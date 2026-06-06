@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 精选日报 · 历史记录</title>
+<style>
+:root{
+  --primary:#4982C9;--primary-deep:#2A5A9C;--primary-light:#D9E8FB;
+  --bg-base:#F6F9FD;--bg-card:#FFFFFF;
+  --text-1:#1A2A40;--text-2:#4B5C73;--text-3:#7B8AA0;
+  --border:#E1EAF5;
+  --grad:linear-gradient(135deg,#4982C9 0%,#2A5A9C 100%);
+  --shadow:0 4px 14px rgba(73,130,201,.10);
+  --shadow-hover:0 8px 24px rgba(73,130,201,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg-base);color:var(--text-1);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;height:64px;gap:32px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--primary-deep)}
+.logo-icon{width:36px;height:36px;background:var(--grad);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+.nav-spacer{flex:1}
+
+.hero{padding:48px 0 32px;background:linear-gradient(180deg,#EAF2FC 0%,#F6F9FD 100%)}
+.hero-badge{display:inline-block;padding:6px 14px;background:rgba(73,130,201,.12);color:var(--primary-deep);border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
+.accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--text-2);font-size:15px;max-width:760px;margin-bottom:24px}
+
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.stat-card{padding:18px;background:#fff;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.stat-num{font-size:28px;font-weight:800;color:var(--primary-deep);margin-bottom:4px}
+.stat-label{font-size:12px;color:var(--text-3)}
+
+.section{padding:32px 0}
+.day-list{display:flex;flex-direction:column;gap:18px}
+.day-group{padding:24px;background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);display:flex;gap:20px;transition:.2s}
+.day-group:hover{box-shadow:var(--shadow-hover)}
+.day-box{flex-shrink:0;width:96px;height:96px;background:var(--grad);color:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.day-box .d{font-size:34px;font-weight:800;line-height:1}
+.day-box .ym{font-size:11px;margin-top:4px;opacity:.9}
+.day-body{flex:1;min-width:0}
+.day-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.day-date{font-weight:700;font-size:16px}
+.day-week{font-size:12px;color:var(--primary-deep);padding:2px 8px;background:var(--primary-light);border-radius:5px}
+.day-count{margin-left:auto;font-size:12px;color:var(--text-3)}
+.day-top3{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;padding:12px;background:linear-gradient(180deg,#FFFBEB 0%,#FFF 100%);border-radius:10px;border:1px solid #F5D77F}
+.day-top3-label{font-size:11px;color:#B45309;font-weight:700;letter-spacing:1px;margin-bottom:4px}
+.day-top-item{display:flex;align-items:flex-start;gap:8px;font-size:14px}
+.day-top-rank{flex-shrink:0;width:20px;height:20px;background:var(--grad);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:1px}
+.day-top-item:first-of-type .day-top-rank{background:linear-gradient(135deg,#F0B400 0%,#D69500 100%)}
+.day-top-title{flex:1;color:var(--text-1);line-height:1.5;font-weight:500}
+.day-top-title:hover{color:var(--primary)}
+.day-top-cat{flex-shrink:0;padding:1px 7px;background:var(--primary-light);color:var(--primary-deep);border-radius:4px;font-size:11px;font-weight:600;margin-top:2px}
+.day-items{display:flex;flex-direction:column;gap:6px;padding-top:8px;border-top:1px dashed var(--border)}
+.day-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-2);padding:3px 0}
+.day-item .ct{padding:1px 7px;background:#F0F5FC;color:var(--primary-deep);border-radius:4px;font-size:11px;font-weight:600}
+.day-item .t{flex:1;color:var(--text-1);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.day-item .t:hover{color:var(--primary)}
+.day-item .h{color:#B45309;font-size:11px;font-weight:600}
+
+.footer{padding:30px 0;text-align:center;color:var(--text-3);font-size:12px;border-top:1px solid var(--border);margin-top:32px}
+.footer a{color:var(--primary);font-weight:500}
+
+@media(max-width:900px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  h1{font-size:28px}
+  .day-group{flex-direction:column}
+  .day-box{width:100%;height:auto;flex-direction:row;justify-content:center;gap:12px;padding:14px}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner">
+  <a class="logo"><span class="logo-icon">AI</span>AI 精选日报 · 历史记录</a>
+  <div class="nav-spacer"></div>
+  <span style="color:var(--text-3);font-size:13px">最近更新:2026-06-06</span>
+</div></nav>
+
+<section class="hero"><div class="container">
+  <div class="hero-badge">📚 历史归档 · 累计 3 天</div>
+  <h1>历史<span class="accent">精选回顾</span></h1>
+  <p class="hero-sub">按日浏览过往每日 AI 精选,沉淀行业完整脉络。点击标题可跳转原文阅读。</p>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">归档天数</div></div>
+    <div class="stat-card"><div class="stat-num">63</div><div class="stat-label">累计资讯</div></div>
+    <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">分类覆盖</div></div>
+    <div class="stat-card"><div class="stat-num">85</div><div class="stat-label">平均热度</div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="day-list"><div class="day-group">
+  <div class="day-box"><div class="d">06</div><div class="ym">2026/06</div></div>
+  <div class="day-body">
+    <div class="day-head">
+      <span class="day-date">2026-06-06</span>
+      <span class="day-week">周六</span>
+      <span class="day-count">共 21 条精选</span>
+    </div>
+    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://x.com/NVIDIAAI/status/2063034422698389625" target="_blank" class="day-top-title">PixelDiT入选CVPR2026最佳论文决赛</a><span class="day-top-cat">基础设施</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" class="day-top-title">用Qwen2.5-3B构建多智能体经济体：工程报告</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/rohanpaul_ai/status/2063018358795300982" target="_blank" class="day-top-title">Arena 发布真实世界 AI 智能体排行榜 Agent Arena</a><span class="day-top-cat">研究</span></div></div>
+    <div class="day-items"><div class="day-item"><span class="ct">商业</span><a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic" target="_blank" class="t">Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片</a><span class="h">🔥 93</span><span style="color:var(--text-3);font-size:11px">05:02</span></div><div class="day-item"><span class="ct">基础设施</span><a href="https://x.com/rohanpaul_ai/status/2063000834045313314" target="_blank" class="t">SpaceX与Google达成云计算新协议</a><span class="h">🔥 92</span><span style="color:var(--text-3);font-size:11px">04:51</span></div><div class="day-item"><span class="ct">工具</span><a href="https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag" target="_blank" class="t">谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架</a><span class="h">🔥 91</span><span style="color:var(--text-3);font-size:11px">04:30</span></div><div class="day-item"><span class="ct">研究</span><a href="https://x.com/MSFTResearch/status/2062983588606320714" target="_blank" class="t">微软Project Mosaic：micro-LED光学互连技术</a><span class="h">🔥 90</span><span style="color:var(--text-3);font-size:11px">03:43</span></div><div class="day-item"><span class="ct">研究</span><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" class="t">Anthropic：让Claude成为化学家</a><span class="h">🔥 89</span><span style="color:var(--text-3);font-size:11px">03:33</span></div><div class="day-item"><span class="ct">行业</span><a href="https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon" target="_blank" class="t">五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">03:23</span></div></div>
+  </div>
+</div><div class="day-group">
+  <div class="day-box"><div class="d">05</div><div class="ym">2026/06</div></div>
+  <div class="day-body">
+    <div class="day-head">
+      <span class="day-date">2026-06-05</span>
+      <span class="day-week">周五</span>
+      <span class="day-count">共 21 条精选</span>
+    </div>
+    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://www.ithome.com/0/960/323.htm" target="_blank" class="day-top-title">腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成</a><span class="day-top-cat">行业</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://www.ithome.com/0/960/218.htm" target="_blank" class="day-top-title">Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发</a><span class="day-top-cat">行业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/cb_doge/status/2062681226633523250" target="_blank" class="day-top-title">马斯克谈SpaceX上市：正处大规模资本扩张期</a><span class="day-top-cat">商业</span></div></div>
+    <div class="day-items"><div class="day-item"><span class="ct">工具</span><a href="https://x.com/NotebookLM/status/2062653124326863077" target="_blank" class="t">NotebookLM 来源归属功能上线</a><span class="h">🔥 93</span><span style="color:var(--text-3);font-size:11px">05:50</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/GeminiApp/status/2062652523945836770" target="_blank" class="t">Gemini macOS 双击 Command 附加活动窗口</a><span class="h">🔥 92</span><span style="color:var(--text-3);font-size:11px">05:47</span></div><div class="day-item"><span class="ct">工具</span><a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank" class="t">Anthropic 开源 AI 驱动漏洞发现框架</a><span class="h">🔥 91</span><span style="color:var(--text-3);font-size:11px">05:32</span></div><div class="day-item"><span class="ct">行业</span><a href="https://x.com/nvidia/status/2062647600424128773" target="_blank" class="t">Nemotron Parakeet ASR 印尼语准确率达 97.7%</a><span class="h">🔥 90</span><span style="color:var(--text-3);font-size:11px">05:28</span></div><div class="day-item"><span class="ct">观点</span><a href="https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence" target="_blank" class="t">共存与协同智能的终结</a><span class="h">🔥 89</span><span style="color:var(--text-3);font-size:11px">05:13</span></div><div class="day-item"><span class="ct">研究</span><a href="https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera" target="_blank" class="t">Google Research 发布被动心率监测系统 PHRM</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">04:25</span></div></div>
+  </div>
+</div><div class="day-group">
+  <div class="day-box"><div class="d">04</div><div class="ym">2026/06</div></div>
+  <div class="day-body">
+    <div class="day-head">
+      <span class="day-date">2026-06-04</span>
+      <span class="day-week">周四</span>
+      <span class="day-count">共 21 条精选</span>
+    </div>
+    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://www.ithome.com/0/871/543.htm" target="_blank" class="day-top-title">DeepSeek 首轮融资拟筹 500 亿元,腾讯/宁德时代领投</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://www.theverge.com/" target="_blank" class="day-top-title">微软与 OpenAI 分道扬镳,如今双方准备正面交锋</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/xiaohu/status/2062367357868355622" target="_blank" class="day-top-title">Cloudflare Radar:机器人流量首次超过人类,占比 57.5%</a><span class="day-top-cat">基础设施</span></div></div>
+    <div class="day-items"><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/krea_ai/" target="_blank" class="t">Ideogram v4.0 发布:2K 分辨率 + JSON Prompt 支持</a><span class="h">🔥 86</span><span style="color:var(--text-3);font-size:11px">01:40</span></div><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/kimmonismus/" target="_blank" class="t">Miso One 开源语音模型:8B 参数 / 110ms 延迟 / 一次性语音克隆</a><span class="h">🔥 84</span><span style="color:var(--text-3);font-size:11px">00:32</span></div><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/xai/" target="_blank" class="t">Grok 模型登陆 Cloudflare AI Gateway</a><span class="h">🔥 79</span><span style="color:var(--text-3);font-size:11px">06:03</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/perplexity_ai/" target="_blank" class="t">Perplexity Personal Computer 登陆 Windows</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">23:05</span></div><div class="day-item"><span class="ct">工具</span><a href="https://www.cursor.com/blog/" target="_blank" class="t">Cursor Enterprise 推出 Organizations 组织管理功能</a><span class="h">🔥 85</span><span style="color:var(--text-3);font-size:11px">20:00</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/Replit/" target="_blank" class="t">Replit 上线 SEO Agent,助应用被搜索发现</a><span class="h">🔥 78</span><span style="color:var(--text-3);font-size:11px">00:37</span></div></div>
+  </div>
+</div></div>
+</div></section>
+
+<footer class="footer"><div class="container">
+  © 2026 AI 精选日报 · Powered by <a href="#">Mira AI</a> · 数据来源:aihot.virxact.com
+</div></footer>
+
+</body>
+</html>
