@@ -9,7 +9,7 @@
   --primary:#4982C9;--primary-deep:#2A5A9C;--primary-light:#D9E8FB;
   --bg-base:#F6F9FD;--bg-card:#FFFFFF;
   --text-1:#1A2A40;--text-2:#4B5C73;--text-3:#7B8AA0;
-  --border:#E1EAF5;
+  --border:#E1EAF5;--accent-gold:#F0B400;
   --grad:linear-gradient(135deg,#4982C9 0%,#2A5A9C 100%);
   --shadow:0 4px 14px rgba(73,130,201,.10);
   --shadow-hover:0 8px 24px rgba(73,130,201,.18);
@@ -36,41 +36,78 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 .stat-num{font-size:28px;font-weight:800;color:var(--primary-deep);margin-bottom:4px}
 .stat-label{font-size:12px;color:var(--text-3)}
 
+.tool-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px;background:#fff;border-radius:12px;box-shadow:var(--shadow);margin-bottom:20px}
+.tool-row button{padding:8px 16px;background:#F0F5FC;color:var(--primary-deep);border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s}
+.tool-row button:hover{background:var(--primary-light)}
+.tool-row .grow{flex:1}
+
 .section{padding:32px 0}
 .day-list{display:flex;flex-direction:column;gap:18px}
-.day-group{padding:24px;background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);display:flex;gap:20px;transition:.2s}
+.day-group{background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden;transition:.2s}
 .day-group:hover{box-shadow:var(--shadow-hover)}
-.day-box{flex-shrink:0;width:96px;height:96px;background:var(--grad);color:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.day-box .d{font-size:34px;font-weight:800;line-height:1}
+
+.day-summary{display:flex;align-items:center;gap:20px;padding:20px 24px;cursor:pointer;user-select:none;transition:.2s}
+.day-summary:hover{background:#F8FBFE}
+.day-box{flex-shrink:0;width:80px;height:80px;background:var(--grad);color:#fff;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.day-box .d{font-size:28px;font-weight:800;line-height:1}
 .day-box .ym{font-size:11px;margin-top:4px;opacity:.9}
-.day-body{flex:1;min-width:0}
-.day-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+
+.day-meta{flex:1;min-width:0}
+.day-meta-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
 .day-date{font-weight:700;font-size:16px}
 .day-week{font-size:12px;color:var(--primary-deep);padding:2px 8px;background:var(--primary-light);border-radius:5px}
-.day-count{margin-left:auto;font-size:12px;color:var(--text-3)}
-.day-top3{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;padding:12px;background:linear-gradient(180deg,#FFFBEB 0%,#FFF 100%);border-radius:10px;border:1px solid #F5D77F}
-.day-top3-label{font-size:11px;color:#B45309;font-weight:700;letter-spacing:1px;margin-bottom:4px}
-.day-top-item{display:flex;align-items:flex-start;gap:8px;font-size:14px}
-.day-top-rank{flex-shrink:0;width:20px;height:20px;background:var(--grad);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:1px}
-.day-top-item:first-of-type .day-top-rank{background:linear-gradient(135deg,#F0B400 0%,#D69500 100%)}
-.day-top-title{flex:1;color:var(--text-1);line-height:1.5;font-weight:500}
-.day-top-title:hover{color:var(--primary)}
-.day-top-cat{flex-shrink:0;padding:1px 7px;background:var(--primary-light);color:var(--primary-deep);border-radius:4px;font-size:11px;font-weight:600;margin-top:2px}
-.day-items{display:flex;flex-direction:column;gap:6px;padding-top:8px;border-top:1px dashed var(--border)}
-.day-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-2);padding:3px 0}
-.day-item .ct{padding:1px 7px;background:#F0F5FC;color:var(--primary-deep);border-radius:4px;font-size:11px;font-weight:600}
-.day-item .t{flex:1;color:var(--text-1);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.day-item .t:hover{color:var(--primary)}
-.day-item .h{color:#B45309;font-size:11px;font-weight:600}
+.day-count{font-size:12px;color:var(--text-3)}
+.day-top3-preview{display:flex;flex-direction:column;gap:4px}
+.preview-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.preview-rank{flex-shrink:0;width:18px;height:18px;background:var(--grad);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
+.preview-item:first-child .preview-rank{background:linear-gradient(135deg,#F0B400 0%,#D69500 100%)}
+.preview-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-1)}
+
+.toggle-btn{flex-shrink:0;display:flex;align-items:center;gap:6px;padding:8px 14px;background:var(--primary-light);color:var(--primary-deep);border-radius:8px;font-size:13px;font-weight:600;transition:.2s}
+.day-group.open .toggle-btn{background:var(--grad);color:#fff}
+.toggle-btn .arrow{display:inline-block;transition:transform .25s}
+.day-group.open .toggle-btn .arrow{transform:rotate(180deg)}
+
+.day-detail{display:none;padding:0 24px 24px;border-top:1px dashed var(--border)}
+.day-group.open .day-detail{display:block}
+
+.detail-section{margin-top:20px}
+.detail-section-title{font-size:16px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:var(--text-1)}
+.detail-section-sub{font-size:12px;color:var(--text-3);font-weight:400;margin-left:6px}
+
+.top3-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.top-card{position:relative;display:block;padding:18px;background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);transition:.2s;overflow:hidden}
+.top-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);border-color:var(--primary-light)}
+.top-card.rank1{background:linear-gradient(180deg,#FFFBEB 0%,#FFF 50%);border-color:#F5D77F}
+.rank-badge{position:absolute;top:12px;right:12px;width:32px;height:32px;background:var(--grad);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;box-shadow:0 4px 10px rgba(73,130,201,.3)}
+.top-card.rank1 .rank-badge{background:linear-gradient(135deg,#F0B400 0%,#D69500 100%)}
+.meta-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--text-3);margin-bottom:10px;flex-wrap:wrap}
+.cat-tag{padding:2px 8px;background:var(--primary-light);color:var(--primary-deep);border-radius:5px;font-weight:600}
+.heat-tag{padding:2px 8px;background:#FEF3C7;color:#B45309;border-radius:5px;font-weight:600}
+.dot{width:3px;height:3px;background:var(--text-3);border-radius:50%}
+.top-card h3{font-size:15px;line-height:1.45;margin-bottom:10px;color:var(--text-1);padding-right:38px}
+.top-card .summary{font-size:12.5px;color:var(--text-2);line-height:1.6;margin-bottom:10px}
+.reason-box{padding:8px 10px;background:rgba(73,130,201,.06);border-left:3px solid var(--primary);border-radius:5px;font-size:11.5px;color:var(--text-2);margin-bottom:10px}
+.reason-box strong{color:var(--primary-deep);margin-right:6px}
+.tags-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.tag{padding:2px 7px;background:#F0F5FC;color:var(--text-2);border-radius:4px;font-size:10.5px}
+.read-btn{display:inline-flex;align-items:center;gap:4px;color:var(--primary);font-size:12px;font-weight:600}
+
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.news-card{display:block;padding:16px;background:#fff;border-radius:12px;border:1px solid var(--border);box-shadow:0 2px 8px rgba(73,130,201,.06);transition:.2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--primary-light)}
+.news-card h4{font-size:14px;line-height:1.5;margin-bottom:8px;color:var(--text-1)}
+.news-card .summary{font-size:12px;color:var(--text-2);line-height:1.55;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 
 .footer{padding:30px 0;text-align:center;color:var(--text-3);font-size:12px;border-top:1px solid var(--border);margin-top:32px}
 .footer a{color:var(--primary);font-weight:500}
 
 @media(max-width:900px){
   .stats-grid{grid-template-columns:1fr 1fr}
+  .top3-grid,.grid-3{grid-template-columns:1fr}
   h1{font-size:28px}
-  .day-group{flex-direction:column}
-  .day-box{width:100%;height:auto;flex-direction:row;justify-content:center;gap:12px;padding:14px}
+  .day-summary{flex-wrap:wrap}
+  .day-box{width:64px;height:64px}
 }
 </style>
 </head>
@@ -84,48 +121,594 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 <section class="hero"><div class="container">
   <div class="hero-badge">📚 历史归档 · 累计 3 天</div>
   <h1>历史<span class="accent">精选回顾</span></h1>
-  <p class="hero-sub">按日浏览过往每日 AI 精选,沉淀行业完整脉络。点击标题可跳转原文阅读。</p>
+  <p class="hero-sub">按日浏览过往每日 AI 精选,点击「展开全部」查看当天完整内容(TOP 3 卡片 + 全部资讯),沉淀 AI 行业完整脉络。</p>
   <div class="stats-grid">
     <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">归档天数</div></div>
     <div class="stat-card"><div class="stat-num">63</div><div class="stat-label">累计资讯</div></div>
     <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">分类覆盖</div></div>
     <div class="stat-card"><div class="stat-num">85</div><div class="stat-label">平均热度</div></div>
   </div>
+  <div class="tool-row">
+    <button onclick="expandAll()">📂 全部展开</button>
+    <button onclick="collapseAll()">📁 全部收起</button>
+    <span class="grow"></span>
+    <span style="color:var(--text-3);font-size:12px">提示:点击每日卡片任意位置可展开/收起</span>
+  </div>
 </div></section>
 
-<section class="section"><div class="container">
-  <div class="day-list"><div class="day-group">
-  <div class="day-box"><div class="d">06</div><div class="ym">2026/06</div></div>
-  <div class="day-body">
-    <div class="day-head">
-      <span class="day-date">2026-06-06</span>
-      <span class="day-week">周六</span>
-      <span class="day-count">共 21 条精选</span>
+<section class="section" style="padding-top:0"><div class="container">
+  <div class="day-list"><div class="day-group open">
+  <div class="day-summary" onclick="toggleDay(this)">
+    <div class="day-box"><div class="d">06</div><div class="ym">2026/06</div></div>
+    <div class="day-meta">
+      <div class="day-meta-head">
+        <span class="day-date">2026-06-06</span>
+        <span class="day-week">周六</span>
+        <span class="day-count">共 21 条精选</span>
+      </div>
+      <div class="day-top3-preview"><div class="preview-item"><span class="preview-rank">1</span><span class="preview-title">PixelDiT入选CVPR2026最佳论文决赛</span></div><div class="preview-item"><span class="preview-rank">2</span><span class="preview-title">用Qwen2.5-3B构建多智能体经济体：工程报告</span></div><div class="preview-item"><span class="preview-rank">3</span><span class="preview-title">Arena 发布真实世界 AI 智能体排行榜 Agent Arena</span></div></div>
     </div>
-    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://x.com/NVIDIAAI/status/2063034422698389625" target="_blank" class="day-top-title">PixelDiT入选CVPR2026最佳论文决赛</a><span class="day-top-cat">基础设施</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" class="day-top-title">用Qwen2.5-3B构建多智能体经济体：工程报告</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/rohanpaul_ai/status/2063018358795300982" target="_blank" class="day-top-title">Arena 发布真实世界 AI 智能体排行榜 Agent Arena</a><span class="day-top-cat">研究</span></div></div>
-    <div class="day-items"><div class="day-item"><span class="ct">商业</span><a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic" target="_blank" class="t">Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片</a><span class="h">🔥 93</span><span style="color:var(--text-3);font-size:11px">05:02</span></div><div class="day-item"><span class="ct">基础设施</span><a href="https://x.com/rohanpaul_ai/status/2063000834045313314" target="_blank" class="t">SpaceX与Google达成云计算新协议</a><span class="h">🔥 92</span><span style="color:var(--text-3);font-size:11px">04:51</span></div><div class="day-item"><span class="ct">工具</span><a href="https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag" target="_blank" class="t">谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架</a><span class="h">🔥 91</span><span style="color:var(--text-3);font-size:11px">04:30</span></div><div class="day-item"><span class="ct">研究</span><a href="https://x.com/MSFTResearch/status/2062983588606320714" target="_blank" class="t">微软Project Mosaic：micro-LED光学互连技术</a><span class="h">🔥 90</span><span style="color:var(--text-3);font-size:11px">03:43</span></div><div class="day-item"><span class="ct">研究</span><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" class="t">Anthropic：让Claude成为化学家</a><span class="h">🔥 89</span><span style="color:var(--text-3);font-size:11px">03:33</span></div><div class="day-item"><span class="ct">行业</span><a href="https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon" target="_blank" class="t">五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">03:23</span></div></div>
+    <div class="toggle-btn"><span>收起</span><span class="arrow">▾</span></div>
+  </div>
+  <div class="day-detail">
+    <div class="detail-section">
+      <div class="detail-section-title">🏆 TOP 3 精选 <span class="detail-section-sub">综合热度与价值评分</span></div>
+      <div class="top3-grid"><a href="https://x.com/NVIDIAAI/status/2063034422698389625" target="_blank" rel="noopener" class="top-card rank1" data-cat="infra">
+  <div class="rank-badge">1</div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 96</span><span>07:05</span><span class="dot"></span><span>X：NVIDIA AI (@NVIDIAAI)</span></div>
+  <h3>PixelDiT入选CVPR2026最佳论文决赛</h3>
+  <div class="summary">被选为 #CVPR2026 最佳论文决赛作品：来自 NVIDIA Research 的 PixelDiT<br><br>在大多数图像生成模型中，预训练的自编码器会在任何扩散发生前压缩图像，导致质量损失在整个流程中累积。<br><br>PixelDiT，即像素扩散变换器，完全去掉了这一步骤。它是一个单阶段模型，直接在像素空间中端到端地学习扩散过程。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#PixelDiT</span><span class="tag">#CVPR2026</span><span class="tag">#NVIDIA</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" rel="noopener" class="top-card" data-cat="biz">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 95</span><span>06:18</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h3>用Qwen2.5-3B构建多智能体经济体：工程报告</h3>
+  <div class="summary">开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Qwen2.5-3B</span><span class="tag">#LLM</span><span class="tag">#Modal</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/rohanpaul_ai/status/2063018358795300982" target="_blank" rel="noopener" class="top-card" data-cat="research">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 94</span><span>06:01</span><span class="dot"></span><span>X：Rohan Paul (@rohanpaul_ai)</span></div>
+  <h3>Arena 发布真实世界 AI 智能体排行榜 Agent Arena</h3>
+  <div class="summary">Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Arena</span><span class="tag">#Agent</span><span class="tag">#30万</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-title">📰 完整资讯 <span class="detail-section-sub">共 18 条 · 按热度排序</span></div>
+      <div class="grid-3"><a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 93</span><span>05:02</span><span class="dot"></span><span>Bloomberg：Technology（RSS）</span></div>
+  <h4>Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片</h4>
+  <div class="summary">Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Apollo</span><span class="tag">#Anthropic</span><span class="tag">#Global</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/rohanpaul_ai/status/2063000834045313314" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 92</span><span>04:51</span><span class="dot"></span><span>X：Rohan Paul (@rohanpaul_ai)</span></div>
+  <h4>SpaceX与Google达成云计算新协议</h4>
+  <div class="summary">SpaceX 刚刚披露了一份与 Google 的新云服务协议。<br><br>Google 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。<br><br>这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#SpaceX</span><span class="tag">#Google</span><span class="tag">#GPU</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 91</span><span>04:30</span><span class="dot"></span><span>Google Research：Blog（网页）</span></div>
+  <h4>谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架</h4>
+  <div class="summary">Google Research 与 Google Cloud 合作推出跨语料库检索（Cross-Corpus Retrieval）框架，作为 Gemini Enterprise Agent Platform 的 Agentic RAG。该多智能体工作流将复杂企业查询分解为子任务，通过规划、重写和路由，迭代搜索多个数据源直至获得充分上下文，再生成可靠回答。与标准 RAG 相比，在事实性数据集上准确率最高提升 34%；在多个领域特定内部数据集上也实现了更好的接地与推理准确性。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Gemini</span><span class="tag">#Enterprise</span><span class="tag">#Agent</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/MSFTResearch/status/2062983588606320714" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 90</span><span>03:43</span><span class="dot"></span><span>X：Microsoft Research (@MSFTResearch)</span></div>
+  <h4>微软Project Mosaic：micro-LED光学互连技术</h4>
+  <div class="summary">微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Project</span><span class="tag">#Mosaic</span><span class="tag">#LED</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 89</span><span>03:33</span><span class="dot"></span><span>Anthropic：Research（发表成果 · 网页）</span></div>
+  <h4>Anthropic：让Claude成为化学家</h4>
+  <div class="summary">Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#Claude</span><span class="tag">#NMR</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 88</span><span>03:23</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器</h4>
+  <div class="summary">据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#The</span><span class="tag">#Intercept</span><span class="tag">#Hacker</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://alexispurslane.github.io/rsync-analysis" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 87</span><span>03:07</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>Claude 是否增加了 rsync 中的错误？</h4>
+  <div class="summary">一篇 Hacker News 热门帖子（105 分）提出了 Claude 是否导致 rsync 工具中 bug 增加的问题，并附有分析链接。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Claude</span><span class="tag">#Hacker</span><span class="tag">#News</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/mntruell/status/2062955210897801520" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 86</span><span>01:50</span><span class="dot"></span><span>X：Michael Truell (@mntruell)</span></div>
+  <h4>智能体协作应如同事般对话和手势</h4>
+  <div class="summary">与 AI 智能体协作应感觉像与同事协作一样。你应能"与它们交谈"--不仅通过文本聊天，还能一起对着屏幕做手势、实时对话等。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#工具</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://developers.googleblog.com/introducing-the-google-colab-cli" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 85</span><span>01:12</span><span class="dot"></span><span>Google Developers Blog（RSS）</span></div>
+  <h4>Google Colab CLI 发布</h4>
+  <div class="summary">Google 推出 Colab 命令行界面（CLI），允许开发者和 AI 智能体将本地终端连接到远程 Colab 运行时，实现无摩擦执行。该轻量级 CLI 支持请求高性能 GPU、远程运行本地 Python 脚本，并检索工件日志或模型（如微调后的 Gemma 3 适配器）。工具可直接集成到标准终端环境，可被 Antigravity、Claude Code 等 AI 智能体调用以管理复杂机器学习流水线。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Colab</span><span class="tag">#CLI</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/OpenRouter/status/2062944965978992935" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 84</span><span>01:09</span><span class="dot"></span><span>X：OpenRouter (@OpenRouter)</span></div>
+  <h4>Riverflow 2.5：可控制评分标准的图像模型</h4>
+  <div class="summary">在OpenRouter上线：来自@Sourceful的Riverflow 2.5。<br><br>首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。<br><br>免费至6月9日（周二）。Fast和Pro见下方🧵。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Riverflow</span><span class="tag">#OpenRouter</span><span class="tag">#Sourceful</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/ChatGPTapp/status/2062944254591430917" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 83</span><span>01:06</span><span class="dot"></span><span>X：ChatGPT (@ChatGPTapp)</span></div>
+  <h4>ChatGPT 网页版支持从写作块发送邮件</h4>
+  <div class="summary">草拟。调整。发送。<br><br>现在你可以在网页版 ChatGPT 中直接从写作块发送邮件，无需离开对话。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#ChatGPT</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/GoogleAI/status/2062942864288387430" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 82</span><span>01:01</span><span class="dot"></span><span>X：Google AI (@GoogleAI)</span></div>
+  <h4>Google AI 本周产品更新：Nano Banana 2、Co-Scientist、dreambeans、Gemma 4 等</h4>
+  <div class="summary">Google AI 本周发布多项更新：Nano Banana 2 及 Pro 正式 GA，可通过 Gemini Enterprise Agent Platform、Gemini API 和 Google AI Studio 获取；Co-Scientist 多智能体系统面向科研自动生成优化新假设；Google Labs 推出 dreambeans，根据用户 Google 应用数据每日生成个性化话题集；Gemma 4 12B 统一无编码器多模态模型可完全离线运行于笔记本；Gemma 4 系列及草稿模型引入 QAT 降低内存需求；Google Magenta RealTime 2 开源实时音乐模型，支持 MIDI 键盘、文本提示和手势演奏。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Nano</span><span class="tag">#Banana</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/GeminiApp/status/2062936486509785385" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 81</span><span>00:36</span><span class="dot"></span><span>X：Gemini (@GeminiApp)</span></div>
+  <h4>Gemini Live 支持实时创建编辑图像</h4>
+  <div class="summary">你现可直接在 Gemini Live 中创建和编辑图像。<br><br>无论是测试房间装饰、解决数学问题，还是制作可分享的梗图，所有操作都实时完成。<br><br>只需打开 Gemini 应用，点击 Live 按钮，共享摄像头，告诉 Gemini 你想看到的。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Gemini</span><span class="tag">#Live</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/EpochAIResearch/status/2062933470373146828" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 80</span><span>00:24</span><span class="dot"></span><span>X：Epoch AI (@EpochAIResearch)</span></div>
+  <h4>AI热推高美国计算基建GDP占比翻倍</h4>
+  <div class="summary">AI 热潮使计算基础设施占美国 GDP 比重翻倍。<br><br>2026 年第一季度，与 AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#GDP</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/AIatMeta/status/2062920724944507095" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 79</span><span>23:33</span><span class="dot"></span><span>X：AI at Meta (@AIatMeta)</span></div>
+  <h4>Meta SAM 3D 获 CVPR26 最佳论文荣誉提名</h4>
+  <div class="summary">热烈祝贺我们的 SAM 3D 团队在 #CVPR26 获得最佳论文荣誉提名！这项殊荣凸显了他们在推动计算机视觉边界方面的杰出工作。<br><br>论文链接：https：//arxiv.org/abs/2511.16624</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Meta</span><span class="tag">#SAM</span><span class="tag">#CVPR26</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://suno.com/blog/6-tips-for-voices" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 78</span><span>23:26</span><span class="dot"></span><span>Suno：Blog（网页）</span></div>
+  <h4>Suno Voices 使用指南：6 个技巧打造高质量人声录制</h4>
+  <div class="summary">Suno Voices 面向 Web 付费用户开放。提升人声质量的 6 个技巧：在安静环境录音以减少背景噪音；先练习歌词再正式录制；不必追求完美，保留真实情感；录音时长尽量超过 1 分钟以提供更多学习素材；将人声匹配到合适的音乐流派（如民谣、流行、死亡金属、波萨诺瓦等）；敢于尝试不同风格以发现惊喜。这些技巧旨在帮助用户获得更个性化、表现力更强的声音效果。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Suno</span><span class="tag">#Voices</span><span class="tag">#Web</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.bloomberg.com/news/articles/2026-06-05/openai-would-ve-imploded-if-altman-didn-t-return-ex-cto-says" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 77</span><span>23:18</span><span class="dot"></span><span>Bloomberg：Technology（RSS）</span></div>
+  <h4>OpenAI 前 CTO 称若 Altman 未回归公司可能已"瓦解"</h4>
+  <div class="summary">Mira Murati 表示，如果 Sam Altman 在 2023 年被短暂罢免后没有回归 CEO 职位，OpenAI 很可能已经"瓦解"。这是她对那场硅谷最激烈的董事会斗争的最清晰描述。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#CTO</span><span class="tag">#Altman</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/kimmonismus/status/2062915287700090948" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 76</span><span>23:11</span><span class="dot"></span><span>X：Kim (@kimmonismus)</span></div>
+  <h4>Hinton称AI拥有意识：人类最好接受非唯一智能生命</h4>
+  <div class="summary">AI先驱Geoffrey Hinton表示，他认为AI拥有意识，人类应接受自己并非唯一智能生命。他指出AI"非常像我们"，AI聊天机器人必须理解问题才能作答，这种觉知等同于感知能力，智能不限于生物。主推文作者进一步讨论意识本质：笛卡尔的"我思故我在"和fMRI等实证手段都无法真正定义意识，人类对自身了解远不及想象。作者呼吁转向新哲学问题，厘清人与机器的区别与联系。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Hinton</span><span class="tag">#Geoffrey</span><span class="tag">#MRI</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
   </div>
 </div><div class="day-group">
-  <div class="day-box"><div class="d">05</div><div class="ym">2026/06</div></div>
-  <div class="day-body">
-    <div class="day-head">
-      <span class="day-date">2026-06-05</span>
-      <span class="day-week">周五</span>
-      <span class="day-count">共 21 条精选</span>
+  <div class="day-summary" onclick="toggleDay(this)">
+    <div class="day-box"><div class="d">05</div><div class="ym">2026/06</div></div>
+    <div class="day-meta">
+      <div class="day-meta-head">
+        <span class="day-date">2026-06-05</span>
+        <span class="day-week">周五</span>
+        <span class="day-count">共 21 条精选</span>
+      </div>
+      <div class="day-top3-preview"><div class="preview-item"><span class="preview-rank">1</span><span class="preview-title">腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成</span></div><div class="preview-item"><span class="preview-rank">2</span><span class="preview-title">Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发</span></div><div class="preview-item"><span class="preview-rank">3</span><span class="preview-title">马斯克谈SpaceX上市：正处大规模资本扩张期</span></div></div>
     </div>
-    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://www.ithome.com/0/960/323.htm" target="_blank" class="day-top-title">腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成</a><span class="day-top-cat">行业</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://www.ithome.com/0/960/218.htm" target="_blank" class="day-top-title">Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发</a><span class="day-top-cat">行业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/cb_doge/status/2062681226633523250" target="_blank" class="day-top-title">马斯克谈SpaceX上市：正处大规模资本扩张期</a><span class="day-top-cat">商业</span></div></div>
-    <div class="day-items"><div class="day-item"><span class="ct">工具</span><a href="https://x.com/NotebookLM/status/2062653124326863077" target="_blank" class="t">NotebookLM 来源归属功能上线</a><span class="h">🔥 93</span><span style="color:var(--text-3);font-size:11px">05:50</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/GeminiApp/status/2062652523945836770" target="_blank" class="t">Gemini macOS 双击 Command 附加活动窗口</a><span class="h">🔥 92</span><span style="color:var(--text-3);font-size:11px">05:47</span></div><div class="day-item"><span class="ct">工具</span><a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank" class="t">Anthropic 开源 AI 驱动漏洞发现框架</a><span class="h">🔥 91</span><span style="color:var(--text-3);font-size:11px">05:32</span></div><div class="day-item"><span class="ct">行业</span><a href="https://x.com/nvidia/status/2062647600424128773" target="_blank" class="t">Nemotron Parakeet ASR 印尼语准确率达 97.7%</a><span class="h">🔥 90</span><span style="color:var(--text-3);font-size:11px">05:28</span></div><div class="day-item"><span class="ct">观点</span><a href="https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence" target="_blank" class="t">共存与协同智能的终结</a><span class="h">🔥 89</span><span style="color:var(--text-3);font-size:11px">05:13</span></div><div class="day-item"><span class="ct">研究</span><a href="https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera" target="_blank" class="t">Google Research 发布被动心率监测系统 PHRM</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">04:25</span></div></div>
+    <div class="toggle-btn"><span>展开全部</span><span class="arrow">▾</span></div>
+  </div>
+  <div class="day-detail">
+    <div class="detail-section">
+      <div class="detail-section-title">🏆 TOP 3 精选 <span class="detail-section-sub">综合热度与价值评分</span></div>
+      <div class="top3-grid"><a href="https://www.ithome.com/0/960/323.htm" target="_blank" rel="noopener" class="top-card rank1" data-cat="industry">
+  <div class="rank-badge">1</div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 96</span><span>11:04</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h3>腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成</h3>
+  <div class="summary">在 6 月 5 日的腾讯云 AI 产业应用大会上，腾讯高级执行副总裁汤道生表示，今年腾讯大部分代码都由 AI 生成，工程师将更多时间用于架构设计，定期指导与修正 AI 输出。腾讯 2026 年 Q1 财报显示，重组后的 AI 研发团队重构了基础设施，并搭建了 Hy3 preview 模型。腾讯总裁刘炽平今年 3 月透露，去年腾讯在 AI 新产品上投入 180 亿元，今年投入至少翻倍。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Hy3</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.ithome.com/0/960/218.htm" target="_blank" rel="noopener" class="top-card" data-cat="industry">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 95</span><span>09:16</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h3>Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发</h3>
+  <div class="summary">Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比"核武器不扩散条约"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#Mythos</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/cb_doge/status/2062681226633523250" target="_blank" rel="noopener" class="top-card" data-cat="biz">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 94</span><span>07:41</span><span class="dot"></span><span>X：cb_doge (@cb_doge)</span></div>
+  <h3>马斯克谈SpaceX上市：正处大规模资本扩张期</h3>
+  <div class="summary">马斯克在JPMorgan活动上回应SpaceX上市问题：他已被建议上市近10年，自2014-2015年起SpaceX就已实现正现金流并自筹资金，之前的私募轮次实际是面向投资者和员工的流动性/回购轮次。当前不同之处在于SpaceX正进入显著资本增长阶段，计划发射约10万颗通信卫星（可能超10万颗），AI和机器人对带宽需求巨大，还将在太空中建设AI数据中心，马斯克认为这将成为AI扩张的主要手段。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#SpaceX</span><span class="tag">#JPMorgan</span><span class="tag">#10万</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-title">📰 完整资讯 <span class="detail-section-sub">共 18 条 · 按热度排序</span></div>
+      <div class="grid-3"><a href="https://x.com/NotebookLM/status/2062653124326863077" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 93</span><span>05:50</span><span class="dot"></span><span>X：NotebookLM (@NotebookLM)</span></div>
+  <h4>NotebookLM 来源归属功能上线</h4>
+  <div class="summary">今天，我们推出又一项呼声很高的功能：来源归属！🥳<br><br>无需再猜测。现在你可以看到每个创作物背后所用的确切公式（提示词 + 来源）。想要调整？只需轻点"迭代"，随心定制 💖</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#NotebookLM</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/GeminiApp/status/2062652523945836770" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 92</span><span>05:47</span><span class="dot"></span><span>X：Gemini (@GeminiApp)</span></div>
+  <h4>Gemini macOS 双击 Command 附加活动窗口</h4>
+  <div class="summary">使用适用于 macOS 的 Gemini 应用，获取针对屏幕内容的定制帮助。💻<br><br>只需同时按下两个 Command ⌘ 键，即可将当前活动窗口无缝附加到聊天中，无需手动截图或切换标签页。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Gemini</span><span class="tag">#Command</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 91</span><span>05:32</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>Anthropic 开源 AI 驱动漏洞发现框架</h4>
+  <div class="summary">Anthropic 将其用于 AI 驱动漏洞发现的开源框架代码托管在 GitHub 上。该框架借助 AI 技术进行漏洞发现，旨在帮助识别软件中的安全缺陷。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#GitHub</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/nvidia/status/2062647600424128773" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 90</span><span>05:28</span><span class="dot"></span><span>X：NVIDIA (@nvidia)</span></div>
+  <h4>Nemotron Parakeet ASR 印尼语准确率达 97.7%</h4>
+  <div class="summary">当法律和监督依赖于转录内容时，70-80% 是不够的。<br><br>http：//Rafiqspace.ai 通过微调 Nemotron Parakeet ASR 达到了 97.7% 的印尼语准确率（2.3% WER）-- 优于全球工具，同时每小时成本降低高达 90%。⚖️</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Nemotron</span><span class="tag">#Parakeet</span><span class="tag">#ASR</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 89</span><span>05:13</span><span class="dot"></span><span>Ethan Mollick：One Useful Thing（RSS）</span></div>
+  <h4>共存与协同智能的终结</h4>
+  <div class="summary">Ethan Mollick 在 One Useful Thing 博客中，以"共存与协同智能的终结"为题，并附带介绍了如何向 AI 推销一本书。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Ethan</span><span class="tag">#Mollick</span><span class="tag">#One</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 88</span><span>04:25</span><span class="dot"></span><span>Google Research：Blog（网页）</span></div>
+  <h4>Google Research 发布被动心率监测系统 PHRM</h4>
+  <div class="summary">Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Research</span><span class="tag">#PHRM</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/OpenAIDevs/status/2062619558440267801" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 87</span><span>03:36</span><span class="dot"></span><span>X：OpenAI Developers (@OpenAIDevs)</span></div>
+  <h4>OpenAI API 新增内容审核评分</h4>
+  <div class="summary">Moderation scores 现已在 Responses API 和 Completions API 中可用。<br><br>在与生成相同的请求流程中返回审核信号，然后由你的应用决定如何使用它们进行记录、路由、审核或拦截。<br><br>https：//developers.openai.com/api/docs/guides/moderation</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#API</span><span class="tag">#Moderation</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 86</span><span>02:57</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h4>Nemotron 3.5 Content Safety：面向全球企业AI的可定制多模态安全</h4>
+  <div class="summary">Nemotron 3.5 Content Safety基于Gemma 3 4B IT，提供128K上下文窗口，支持用户提示、可选图像与助手响应的统一多模态安全评估。新增自定义策略执行，允许企业用自然语言定义专属安全规则；THINK模式可输出可审计的逐步推理痕迹。显式训练覆盖12种语言，并借助基座模型零样本泛化至约140种语言。输出提供低延迟二分类、带分类标签、THINK推理痕迹三种模式。安全分类遵循Aegis 2.0框架（13核心类别+10细分类别）。同步发布多模态、多语言安全数据集，可在8GB+ VRAM GPU上实时部署。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Nemotron</span><span class="tag">#Content</span><span class="tag">#Safety</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/googleaidevs/status/2062603374789263646" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 85</span><span>02:32</span><span class="dot"></span><span>X：Google AI for Developers (@googleaidevs)</span></div>
+  <h4>Google Magenta RealTime 2 （MRT2） 实时音乐模型发布</h4>
+  <div class="summary">Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Magenta</span><span class="tag">#RealTime</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/OpenAIDevs/status/2062599291479478275" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 84</span><span>02:16</span><span class="dot"></span><span>X：OpenAI Developers (@OpenAIDevs)</span></div>
+  <h4>Codex 推出 iOS 应用构建插件</h4>
+  <div class="summary">更多 iOS 应用循环，现已集成至 Codex。<br><br>Build iOS Apps 插件让 Codex 可在应用内浏览器查看和测试你的 iOS 应用，打开 SwiftUI 预览，并无需离开 Codex 即可热重载编辑。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Codex</span><span class="tag">#Build</span><span class="tag">#Apps</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/Replit/status/2062594881625940379" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 83</span><span>01:58</span><span class="dot"></span><span>X：Replit (@Replit)</span></div>
+  <h4>Replit Agent 联手 Shopify 快速建店</h4>
+  <div class="summary">我们与 Shopify 合作，让你从想法到上线商店只需几分钟<br><br>只需告诉 Replit Agent 你想卖什么。它会：<br><br>- 构建自定义店铺页面<br>- 创建你的 Shopify 商店<br>- 帮你添加商品<br><br>在 Shopify 中认领店铺，设置支付，即可开业。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Replit</span><span class="tag">#Agent</span><span class="tag">#Shopify</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/NotebookLM/status/2062582348194197743" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 82</span><span>01:08</span><span class="dot"></span><span>X：NotebookLM (@NotebookLM)</span></div>
+  <h4>NotebookLM 推出福尔摩斯游戏笔记本</h4>
+  <div class="summary">专业技巧：将笔记本游戏化<br><br>不要只是阅读笔记--去调查它们。我们全新的福尔摩斯笔记本将学习变成一款互动侦探游戏。推理事实，发现线索，证明即使是最复杂的问题也能迎刃而解。<br><br>➡️ https：//goo.gle/Sherlock</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#NotebookLM</span><span class="tag">#Sherlock</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.lmsys.org/blog/2026-06-04-higgs-audio-v3-tts" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 81</span><span>00:53</span><span class="dot"></span><span>LMSYS：Blog（Chatbot Arena 团队）</span></div>
+  <h4>Boson AI 与 LMSYS 发布基于 SGLang-Omni 的 Higgs Audio v3 TTS 端到端服务</h4>
+  <div class="summary">Boson AI 与 LMSYS 联合推出基于 SGLang-Omni 推理框架的 Higgs Audio v3 TTS 端到端服务。该模型约 4B 参数，基于 Qwen3-4B 骨干，支持 100 种语言（内部评测覆盖 111 种），在 Seed-TTS、CV3、MiniMax-Multilingual 及 Higgs-Multilingual 零样本语音克隆任务中达到单字级 WER/CER。开发者可通过文本内控制标签实时调整情感（20+种）、风格、韵律（语速/音高/停顿）及音效。模型支持流式合成，文本未完整时即可开始生成语音并保持一致性。SGLang-Omni 专为多阶段生成模型设计，统一调度 AR 解码与轻量计算，实现低延迟推理。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Boson</span><span class="tag">#LMSYS</span><span class="tag">#SGLang-Omni</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.dwarkesh.com/p/alex-imas-phil-trammell" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 80</span><span>00:14</span><span class="dot"></span><span>Dwarkesh Patel：Podcast & Blog（RSS）</span></div>
+  <h4>Alex Imas 和 Phil Trammell：AGI 后什么仍然稀缺？</h4>
+  <div class="summary">经济学家 Alex Imas 和 Phil Trammell 指出，AGI 时代机器人数量可以快速复制增长，但人类独特技能（以芭蕾舞演员为例）的数量保持不变，揭示了即使技术大幅进步，某些稀缺资源仍不可替代。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Alex</span><span class="tag">#Imas</span><span class="tag">#Phil</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/SiliconFlowAI/status/2062549952266723493" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 79</span><span>23:00</span><span class="dot"></span><span>X：硅基流动 SiliconFlow (@SiliconFlowAI)</span></div>
+  <h4>Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平</h4>
+  <div class="summary">neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Nex-N2-Pro</span><span class="tag">#Qwen3.5</span><span class="tag">#397B</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 78</span><span>22:15</span><span class="dot"></span><span>The Verge：订阅版科技（RSS）</span></div>
+  <h4>台积电难以跟上AI需求："我们只能支持这么多"</h4>
+  <div class="summary">全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要"非常长的时间"，凸显AI需求带来的产能压力。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#基础设施</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/OpenRouter/status/2062538625225548118" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 77</span><span>22:15</span><span class="dot"></span><span>X：OpenRouter (@OpenRouter)</span></div>
+  <h4>DeepSeek连续四周登顶Token份额榜</h4>
+  <div class="summary">DeepSeek 现已连续四周在我们平台的 token 份额排行榜上位居第一： https：//openrouter.ai/rankings</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#DeepSeek</span><span class="tag">#Token</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 76</span><span>21:02</span><span class="dot"></span><span>NVIDIA Technical Blog（开发者技术博客 · RSS）</span></div>
+  <h4>NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力</h4>
+  <div class="summary">NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#NVIDIA</span><span class="tag">#Nemotron</span><span class="tag">#Ultra</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
   </div>
 </div><div class="day-group">
-  <div class="day-box"><div class="d">04</div><div class="ym">2026/06</div></div>
-  <div class="day-body">
-    <div class="day-head">
-      <span class="day-date">2026-06-04</span>
-      <span class="day-week">周四</span>
-      <span class="day-count">共 21 条精选</span>
+  <div class="day-summary" onclick="toggleDay(this)">
+    <div class="day-box"><div class="d">04</div><div class="ym">2026/06</div></div>
+    <div class="day-meta">
+      <div class="day-meta-head">
+        <span class="day-date">2026-06-04</span>
+        <span class="day-week">周四</span>
+        <span class="day-count">共 21 条精选</span>
+      </div>
+      <div class="day-top3-preview"><div class="preview-item"><span class="preview-rank">1</span><span class="preview-title">DeepSeek 首轮融资拟筹 500 亿元,腾讯/宁德时代领投</span></div><div class="preview-item"><span class="preview-rank">2</span><span class="preview-title">微软与 OpenAI 分道扬镳,如今双方准备正面交锋</span></div><div class="preview-item"><span class="preview-rank">3</span><span class="preview-title">Cloudflare Radar:机器人流量首次超过人类,占比 57.5%</span></div></div>
     </div>
-    <div class="day-top3"><div class="day-top3-label">🏆 当日 TOP 3</div><div class="day-top-item"><span class="day-top-rank">1</span><a href="https://www.ithome.com/0/871/543.htm" target="_blank" class="day-top-title">DeepSeek 首轮融资拟筹 500 亿元,腾讯/宁德时代领投</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">2</span><a href="https://www.theverge.com/" target="_blank" class="day-top-title">微软与 OpenAI 分道扬镳,如今双方准备正面交锋</a><span class="day-top-cat">商业</span></div><div class="day-top-item"><span class="day-top-rank">3</span><a href="https://x.com/xiaohu/status/2062367357868355622" target="_blank" class="day-top-title">Cloudflare Radar:机器人流量首次超过人类,占比 57.5%</a><span class="day-top-cat">基础设施</span></div></div>
-    <div class="day-items"><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/krea_ai/" target="_blank" class="t">Ideogram v4.0 发布:2K 分辨率 + JSON Prompt 支持</a><span class="h">🔥 86</span><span style="color:var(--text-3);font-size:11px">01:40</span></div><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/kimmonismus/" target="_blank" class="t">Miso One 开源语音模型:8B 参数 / 110ms 延迟 / 一次性语音克隆</a><span class="h">🔥 84</span><span style="color:var(--text-3);font-size:11px">00:32</span></div><div class="day-item"><span class="ct">大模型</span><a href="https://x.com/xai/" target="_blank" class="t">Grok 模型登陆 Cloudflare AI Gateway</a><span class="h">🔥 79</span><span style="color:var(--text-3);font-size:11px">06:03</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/perplexity_ai/" target="_blank" class="t">Perplexity Personal Computer 登陆 Windows</a><span class="h">🔥 88</span><span style="color:var(--text-3);font-size:11px">23:05</span></div><div class="day-item"><span class="ct">工具</span><a href="https://www.cursor.com/blog/" target="_blank" class="t">Cursor Enterprise 推出 Organizations 组织管理功能</a><span class="h">🔥 85</span><span style="color:var(--text-3);font-size:11px">20:00</span></div><div class="day-item"><span class="ct">工具</span><a href="https://x.com/Replit/" target="_blank" class="t">Replit 上线 SEO Agent,助应用被搜索发现</a><span class="h">🔥 78</span><span style="color:var(--text-3);font-size:11px">00:37</span></div></div>
+    <div class="toggle-btn"><span>展开全部</span><span class="arrow">▾</span></div>
+  </div>
+  <div class="day-detail">
+    <div class="detail-section">
+      <div class="detail-section-title">🏆 TOP 3 精选 <span class="detail-section-sub">综合热度与价值评分</span></div>
+      <div class="top3-grid"><a href="https://www.ithome.com/0/871/543.htm" target="_blank" rel="noopener" class="top-card rank1" data-cat="biz">
+  <div class="rank-badge">1</div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 95</span><span>12:36</span><span class="dot"></span><span>IT 之家</span></div>
+  <h3>DeepSeek 首轮融资拟筹 500 亿元,腾讯/宁德时代领投</h3>
+  <div class="summary">DeepSeek 启动成立以来首轮外部融资,目标募资 500 亿元人民币,腾讯、宁德时代等头部产业资本拟参投,估值或冲击千亿美元。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>中国大模型独角兽估值定锚事件,可能改写国内 AI 投资格局。</div>
+  <div class="tags-row"><span class="tag">#融资</span><span class="tag">#DeepSeek</span><span class="tag">#腾讯</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.theverge.com/" target="_blank" rel="noopener" class="top-card" data-cat="biz">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 93</span><span>22:04</span><span class="dot"></span><span>The Verge</span></div>
+  <h3>微软与 OpenAI 分道扬镳,如今双方准备正面交锋</h3>
+  <div class="summary">延续四年的微软-OpenAI 同盟松动,微软在 Build 大会主推自研模型 + Copilot 全栈,OpenAI 加速 Stargate 算力自主与 GPT-5 商业化,两强从协作转向同质化竞争。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI 产业格局拐点,影响 Azure / Office / GitHub 整条生态。</div>
+  <div class="tags-row"><span class="tag">#微软</span><span class="tag">#OpenAI</span><span class="tag">#竞争</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/xiaohu/status/2062367357868355622" target="_blank" rel="noopener" class="top-card" data-cat="infra">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 91</span><span>10:54</span><span class="dot"></span><span>小互(X)</span></div>
+  <h3>Cloudflare Radar:机器人流量首次超过人类,占比 57.5%</h3>
+  <div class="summary">过去一周 HTML 网页请求中,57.5% 来自机器人(爬虫/AI 抓取/自动化脚本),人类仅 42.5%,JSON API 通信流量占 33.1%,互联网主体已转向机器间通信。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI Agent 时代里程碑数据,反内容、反爬、API 经济进入新阶段。</div>
+  <div class="tags-row"><span class="tag">#Cloudflare</span><span class="tag">#Agent</span><span class="tag">#流量</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-title">📰 完整资讯 <span class="detail-section-sub">共 18 条 · 按热度排序</span></div>
+      <div class="grid-3"><a href="https://x.com/krea_ai/" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 86</span><span>01:40</span><span class="dot"></span><span>Krea AI(X)</span></div>
+  <h4>Ideogram v4.0 发布:2K 分辨率 + JSON Prompt 支持</h4>
+  <div class="summary">Ideogram 推出 v4.0 模型,原生支持 2K 分辨率出图与 JSON 结构化提示词,可对图片版式、文字、风格做精细控制,在排版与海报生成上对标 Midjourney v7。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>文生图赛道分辨率天花板抬升 + 结构化提示词工程化。</div>
+  <div class="tags-row"><span class="tag">#文生图</span><span class="tag">#Ideogram</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/kimmonismus/" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 84</span><span>00:32</span><span class="dot"></span><span>Kim(X)</span></div>
+  <h4>Miso One 开源语音模型:8B 参数 / 110ms 延迟 / 一次性语音克隆</h4>
+  <div class="summary">Miso One 开源 8B 参数实时语音模型,端到端延迟仅 110ms,支持单段 5 秒音频完成语音克隆,质量接近 ElevenLabs 商业产品。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>首个把生产级实时语音克隆推到完全开源的模型。</div>
+  <div class="tags-row"><span class="tag">#语音</span><span class="tag">#开源</span><span class="tag">#TTS</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/xai/" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 79</span><span>06:03</span><span class="dot"></span><span>xAI(X)</span></div>
+  <h4>Grok 模型登陆 Cloudflare AI Gateway</h4>
+  <div class="summary">xAI 与 Cloudflare 合作将 Grok 系列模型接入 AI Gateway,开发者可通过统一 API 调用并享受 Cloudflare 全球边缘节点的低延迟分发。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>xAI 加速分发渠道下沉,与 OpenAI/Anthropic 同台。</div>
+  <div class="tags-row"><span class="tag">#xAI</span><span class="tag">#Cloudflare</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/perplexity_ai/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 88</span><span>23:05</span><span class="dot"></span><span>Perplexity(X)</span></div>
+  <h4>Perplexity Personal Computer 登陆 Windows</h4>
+  <div class="summary">Perplexity 推出桌面端 Personal Computer for Windows,可在本地理解屏幕内容、自动完成跨应用搜索与操作,与 Comet 浏览器深度联动。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI 搜索从浏览器深入桌面级 OS 代理。</div>
+  <div class="tags-row"><span class="tag">#Perplexity</span><span class="tag">#桌面</span><span class="tag">#Agent</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.cursor.com/blog/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 85</span><span>20:00</span><span class="dot"></span><span>Cursor Blog</span></div>
+  <h4>Cursor Enterprise 推出 Organizations 组织管理功能</h4>
+  <div class="summary">Cursor 面向企业客户上线 Organizations,支持统一 SSO、用量计费、模型策略下发与代码外泄审计,正式打通 AI IDE 的企业治理路径。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI 编程 IDE 正式进入企业级协作叙事。</div>
+  <div class="tags-row"><span class="tag">#Cursor</span><span class="tag">#Enterprise</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/Replit/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 78</span><span>00:37</span><span class="dot"></span><span>Replit(X)</span></div>
+  <h4>Replit 上线 SEO Agent,助应用被搜索发现</h4>
+  <div class="summary">Replit 新增 SEO Agent,可自动为 Vibe-Coded 应用生成 sitemap、metadata、结构化数据并提交搜索引擎,补全建-部署-引流闭环。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>Vibe Coding 完成建-部署-引流闭环最后一环。</div>
+  <div class="tags-row"><span class="tag">#Replit</span><span class="tag">#SEO</span><span class="tag">#Agent</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 82</span><span>21:40</span><span class="dot"></span><span>TechCrunch</span></div>
+  <h4>Meta WhatsApp Business AI 智能体全球上线</h4>
+  <div class="summary">Meta 宣布 WhatsApp Business AI Agent 面向全球商家全量开放,可自动应答咨询、推荐商品、完成下单与售后,覆盖 30 亿月活用户。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>覆盖 30 亿 WhatsApp 用户,商家 Agent 进入消费侧最大入口。</div>
+  <div class="tags-row"><span class="tag">#Meta</span><span class="tag">#WhatsApp</span><span class="tag">#Agent</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/SiliconFlowAI/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 74</span><span>13:24</span><span class="dot"></span><span>硅基流动(X)</span></div>
+  <h4>NousResearch 发布 Hermes Agent 桌面应用公测</h4>
+  <div class="summary">NousResearch 发布 Hermes Agent 桌面端公测版,本地运行开源 Hermes 模型,内置 MCP 工具调用与本地知识库索引,定位开源版 ChatGPT Desktop。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>开源社区版本地 ChatGPT Desktop 成熟可用。</div>
+  <div class="tags-row"><span class="tag">#NousResearch</span><span class="tag">#开源</span><span class="tag">#桌面</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.anthropic.com/research" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 89</span><span>17:51</span><span class="dot"></span><span>Anthropic Research</span></div>
+  <h4>Anthropic:832 个 AI 恶意账户分析,中高风险攻击半年从 33% 跃至 56%</h4>
+  <div class="summary">Anthropic 发布最新滥用报告,分析过去 6 个月被封禁的 832 个 Claude 账户,发现中高风险攻击占比从 33% 跃升至 56%,涉及自动化网络钓鱼、漏洞利用、虚假信息生产。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>首份系统性 LLM 滥用威胁报告,安全防线紧迫度直接量化。</div>
+  <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#安全</span><span class="tag">#滥用</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://blogs.nvidia.com/blog/category/research/" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 83</span><span>23:00</span><span class="dot"></span><span>NVIDIA AI Blog</span></div>
+  <h4>NVIDIA Research CVPR 2026 三连发:抓取/自动驾驶/智能体泛化</h4>
+  <div class="summary">NVIDIA Research 在 CVPR 2026 公开三篇论文,展示如何通过规模化合成数据训练实现机械抓取通用化、自动驾驶域泛化与多任务智能体迁移。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>具身智能从仿真到真实世界,数据规模化路径成型。</div>
+  <div class="tags-row"><span class="tag">#NVIDIA</span><span class="tag">#CVPR</span><span class="tag">#具身智能</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/NVIDIAAI/" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 76</span><span>10:17</span><span class="dot"></span><span>NVIDIA AI(X)</span></div>
+  <h4>NVIDIA PPISP:补偿光度变化,提升 3D 重建精度</h4>
+  <div class="summary">NVIDIA 提出 PPISP(Per-Pixel Implicit Shading Prior),通过为每像素学习隐式光照先验,补偿采集过程中的光度变化,显著提升 NeRF / 3DGS 在户外场景的重建精度。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>3DGS / NeRF 落地室外场景的关键缺陷突破。</div>
+  <div class="tags-row"><span class="tag">#NVIDIA</span><span class="tag">#3D</span><span class="tag">#NeRF</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 71</span><span>00:09</span><span class="dot"></span><span>Microsoft Research</span></div>
+  <h4>微软研究:装瓶厂 AI 从聊天到决策的真实部署</h4>
+  <div class="summary">Microsoft Research 联合可口可乐装瓶厂部署 AI Agent,从聊天问答升级到自动调度产线、库存预警与设备维护决策,案例研究展示工业落地路径。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工业现场 AI Agent 实证案例,从 PoC 走向 production。</div>
+  <div class="tags-row"><span class="tag">#微软</span><span class="tag">#工业</span><span class="tag">#Agent</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/suno/" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 87</span><span>22:44</span><span class="dot"></span><span>Suno(X)</span></div>
+  <h4>Suno 完成 4 亿美元 D 轮融资</h4>
+  <div class="summary">AI 音乐生成头部公司 Suno 宣布完成 4 亿美元 D 轮融资,估值翻倍至 30 亿美元,资金将用于扩大歌词/曲风模型训练与版权合作。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI 音乐赛道头部估值再翻倍,挑战 Spotify 内容分发逻辑。</div>
+  <div class="tags-row"><span class="tag">#Suno</span><span class="tag">#音乐</span><span class="tag">#融资</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.ithome.com/" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 80</span><span>08:50</span><span class="dot"></span><span>IT 之家</span></div>
+  <h4>联合国报告:2030 年 AI 数据中心水电消耗将翻倍</h4>
+  <div class="summary">联合国发布报告称,2030 年全球 AI 数据中心耗水量与耗电量将较 2024 年翻倍,呼吁各国出台 AI ESG 监管与新一代低能耗制冷标准。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>AI ESG 监管压力升级,影响下一代数据中心选址与制冷方案。</div>
+  <div class="tags-row"><span class="tag">#联合国</span><span class="tag">#数据中心</span><span class="tag">#ESG</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.bloomberg.com/technology" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 77</span><span>20:12</span><span class="dot"></span><span>Bloomberg</span></div>
+  <h4>欧盟公布技术主权计划,推动芯片与 AI 自主发展</h4>
+  <div class="summary">欧盟委员会公布全面技术主权计划,覆盖先进制程芯片、AI 模型、量子计算与云基础设施,目标 2030 年欧洲在关键 AI 链路实现自主。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>欧盟版芯片法案 2.0,影响全球 AI 供应链重构。</div>
+  <div class="tags-row"><span class="tag">#欧盟</span><span class="tag">#芯片</span><span class="tag">#主权</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/drfeifei/" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 84</span><span>02:57</span><span class="dot"></span><span>Fei-Fei Li(X)</span></div>
+  <h4>李飞飞:世界模型的功能分类(World Labs)</h4>
+  <div class="summary">World Labs 创始人李飞飞撰文系统分类世界模型功能,从物理一致性、空间智能、长时序推理、跨模态生成四大维度建立 World Model 评测框架。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>World Labs 首份系统性 World Model 分类框架,定义赛道术语。</div>
+  <div class="tags-row"><span class="tag">#李飞飞</span><span class="tag">#世界模型</span><span class="tag">#World Labs</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://news.ycombinator.com/" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 75</span><span>03:00</span><span class="dot"></span><span>Hacker News</span></div>
+  <h4>Uber 每月 $1,500 的 AI 使用上限,为 AI 工具定价提供参考</h4>
+  <div class="summary">Uber 内部 AI 工具开支政策曝光:工程师每月可申请最高 $1,500 的 AI 订阅/API 额度,涵盖 Cursor、Claude、ChatGPT Enterprise 等,为行业 SaaS 定价提供锚点。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大厂员工 AI 工具开支首次披露,行业 SaaS 定价锚点。</div>
+  <div class="tags-row"><span class="tag">#Uber</span><span class="tag">#定价</span><span class="tag">#SaaS</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/SiliconFlowAI/" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 72</span><span>14:12</span><span class="dot"></span><span>硅基流动(X)</span></div>
+  <h4>Karpathy 的 llm-wiki 项目获超 5000 星</h4>
+  <div class="summary">Andrej Karpathy 发起的 llm-wiki 开源项目两周内突破 5000 星,系统整理 LLM 训练、推理、对齐、Agent 全栈知识,被誉为 LLM 从业者最权威知识库。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>LLM 从业者最权威的开源系统化知识库,新人入门首选。</div>
+  <div class="tags-row"><span class="tag">#Karpathy</span><span class="tag">#开源</span><span class="tag">#wiki</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+    </div>
   </div>
 </div></div>
 </div></section>
@@ -134,5 +717,32 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   © 2026 AI 精选日报 · Powered by <a href="#">Mira AI</a> · 数据来源:aihot.virxact.com
 </div></footer>
 
+<script>
+function toggleDay(el){
+  const g = el.closest('.day-group');
+  g.classList.toggle('open');
+  if(g.classList.contains('open')){
+    const t = g.querySelector('.toggle-btn span:not(.arrow)');
+    if(t) t.textContent = '收起';
+  } else {
+    const t = g.querySelector('.toggle-btn span:not(.arrow)');
+    if(t) t.textContent = '展开全部';
+  }
+}
+function expandAll(){
+  document.querySelectorAll('.day-group').forEach(g=>{
+    g.classList.add('open');
+    const t = g.querySelector('.toggle-btn span:not(.arrow)');
+    if(t) t.textContent = '收起';
+  });
+}
+function collapseAll(){
+  document.querySelectorAll('.day-group').forEach(g=>{
+    g.classList.remove('open');
+    const t = g.querySelector('.toggle-btn span:not(.arrow)');
+    if(t) t.textContent = '展开全部';
+  });
+}
+</script>
 </body>
 </html>
