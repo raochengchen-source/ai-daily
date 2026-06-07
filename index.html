@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 精选日报 · 2026-06-07</title>
+<style>
+:root{
+  --primary:#4982C9;--primary-deep:#2A5A9C;--primary-light:#D9E8FB;
+  --bg-base:#F6F9FD;--bg-card:#FFFFFF;
+  --text-1:#1A2A40;--text-2:#4B5C73;--text-3:#7B8AA0;
+  --border:#E1EAF5;--accent-gold:#F0B400;
+  --grad:linear-gradient(135deg,#4982C9 0%,#2A5A9C 100%);
+  --shadow:0 4px 14px rgba(73,130,201,.10);
+  --shadow-hover:0 8px 24px rgba(73,130,201,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg-base);color:var(--text-1);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;height:64px;gap:32px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--primary-deep)}
+.logo-icon{width:36px;height:36px;background:var(--grad);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+.nav-spacer{flex:1}
+.search-box{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#F0F5FC;border-radius:10px;width:280px}
+.search-box input{border:none;outline:none;background:transparent;flex:1;font-size:13px;color:var(--text-1)}
+
+.hero{padding:48px 0 32px;background:linear-gradient(180deg,#EAF2FC 0%,#F6F9FD 100%)}
+.hero-badge{display:inline-block;padding:6px 14px;background:rgba(73,130,201,.12);color:var(--primary-deep);border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
+.accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--text-2);font-size:15px;max-width:760px;margin-bottom:24px}
+.cal-card{display:flex;align-items:center;gap:14px;padding:16px 20px;background:#fff;border-radius:14px;box-shadow:var(--shadow);max-width:520px;margin-bottom:24px}
+.cal-icon{width:42px;height:42px;background:var(--primary-light);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.cal-info .label{font-size:12px;color:var(--text-3)}
+.cal-info .date{font-size:16px;font-weight:700;color:var(--text-1)}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{padding:7px 14px;background:#fff;border:1px solid var(--border);border-radius:18px;font-size:13px;font-weight:500;color:var(--text-2);cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.chip:hover{border-color:var(--primary);color:var(--primary-deep)}
+.chip.active{background:var(--grad);color:#fff;border-color:transparent}
+.chip .count{padding:1px 7px;background:rgba(255,255,255,.25);border-radius:10px;font-size:11px}
+.chip:not(.active) .count{background:var(--primary-light);color:var(--primary-deep)}
+
+.section{padding:32px 0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px}
+.section-title{font-size:24px;font-weight:700;display:flex;align-items:center;gap:10px}
+.section-sub{color:var(--text-3);font-size:13px}
+
+.top3-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.top-card{position:relative;display:block;padding:22px;background:#fff;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow);transition:.25s;overflow:hidden}
+.top-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:var(--primary-light)}
+.top-card.rank1{background:linear-gradient(180deg,#FFFBEB 0%,#FFF 50%);border-color:#F5D77F}
+.rank-badge{position:absolute;top:14px;right:14px;width:36px;height:36px;background:var(--grad);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;box-shadow:0 4px 10px rgba(73,130,201,.3)}
+.top-card.rank1 .rank-badge{background:linear-gradient(135deg,#F0B400 0%,#D69500 100%);box-shadow:0 4px 10px rgba(240,180,0,.4)}
+.meta-row{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-3);margin-bottom:12px;flex-wrap:wrap}
+.cat-tag{padding:3px 9px;background:var(--primary-light);color:var(--primary-deep);border-radius:6px;font-weight:600}
+.heat-tag{padding:3px 9px;background:#FEF3C7;color:#B45309;border-radius:6px;font-weight:600}
+.dot{width:3px;height:3px;background:var(--text-3);border-radius:50%}
+.top-card h3{font-size:17px;line-height:1.45;margin-bottom:10px;color:var(--text-1);padding-right:42px}
+.top-card .summary{font-size:13px;color:var(--text-2);line-height:1.65;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.reason-box{padding:10px 12px;background:rgba(73,130,201,.06);border-left:3px solid var(--primary);border-radius:6px;font-size:12px;color:var(--text-2);margin-bottom:12px}
+.reason-box strong{color:var(--primary-deep);margin-right:6px}
+.tags-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tag{padding:2px 8px;background:#F0F5FC;color:var(--text-2);border-radius:4px;font-size:11px}
+.read-btn{display:inline-flex;align-items:center;gap:4px;color:var(--primary);font-size:13px;font-weight:600}
+
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.news-card{display:block;padding:18px;background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:0 2px 8px rgba(73,130,201,.06);transition:.25s}
+.news-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--primary-light)}
+.news-card h4{font-size:15px;line-height:1.5;margin-bottom:8px;color:var(--text-1)}
+.news-card .summary{font-size:12.5px;color:var(--text-2);line-height:1.6;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+.footer{padding:30px 0;text-align:center;color:var(--text-3);font-size:12px;border-top:1px solid var(--border);margin-top:32px}
+.footer a{color:var(--primary);font-weight:500}
+
+@media(max-width:900px){
+  .top3-grid,.grid-3{grid-template-columns:1fr}
+  h1{font-size:28px}
+  .search-box{display:none}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner">
+  <a class="logo"><span class="logo-icon">AI</span>AI 精选日报</a>
+  <div class="nav-spacer"></div>
+  <a href="https://raochengchen-source.github.io/ai-daily/archive.html" target="_blank" style="color:var(--primary);font-size:14px;font-weight:600">📚 历史记录 →</a>
+  <div class="search-box"><span>🔍</span><input placeholder="搜索资讯、来源、标签..."></div>
+</div></nav>
+
+<div id="selected">
+  <section class="hero"><div class="container">
+    <div class="hero-badge">✨ 每日 AI 精选 · 2026-06-07 周日 · 共 21 条</div>
+    <h1>今天的 AI 圈,<span class="accent">这 21 条就够了</span></h1>
+    <p class="hero-sub">每日凌晨自动抓取全网最新动态,经多维度评分模型筛选,精选大模型、商业、工具、研究、基础设施等核心赛道高价值资讯。</p>
+    <div class="cal-card">
+      <div class="cal-icon">📅</div>
+      <div class="cal-info"><div class="label">今日日期</div><div class="date">2026-06-07 周日</div></div>
+    </div>
+    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">2</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">4</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">1</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">5</span></span><span class="chip " onclick="filterCat('research',this)">研究<span class="count">2</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">3</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">4</span></span></div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <div class="section-head"><div class="section-title">🏆 今日 TOP 3</div><div class="section-sub">综合热度与价值评分</div></div>
+    <div class="top3-grid"><a href="https://x.com/MiniMax_AI/status/2063397618034844135" target="_blank" rel="noopener" class="top-card rank1" data-cat="opinion">
+  <div class="rank-badge">1</div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 96</span><span>07:08</span><span class="dot"></span><span>X：MiniMax (@MiniMax_AI)</span></div>
+  <h3>M3与Opus代码审计13个bug：$0.07 vs $1.30</h3>
+  <div class="summary">对 Claude Opus 4.8 和 MiniMax M3 进行相同的代码审计：同一代码库、同一提示词，预先植入 17 个已知 bug。MiniMax M3 以 $0.07 抓到 13 个；最便宜的 Claude 运行同样抓到 13 个，花费 $1.30。MiniMax 表示这一对比非常有趣，绝对值得一读。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Opus</span><span class="tag">#Claude</span><span class="tag">#MiniMax</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06-04" target="_blank" rel="noopener" class="top-card" data-cat="industry">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 95</span><span>05:47</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h3>美国众议院议员发布法案草案，旨在禁止各州制定人工智能相关法规</h3>
+  <div class="summary">美国众议院议员发布一项法案草案，旨在禁止各州自行制定人工智能相关法规，将AI监管权力集中到联邦层面。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#行业</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2" target="_blank" rel="noopener" class="top-card" data-cat="opinion">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 94</span><span>03:02</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h3>五个实验室，五个心智：用小模型构建多模型金融剧情游戏</h3>
+  <div class="summary">Thousand Token Wood v2使用四个不同实验室的小模型（gpt-oss-20b、MiniCPM3-4B、Nemotron-Mini-4B及微调Qwen 0.5B）驱动金融模拟游戏的智能体。核心发现是异构服务层摩擦在于vLLM 0.22.1需CUDA工具包，而非模型本身。通过容忍性JSON解析层，添加模型只需一条配置。信息隔离确保内幕标志不在提示词中，扫描测试验证无泄露。记忆用情绪摘要截断避免淹没。微调0.5B模型实现0%自成交、100%有效报价，真相防火墙零泄露。小模型是可靠格式生成器但不可靠推理器，可通过结构化、提示词和微调弥补。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Thousand</span><span class="tag">#Token</span><span class="tag">#Wood</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <div class="section-head"><div class="section-title">📰 精选资讯</div><div class="section-sub">共 18 条 · 按热度排序</div></div>
+    <div class="grid-3"><a href="https://garymarcus.substack.com/p/ais-black-friday" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 93</span><span>00:24</span><span class="dot"></span><span>Gary Marcus：The Road to AI We Can Trust（RSS）</span></div>
+  <h4>AI 的黑色星期五</h4>
+  <div class="summary">Gary Marcus 在文章中分享了对 AI 领域刚刚发生事件的看法，表达了对当前 AI 发展方向的思考。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Gary</span><span class="tag">#Marcus</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/build-small-hackathon/job-search-blog" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 92</span><span>23:36</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h4>Job Searcher</h4>
+  <div class="summary">Hugging Face 发布 Job Searcher，一个基于 AI 的求职搜索工具。用户上传简历并设定偏好后，系统使用教师模型 DeepSeek V4 Pro 生成 LinkedIn 搜索查询，通过 JobSpy 抓取职位，再对学生模型 Qwen3-8B（8B 参数）进行 LoRA 微调，对每个职位从技能匹配、经验相关性、教育背景、行业领域契合度和资历对齐五个维度给出评分和推理。训练在 Modal 平台单张 A100 上完成。推理部署于 Hugging Face ZeroGPU Space，使用 llama.cpp 实现流式输出。项目开源。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Job</span><span class="tag">#Searcher</span><span class="tag">#Hugging</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/rohanpaul_ai/status/2063246343842501091" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 91</span><span>21:07</span><span class="dot"></span><span>X：Rohan Paul (@rohanpaul_ai)</span></div>
+  <h4>GitHub 开源 Spec Kit 工具包，用产品规范引导 AI 编码</h4>
+  <div class="summary">GitHub 发布开源工具包 Spec Kit，旨在解决 "vibe coding" 的最大弱点--AI 常在规则未明确时就开始编码。它把流程从 "让 AI 直接构建" 改为 "先写产品规范，再让 AI 根据规范实现"。当前 AI 编码模式常因松散提示直接跳入代码，导致需求薄弱、边界遗漏和反复返工。Spec Kit 推动反向流程：先定义产品功能，再澄清差距、制订技术计划、分解任务，最后让 agent 执行。规范成为可执行的开发合约，支持 Copilot、Claude Code、Codex、Gemini、Cursor、Qwen 等 30+ agent 集成。项目已获 109K+ 星标。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#GitHub</span><span class="tag">#Spec</span><span class="tag">#Kit</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.ithome.com/0/960/969.htm" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 90</span><span>20:48</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h4>OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型</h4>
+  <div class="summary">OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#OpenCV</span><span class="tag">#DNN</span><span class="tag">#ONNX</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/build-small-hackathon/persona-atlas" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 89</span><span>19:42</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h4>Persona Atlas：Hugging Face 上的开源人物思维映射工具</h4>
+  <div class="summary">Persona Atlas 是一个运行在 Hugging Face Inference Providers 上的开源项目。它通过工具调用代理执行真实网络搜索，生成公众人物的资料、事实清单和风格假设，然后让该人物回答十个关于身份、伦理等开放式问题。每个回答被转化为嵌入向量，从而在向量空间中对不同人物进行距离比较，并基于十个特质锚点绘制热力图。前端采用 Gradio，提供研究、比较和检查代理完整追溯三个标签页，预设多个人物角色，无需 token 即可直接体验。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Persona</span><span class="tag">#Atlas</span><span class="tag">#Hugging</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://mp.weixin.qq.com/s/ZVgqdH_fE42jO4kcI-lF3g" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 88</span><span>14:46</span><span class="dot"></span><span>公众号：阶跃星辰（Step）</span></div>
+  <h4>阶跃首席科学家张祥雨合著论文 ResNet 获 CVPR 2026 「时间检验奖」</h4>
+  <div class="summary"></div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#ResNet</span><span class="tag">#CVPR</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/NVIDIAAI/status/2063034422698389625" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 87</span><span>07:05</span><span class="dot"></span><span>X：NVIDIA AI (@NVIDIAAI)</span></div>
+  <h4>PixelDiT入选CVPR2026最佳论文决赛</h4>
+  <div class="summary">被选为 #CVPR2026 最佳论文决赛作品：来自 NVIDIA Research 的 PixelDiT
+
+在大多数图像生成模型中，预训练的自编码器会在任何扩散发生前压缩图像，导致质量损失在整个流程中累积。
+
+PixelDiT，即像素扩散变换器，完全去掉了这一步骤。它是一个单阶段模型，直接在像素空间中端到端地学习扩散过程。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#PixelDiT</span><span class="tag">#CVPR2026</span><span class="tag">#NVIDIA</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 86</span><span>06:18</span><span class="dot"></span><span>Hugging Face：Blog（RSS）</span></div>
+  <h4>用Qwen2.5-3B构建多智能体经济体：工程报告</h4>
+  <div class="summary">开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Qwen2.5-3B</span><span class="tag">#LLM</span><span class="tag">#Modal</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/rohanpaul_ai/status/2063018358795300982" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 85</span><span>06:01</span><span class="dot"></span><span>X：Rohan Paul (@rohanpaul_ai)</span></div>
+  <h4>Arena 发布真实世界 AI 智能体排行榜 Agent Arena</h4>
+  <div class="summary">Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Arena</span><span class="tag">#Agent</span><span class="tag">#30万</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 84</span><span>05:02</span><span class="dot"></span><span>Bloomberg：Technology（RSS）</span></div>
+  <h4>Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片</h4>
+  <div class="summary">Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Apollo</span><span class="tag">#Anthropic</span><span class="tag">#Global</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/rohanpaul_ai/status/2063000834045313314" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 83</span><span>04:51</span><span class="dot"></span><span>X：Rohan Paul (@rohanpaul_ai)</span></div>
+  <h4>SpaceX与Google达成云计算新协议</h4>
+  <div class="summary">SpaceX 刚刚披露了一份与 Google 的新云服务协议。
+
+Google 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。
+
+这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#SpaceX</span><span class="tag">#Google</span><span class="tag">#GPU</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/MSFTResearch/status/2062983588606320714" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 82</span><span>03:43</span><span class="dot"></span><span>X：Microsoft Research (@MSFTResearch)</span></div>
+  <h4>微软Project Mosaic：micro-LED光学互连技术</h4>
+  <div class="summary">微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Project</span><span class="tag">#Mosaic</span><span class="tag">#LED</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 81</span><span>03:23</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器</h4>
+  <div class="summary">据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#The</span><span class="tag">#Intercept</span><span class="tag">#Hacker</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://alexispurslane.github.io/rsync-analysis" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 80</span><span>03:07</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>Claude 是否增加了 rsync 中的错误？</h4>
+  <div class="summary">一篇 Hacker News 热门帖子（105 分）提出了 Claude 是否导致 rsync 工具中 bug 增加的问题，并附有分析链接。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Claude</span><span class="tag">#Hacker</span><span class="tag">#News</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/mntruell/status/2062955210897801520" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 79</span><span>01:50</span><span class="dot"></span><span>X：Michael Truell (@mntruell)</span></div>
+  <h4>智能体协作应如同事般对话和手势</h4>
+  <div class="summary">与 AI 智能体协作应感觉像与同事协作一样。你应能"与它们交谈"--不仅通过文本聊天，还能一起对着屏幕做手势、实时对话等。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#工具</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/OpenRouter/status/2062944965978992935" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 78</span><span>01:09</span><span class="dot"></span><span>X：OpenRouter (@OpenRouter)</span></div>
+  <h4>Riverflow 2.5：可控制评分标准的图像模型</h4>
+  <div class="summary">在OpenRouter上线：来自@Sourceful的Riverflow 2.5。
+
+首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。
+
+免费至6月9日（周二）。Fast和Pro见下方🧵。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Riverflow</span><span class="tag">#OpenRouter</span><span class="tag">#Sourceful</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/ChatGPTapp/status/2062944254591430917" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 77</span><span>01:06</span><span class="dot"></span><span>X：ChatGPT (@ChatGPTapp)</span></div>
+  <h4>ChatGPT 网页版支持从写作块发送邮件</h4>
+  <div class="summary">草拟。调整。发送。
+
+现在你可以在网页版 ChatGPT 中直接从写作块发送邮件，无需离开对话。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#ChatGPT</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/GoogleAI/status/2062942864288387430" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 76</span><span>01:01</span><span class="dot"></span><span>X：Google AI (@GoogleAI)</span></div>
+  <h4>Google AI 本周产品更新：Nano Banana 2、Co-Scientist、dreambeans、Gemma 4 等</h4>
+  <div class="summary">Google AI 本周发布多项更新：Nano Banana 2 及 Pro 正式 GA，可通过 Gemini Enterprise Agent Platform、Gemini API 和 Google AI Studio 获取；Co-Scientist 多智能体系统面向科研自动生成优化新假设；Google Labs 推出 dreambeans，根据用户 Google 应用数据每日生成个性化话题集；Gemma 4 12B 统一无编码器多模态模型可完全离线运行于笔记本；Gemma 4 系列及草稿模型引入 QAT 降低内存需求；Google Magenta RealTime 2 开源实时音乐模型，支持 MIDI 键盘、文本提示和手势演奏。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Nano</span><span class="tag">#Banana</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a></div>
+  </div></section>
+</div>
+
+<footer class="footer"><div class="container">
+  © 2026 AI 精选日报 · Powered by <a href="#">Mira AI</a> · 每日 10:00 自动更新 · 数据来源:aihot.virxact.com · <a href="https://raochengchen-source.github.io/ai-daily/archive.html" target="_blank">查看历史记录</a>
+</div></footer>
+
+<script>
+function filterCat(key,el){
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('[data-cat]').forEach(card=>{
+    card.style.display = (key==='all'||card.dataset.cat===key)?'':'none';
+  });
+}
+</script>
+</body>
+</html>
