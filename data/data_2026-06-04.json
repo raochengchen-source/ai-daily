@@ -1,0 +1,405 @@
+{
+  "date": "2026-06-04",
+  "weekday": "周四",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 3
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 2
+    },
+    {
+      "key": "model",
+      "label": "大模型",
+      "count": 3
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 5
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 4
+    },
+    {
+      "key": "industry",
+      "label": "行业",
+      "count": 2
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 2
+    }
+  ],
+  "top3": [
+    {
+      "rank": 1,
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "12:36",
+      "source": "IT 之家",
+      "heat": 95,
+      "title": "DeepSeek 首轮融资拟筹 500 亿元,腾讯/宁德时代领投",
+      "summary": "DeepSeek 启动成立以来首轮外部融资,目标募资 500 亿元人民币,腾讯、宁德时代等头部产业资本拟参投,估值或冲击千亿美元。",
+      "reason": "中国大模型独角兽估值定锚事件,可能改写国内 AI 投资格局。",
+      "tags": [
+        "融资",
+        "DeepSeek",
+        "腾讯"
+      ],
+      "url": "https://www.ithome.com/0/871/543.htm"
+    },
+    {
+      "rank": 2,
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "22:04",
+      "source": "The Verge",
+      "heat": 93,
+      "title": "微软与 OpenAI 分道扬镳,如今双方准备正面交锋",
+      "summary": "延续四年的微软-OpenAI 同盟松动,微软在 Build 大会主推自研模型 + Copilot 全栈,OpenAI 加速 Stargate 算力自主与 GPT-5 商业化,两强从协作转向同质化竞争。",
+      "reason": "AI 产业格局拐点,影响 Azure / Office / GitHub 整条生态。",
+      "tags": [
+        "微软",
+        "OpenAI",
+        "竞争"
+      ],
+      "url": "https://www.theverge.com/"
+    },
+    {
+      "rank": 3,
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "10:54",
+      "source": "小互(X)",
+      "heat": 91,
+      "title": "Cloudflare Radar:机器人流量首次超过人类,占比 57.5%",
+      "summary": "过去一周 HTML 网页请求中,57.5% 来自机器人(爬虫/AI 抓取/自动化脚本),人类仅 42.5%,JSON API 通信流量占 33.1%,互联网主体已转向机器间通信。",
+      "reason": "AI Agent 时代里程碑数据,反内容、反爬、API 经济进入新阶段。",
+      "tags": [
+        "Cloudflare",
+        "Agent",
+        "流量"
+      ],
+      "url": "https://x.com/xiaohu/status/2062367357868355622"
+    }
+  ],
+  "items": [
+    {
+      "rank": 4,
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "01:40",
+      "source": "Krea AI(X)",
+      "heat": 86,
+      "title": "Ideogram v4.0 发布:2K 分辨率 + JSON Prompt 支持",
+      "summary": "Ideogram 推出 v4.0 模型,原生支持 2K 分辨率出图与 JSON 结构化提示词,可对图片版式、文字、风格做精细控制,在排版与海报生成上对标 Midjourney v7。",
+      "reason": "文生图赛道分辨率天花板抬升 + 结构化提示词工程化。",
+      "tags": [
+        "文生图",
+        "Ideogram"
+      ],
+      "url": "https://x.com/krea_ai/"
+    },
+    {
+      "rank": 5,
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "00:32",
+      "source": "Kim(X)",
+      "heat": 84,
+      "title": "Miso One 开源语音模型:8B 参数 / 110ms 延迟 / 一次性语音克隆",
+      "summary": "Miso One 开源 8B 参数实时语音模型,端到端延迟仅 110ms,支持单段 5 秒音频完成语音克隆,质量接近 ElevenLabs 商业产品。",
+      "reason": "首个把生产级实时语音克隆推到完全开源的模型。",
+      "tags": [
+        "语音",
+        "开源",
+        "TTS"
+      ],
+      "url": "https://x.com/kimmonismus/"
+    },
+    {
+      "rank": 6,
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "06:03",
+      "source": "xAI(X)",
+      "heat": 79,
+      "title": "Grok 模型登陆 Cloudflare AI Gateway",
+      "summary": "xAI 与 Cloudflare 合作将 Grok 系列模型接入 AI Gateway,开发者可通过统一 API 调用并享受 Cloudflare 全球边缘节点的低延迟分发。",
+      "reason": "xAI 加速分发渠道下沉,与 OpenAI/Anthropic 同台。",
+      "tags": [
+        "xAI",
+        "Cloudflare"
+      ],
+      "url": "https://x.com/xai/"
+    },
+    {
+      "rank": 7,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "23:05",
+      "source": "Perplexity(X)",
+      "heat": 88,
+      "title": "Perplexity Personal Computer 登陆 Windows",
+      "summary": "Perplexity 推出桌面端 Personal Computer for Windows,可在本地理解屏幕内容、自动完成跨应用搜索与操作,与 Comet 浏览器深度联动。",
+      "reason": "AI 搜索从浏览器深入桌面级 OS 代理。",
+      "tags": [
+        "Perplexity",
+        "桌面",
+        "Agent"
+      ],
+      "url": "https://x.com/perplexity_ai/"
+    },
+    {
+      "rank": 8,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "20:00",
+      "source": "Cursor Blog",
+      "heat": 85,
+      "title": "Cursor Enterprise 推出 Organizations 组织管理功能",
+      "summary": "Cursor 面向企业客户上线 Organizations,支持统一 SSO、用量计费、模型策略下发与代码外泄审计,正式打通 AI IDE 的企业治理路径。",
+      "reason": "AI 编程 IDE 正式进入企业级协作叙事。",
+      "tags": [
+        "Cursor",
+        "Enterprise"
+      ],
+      "url": "https://www.cursor.com/blog/"
+    },
+    {
+      "rank": 9,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "00:37",
+      "source": "Replit(X)",
+      "heat": 78,
+      "title": "Replit 上线 SEO Agent,助应用被搜索发现",
+      "summary": "Replit 新增 SEO Agent,可自动为 Vibe-Coded 应用生成 sitemap、metadata、结构化数据并提交搜索引擎,补全建-部署-引流闭环。",
+      "reason": "Vibe Coding 完成建-部署-引流闭环最后一环。",
+      "tags": [
+        "Replit",
+        "SEO",
+        "Agent"
+      ],
+      "url": "https://x.com/Replit/"
+    },
+    {
+      "rank": 10,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "21:40",
+      "source": "TechCrunch",
+      "heat": 82,
+      "title": "Meta WhatsApp Business AI 智能体全球上线",
+      "summary": "Meta 宣布 WhatsApp Business AI Agent 面向全球商家全量开放,可自动应答咨询、推荐商品、完成下单与售后,覆盖 30 亿月活用户。",
+      "reason": "覆盖 30 亿 WhatsApp 用户,商家 Agent 进入消费侧最大入口。",
+      "tags": [
+        "Meta",
+        "WhatsApp",
+        "Agent"
+      ],
+      "url": "https://techcrunch.com/category/artificial-intelligence/"
+    },
+    {
+      "rank": 11,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "13:24",
+      "source": "硅基流动(X)",
+      "heat": 74,
+      "title": "NousResearch 发布 Hermes Agent 桌面应用公测",
+      "summary": "NousResearch 发布 Hermes Agent 桌面端公测版,本地运行开源 Hermes 模型,内置 MCP 工具调用与本地知识库索引,定位开源版 ChatGPT Desktop。",
+      "reason": "开源社区版本地 ChatGPT Desktop 成熟可用。",
+      "tags": [
+        "NousResearch",
+        "开源",
+        "桌面"
+      ],
+      "url": "https://x.com/SiliconFlowAI/"
+    },
+    {
+      "rank": 12,
+      "cat": "研究",
+      "catKey": "research",
+      "time": "17:51",
+      "source": "Anthropic Research",
+      "heat": 89,
+      "title": "Anthropic:832 个 AI 恶意账户分析,中高风险攻击半年从 33% 跃至 56%",
+      "summary": "Anthropic 发布最新滥用报告,分析过去 6 个月被封禁的 832 个 Claude 账户,发现中高风险攻击占比从 33% 跃升至 56%,涉及自动化网络钓鱼、漏洞利用、虚假信息生产。",
+      "reason": "首份系统性 LLM 滥用威胁报告,安全防线紧迫度直接量化。",
+      "tags": [
+        "Anthropic",
+        "安全",
+        "滥用"
+      ],
+      "url": "https://www.anthropic.com/research"
+    },
+    {
+      "rank": 13,
+      "cat": "研究",
+      "catKey": "research",
+      "time": "23:00",
+      "source": "NVIDIA AI Blog",
+      "heat": 83,
+      "title": "NVIDIA Research CVPR 2026 三连发:抓取/自动驾驶/智能体泛化",
+      "summary": "NVIDIA Research 在 CVPR 2026 公开三篇论文,展示如何通过规模化合成数据训练实现机械抓取通用化、自动驾驶域泛化与多任务智能体迁移。",
+      "reason": "具身智能从仿真到真实世界,数据规模化路径成型。",
+      "tags": [
+        "NVIDIA",
+        "CVPR",
+        "具身智能"
+      ],
+      "url": "https://blogs.nvidia.com/blog/category/research/"
+    },
+    {
+      "rank": 14,
+      "cat": "研究",
+      "catKey": "research",
+      "time": "10:17",
+      "source": "NVIDIA AI(X)",
+      "heat": 76,
+      "title": "NVIDIA PPISP:补偿光度变化,提升 3D 重建精度",
+      "summary": "NVIDIA 提出 PPISP(Per-Pixel Implicit Shading Prior),通过为每像素学习隐式光照先验,补偿采集过程中的光度变化,显著提升 NeRF / 3DGS 在户外场景的重建精度。",
+      "reason": "3DGS / NeRF 落地室外场景的关键缺陷突破。",
+      "tags": [
+        "NVIDIA",
+        "3D",
+        "NeRF"
+      ],
+      "url": "https://x.com/NVIDIAAI/"
+    },
+    {
+      "rank": 15,
+      "cat": "研究",
+      "catKey": "research",
+      "time": "00:09",
+      "source": "Microsoft Research",
+      "heat": 71,
+      "title": "微软研究:装瓶厂 AI 从聊天到决策的真实部署",
+      "summary": "Microsoft Research 联合可口可乐装瓶厂部署 AI Agent,从聊天问答升级到自动调度产线、库存预警与设备维护决策,案例研究展示工业落地路径。",
+      "reason": "工业现场 AI Agent 实证案例,从 PoC 走向 production。",
+      "tags": [
+        "微软",
+        "工业",
+        "Agent"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/"
+    },
+    {
+      "rank": 16,
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "22:44",
+      "source": "Suno(X)",
+      "heat": 87,
+      "title": "Suno 完成 4 亿美元 D 轮融资",
+      "summary": "AI 音乐生成头部公司 Suno 宣布完成 4 亿美元 D 轮融资,估值翻倍至 30 亿美元,资金将用于扩大歌词/曲风模型训练与版权合作。",
+      "reason": "AI 音乐赛道头部估值再翻倍,挑战 Spotify 内容分发逻辑。",
+      "tags": [
+        "Suno",
+        "音乐",
+        "融资"
+      ],
+      "url": "https://x.com/suno/"
+    },
+    {
+      "rank": 17,
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "08:50",
+      "source": "IT 之家",
+      "heat": 80,
+      "title": "联合国报告:2030 年 AI 数据中心水电消耗将翻倍",
+      "summary": "联合国发布报告称,2030 年全球 AI 数据中心耗水量与耗电量将较 2024 年翻倍,呼吁各国出台 AI ESG 监管与新一代低能耗制冷标准。",
+      "reason": "AI ESG 监管压力升级,影响下一代数据中心选址与制冷方案。",
+      "tags": [
+        "联合国",
+        "数据中心",
+        "ESG"
+      ],
+      "url": "https://www.ithome.com/"
+    },
+    {
+      "rank": 18,
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "20:12",
+      "source": "Bloomberg",
+      "heat": 77,
+      "title": "欧盟公布技术主权计划,推动芯片与 AI 自主发展",
+      "summary": "欧盟委员会公布全面技术主权计划,覆盖先进制程芯片、AI 模型、量子计算与云基础设施,目标 2030 年欧洲在关键 AI 链路实现自主。",
+      "reason": "欧盟版芯片法案 2.0,影响全球 AI 供应链重构。",
+      "tags": [
+        "欧盟",
+        "芯片",
+        "主权"
+      ],
+      "url": "https://www.bloomberg.com/technology"
+    },
+    {
+      "rank": 19,
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "02:57",
+      "source": "Fei-Fei Li(X)",
+      "heat": 84,
+      "title": "李飞飞:世界模型的功能分类(World Labs)",
+      "summary": "World Labs 创始人李飞飞撰文系统分类世界模型功能,从物理一致性、空间智能、长时序推理、跨模态生成四大维度建立 World Model 评测框架。",
+      "reason": "World Labs 首份系统性 World Model 分类框架,定义赛道术语。",
+      "tags": [
+        "李飞飞",
+        "世界模型",
+        "World Labs"
+      ],
+      "url": "https://x.com/drfeifei/"
+    },
+    {
+      "rank": 20,
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "03:00",
+      "source": "Hacker News",
+      "heat": 75,
+      "title": "Uber 每月 $1,500 的 AI 使用上限,为 AI 工具定价提供参考",
+      "summary": "Uber 内部 AI 工具开支政策曝光:工程师每月可申请最高 $1,500 的 AI 订阅/API 额度,涵盖 Cursor、Claude、ChatGPT Enterprise 等,为行业 SaaS 定价提供锚点。",
+      "reason": "大厂员工 AI 工具开支首次披露,行业 SaaS 定价锚点。",
+      "tags": [
+        "Uber",
+        "定价",
+        "SaaS"
+      ],
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "rank": 21,
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "14:12",
+      "source": "硅基流动(X)",
+      "heat": 72,
+      "title": "Karpathy 的 llm-wiki 项目获超 5000 星",
+      "summary": "Andrej Karpathy 发起的 llm-wiki 开源项目两周内突破 5000 星,系统整理 LLM 训练、推理、对齐、Agent 全栈知识,被誉为 LLM 从业者最权威知识库。",
+      "reason": "LLM 从业者最权威的开源系统化知识库,新人入门首选。",
+      "tags": [
+        "Karpathy",
+        "开源",
+        "wiki"
+      ],
+      "url": "https://x.com/SiliconFlowAI/"
+    }
+  ]
+}

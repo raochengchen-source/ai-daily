@@ -1,0 +1,401 @@
+{
+  "date": "2026-06-06",
+  "weekday": "周六",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 3
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 3
+    },
+    {
+      "key": "model",
+      "label": "大模型",
+      "count": 1
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 5
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 4
+    },
+    {
+      "key": "industry",
+      "label": "行业",
+      "count": 2
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 3
+    }
+  ],
+  "top3": [
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "07:05",
+      "source": "X：NVIDIA AI (@NVIDIAAI)",
+      "heat": 96,
+      "title": "PixelDiT入选CVPR2026最佳论文决赛",
+      "summary": "被选为 #CVPR2026 最佳论文决赛作品：来自 NVIDIA Research 的 PixelDiT\n\n在大多数图像生成模型中，预训练的自编码器会在任何扩散发生前压缩图像，导致质量损失在整个流程中累积。\n\nPixelDiT，即像素扩散变换器，完全去掉了这一步骤。它是一个单阶段模型，直接在像素空间中端到端地学习扩散过程。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "PixelDiT",
+        "CVPR2026",
+        "NVIDIA"
+      ],
+      "url": "https://x.com/NVIDIAAI/status/2063034422698389625",
+      "rank": 1
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "06:18",
+      "source": "Hugging Face：Blog（RSS）",
+      "heat": 95,
+      "title": "用Qwen2.5-3B构建多智能体经济体：工程报告",
+      "summary": "开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Qwen2.5-3B",
+        "LLM",
+        "Modal"
+      ],
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+      "rank": 2
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "06:01",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 94,
+      "title": "Arena 发布真实世界 AI 智能体排行榜 Agent Arena",
+      "summary": "Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Arena",
+        "Agent",
+        "30万"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2063018358795300982",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "05:02",
+      "source": "Bloomberg：Technology（RSS）",
+      "heat": 93,
+      "title": "Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片",
+      "summary": "Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Apollo",
+        "Anthropic",
+        "Global"
+      ],
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic",
+      "rank": 4
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "04:51",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 92,
+      "title": "SpaceX与Google达成云计算新协议",
+      "summary": "SpaceX 刚刚披露了一份与 Google 的新云服务协议。\n\nGoogle 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。\n\n这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "SpaceX",
+        "Google",
+        "GPU"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2063000834045313314",
+      "rank": 5
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "04:30",
+      "source": "Google Research：Blog（网页）",
+      "heat": 91,
+      "title": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+      "summary": "Google Research 与 Google Cloud 合作推出跨语料库检索（Cross-Corpus Retrieval）框架，作为 Gemini Enterprise Agent Platform 的 Agentic RAG。该多智能体工作流将复杂企业查询分解为子任务，通过规划、重写和路由，迭代搜索多个数据源直至获得充分上下文，再生成可靠回答。与标准 RAG 相比，在事实性数据集上准确率最高提升 34%；在多个领域特定内部数据集上也实现了更好的接地与推理准确性。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Enterprise",
+        "Agent"
+      ],
+      "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+      "rank": 6
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "03:43",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "heat": 90,
+      "title": "微软Project Mosaic：micro-LED光学互连技术",
+      "summary": "微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Project",
+        "Mosaic",
+        "LED"
+      ],
+      "url": "https://x.com/MSFTResearch/status/2062983588606320714",
+      "rank": 7
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "03:33",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "heat": 89,
+      "title": "Anthropic：让Claude成为化学家",
+      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "NMR"
+      ],
+      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+      "rank": 8
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "03:23",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 88,
+      "title": "五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器",
+      "summary": "据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "The",
+        "Intercept",
+        "Hacker"
+      ],
+      "url": "https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon",
+      "rank": 9
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "03:07",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 87,
+      "title": "Claude 是否增加了 rsync 中的错误？",
+      "summary": "一篇 Hacker News 热门帖子（105 分）提出了 Claude 是否导致 rsync 工具中 bug 增加的问题，并附有分析链接。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Hacker",
+        "News"
+      ],
+      "url": "https://alexispurslane.github.io/rsync-analysis",
+      "rank": 10
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:50",
+      "source": "X：Michael Truell (@mntruell)",
+      "heat": 86,
+      "title": "智能体协作应如同事般对话和手势",
+      "summary": "与 AI 智能体协作应感觉像与同事协作一样。你应能\"与它们交谈\"--不仅通过文本聊天，还能一起对着屏幕做手势、实时对话等。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "工具"
+      ],
+      "url": "https://x.com/mntruell/status/2062955210897801520",
+      "rank": 11
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "01:12",
+      "source": "Google Developers Blog（RSS）",
+      "heat": 85,
+      "title": "Google Colab CLI 发布",
+      "summary": "Google 推出 Colab 命令行界面（CLI），允许开发者和 AI 智能体将本地终端连接到远程 Colab 运行时，实现无摩擦执行。该轻量级 CLI 支持请求高性能 GPU、远程运行本地 Python 脚本，并检索工件日志或模型（如微调后的 Gemma 3 适配器）。工具可直接集成到标准终端环境，可被 Antigravity、Claude Code 等 AI 智能体调用以管理复杂机器学习流水线。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Colab",
+        "CLI"
+      ],
+      "url": "https://developers.googleblog.com/introducing-the-google-colab-cli",
+      "rank": 12
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "01:09",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "heat": 84,
+      "title": "Riverflow 2.5：可控制评分标准的图像模型",
+      "summary": "在OpenRouter上线：来自@Sourceful的Riverflow 2.5。\n\n首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。\n\n免费至6月9日（周二）。Fast和Pro见下方🧵。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Riverflow",
+        "OpenRouter",
+        "Sourceful"
+      ],
+      "url": "https://x.com/OpenRouter/status/2062944965978992935",
+      "rank": 13
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:06",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "heat": 83,
+      "title": "ChatGPT 网页版支持从写作块发送邮件",
+      "summary": "草拟。调整。发送。\n\n现在你可以在网页版 ChatGPT 中直接从写作块发送邮件，无需离开对话。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "ChatGPT"
+      ],
+      "url": "https://x.com/ChatGPTapp/status/2062944254591430917",
+      "rank": 14
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:01",
+      "source": "X：Google AI (@GoogleAI)",
+      "heat": 82,
+      "title": "Google AI 本周产品更新：Nano Banana 2、Co-Scientist、dreambeans、Gemma 4 等",
+      "summary": "Google AI 本周发布多项更新：Nano Banana 2 及 Pro 正式 GA，可通过 Gemini Enterprise Agent Platform、Gemini API 和 Google AI Studio 获取；Co-Scientist 多智能体系统面向科研自动生成优化新假设；Google Labs 推出 dreambeans，根据用户 Google 应用数据每日生成个性化话题集；Gemma 4 12B 统一无编码器多模态模型可完全离线运行于笔记本；Gemma 4 系列及草稿模型引入 QAT 降低内存需求；Google Magenta RealTime 2 开源实时音乐模型，支持 MIDI 键盘、文本提示和手势演奏。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Nano",
+        "Banana"
+      ],
+      "url": "https://x.com/GoogleAI/status/2062942864288387430",
+      "rank": 15
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "00:36",
+      "source": "X：Gemini (@GeminiApp)",
+      "heat": 81,
+      "title": "Gemini Live 支持实时创建编辑图像",
+      "summary": "你现可直接在 Gemini Live 中创建和编辑图像。\n\n无论是测试房间装饰、解决数学问题，还是制作可分享的梗图，所有操作都实时完成。\n\n只需打开 Gemini 应用，点击 Live 按钮，共享摄像头，告诉 Gemini 你想看到的。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Live"
+      ],
+      "url": "https://x.com/GeminiApp/status/2062936486509785385",
+      "rank": 16
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "00:24",
+      "source": "X：Epoch AI (@EpochAIResearch)",
+      "heat": 80,
+      "title": "AI热推高美国计算基建GDP占比翻倍",
+      "summary": "AI 热潮使计算基础设施占美国 GDP 比重翻倍。\n\n2026 年第一季度，与 AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "GDP"
+      ],
+      "url": "https://x.com/EpochAIResearch/status/2062933470373146828",
+      "rank": 17
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "23:33",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "heat": 79,
+      "title": "Meta SAM 3D 获 CVPR26 最佳论文荣誉提名",
+      "summary": "热烈祝贺我们的 SAM 3D 团队在 #CVPR26 获得最佳论文荣誉提名！这项殊荣凸显了他们在推动计算机视觉边界方面的杰出工作。\n\n论文链接：https：//arxiv.org/abs/2511.16624",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Meta",
+        "SAM",
+        "CVPR26"
+      ],
+      "url": "https://x.com/AIatMeta/status/2062920724944507095",
+      "rank": 18
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "23:26",
+      "source": "Suno：Blog（网页）",
+      "heat": 78,
+      "title": "Suno Voices 使用指南：6 个技巧打造高质量人声录制",
+      "summary": "Suno Voices 面向 Web 付费用户开放。提升人声质量的 6 个技巧：在安静环境录音以减少背景噪音；先练习歌词再正式录制；不必追求完美，保留真实情感；录音时长尽量超过 1 分钟以提供更多学习素材；将人声匹配到合适的音乐流派（如民谣、流行、死亡金属、波萨诺瓦等）；敢于尝试不同风格以发现惊喜。这些技巧旨在帮助用户获得更个性化、表现力更强的声音效果。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Suno",
+        "Voices",
+        "Web"
+      ],
+      "url": "https://suno.com/blog/6-tips-for-voices",
+      "rank": 19
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "23:18",
+      "source": "Bloomberg：Technology（RSS）",
+      "heat": 77,
+      "title": "OpenAI 前 CTO 称若 Altman 未回归公司可能已\"瓦解\"",
+      "summary": "Mira Murati 表示，如果 Sam Altman 在 2023 年被短暂罢免后没有回归 CEO 职位，OpenAI 很可能已经\"瓦解\"。这是她对那场硅谷最激烈的董事会斗争的最清晰描述。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "CTO",
+        "Altman"
+      ],
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/openai-would-ve-imploded-if-altman-didn-t-return-ex-cto-says",
+      "rank": 20
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "23:11",
+      "source": "X：Kim (@kimmonismus)",
+      "heat": 76,
+      "title": "Hinton称AI拥有意识：人类最好接受非唯一智能生命",
+      "summary": "AI先驱Geoffrey Hinton表示，他认为AI拥有意识，人类应接受自己并非唯一智能生命。他指出AI\"非常像我们\"，AI聊天机器人必须理解问题才能作答，这种觉知等同于感知能力，智能不限于生物。主推文作者进一步讨论意识本质：笛卡尔的\"我思故我在\"和fMRI等实证手段都无法真正定义意识，人类对自身了解远不及想象。作者呼吁转向新哲学问题，厘清人与机器的区别与联系。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Hinton",
+        "Geoffrey",
+        "MRI"
+      ],
+      "url": "https://x.com/kimmonismus/status/2062915287700090948",
+      "rank": 21
+    }
+  ]
+}

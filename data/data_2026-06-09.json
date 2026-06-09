@@ -1,0 +1,395 @@
+{
+  "date": "2026-06-09",
+  "weekday": "周二",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 2
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 1
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 6
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 1
+    },
+    {
+      "key": "industry",
+      "label": "行业",
+      "count": 4
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 7
+    }
+  ],
+  "top3": [
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "10:19",
+      "source": "IT之家（RSS）",
+      "heat": 96,
+      "title": "OpenAI 秘密提交 IPO 申请，奥特曼旗下 Tools for Humanity 裁员",
+      "summary": "OpenAI 近日秘密提交 IPO 申请。其 CEO 山姆·奥特曼旗下的 Tools for Humanity 公司正裁员，该公司因虹膜扫描项目 World 及加密货币 Worldcoin 知名，投后估值 25 亿美元，获 Andreessen Horowitz 等投资。因营收困境，公司缩减规模。海外监管方面，肯尼亚以隐私和金融风险为由叫停运营，韩国因违反隐私法规罚款 83 万美元。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "Tools"
+      ],
+      "url": "https://www.ithome.com/0/961/792.htm",
+      "rank": 1
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "10:01",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 95,
+      "title": "Elon Musk 详解 SpaceX AI1 轨道 AI 数据中心卫星方案",
+      "summary": "Elon Musk 首次详细解释 SpaceX 的 AI1 轨道 AI 数据中心卫星：峰值功率 150 kW，持续计算功率约 120 kW，相当于一个 NVIDIA GB300 机架；太阳能板效率 250 W/m2；双面散热器排热 1，400 W/m2。通过激光链路实现约 1 Tbps 互联，低轨 600-800 km 高度往返延迟 6-8 ms。由 Starship 发射，计划部署多达百万颗卫星，2027 年底前实现量产。近地目标为吉瓦级轨道 AI 算力，长期向太瓦级推进。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Elon",
+        "Musk",
+        "SpaceX"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2064165951936094364",
+      "rank": 2
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "09:19",
+      "source": "X：Berry Xia (@berryxia)",
+      "heat": 94,
+      "title": "开源工具 Tokei：在菜单栏实时监控 AI coding agent 的 token 用量与成本",
+      "summary": "Berry Xia 推荐开源工具 Tokei，这是一个 macOS 菜单栏小工具，只读本地日志、零网络调用，30 秒自动刷新，实时监控 Claude Code、Grok CLI、Aider、OpenCode 等 8 个主流 AI coding agent 的 token 用量、实时成本与性能数据，并附每日图表、周热力图和年度 Wrapped。支持私人 Git 多设备同步、价格表本地覆盖，闲置过久会提醒休息。引用推文指出，token 消耗情况可作为深度使用 AI 的面试亮点，数据全程私有，零侵入，无需任何认证。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Tokei",
+        "Berry",
+        "Xia"
+      ],
+      "url": "https://x.com/berryxia/status/2064155452934639718",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "09:15",
+      "source": "IT之家（RSS）",
+      "heat": 93,
+      "title": "两部门：到2026年底人形机器人等重点产品完成应用验证并常态部署",
+      "summary": "工信部、国资委6月8日联合发布通知，目标到2026年底，人形机器人等重点产品在代表性场景完成应用验证并开启常态部署，形成百个以上高价值场景，万台级规模落地。要求各省级地区选取不少于20个场景单元（覆盖两类领域），央企不少于10个。围绕打造实景实训空间、组建创新应用联合体、攻关作业技能、加强验证部署、强化要素保障、凝练经验等六大任务展开，鼓励\"人形机器人即服务\"等商业创新。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "行业"
+      ],
+      "url": "https://www.ithome.com/0/961/749.htm",
+      "rank": 4
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "08:44",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "heat": 92,
+      "title": "FrontierCode 基准测试：AI 编程评估新标准--维护者审核通过率最高仅 13.4%",
+      "summary": "Cognition 发布 FrontierCode 基准测试，重新定义 AI 编程评估：由 20 多位顶级开源维护者手工制作 150 个任务（每个耗时 40+ 小时），依据 3000 多条规则判断维护者是否愿意合并代码。该基准指出 SWE-Bench 等超半数通过测试的代码实为不可维护的垃圾。结果中 Claude Opus 4.8 在最高难度档获 13.4%，GPT-5.5 为 6.3%，其余模型 1%-5%。这意味着即便最强模型，近九成代码仍无法通过有经验维护者审核。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "FrontierCode",
+        "Cognition",
+        "SWE-Bench"
+      ],
+      "url": "https://x.com/AYi_AInotes/status/2064146694774595646",
+      "rank": 5
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "08:38",
+      "source": "X：邵猛 (@shao__meng)",
+      "heat": 91,
+      "title": "GitHub 122K⭐的Skills推出新技能「Teach」：把工作目录变有状态学习空间",
+      "summary": "GitHub 122K⭐的Skills仓库推出新技能Teach，可将当前工作目录变为有状态学习空间。设计理念从Knowledge（概念事实）→Skills（动手操作）→Wisdom（真实判断）。工作区以文件即学习状态：MISSION.md定目标、lessons/提供课程、learning-records/记录已会内容、reference/生成速查手册。五个关键机制：Mission定方向、ZPD根据记录调整难度、Lesson一课一事+即时反馈、Learning Record记\"会了什么\"而非\"讲了什么\"、Reference形成长期可回看手册。可通过npx skills add mattpocock/skills --skill teach安装，适用于从魔方到软件基础等学习场景。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "GitHub",
+        "Skills",
+        "Teach"
+      ],
+      "url": "https://x.com/shao__meng/status/2064144978792878348",
+      "rank": 6
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "08:14",
+      "source": "X：Claude (@claudeai)",
+      "heat": 90,
+      "title": "Claude 东京站活动开放注册",
+      "summary": "最终站：东京。\n快来注册，直接聆听 Claude 团队分享：http：//claude.com/code-with-claude/tokyo",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Claude"
+      ],
+      "url": "https://x.com/claudeai/status/2064139073590104402",
+      "rank": 7
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "07:05",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 89,
+      "title": "Apple Core AI 框架",
+      "summary": "一篇关于 Apple Core AI 框架的 Hacker News 帖子获得 109 个点赞。帖子内容包含一张苹果开发者 OG 图片和一个指向 Apple Core AI Framework 官方文档的链接（developer.apple.com）。该帖子由 buzzing.cc 中文翻译，发布于 2026 年 6 月 8 日 02：47（UTC）。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Apple",
+        "Core",
+        "Hacker"
+      ],
+      "url": "https://developer.apple.com/documentation/coreai",
+      "rank": 8
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "06:50",
+      "source": "IT之家（RSS）",
+      "heat": 88,
+      "title": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
+      "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "CEO",
+        "IPO"
+      ],
+      "url": "https://www.ithome.com/0/961/721.htm",
+      "rank": 9
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "06:24",
+      "source": "Claude：Blog（网页）",
+      "heat": 87,
+      "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
+      "summary": "Anthropic 通过一个新 Swift 包，让 Apple 开发者能在 Foundation Models 框架中直接调用 Claude。开发者用 Apple 框架以原生 Swift 方式，仅需三行代码即可通过引导生成返回类型化 Swift 值。当请求涉及多步推理、代码生成、联网搜索或数据分析时，Claude 可接手处理，并将流式响应传回同一视图。该支持可在 iOS 27、iPadOS 27、macOS 27、visionOS 27 和 watchOS 27 上使用，开发者需添加包并配置 Anthropic API 密钥。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Apple",
+        "Foundation"
+      ],
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "rank": 10
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "05:25",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 86,
+      "title": "OpenAI计划到2028年由AI主导研究",
+      "summary": "Sam Altman关于OpenAI未来路径的新博客称，到2028年3月，其大量研究将由AI完成。\n\n该路径主要有3个目标：构建自动AI研究员，利用它加速科学和生产，然后给每个人一个个人AGI，帮助处理工作、学习、编程、商业、健康文书和决策。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "Sam",
+        "Altman"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2064096574142390755",
+      "rank": 11
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "04:32",
+      "source": "X：Viggle AI (@ViggleAI)",
+      "heat": 85,
+      "title": "Viggle API 上线：任意角色任意动作秒级生成",
+      "summary": "推出 Viggle API。\n\n给任意角色添加任意动作，一次 API 调用--数秒内即可激活。\n\n可接入 Claude、Codex 或你正在构建的任何智能体。起价 $0.01/秒。\n\n注册即获 100 次免费额度。\n\n转发 + 关注 + 评论，10 位中奖者再获 100 次！\n\n了解更多👇",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Viggle",
+        "API",
+        "Claude"
+      ],
+      "url": "https://x.com/ViggleAI/status/2064083087806390319",
+      "rank": 12
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "02:50",
+      "source": "Claude：Blog（网页）",
+      "heat": 84,
+      "title": "Claude 为 Connector 开发者推出性能监控仪表盘",
+      "summary": "Claude 为目录中已发布的 Connector 新增性能监控仪表盘（公开测试版）。所有者可追踪活跃用户、工具调用次数、目录排名、健康评分、错误率、延迟，并按工具细分错误归因；还能按 Claude、Claude Code、Cowork 等产品分解使用情况。访问需 Team 或 Enterprise 账号（Admin/Owner 权限或自定义角色）。基于 MCP 构建的 Connector 可直接在 Claude 应用内提交至目录，该目录已有超 300 个第三方 Connector，每日被数百万人使用。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Connector",
+        "Code"
+      ],
+      "url": "https://claude.com/blog/observability-for-developers-building-connectors",
+      "rank": 13
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "02:39",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "heat": 83,
+      "title": "Anthropic：AI编码快于生物学的缘由",
+      "summary": "新的科学博客：为什么 AI 在编码方面的进步比在生物学方面更快？\n\n对智能体而言，生物数据库就像汽车发明前建造的城市--开进去会让人抓狂，因为它们是针对不同的交通流量设计的。\n\n我们如何构建智能体可以使用的基础设施？\nhttps：//www.anthropic.com/research/agents-in-biology",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic"
+      ],
+      "url": "https://x.com/AnthropicAI/status/2064054837294354677",
+      "rank": 14
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "02:18",
+      "source": "Apple：Newsroom（RSS）",
+      "heat": 82,
+      "title": "Apple发布新一代Apple Intelligence和Siri AI",
+      "summary": "今天Apple预览了即将推出的软件版本，将带来新一代Apple Intelligence和Siri AI。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Apple",
+        "Intelligence",
+        "Siri"
+      ],
+      "url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more",
+      "rank": 15
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "02:17",
+      "source": "Apple：Newsroom（RSS）",
+      "heat": 81,
+      "title": "Apple Intelligence 将强大 AI 能力融入日常体验",
+      "summary": "Apple 发布下一代 Apple Intelligence，将 AI 能力集成到 iPhone、iPad 和 Mac 中，带来更个性化和有帮助的日常体验。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Apple",
+        "Intelligence",
+        "Phone"
+      ],
+      "url": "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences",
+      "rank": 16
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "02:17",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 80,
+      "title": "苹果 WWDC 2026 直播",
+      "summary": "苹果 WWDC 2026 主题演讲通过官网进行直播，Hacker News 用户讨论热度达到 110 点。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "WWDC",
+        "Hacker",
+        "News"
+      ],
+      "url": "https://www.apple.com/apple-events/event-stream",
+      "rank": 17
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "02:13",
+      "source": "Apple：Newsroom（RSS）",
+      "heat": 79,
+      "title": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线",
+      "summary": "由于欧盟《数字市场法案》（DMA），Apple 无法在 iOS 27 和 iPadOS 27 发布时于欧盟地区推出 Siri AI。该功能在欧盟的上线时间将晚于其他地区，具体时间未公布。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "DMA",
+        "Siri",
+        "PadOS"
+      ],
+      "url": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27",
+      "rank": 18
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "02:09",
+      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+      "heat": 78,
+      "title": "样本效率黑洞：AI能力背后隐藏的数据需求深渊",
+      "summary": "将AI比作一个闪耀着能力的星系，其核心存在一个肉眼不可见的巨大黑洞--数据。这个比喻揭示了AI模型惊人能力背后对海量数据的依赖，样本效率的瓶颈如同引力中心，将各色能力凝聚在一起。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "观点"
+      ],
+      "url": "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole",
+      "rank": 19
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "01:46",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "heat": 77,
+      "title": "为生物学AI智能体铺路",
+      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Biomni",
+        "Edison"
+      ],
+      "url": "https://www.anthropic.com/research/agents-in-biology",
+      "rank": 20
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "01:12",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "heat": 76,
+      "title": "Claude Code GA一周年回顾：验证与自动模式",
+      "summary": "Claude Code 的第一个演示收到了两个 Slack 反应。\n\nGA 一周年之际，@bcherny 和 @_catwu 回顾：验证最佳实践、为何构建自动模式、例程和循环，以及下一步计划。\n\nhttps：//www.youtube.com/watch？v=Hth_tLaC2j8",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Code",
+        "Slack"
+      ],
+      "url": "https://x.com/ClaudeDevs/status/2064032814392352816",
+      "rank": 21
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "date": "2026-06-05",
+  "weekday": "周五",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 2
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 2
+    },
+    {
+      "key": "model",
+      "label": "大模型",
+      "count": 2
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 7
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 1
+    },
+    {
+      "key": "industry",
+      "label": "行业",
+      "count": 4
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 3
+    }
+  ],
+  "top3": [
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "11:04",
+      "source": "IT之家（RSS）",
+      "heat": 96,
+      "title": "腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成",
+      "summary": "在 6 月 5 日的腾讯云 AI 产业应用大会上，腾讯高级执行副总裁汤道生表示，今年腾讯大部分代码都由 AI 生成，工程师将更多时间用于架构设计，定期指导与修正 AI 输出。腾讯 2026 年 Q1 财报显示，重组后的 AI 研发团队重构了基础设施，并搭建了 Hy3 preview 模型。腾讯总裁刘炽平今年 3 月透露，去年腾讯在 AI 新产品上投入 180 亿元，今年投入至少翻倍。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Hy3"
+      ],
+      "url": "https://www.ithome.com/0/960/323.htm",
+      "rank": 1
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "09:16",
+      "source": "IT之家（RSS）",
+      "heat": 95,
+      "title": "Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发",
+      "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "Mythos"
+      ],
+      "url": "https://www.ithome.com/0/960/218.htm",
+      "rank": 2
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "07:41",
+      "source": "X：cb_doge (@cb_doge)",
+      "heat": 94,
+      "title": "马斯克谈SpaceX上市：正处大规模资本扩张期",
+      "summary": "马斯克在JPMorgan活动上回应SpaceX上市问题：他已被建议上市近10年，自2014-2015年起SpaceX就已实现正现金流并自筹资金，之前的私募轮次实际是面向投资者和员工的流动性/回购轮次。当前不同之处在于SpaceX正进入显著资本增长阶段，计划发射约10万颗通信卫星（可能超10万颗），AI和机器人对带宽需求巨大，还将在太空中建设AI数据中心，马斯克认为这将成为AI扩张的主要手段。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "SpaceX",
+        "JPMorgan",
+        "10万"
+      ],
+      "url": "https://x.com/cb_doge/status/2062681226633523250",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "05:50",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "heat": 93,
+      "title": "NotebookLM 来源归属功能上线",
+      "summary": "今天，我们推出又一项呼声很高的功能：来源归属！🥳\n\n无需再猜测。现在你可以看到每个创作物背后所用的确切公式（提示词 + 来源）。想要调整？只需轻点\"迭代\"，随心定制 💖",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "NotebookLM"
+      ],
+      "url": "https://x.com/NotebookLM/status/2062653124326863077",
+      "rank": 4
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "05:47",
+      "source": "X：Gemini (@GeminiApp)",
+      "heat": 92,
+      "title": "Gemini macOS 双击 Command 附加活动窗口",
+      "summary": "使用适用于 macOS 的 Gemini 应用，获取针对屏幕内容的定制帮助。💻\n\n只需同时按下两个 Command ⌘ 键，即可将当前活动窗口无缝附加到聊天中，无需手动截图或切换标签页。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Command"
+      ],
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "rank": 5
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "05:32",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 91,
+      "title": "Anthropic 开源 AI 驱动漏洞发现框架",
+      "summary": "Anthropic 将其用于 AI 驱动漏洞发现的开源框架代码托管在 GitHub 上。该框架借助 AI 技术进行漏洞发现，旨在帮助识别软件中的安全缺陷。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "GitHub"
+      ],
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "rank": 6
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "05:28",
+      "source": "X：NVIDIA (@nvidia)",
+      "heat": 90,
+      "title": "Nemotron Parakeet ASR 印尼语准确率达 97.7%",
+      "summary": "当法律和监督依赖于转录内容时，70-80% 是不够的。\n\nhttp：//Rafiqspace.ai 通过微调 Nemotron Parakeet ASR 达到了 97.7% 的印尼语准确率（2.3% WER）-- 优于全球工具，同时每小时成本降低高达 90%。⚖️",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Nemotron",
+        "Parakeet",
+        "ASR"
+      ],
+      "url": "https://x.com/nvidia/status/2062647600424128773",
+      "rank": 7
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "05:13",
+      "source": "Ethan Mollick：One Useful Thing（RSS）",
+      "heat": 89,
+      "title": "共存与协同智能的终结",
+      "summary": "Ethan Mollick 在 One Useful Thing 博客中，以\"共存与协同智能的终结\"为题，并附带介绍了如何向 AI 推销一本书。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Ethan",
+        "Mollick",
+        "One"
+      ],
+      "url": "https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence",
+      "rank": 8
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "04:25",
+      "source": "Google Research：Blog（网页）",
+      "heat": 88,
+      "title": "Google Research 发布被动心率监测系统 PHRM",
+      "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Research",
+        "PHRM"
+      ],
+      "url": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
+      "rank": 9
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "03:36",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "heat": 87,
+      "title": "OpenAI API 新增内容审核评分",
+      "summary": "Moderation scores 现已在 Responses API 和 Completions API 中可用。\n\n在与生成相同的请求流程中返回审核信号，然后由你的应用决定如何使用它们进行记录、路由、审核或拦截。\n\nhttps：//developers.openai.com/api/docs/guides/moderation",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "API",
+        "Moderation"
+      ],
+      "url": "https://x.com/OpenAIDevs/status/2062619558440267801",
+      "rank": 10
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "02:57",
+      "source": "Hugging Face：Blog（RSS）",
+      "heat": 86,
+      "title": "Nemotron 3.5 Content Safety：面向全球企业AI的可定制多模态安全",
+      "summary": "Nemotron 3.5 Content Safety基于Gemma 3 4B IT，提供128K上下文窗口，支持用户提示、可选图像与助手响应的统一多模态安全评估。新增自定义策略执行，允许企业用自然语言定义专属安全规则；THINK模式可输出可审计的逐步推理痕迹。显式训练覆盖12种语言，并借助基座模型零样本泛化至约140种语言。输出提供低延迟二分类、带分类标签、THINK推理痕迹三种模式。安全分类遵循Aegis 2.0框架（13核心类别+10细分类别）。同步发布多模态、多语言安全数据集，可在8GB+ VRAM GPU上实时部署。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Nemotron",
+        "Content",
+        "Safety"
+      ],
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "rank": 11
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "02:32",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "heat": 85,
+      "title": "Google Magenta RealTime 2 （MRT2） 实时音乐模型发布",
+      "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Magenta",
+        "RealTime"
+      ],
+      "url": "https://x.com/googleaidevs/status/2062603374789263646",
+      "rank": 12
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "02:16",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "heat": 84,
+      "title": "Codex 推出 iOS 应用构建插件",
+      "summary": "更多 iOS 应用循环，现已集成至 Codex。\n\nBuild iOS Apps 插件让 Codex 可在应用内浏览器查看和测试你的 iOS 应用，打开 SwiftUI 预览，并无需离开 Codex 即可热重载编辑。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Codex",
+        "Build",
+        "Apps"
+      ],
+      "url": "https://x.com/OpenAIDevs/status/2062599291479478275",
+      "rank": 13
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:58",
+      "source": "X：Replit (@Replit)",
+      "heat": 83,
+      "title": "Replit Agent 联手 Shopify 快速建店",
+      "summary": "我们与 Shopify 合作，让你从想法到上线商店只需几分钟\n\n只需告诉 Replit Agent 你想卖什么。它会：\n\n- 构建自定义店铺页面\n- 创建你的 Shopify 商店\n- 帮你添加商品\n\n在 Shopify 中认领店铺，设置支付，即可开业。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Replit",
+        "Agent",
+        "Shopify"
+      ],
+      "url": "https://x.com/Replit/status/2062594881625940379",
+      "rank": 14
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:08",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "heat": 82,
+      "title": "NotebookLM 推出福尔摩斯游戏笔记本",
+      "summary": "专业技巧：将笔记本游戏化\n\n不要只是阅读笔记--去调查它们。我们全新的福尔摩斯笔记本将学习变成一款互动侦探游戏。推理事实，发现线索，证明即使是最复杂的问题也能迎刃而解。\n\n➡️ https：//goo.gle/Sherlock",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "NotebookLM",
+        "Sherlock"
+      ],
+      "url": "https://x.com/NotebookLM/status/2062582348194197743",
+      "rank": 15
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "00:53",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "heat": 81,
+      "title": "Boson AI 与 LMSYS 发布基于 SGLang-Omni 的 Higgs Audio v3 TTS 端到端服务",
+      "summary": "Boson AI 与 LMSYS 联合推出基于 SGLang-Omni 推理框架的 Higgs Audio v3 TTS 端到端服务。该模型约 4B 参数，基于 Qwen3-4B 骨干，支持 100 种语言（内部评测覆盖 111 种），在 Seed-TTS、CV3、MiniMax-Multilingual 及 Higgs-Multilingual 零样本语音克隆任务中达到单字级 WER/CER。开发者可通过文本内控制标签实时调整情感（20+种）、风格、韵律（语速/音高/停顿）及音效。模型支持流式合成，文本未完整时即可开始生成语音并保持一致性。SGLang-Omni 专为多阶段生成模型设计，统一调度 AR 解码与轻量计算，实现低延迟推理。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Boson",
+        "LMSYS",
+        "SGLang-Omni"
+      ],
+      "url": "https://www.lmsys.org/blog/2026-06-04-higgs-audio-v3-tts",
+      "rank": 16
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "00:14",
+      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+      "heat": 80,
+      "title": "Alex Imas 和 Phil Trammell：AGI 后什么仍然稀缺？",
+      "summary": "经济学家 Alex Imas 和 Phil Trammell 指出，AGI 时代机器人数量可以快速复制增长，但人类独特技能（以芭蕾舞演员为例）的数量保持不变，揭示了即使技术大幅进步，某些稀缺资源仍不可替代。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Alex",
+        "Imas",
+        "Phil"
+      ],
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "rank": 17
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "23:00",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "heat": 79,
+      "title": "Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平",
+      "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Nex-N2-Pro",
+        "Qwen3.5",
+        "397B"
+      ],
+      "url": "https://x.com/SiliconFlowAI/status/2062549952266723493",
+      "rank": 18
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "22:15",
+      "source": "The Verge：订阅版科技（RSS）",
+      "heat": 78,
+      "title": "台积电难以跟上AI需求：\"我们只能支持这么多\"",
+      "summary": "全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要\"非常长的时间\"，凸显AI需求带来的产能压力。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "基础设施"
+      ],
+      "url": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
+      "rank": 19
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "22:15",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "heat": 77,
+      "title": "DeepSeek连续四周登顶Token份额榜",
+      "summary": "DeepSeek 现已连续四周在我们平台的 token 份额排行榜上位居第一： https：//openrouter.ai/rankings",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek",
+        "Token"
+      ],
+      "url": "https://x.com/OpenRouter/status/2062538625225548118",
+      "rank": 20
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "21:02",
+      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
+      "heat": 76,
+      "title": "NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力",
+      "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "NVIDIA",
+        "Nemotron",
+        "Ultra"
+      ],
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
+      "rank": 21
+    }
+  ]
+}
