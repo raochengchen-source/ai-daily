@@ -1,0 +1,38 @@
+name: Daily AI Digest
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 10:00 Asia/Shanghai
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TZ: Asia/Shanghai
+      LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
+      LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
+      LARK_CHAT_ID: ${{ secrets.LARK_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python3 scripts/fetch_daily.py
+      - run: python3 scripts/build_single.py
+      - run: python3 scripts/build_archive.py
+      - run: |
+          git config user.name  "ai-daily-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ index.html archive.html
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            git commit -m "daily $(date +%Y-%m-%d)"
+            git push
+          fi
+      - run: python3 scripts/send_card.py
