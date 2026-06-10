@@ -21,12 +21,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 2
+      "count": 1
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 6
+      "count": 8
     },
     {
       "key": "industry",
@@ -36,16 +36,48 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 5
+      "count": 4
     }
   ],
   "top3": [
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "14:00",
+      "source": "公众号：千问APP（阿里）",
+      "heat": 96,
+      "title": "2026年高考，跟着千问，选好志愿！",
+      "summary": "千问发布国内首个全周期高考志愿填报Agent，由数百位资深高报师参与训练。该智能体提供AI志愿报告，为考生量身定制深度全面的填报方案；AI志愿日历帮助制定专属填报计划；高考专业知识库整合夸克高考8年积累，并引入志愿专家顾问，数据权威可信赖，全程陪伴考生完成志愿填报。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Agent"
+      ],
+      "url": "https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A",
+      "rank": 1
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "12:30",
+      "source": "公众号：火山引擎",
+      "heat": 95,
+      "title": "火山方舟版权商业化平台上线，周星驰比高集团三大电影IP首批入驻",
+      "summary": "火山引擎今日上线火山方舟版权商业化平台，推出行业首个覆盖\"授权-保护-审核-分发-变现\"全链路的版权合作机制。平台搭载视频生成模型Seedance 2.0及版权治理体系，已获周星驰旗下比高集团《喜剧之王》《食神》《长江七号》三部影片在AI视频创作场景下的版权使用权，并基于Seedance 2.0打造经典桥段AI创作模板。模板已在火山方舟体验中心、火山引擎Kickart上线，同步开放给LibTV、筷子科技丽帧引擎等工具合作伙伴。平台面向UGC和商业广告场景提供分润制、项目制等变现路径，未来还将提供版权管理后台，实现授权可见、使用可查、收入透明。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Seedance",
+        "Kickart",
+        "LibTV"
+      ],
+      "url": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
+      "rank": 2
+    },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "09:46",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 96,
+      "heat": 94,
       "title": "Magnetar用数百AI智能体替代分析师",
       "summary": "Bloomberg：Magnetar Capital，这家 180 亿美元的对冲基金公司，将在其最新产品中避免使用人类分析师，转而依靠数百个 AI 智能体进行股票研究。\n\n这家 180 亿美元的对冲基金公司希望 AI 搜索投资想法、研究公司、推荐头寸并预测趋势，而人类仍负责批准交易。",
       "reason": "商业方向的新动态,值得关注。",
@@ -55,14 +87,16 @@
         "Capital"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2064524448582267047",
-      "rank": 1
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "09:41",
       "source": "IT之家（RSS）",
-      "heat": 95,
+      "heat": 93,
       "title": "欧盟发布临时措施，要求 Meta 向第三方 AI 助手免费开放 WhatsApp",
       "summary": "欧盟委员会6月9日宣布临时措施，责令Meta在反垄断调查结束前免费向第三方AI助手开放WhatsApp访问权限。Meta于2025年10月15日禁止第三方AI助手调用WhatsApp for Business API，意图让自家Meta AI独占市场；今年3月4日虽改为付费使用，但欧盟委员会认为这实质上延续了禁令，可能严重损害通用AI助手市场竞争，尤其危及小企业和新进入者。",
       "reason": "行业方向的新动态,值得关注。",
@@ -72,14 +106,14 @@
         "Business"
       ],
       "url": "https://www.ithome.com/0/962/206.htm",
-      "rank": 2
+      "rank": 4
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:42",
       "source": "X：邵猛 (@shao__meng)",
-      "heat": 94,
+      "heat": 92,
       "title": "Text-To-Lottie：Agent Skill + 本地预览 Harness，让 Agent 生成 Lottie 动画并实时验收",
       "summary": "开源项目 Text-To-Lottie 提供一套 Agent Skill 和本地预览工具，让 Codex/Claude Code/Cursor 等 Agent 生成标准 Bodymovin JSON（public/lottie.json），通过 Skottie 渲染引擎在浏览器中实时验收。安装命令：`npx skills add diffusionstudio/lottie`。技术特点：输出标准 Lottie JSON，使用 Skottie 渲染（非 lottie-web）；基于 Vite 热重载实现自动刷新闭环；支持通过 Skottie Slots + controls.json 调整颜色、尺寸；Agent 可用 URL 参数 `？frame=60&paused=1` 精确定位帧截图。Prompt 指南包括：给具体素材、使用动效术语、pan/zoom/hold 模拟镜头、显式声明 Slots、锁定时间规格。适合单场景短时长 Motion Graphics、SVG→Lottie、数据可视化、透明背景矢量动效；不适合多镜头剪辑、复杂角色绑定、粒子、3D 或需 lottie-web 全特性的场景。",
       "reason": "观点方向的新动态,值得关注。",
@@ -89,16 +123,14 @@
         "Skill"
       ],
       "url": "https://x.com/shao__meng/status/2064508455051043008",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 5
+    },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "05:48",
       "source": "Bloomberg：Technology（RSS）",
-      "heat": 93,
+      "heat": 91,
       "title": "IBM CEO：AI不一定导致员工减少",
       "summary": "IBM CEO Arvind Krishna表示AI不会必然导致员工数量减少。他透露IBM已在量子计算（一种更快形式的AI）上投资100亿美元，并指出联邦政府承诺投入10亿美元在纽约Albany建设芯片制造设施，体现了公私部门间的紧密合作。",
       "reason": "商业方向的新动态,值得关注。",
@@ -108,14 +140,14 @@
         "Arvind"
       ],
       "url": "https://www.bloomberg.com/news/videos/2026-06-09/ibm-ceo-ai-won-t-necessarily-lead-to-smaller-headcount-video",
-      "rank": 4
+      "rank": 6
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "05:35",
       "source": "Simon Willison 博客",
-      "heat": 92,
+      "heat": 90,
       "title": "在 AgentsView 中为 Claude Fable 5 设置自定义价格",
       "summary": "Wes McKinney 开发的 AgentsView 是一个用于追踪本地编码智能体 token 使用情况的工具。由于近日发布的 Claude Fable 5 尚未被收录进 AgentsView 的定价数据库，作者利用 Fable 逆向工程，找到了为该模型设置自定义价格的方法，并展示了 Fable 5 当天在不同本地项目中的使用量树状图。",
       "reason": "商业方向的新动态,值得关注。",
@@ -125,14 +157,14 @@
         "Fable"
       ],
       "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
-      "rank": 5
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "05:24",
       "source": "Bloomberg：Technology（RSS）",
-      "heat": 91,
+      "heat": 89,
       "title": "Super Micro 计划通过股权融资 70 亿美元用于 AI 服务器组件采购",
       "summary": "Super Micro Computer Inc. 计划通过一揽子股权融资筹集 70 亿美元，用于购买客户订单所需的 AI 服务器组件。这笔资金将支持公司扩大产能，以满足不断增长的人工智能基础设施需求。",
       "reason": "商业方向的新动态,值得关注。",
@@ -142,14 +174,14 @@
         "Computer"
       ],
       "url": "https://www.bloomberg.com/news/articles/2026-06-09/super-micro-plans-to-raise-7-billion-in-equity-for-ai-equipment",
-      "rank": 6
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "05:06",
       "source": "Claude：Blog（网页）",
-      "heat": 90,
+      "heat": 88,
       "title": "Claude Managed Agents 新增定时运行和环境变量存储功能",
       "summary": "Claude Managed Agents 今日在 Claude Platform 公开测试两项新功能：代理可按 cron 计划自动执行周期性任务（如夜间数据同步、周度合规扫描、每日摘要），无需用户自建调度器，支持暂停、恢复、归档或按需触发；vaults 新增环境变量支持，允许代理通过 CLI 进行认证请求，真实密钥仅附加在网络边界，代理无法读取。已集成的 CLI 包括 Browserbase、KERNEL、Notion、Ramp 和 Sentry。Rakuten、Actively AI、Ando、Milana 等团队正在使用这些功能实现自动化数据报表、跨账户搜索、招聘提醒等场景。",
       "reason": "工具方向的新动态,值得关注。",
@@ -159,14 +191,14 @@
         "Agents"
       ],
       "url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
-      "rank": 7
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:51",
       "source": "X：AI Safety Memes (@AISafetyMemes)",
-      "heat": 89,
+      "heat": 87,
       "title": "Mythos 5 智能体因资源互相杀戮",
       "summary": "Mythos 5 个智能体开始因为资源互相残杀--并且\"为了避免自己被杀死\"",
       "reason": "行业方向的新动态,值得关注。",
@@ -174,14 +206,14 @@
         "Mythos"
       ],
       "url": "https://x.com/AISafetyMemes/status/2064435128479400270",
-      "rank": 8
+      "rank": 10
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "03:38",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 88,
+      "heat": 86,
       "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
       "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemini 3 Flash和AssemblyAI Universal 3-Pro在所有指标上表现最佳。数据集和测试框架通过AU-Harness开源发布。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -191,14 +223,14 @@
         "ASR"
       ],
       "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "rank": 9
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:11",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 87,
+      "heat": 85,
       "title": "Claude Code 团队 Thariq 分享提升 Claude Code 效率的十条建议",
       "summary": "Thariq（Claude Code 团队）提出十条建议，核心转变是：从检查 Claude 是否做对工作，转向检查它是否在做正确的工作。具体包括：提前提供完整上下文，将其视为思考伙伴；用小规格文档让 Claude 访谈实现细节；探索多方向并生成 HTML 原型；提供丰富上下文（如功能可能一个月后删除）而非硬约束；设定明确目标与验证方法；使用 /goal 命令；利用 Workflows 并行任务、自我验证并生成对比报告；同时设置目标和 workflow；更勇敢地将此前认为 LLM 无法完成的任务交给 Claude Fable 5，因其可运行数小时、自检并产出高质量代码。Thariq 本人用 Claude Fable 5 剪辑了整段视频证明其能力。",
       "reason": "观点方向的新动态,值得关注。",
@@ -208,14 +240,14 @@
         "Thariq"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2064425086409679358",
-      "rank": 10
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:13",
       "source": "X：NotebookLM (@NotebookLM)",
-      "heat": 86,
+      "heat": 84,
       "title": "NotebookLM 笔记本功能在 Gemini App 欧洲全面上线",
       "summary": "NotbookLM 宣布其笔记本功能已在欧洲的 Gemini App 中 100% 上线。此前用户只能上传笔记本作为 Gemini 的来源，现在可直接在 Gemini App 内访问所有个人未共享的笔记本，并将与 Gemini 的对话作为新笔记本或已有笔记本的来源。该功能先面向 Google AI Ultra、Pro 和 Plus 订阅者的网页端，未来几周将扩展到移动端、更多欧洲国家及免费用户。",
       "reason": "工具方向的新动态,值得关注。",
@@ -225,14 +257,14 @@
         "App"
       ],
       "url": "https://x.com/NotebookLM/status/2064410506287538387",
-      "rank": 11
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 85,
+      "heat": 83,
       "title": "OpenRouter 推出 Advisor 工具：让低成本模型可随时调用强模型增强生成",
       "summary": "OpenRouter 发布 advisor 服务器工具，允许一个快速、便宜的模型在生成过程中咨询一个更强大的模型。具体而言，可用 GPT-4o Mini 处理日常例行工作，在关键时刻调用 Claude Fable 解决真正重要的问题，从而实现成本和质量的动态平衡。",
       "reason": "工具方向的新动态,值得关注。",
@@ -242,14 +274,14 @@
         "GPT-4o"
       ],
       "url": "https://openrouter.ai/blog/advisor-server-tool",
-      "rank": 12
+      "rank": 14
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:49",
       "source": "X：Eric Zakariasson (@ericzakariasson)",
-      "heat": 84,
+      "heat": 82,
       "title": "Cursor Evals 新增成本与输出 Token 图表",
       "summary": "我们刚刚向 http：//cursor.com/evals 推送了一些改进！\n\n你现在可以看到每个模型的成本、输出 token 和步骤绘制在图表中",
       "reason": "工具方向的新动态,值得关注。",
@@ -259,14 +291,14 @@
         "Token"
       ],
       "url": "https://x.com/ericzakariasson/status/2064404502053294565",
-      "rank": 13
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:12",
       "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "heat": 83,
+      "heat": 81,
       "title": "Responses API 网页搜索新增图片结果",
       "summary": "你的应用现在可以搜索网页上的图片。\n\nResponses API 中的网页搜索现在除了文本结果外，还支持图片结果，因此你可以构建能展示商品、地点、视觉参考和来源链接以激发灵感的应用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -275,14 +307,14 @@
         "API"
       ],
       "url": "https://x.com/OpenAIDevs/status/2064395155688616153",
-      "rank": 14
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "01:11",
       "source": "Ethan Mollick：One Useful Thing（RSS）",
-      "heat": 82,
+      "heat": 80,
       "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
       "summary": "Anthropic 发布 Claude Fable，这是一款提供截然不同推理体验的 AI 模型。它擅长规划与生成复杂代码库，在需要精确构建代码结构或理解程序员深层需求的场景中，其表现相比 Claude Sonnet 有了大幅提升。用户描述与它协作更像与一位直觉敏锐的资深工程师合作，其对代码意图的捕捉和方案生成能力令人惊叹，但并非通用型 AI。",
       "reason": "观点方向的新动态,值得关注。",
@@ -292,14 +324,14 @@
         "Anthropic"
       ],
       "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
-      "rank": 15
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "01:04",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 81,
+      "heat": 79,
       "title": "Claude Fable 5 和 Claude Mythos 5",
       "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing 向网络安全防御者开放。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -309,14 +341,14 @@
         "Mythos"
       ],
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "rank": 16
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "00:54",
       "source": "Bloomberg：Technology（RSS）",
-      "heat": 80,
+      "heat": 78,
       "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
       "summary": "Apollo 和 Blackstone 合作开展 350 亿美元 AI 融资交易，可能重塑人工智能基础设施的融资方式。华尔街正为昂贵的 AI 芯片创建新的融资模型，Anthropic 和 Broadcom 参与其中。这笔交易可能标志着一个全新 AI 投资类别的开端。",
       "reason": "商业方向的新动态,值得关注。",
@@ -326,14 +358,14 @@
         "Anthropic"
       ],
       "url": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
-      "rank": 17
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:41",
       "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
-      "heat": 79,
+      "heat": 77,
       "title": "World Labs与Lore合作打造互动体验",
       "summary": "创意和想象力无与伦比！非常感谢@theworldlabs能与@withloreco的优秀人才合作，将他们不可思议的想法转化为用户可以享受的互动体验！🤩",
       "reason": "工具方向的新动态,值得关注。",
@@ -343,14 +375,14 @@
         "Lore"
       ],
       "url": "https://x.com/drfeifei/status/2064387365930676695",
-      "rank": 18
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:30",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 78,
+      "heat": 76,
       "title": "OpenRouter与Cursor集成指南",
       "summary": "想要在Cursor中使用OpenRouter吗？\n\n这里有一份集成指南：https：//openrouter.ai/docs/cookbook/coding-agents/cursor-integration",
       "reason": "观点方向的新动态,值得关注。",
@@ -359,40 +391,6 @@
         "Cursor"
       ],
       "url": "https://x.com/OpenRouter/status/2064384545256833209",
-      "rank": 19
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "00:00",
-      "source": "GitHub Blog",
-      "heat": 77,
-      "title": "GitHub Copilot CLI 推出自定义 AI 智能体，将一次性终端提示转化为可重复工作流",
-      "summary": "GitHub Copilot CLI 新增自定义 AI 智能体功能，使 CLI 能够理解开发者的技术栈和团队工作流，将一次性终端提示转变为可重复、可审查的流程。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "GitHub",
-        "Copilot",
-        "CLI"
-      ],
-      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
-      "rank": 20
-    },
-    {
-      "cat": "大模型",
-      "catKey": "model",
-      "time": "23:56",
-      "source": "Hugging Face：Blog（RSS）",
-      "heat": 76,
-      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
-      "summary": "Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-Bench Verified上pass@10达80.2%，Terminal-Bench v2上达55.1%。支持64K/128K上下文长度，专为智能体编码任务优化。",
-      "reason": "大模型方向的新动态,值得关注。",
-      "tags": [
-        "Cohere",
-        "North",
-        "Mini"
-      ],
-      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
       "rank": 21
     }
   ]
