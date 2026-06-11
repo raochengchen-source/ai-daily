@@ -22,9 +22,9 @@ jobs:
       LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
       LARK_CHAT_ID: ${{ secrets.LARK_CHAT_ID }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with: { python-version: '3.11' }
       - run: python3 scripts/fetch_daily.py
       - run: python3 scripts/build_single.py
