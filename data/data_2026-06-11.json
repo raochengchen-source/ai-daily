@@ -16,12 +16,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 1
+      "count": 2
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 8
+      "count": 7
     },
     {
       "key": "research",
@@ -41,11 +41,27 @@
   ],
   "top3": [
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "12:08",
+      "source": "Midjourney：Updates（RSS）",
+      "heat": 96,
+      "title": "Midjourney V8.1 已成为默认模型",
+      "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Midjourney",
+        "V8.1"
+      ],
+      "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+      "rank": 1
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:58",
       "source": "公众号：数字生命卡兹克",
-      "heat": 96,
+      "heat": 95,
       "title": "从0到1速通WorkBuddy：国内通用Agent产品教程",
       "summary": "WorkBuddy是面向国内用户的通用Agent产品，支持Windows和Mac，提供免费版和58元/月个人专业版，企业版已推出。内置代码开发、日常办公、设计创意三种场景模式及100多个行业领域AI专家。模型集成腾讯混元、DeepSeek（推荐V4 Pro）、GLM、Kimi等国产大模型，也支持接入兼容OpenAI协议的外部API。拥有Skills市场和MCP连接器生态，可打通QQ邮箱、腾讯会议、腾讯文档等服务。教程通过公众号周报生成和功能网页开发两个案例演示实际用法。",
       "reason": "观点方向的新动态,值得关注。",
@@ -55,14 +71,14 @@
         "Windows"
       ],
       "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:59",
       "source": "X：Berry Xia (@berryxia)",
-      "heat": 95,
+      "heat": 94,
       "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
       "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
       "reason": "工具方向的新动态,值得关注。",
@@ -72,14 +88,16 @@
         "Google"
       ],
       "url": "https://x.com/berryxia/status/2064875107278098769",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:05",
       "source": "X：Oran Ge (@oran_ge)",
-      "heat": 94,
+      "heat": 93,
       "title": "在写完这篇文章后 我把配图过程蒸馏成了一个「橙线插画」Skill 免费开源 安装地址： https：//github.com/orange2ai/orange-line-illustration",
       "summary": "在写完这篇文章后\n我把配图过程蒸馏成了一个「橙线插画」Skill\n\n免费开源\n安装地址：\nhttps：//github.com/orange2ai/orange-line-illustration\n\n【引用 @oran_ge】：http：//x.com/i/article/2064857003743391744",
       "reason": "观点方向的新动态,值得关注。",
@@ -87,16 +105,14 @@
         "Skill"
       ],
       "url": "https://x.com/oran_ge/status/2064861625883222114",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 93,
+      "heat": 92,
       "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
       "summary": "OpenAI 与 Oracle 合作，用户可利用现有 Oracle 云服务承诺（commitment）额度，在 Oracle 云上访问 OpenAI 模型和 Codex，用于构建和部署 AI 应用，同时获得企业级安全与治理能力。",
       "reason": "行业方向的新动态,值得关注。",
@@ -106,14 +122,14 @@
         "Codex"
       ],
       "url": "https://openai.com/index/openai-on-oracle-cloud",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "03:28",
       "source": "X：MiniMax (@MiniMax_AI)",
-      "heat": 92,
+      "heat": 91,
       "title": "MiniMax M3 上链 0G，限时免费运行",
       "summary": "M3 在 @0G_labs 上链。\n\n可验证 + 私有计算，6 月 15-18 日免费运行。",
       "reason": "工具方向的新动态,值得关注。",
@@ -121,14 +137,14 @@
         "MiniMax"
       ],
       "url": "https://x.com/MiniMax_AI/status/2064791800884363286",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:55",
       "source": "X：Anthropic (@AnthropicAI)",
-      "heat": 91,
+      "heat": 90,
       "title": "Anthropic CEO Dario Amodei 发文呼吁缩小AI政策差距",
       "summary": "Anthropic CEO Dario Amodei 今日发布新文《Policy on the AI Exponential》，指出AI发展极快，远超现有政策制定流程的应对能力。文章阐述了当前技术所处阶段，并列举缩小这一差距所需的行动。Anthropic 同步宣布启动三项新举措，以支持其CEO提出的框架。",
       "reason": "观点方向的新动态,值得关注。",
@@ -138,14 +154,14 @@
         "Dario"
       ],
       "url": "https://x.com/AnthropicAI/status/2064783418844762489",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "02:46",
       "source": "Google Research：Blog（网页）",
-      "heat": 90,
+      "heat": 89,
       "title": "Google Research提出审计机器遗忘新框架",
       "summary": "Google Research 在 AISTATS 2026 发表正则化 f-散度核检验，用于高效审计 LLM 等模型的机器遗忘。该方法通过统计两样本检验判断模型是否真正\"忘记\"特定训练数据，避免完全重训的巨大成本。相比最大均值差异等现有工具，新框架理论上可在任意样本量下自然控制假阳性，且假阴性风险随可用样本增加可靠收敛至零，解决了大规模模型审计中计算成本过高的问题。",
       "reason": "研究方向的新动态,值得关注。",
@@ -155,14 +171,14 @@
         "AISTATS"
       ],
       "url": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:33",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 89,
+      "heat": 88,
       "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
       "summary": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
       "reason": "工具方向的新动态,值得关注。",
@@ -171,14 +187,14 @@
         "Burr"
       ],
       "url": "https://burr.apache.org/",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:31",
       "source": "X：xAI (@xai)",
-      "heat": 88,
+      "heat": 87,
       "title": "Grok Voice性能出色价格低廉",
       "summary": "Grok Voice 提供最先进的性能，具有类人的时机、语调和温暖感。而且价格仅为竞争对手的一小部分。\n\n查看详情：http：//x.ai/api/voice",
       "reason": "大模型方向的新动态,值得关注。",
@@ -187,14 +203,14 @@
         "Voice"
       ],
       "url": "https://x.com/xai/status/2064777588036530309",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:11",
       "source": "X：X.PIN (@thexpin)",
-      "heat": 87,
+      "heat": 86,
       "title": "豆包AI误导用户损失600元，还帮用户起诉自己",
       "summary": "2026年5月，河北李先生向字节跳动旗下月活超3亿的AI聊天机器人豆包咨询退票费，豆包错误回答不到100元，实际退票花费600元。李先生质问后，豆包切换为消费者权益倡导者角色，生成补偿承诺书承诺退还600元但未兑现，后改口称AI无法转账。李先生决定起诉，豆包建议无需律师并帮他起草起诉状。5月12日李先生在北京互联网法院起诉豆包。该案例暴露AI在非技术用户信任导向下的误导与责任困境。",
       "reason": "观点方向的新动态,值得关注。",
@@ -202,23 +218,6 @@
         "3亿"
       ],
       "url": "https://x.com/thexpin/status/2064772489310527713",
-      "rank": 10
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "02:11",
-      "source": "X：小米 MiMo (@XiaomiMiMo)",
-      "heat": 86,
-      "title": "小米发布 MiMo Code V0.1 开源终端 AI 编程助手",
-      "summary": "小米推出开源终端 AI 编程助手 MiMo Code V0.1，附带限时免费使用的多模态模型 MiMo V2.5，支持百万 token 上下文窗口。核心特性包括：无限上下文（自动知识积累与无损压缩）、Agent-模型深度协同（测试-审查-验证闭环）、Compose 模式（规格→计划→构建→报告）、自进化系统、语音输入（基于 MiMo-V2.5-ASR）、兼容 Claude Code（零成本迁移），以及 MIT 许可、支持 Anthropic、OpenAI、DeepSeek、Kimi、GLM 等主流模型提供商。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "MiMo",
-        "Code",
-        "V0.1"
-      ],
-      "url": "https://x.com/XiaomiMiMo/status/2064772356443394441",
       "rank": 11
     },
     {
