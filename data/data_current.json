@@ -11,7 +11,7 @@
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 2
+      "count": 1
     },
     {
       "key": "model",
@@ -36,16 +36,32 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 6
+      "count": 7
     }
   ],
   "top3": [
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "13:53",
+      "source": "IT之家（RSS）",
+      "heat": 96,
+      "title": "Anthropic CEO 阿莫迪：AI 可能会造成大规模、长期性的岗位流失",
+      "summary": "Anthropic CEO 达里奥・阿莫迪警告，AI造成的大规模岗位流失是技术固有属性--AI系统旨在复刻人类认知，失业将成为结构性必然结果。他提出应对思路：完善劳动力市场监测、推行薪资保障与留岗税收优惠、发放培训补贴；若人力需求永久下降，则需通过征税推行全民基本收入等长期收入保障。Anthropic目标非削减人力成本，而是帮企业开拓新营收、盘活现有员工产能。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "CEO"
+      ],
+      "url": "https://www.ithome.com/0/962/854.htm",
+      "rank": 1
+    },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "12:08",
       "source": "Midjourney：Updates（RSS）",
-      "heat": 96,
+      "heat": 95,
       "title": "Midjourney V8.1 已成为默认模型",
       "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -54,14 +70,14 @@
         "V8.1"
       ],
       "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:58",
       "source": "公众号：数字生命卡兹克",
-      "heat": 95,
+      "heat": 94,
       "title": "从0到1速通WorkBuddy：国内通用Agent产品教程",
       "summary": "WorkBuddy是面向国内用户的通用Agent产品，支持Windows和Mac，提供免费版和58元/月个人专业版，企业版已推出。内置代码开发、日常办公、设计创意三种场景模式及100多个行业领域AI专家。模型集成腾讯混元、DeepSeek（推荐V4 Pro）、GLM、Kimi等国产大模型，也支持接入兼容OpenAI协议的外部API。拥有Skills市场和MCP连接器生态，可打通QQ邮箱、腾讯会议、腾讯文档等服务。教程通过公众号周报生成和功能网页开发两个案例演示实际用法。",
       "reason": "观点方向的新动态,值得关注。",
@@ -71,14 +87,16 @@
         "Windows"
       ],
       "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:59",
       "source": "X：Berry Xia (@berryxia)",
-      "heat": 94,
+      "heat": 93,
       "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
       "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
       "reason": "工具方向的新动态,值得关注。",
@@ -88,16 +106,14 @@
         "Google"
       ],
       "url": "https://x.com/berryxia/status/2064875107278098769",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:05",
       "source": "X：Oran Ge (@oran_ge)",
-      "heat": 93,
+      "heat": 92,
       "title": "在写完这篇文章后 我把配图过程蒸馏成了一个「橙线插画」Skill 免费开源 安装地址： https：//github.com/orange2ai/orange-line-illustration",
       "summary": "在写完这篇文章后\n我把配图过程蒸馏成了一个「橙线插画」Skill\n\n免费开源\n安装地址：\nhttps：//github.com/orange2ai/orange-line-illustration\n\n【引用 @oran_ge】：http：//x.com/i/article/2064857003743391744",
       "reason": "观点方向的新动态,值得关注。",
@@ -105,14 +121,14 @@
         "Skill"
       ],
       "url": "https://x.com/oran_ge/status/2064861625883222114",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 92,
+      "heat": 91,
       "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
       "summary": "OpenAI 与 Oracle 合作，用户可利用现有 Oracle 云服务承诺（commitment）额度，在 Oracle 云上访问 OpenAI 模型和 Codex，用于构建和部署 AI 应用，同时获得企业级安全与治理能力。",
       "reason": "行业方向的新动态,值得关注。",
@@ -122,14 +138,14 @@
         "Codex"
       ],
       "url": "https://openai.com/index/openai-on-oracle-cloud",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "03:28",
       "source": "X：MiniMax (@MiniMax_AI)",
-      "heat": 91,
+      "heat": 90,
       "title": "MiniMax M3 上链 0G，限时免费运行",
       "summary": "M3 在 @0G_labs 上链。\n\n可验证 + 私有计算，6 月 15-18 日免费运行。",
       "reason": "工具方向的新动态,值得关注。",
@@ -137,14 +153,14 @@
         "MiniMax"
       ],
       "url": "https://x.com/MiniMax_AI/status/2064791800884363286",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:55",
       "source": "X：Anthropic (@AnthropicAI)",
-      "heat": 90,
+      "heat": 89,
       "title": "Anthropic CEO Dario Amodei 发文呼吁缩小AI政策差距",
       "summary": "Anthropic CEO Dario Amodei 今日发布新文《Policy on the AI Exponential》，指出AI发展极快，远超现有政策制定流程的应对能力。文章阐述了当前技术所处阶段，并列举缩小这一差距所需的行动。Anthropic 同步宣布启动三项新举措，以支持其CEO提出的框架。",
       "reason": "观点方向的新动态,值得关注。",
@@ -154,14 +170,14 @@
         "Dario"
       ],
       "url": "https://x.com/AnthropicAI/status/2064783418844762489",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "02:46",
       "source": "Google Research：Blog（网页）",
-      "heat": 89,
+      "heat": 88,
       "title": "Google Research提出审计机器遗忘新框架",
       "summary": "Google Research 在 AISTATS 2026 发表正则化 f-散度核检验，用于高效审计 LLM 等模型的机器遗忘。该方法通过统计两样本检验判断模型是否真正\"忘记\"特定训练数据，避免完全重训的巨大成本。相比最大均值差异等现有工具，新框架理论上可在任意样本量下自然控制假阳性，且假阴性风险随可用样本增加可靠收敛至零，解决了大规模模型审计中计算成本过高的问题。",
       "reason": "研究方向的新动态,值得关注。",
@@ -171,14 +187,14 @@
         "AISTATS"
       ],
       "url": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:33",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 88,
+      "heat": 87,
       "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
       "summary": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
       "reason": "工具方向的新动态,值得关注。",
@@ -187,14 +203,14 @@
         "Burr"
       ],
       "url": "https://burr.apache.org/",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:31",
       "source": "X：xAI (@xai)",
-      "heat": 87,
+      "heat": 86,
       "title": "Grok Voice性能出色价格低廉",
       "summary": "Grok Voice 提供最先进的性能，具有类人的时机、语调和温暖感。而且价格仅为竞争对手的一小部分。\n\n查看详情：http：//x.ai/api/voice",
       "reason": "大模型方向的新动态,值得关注。",
@@ -203,14 +219,14 @@
         "Voice"
       ],
       "url": "https://x.com/xai/status/2064777588036530309",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:11",
       "source": "X：X.PIN (@thexpin)",
-      "heat": 86,
+      "heat": 85,
       "title": "豆包AI误导用户损失600元，还帮用户起诉自己",
       "summary": "2026年5月，河北李先生向字节跳动旗下月活超3亿的AI聊天机器人豆包咨询退票费，豆包错误回答不到100元，实际退票花费600元。李先生质问后，豆包切换为消费者权益倡导者角色，生成补偿承诺书承诺退还600元但未兑现，后改口称AI无法转账。李先生决定起诉，豆包建议无需律师并帮他起草起诉状。5月12日李先生在北京互联网法院起诉豆包。该案例暴露AI在非技术用户信任导向下的误导与责任困境。",
       "reason": "观点方向的新动态,值得关注。",
@@ -218,14 +234,14 @@
         "3亿"
       ],
       "url": "https://x.com/thexpin/status/2064772489310527713",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:06",
       "source": "公众号：小米 MiMo",
-      "heat": 85,
+      "heat": 84,
       "title": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议",
       "summary": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议。内置限时免费MiMo-V2.5多模态模型，性能比肩Claude Sonnet 4.6；支持接入DeepSeek、Kimi、GLM等模型。核心能力包括持久记忆系统（项目记忆、会话检查点、任务进度）和无限上下文--通过独立subagent自动保存状态解决长会话遗忘。独创Compose模式实现模型与Agent协同优化，SWE-Bench Pro达62%（Claude Code 57%），Terminal Bench 2达73%（68%）。内置语音输入和/dream命令，每7天自动合并记忆。终端输入`mimo`即可使用，所有设置中文汉化。",
       "reason": "工具方向的新动态,值得关注。",
@@ -235,14 +251,14 @@
         "V0.1.0"
       ],
       "url": "https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "01:38",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
       "summary": "Anthropic 安全团队发现，其 Mythos Preview AI 模型能在几小时内将 Firefox 和 Windows 内核的安全补丁转化为可工作的漏洞利用，成本仅需数千美元，且无需专业知识。在微软自动更新到达任何设备之前，该模型已完成 8 条完整攻击链。Anthropic 认为传统的补丁节奏已经过时。",
       "reason": "研究方向的新动态,值得关注。",
@@ -252,14 +268,14 @@
         "Preview"
       ],
       "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "01:00",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "突发：Google 因模型幻觉被判负有法律责任",
       "summary": "一项法律裁决判定 Google 对其 AI 模型产生的幻觉内容负有法律责任。该判决可能产生巨大影响，尤其若其他国家跟进做出类似裁定。",
       "reason": "行业方向的新动态,值得关注。",
@@ -267,14 +283,14 @@
         "Google"
       ],
       "url": "https://garymarcus.substack.com/p/breaking-google-liable-for-hallucinations",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:43",
       "source": "X：Replit (@Replit)",
-      "heat": 82,
+      "heat": 81,
       "title": "Replit 联合 Socket 推出 Package Firewall",
       "summary": "大多数人在发布项目前会运行安全扫描以检测恶意包\n\n但风险从安装的那一刻就已开始\n\n今天，我们正式推出 Package Firewall，与 Socket 合作构建\n\n它在恶意软件到达你的应用之前就将其拦截",
       "reason": "工具方向的新动态,值得关注。",
@@ -284,14 +300,14 @@
         "Package"
       ],
       "url": "https://x.com/Replit/status/2064750235193417828",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "00:24",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
       "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -301,14 +317,14 @@
         "DeepMind"
       ],
       "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:18",
       "source": "The Verge：AI（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "Google将保存用户的Lens图片、Search Live录音和Translate音频用于AI训练",
       "summary": "Google更新搜索交互数据保存方式，新增\"Search Services History\"设置，用于保存用户搜索时使用的图片、文件、音频和视频，包括Google Lens搜索的图片、实时搜索工具Search Live的录音、语音搜索和Translate中的语音片段。这些数据将被用于\"提供、改进和开发AI模型\"。用户可关闭该设置并禁用\"Save Media\"选项以避免保存。",
       "reason": "工具方向的新动态,值得关注。",
@@ -318,14 +334,14 @@
         "Search"
       ],
       "url": "https://www.theverge.com/tech/947836/google-search-privacy-settings-images-audio",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:16",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "回顾与 Steve Eisman 的访谈，以及可能的关键新闻",
       "summary": "原文回顾了与 Steve Eisman 的最新访谈，并指出一些可能具有关键意义的新闻，未提供具体细节。",
       "reason": "观点方向的新动态,值得关注。",
@@ -334,14 +350,14 @@
         "Eisman"
       ],
       "url": "https://garymarcus.substack.com/p/breaking-news-and-how-the-end-might",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:00",
       "source": "GitHub Blog",
-      "heat": 78,
+      "heat": 77,
       "title": "通过语言服务器为 GitHub Copilot CLI 提供真正的代码智能",
       "summary": "GitHub Copilot CLI 现在可以通过安装和配置 LSP（Language Server Protocol）服务器来替代原始的暴力 grep 或反编译方式，从而获得真正的代码智能。",
       "reason": "观点方向的新动态,值得关注。",
@@ -351,14 +367,14 @@
         "CLI"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:22",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 77,
+      "heat": 76,
       "title": "OpenRouter 推出 Activity explorer 活动探索器",
       "summary": "今天，我们在 OpenRouter 上推出了新的 Activity explorer。\n\n这是查看你和团队在每个模型上花费了多少的最佳方式，还包括 token、缓存命中率、智能体以及趋势。所有数据实时更新。\n\n看看我们的团队如何使用 Fable 和其他模型 👇",
       "reason": "工具方向的新动态,值得关注。",
@@ -368,22 +384,6 @@
         "Fable"
       ],
       "url": "https://x.com/OpenRouter/status/2064730000956489889",
-      "rank": 20
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "23:22",
-      "source": "IT之家（RSS）",
-      "heat": 76,
-      "title": "毕业典礼频现\"谈 AI 色变\"，微软总裁史密斯呼吁行业必须回应公众担忧",
-      "summary": "近几周多场毕业典礼上，演讲者宣传AI技术时遭学生嘘声。普林斯顿应届毕业生曾否决一款疑似借助AI设计的毕业典礼夹克。微软总裁布拉德·史密斯回应称，行业必须严肃可信地回答问题。史密斯主张AI应增强人而非取代人，认为实用AI渗透经济的速度可能比行业乐观预期更慢。微软今年计划投入约1900亿美元资本支出，主要用于数据中心。微软AI负责人穆斯塔法·苏莱曼修正此前\"大多数白领工作18个月内自动化\"的说法，表示仅指AI执行单项任务的能力。上月微软CFO艾米·胡德在杜克大学演讲全程未提AI，未遭嘘声。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "1900亿",
-        "CFO"
-      ],
-      "url": "https://www.ithome.com/0/962/680.htm",
       "rank": 21
     }
   ]
