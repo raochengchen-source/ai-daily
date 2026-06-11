@@ -92,10 +92,22 @@ def send(token, card):
 
 def main():
     d = load_data()
+    date = d["date"]
+    # 幂等锁:当天已发过则跳过(支持一天多个 cron 触发点而不重复发卡片)
+    force = os.environ.get("AI_DAILY_FORCE_SEND") == "1"
+    lock = os.path.join(DATA_DIR, f".sent_{date}")
+    if os.path.exists(lock) and not force:
+        print(f"SKIP already sent for {date} (lock exists). Set AI_DAILY_FORCE_SEND=1 to override.")
+        return
     token = get_token()
     card = build_card(d)
     mid = send(token, card)
-    print(f"OK sent {mid} for {d['date']} -> {CHAT_ID}")
+    try:
+        with open(lock, "w", encoding="utf-8") as f:
+            f.write(mid)
+    except Exception:
+        pass
+    print(f"OK sent {mid} for {date} -> {CHAT_ID}")
 
 
 if __name__ == "__main__":
