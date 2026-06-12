@@ -3,7 +3,9 @@
 Each day collapses by default; clicking expands the FULL day content
 (TOP3 cards + waterfall cards) just like the daily page.
 """
-import json, os, glob, datetime
+import json, os, glob, datetime, time
+
+BUILD_TS = str(int(time.time()))  # 构建时间戳,用于页面防缓存自动刷新
 
 BASE = os.environ.get("AI_DAILY_BASE") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE, "data")
@@ -248,8 +250,32 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="ai-daily-build" content="{(days[0]['date'] if days else '—')}|{BUILD_TS}">
 <title>AI 精选日报 · 历史记录</title>
 <style>{CSS}</style>
+<script>
+// 自动防缓存:发现页面变旧就自动强刷一次。
+(function(){{
+  var CUR = "{(days[0]['date'] if days else '—')}|{BUILD_TS}";
+  function check(){{
+    fetch(location.pathname + "?_=" + Date.now(), {{cache:"no-store"}})
+      .then(function(r){{return r.text();}})
+      .then(function(t){{
+        var m = t.match(/name="ai-daily-build" content="([^"]+)"/);
+        if(m && m[1] && m[1] !== CUR){{
+          location.replace(location.pathname + "?v=" + Date.now());
+        }}
+      }}).catch(function(){{}});
+  }}
+  check();
+  document.addEventListener("visibilitychange", function(){{
+    if(document.visibilityState === "visible") check();
+  }});
+}})();
+</script>
 </head>
 <body>
 <nav class="nav"><div class="container nav-inner">
