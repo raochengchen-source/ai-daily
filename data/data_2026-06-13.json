@@ -31,38 +31,21 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 4
+      "count": 3
     },
     {
       "key": "opinion",
       "label": "观点",
-      "count": 8
+      "count": 9
     }
   ],
   "top3": [
     {
       "cat": "行业",
       "catKey": "industry",
-      "time": "09:36",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 96,
-      "title": "美国政府指令Anthropic暂停最强模型Fable 5和Mythos 5访问",
-      "summary": "美国商务部上周五以国家安全为由，要求Anthropic暂停所有外国国民（含公司内部外籍员工）对Fable 5和Mythos 5的访问。Anthropic已紧急对所有客户禁用这两个模型。起因是有人发现一种jailbreak可诱导模型提供本应拒绝的网络安全帮助。Anthropic认为政府未展示通用jailbreak，该技术范围狭窄，仅发现少量已知小漏洞，且其他公开模型也能提供类似能力。商务部长Howard Lutnick称这些模型将面临出口限制，直至美国政府强化国家安全系统（预计未来几周内）。Anthropic表示完美抵抗jailbreak目前任何模型都难以实现，并称此为误解，正努力恢复访问。其他Claude模型不受影响。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Anthropic",
-        "Fable",
-        "Mythos"
-      ],
-      "url": "https://x.com/rohanpaul_ai/status/2065609113414054240",
-      "rank": 1
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
       "time": "09:15",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 95,
+      "heat": 96,
       "title": "关于美国政府指令暂停访问Fable 5和Mythos 5的声明",
       "summary": "美国政府以国家安全为由，指令Anthropic暂停所有外国国民（含海外员工）对Fable 5和Mythos 5的访问。Anthropic当日5：21pm （ET）收到指令后立即向所有客户禁用这两个模型，其他模型不受影响。政府称发现一种越狱Fable 5的方法；Anthropic审核认为该技术仅能识别少量已知微小漏洞，且其他公开模型（如OpenAI的GPT-5.5）也能做到。Anthropic坚持深度防御策略，认为此次越狱不具普遍性，不同意以此标准召回已服务数亿人的商用模型，正与政府合作争取尽快恢复访问。",
       "reason": "行业方向的新动态,值得关注。",
@@ -72,14 +55,14 @@
         "Anthropic"
       ],
       "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "rank": 2
+      "rank": 1
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "08:27",
       "source": "Bloomberg：Technology（RSS）",
-      "heat": 94,
+      "heat": 95,
       "title": "OpenAI 遭多州总检察长联合调查",
       "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
       "reason": "行业方向的新动态,值得关注。",
@@ -87,16 +70,14 @@
         "OpenAI"
       ],
       "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 2
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "06:48",
       "source": "X：Oran Ge (@oran_ge)",
-      "heat": 93,
+      "heat": 94,
       "title": "Oran Ge 开源《人味儿写作心法.skill》解决AI写作缺人味",
       "summary": "Oran Ge 让 Claude Fable 5 打磨文案三遍，发现改稿越来越讲究却缺\"人味儿\"。他与 AI 讨论后得出结论：人写的文字背后有\"存在感\"--作者在具体位置付出过具体代价，而 AI 无法复现。为此他制作了《人味儿写作心法.skill》，专用于自写文章或口述后让 AI 改稿的场景，旨在保留文字的人味。该技能已开源免费发布在 GitHub。",
       "reason": "观点方向的新动态,值得关注。",
@@ -106,14 +87,16 @@
         "Fable"
       ],
       "url": "https://x.com/oran_ge/status/2065566882774868125",
-      "rank": 4
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:14",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 92,
+      "heat": 93,
       "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
       "summary": "Anthropic对近5.2万美国人调查显示：48%将治愈癌症等疾病列为首要期望，36%希望AI帮助残障人士。64%担忧AI导致失业，56%担忧认知依赖，52%担忧信息误导。超70%支持政府监管，最关注隐私（56%）、儿童安全（52%）和责任归属（49%）。仅15%信任AI公司决策。多数议题上观点不因党派或地域严重分裂。调查于2025年11-12月由YouGov线上执行并加权至人口普查基准。",
       "reason": "观点方向的新动态,值得关注。",
@@ -123,6 +106,23 @@
         "YouGov"
       ],
       "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "rank": 4
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "00:00",
+      "source": "OpenRouter：Announcements（RSS）",
+      "heat": 92,
+      "title": "Hermes Agent 在 OpenRouter 上的使用指南：设置、模型与路由",
+      "summary": "Hermes Agent 已通过 OpenRouter 处理超过 17 万亿 tokens。使用指南包括设置流程、选择支持 64K 上下文窗口的模型，以及调整路由策略以兼顾成本与可靠性。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Hermes",
+        "Agent",
+        "OpenRouter"
+      ],
+      "url": "https://openrouter.ai/blog/tutorials/hermes-agent",
       "rank": 5
     },
     {
