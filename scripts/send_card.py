@@ -5,7 +5,7 @@ Reads creds from env (LARK_APP_ID, LARK_APP_SECRET, LARK_CHAT_ID).
 Reads latest data from data/data_current.json or newest data_2*.json.
 Uses the permanent GitHub Pages URL.
 """
-import json, os, sys, glob, urllib.request, urllib.error
+import json, os, sys, glob, subprocess, urllib.request, urllib.error
 
 APP_ID     = os.environ["LARK_APP_ID"]
 APP_SECRET = os.environ["LARK_APP_SECRET"]
@@ -90,6 +90,36 @@ def send(token, card):
     return r["data"]["message_id"]
 
 
+def commit_lock(lock_path, date):
+    """把幂等锁立即提交并推送到仓库,让后续被串行化的并发 run 在 checkout 时
+    就能看到锁从而跳过,彻底避免一天重复发卡片。仅在 GitHub Actions 中执行。"""
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        return
+    rel = os.path.relpath(lock_path, BASE)
+
+    def git(*args, check=True):
+        return subprocess.run(["git", "-C", BASE, *args],
+                              capture_output=True, text=True, check=check)
+
+    try:
+        git("config", "user.name", "github-actions[bot]", check=False)
+        git("config", "user.email",
+            "github-actions[bot]@users.noreply.github.com", check=False)
+        git("add", rel)
+        # 没有变更则无需提交(锁已在之前的 run 提交过)
+        if git("diff", "--cached", "--quiet", check=False).returncode == 0:
+            print(f"lock {rel} already committed, nothing to push")
+            return
+        git("commit", "-m", f"chore: lock sent {date} [skip ci]")
+        # 推送,若被拒绝则 rebase 后重试一次
+        if git("push", check=False).returncode != 0:
+            git("pull", "--rebase", check=False)
+            git("push", check=False)
+        print(f"committed+pushed lock {rel}")
+    except Exception as e:
+        print(f"WARN commit_lock failed: {e}")
+
+
 def main():
     d = load_data()
     date = d["date"]
@@ -102,11 +132,13 @@ def main():
     token = get_token()
     card = build_card(d)
     mid = send(token, card)
+    # 先写本地锁,再立即提交推送,确保后续串行 run 能看到锁
     try:
         with open(lock, "w", encoding="utf-8") as f:
             f.write(mid)
     except Exception:
         pass
+    commit_lock(lock, date)
     print(f"OK sent {mid} for {date} -> {CHAT_ID}")
 
 
