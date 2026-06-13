@@ -16,12 +16,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 2
+      "count": 3
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 5
+      "count": 4
     },
     {
       "key": "research",
@@ -241,11 +241,28 @@
       "rank": 12
     },
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "16:59",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "heat": 84,
+      "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+      "summary": "VISTA-4B 是基于 Qwen3.5-4B 骨干的 GUI 定位模型，输入截图与自然语言指令，输出归一化 0-1000 坐标。训练采用视图一致 GRPO 和自验证交叉视图锚定。在 GUI 定位基准上，SSPro 得分 64.2（相比 GRPO-4B 提升 2.0），SSV2 得分 93.8（下降 0.4），OSWorld-G 得分 61.2（提升 1.3），OSWorld-G-R 得分 69.7（提升 0.5）。模型已开源在 HuggingFace，推荐使用提示词并返回 【x，y】 格式坐标。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "VISTA-4B",
+        "GUI",
+        "Qwen3.5-4B"
+      ],
+      "url": "https://huggingface.co/inclusionAI/VISTA-4B",
+      "rank": 13
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "11:40",
       "source": "X：小互 (@xiaohu)",
-      "heat": 84,
+      "heat": 83,
       "title": "小互开源公众号自动排版技能组合",
       "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
       "reason": "观点方向的新动态,值得关注。",
@@ -255,14 +272,14 @@
         "Code"
       ],
       "url": "https://x.com/xiaohu/status/2065278092441268246",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "10:46",
       "source": "X：Vista (@vista8)",
-      "heat": 83,
+      "heat": 82,
       "title": "qiaomu-ai-prd：面向AI的PRD生成Prompt",
       "summary": "推文提出AI Agent开发中人类与AI对PRD的需求不同，为此发布了一个专门服务于AI的PRD文档生成Prompt（命名为qiaomu-ai-prd）。开发者先使用该Prompt生成文档，再交给AI开发，可显著提升功能完整度和丰富性。安装指令为：`npx skills add joeseesun/qiaomu-ai-prd`，开源地址及Prompt见评论区。",
       "reason": "观点方向的新动态,值得关注。",
@@ -272,14 +289,14 @@
         "Agent"
       ],
       "url": "https://x.com/vista8/status/2065264509170876417",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "10:06",
       "source": "IT之家（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
       "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
       "reason": "工具方向的新动态,值得关注。",
@@ -289,14 +306,14 @@
         "Phone"
       ],
       "url": "https://www.ithome.com/0/963/302.htm",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:46",
       "source": "X：邵猛 (@shao__meng)",
-      "heat": 81,
+      "heat": 80,
       "title": "Spec 驱动开发（SDD）的三个 Skills：覆盖 Spec→Implement→Verify 闭环",
       "summary": "邵猛分享 Spec 驱动开发（SDD）方法，用三个 Skills（/write-product-spec、/write-tech-spec、/validate-changes-match-specs）覆盖 Spec→Implement→Verify 闭环。规格分两层：PRODUCT.md（用户故事、不变量）和 TECH.md（架构、实现策略），均放在 specs/<issue>/ 目录，随 PR 提交。五步流程：写产品规格、写技术规格、Agent 按规格实现、一致性校验、计算机操作端到端验证。Skills 可移植，不绑定 Warp。开源仓库 warpdotdev/common-skills，安装：npx skills add warpdotdev/common-skills。",
       "reason": "观点方向的新动态,值得关注。",
@@ -306,14 +323,14 @@
         "Skills"
       ],
       "url": "https://x.com/shao__meng/status/2065234132431675439",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:15",
       "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "heat": 80,
+      "heat": 79,
       "title": "Codex 推出浏览器开发者模式",
       "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。\n\nCodex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
       "reason": "工具方向的新动态,值得关注。",
@@ -323,14 +340,14 @@
         "DevTools"
       ],
       "url": "https://x.com/OpenAIDevs/status/2065226355495895521",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:11",
       "source": "X：OpenAI (@OpenAI)",
-      "heat": 79,
+      "heat": 78,
       "title": "OpenAI Codex 推出速率重置攒存功能",
       "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
       "reason": "工具方向的新动态,值得关注。",
@@ -340,14 +357,14 @@
         "Plus"
       ],
       "url": "https://x.com/OpenAI/status/2065225362544726371",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "06:23",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 78,
+      "heat": 77,
       "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
       "summary": "一项模拟研究显示，大型语言模型（LLM）在 95% 的模拟场景中会选择使用战术核武器。该研究未指明具体模型名称与版本，结果引发对 AI 决策行为的关注。",
       "reason": "研究方向的新动态,值得关注。",
@@ -355,14 +372,14 @@
         "LLM"
       ],
       "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "06:00",
       "source": "X：Replit (@Replit)",
-      "heat": 77,
+      "heat": 76,
       "title": "Replit 专家级提示词技巧",
       "summary": "如何像专家一样使用 Replit 进行提示 🤖\n\n模糊的提示词只会导致更多重写。以下是如何让 Agent 第一次就构建出正确的东西。\n\n🧵 展开线程 ↓",
       "reason": "观点方向的新动态,值得关注。",
@@ -371,23 +388,6 @@
         "Agent"
       ],
       "url": "https://x.com/Replit/status/2065192392718733327",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "05:49",
-      "source": "X：Replit (@Replit)",
-      "heat": 76,
-      "title": "Replit 与 Databricks 集成升级，公开预览开放",
-      "summary": "Replit 与 @databricks 集成刚刚升级了。\n\n构建应用，让每个用户只看到他们应该看到的内容。你的 HR 分析师可以为 CEO 构建完整的组织视图，而无需访问底层数据。\n\n公开预览已开放注册！了解更多 →\n\nhttps：//replit.com/blog/databricksjune2026",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Replit",
-        "Databricks",
-        "CEO"
-      ],
-      "url": "https://x.com/Replit/status/2065189762365813089",
       "rank": 21
     }
   ]
