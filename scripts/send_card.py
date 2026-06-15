@@ -15,6 +15,29 @@ BASE       = os.environ.get("AI_DAILY_BASE") or os.path.dirname(os.path.dirname(
 DATA_DIR   = os.path.join(BASE, "data")
 
 
+def load_chat_ids():
+    """目标群 = 环境变量 LARK_CHAT_ID(可逗号分隔) ∪ data/chat_ids.txt(每行一个,# 注释)。
+    新增/删除推送群只需改 data/chat_ids.txt 并提交,无需改 GitHub Secrets。"""
+    ids = []
+    for x in (CHAT_ID or "").split(","):
+        x = x.strip()
+        if x:
+            ids.append(x)
+    f = os.path.join(DATA_DIR, "chat_ids.txt")
+    if os.path.exists(f):
+        with open(f, encoding="utf-8") as fh:
+            for line in fh:
+                line = line.split("#", 1)[0].strip()
+                if line:
+                    ids.append(line)
+    # 去重并保序
+    seen, out = set(), []
+    for x in ids:
+        if x not in seen:
+            seen.add(x); out.append(x)
+    return out
+
+
 def http_json(url, body=None, headers=None, method="GET"):
     data = None if body is None else json.dumps(body).encode("utf-8")
     h = {"Content-Type": "application/json"}
@@ -73,9 +96,9 @@ def build_card(d):
     }
 
 
-def send(token, card):
+def send(token, card, chat_id):
     body = {
-        "receive_id": CHAT_ID,
+        "receive_id": chat_id,
         "msg_type": "interactive",
         "content": json.dumps(card, ensure_ascii=False),
     }
@@ -123,23 +146,48 @@ def commit_lock(lock_path, date):
 def main():
     d = load_data()
     date = d["date"]
-    # 幂等锁:当天已发过则跳过(支持一天多个 cron 触发点而不重复发卡片)
     force = os.environ.get("AI_DAILY_FORCE_SEND") == "1"
+    chat_ids = load_chat_ids()
+    if not chat_ids:
+        raise RuntimeError("no target chat_id (set LARK_CHAT_ID or data/chat_ids.txt)")
+
     lock = os.path.join(DATA_DIR, f".sent_{date}")
-    if os.path.exists(lock) and not force:
-        print(f"SKIP already sent for {date} (lock exists). Set AI_DAILY_FORCE_SEND=1 to override.")
+    # 锁文件按群记录已发状态:{"sent": ["oc_xxx", ...]}。兼容旧版纯文本锁(视为整体已发)。
+    sent = set()
+    if os.path.exists(lock):
+        try:
+            with open(lock, encoding="utf-8") as f:
+                raw = f.read().strip()
+            obj = json.loads(raw)
+            sent = set(obj.get("sent", []))
+        except Exception:
+            # 旧版纯文本锁:无法区分群,保守地认为列表里第一个群已发
+            sent = {chat_ids[0]} if chat_ids else set()
+
+    targets = chat_ids if force else [c for c in chat_ids if c not in sent]
+    if not targets:
+        print(f"SKIP all {len(chat_ids)} chat(s) already sent for {date}. Set AI_DAILY_FORCE_SEND=1 to override.")
         return
+
     token = get_token()
     card = build_card(d)
-    mid = send(token, card)
-    # 先写本地锁,再立即提交推送,确保后续串行 run 能看到锁
+    results = {}
+    for cid in targets:
+        try:
+            mid = send(token, card, cid)
+            sent.add(cid)
+            results[cid] = mid
+            print(f"OK sent {mid} for {date} -> {cid}")
+        except Exception as e:
+            print(f"WARN send to {cid} failed: {e}")
+
+    # 写锁:记录所有已成功发送的群,再立即提交推送,确保后续串行 run 看到锁
     try:
         with open(lock, "w", encoding="utf-8") as f:
-            f.write(mid)
+            json.dump({"date": date, "sent": sorted(sent), "ids": results}, f, ensure_ascii=False)
     except Exception:
         pass
     commit_lock(lock, date)
-    print(f"OK sent {mid} for {date} -> {CHAT_ID}")
 
 
 if __name__ == "__main__":
