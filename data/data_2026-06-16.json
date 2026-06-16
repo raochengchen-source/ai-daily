@@ -11,22 +11,17 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 5
-    },
-    {
-      "key": "infra",
-      "label": "基础设施",
-      "count": 1
+      "count": 2
     },
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 6
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 6
+      "count": 5
     },
     {
       "key": "research",
@@ -41,7 +36,7 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 4
+      "count": 6
     }
   ],
   "top3": [
@@ -145,11 +140,62 @@
       "rank": 6
     },
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "08:00",
+      "source": "Qwen：Blog Retrieval（API）",
+      "heat": 90,
+      "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
+      "summary": "Qwen-RobotManip 是通义千问基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38，100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道（1，933 小时第一人称视频转 24，808 小时数据）及上下文策略适配。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen-RobotManip",
+        "Qwen-VL",
+        "VLA"
+      ],
+      "url": "https://qwen.ai/blog?id=qwen-robotmanip",
+      "rank": 7
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "08:00",
+      "source": "Qwen：Blog Retrieval（API）",
+      "heat": 89,
+      "title": "Qwen-RobotWorld：具身智能体的无界世界",
+      "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen-RobotWorld",
+        "Multimodal",
+        "Diffusion"
+      ],
+      "url": "https://qwen.ai/blog?id=qwen-robotworld",
+      "rank": 8
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "08:00",
+      "source": "Qwen：Blog Retrieval（API）",
+      "heat": 88,
+      "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+      "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen-RobotNav",
+        "Qwen",
+        "Qwen3-VL"
+      ],
+      "url": "https://qwen.ai/blog?id=qwen-robotnav",
+      "rank": 9
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "07:16",
       "source": "IT之家（RSS）",
-      "heat": 90,
+      "heat": 87,
       "title": "项目负责人揭秘为何苹果 AI 版 Siri 姗姗来迟：推倒重来，彻底重构",
       "summary": "苹果AI版Siri迟迟未上线，项目负责人迈克·罗克韦尔在WWDC技术分享会上透露，去年团队曾做出在原有Siri基础上小幅改良、新增工具调用的可运行版本，但因无法达到产品愿景，最终选择推倒重来，完整从零重构系统，依托全新大模型搭建。重构后的Siri拥有独立应用程序，原生支持多模态交互，隐私保护贯穿底层架构，并覆盖iPhone、iPad、Mac、Apple Watch、Vision Pro、CarPlay、AirPods等全平台，提供统一连贯体验。",
       "reason": "观点方向的新动态,值得关注。",
@@ -159,14 +205,14 @@
         "Phone"
       ],
       "url": "https://www.ithome.com/0/964/620.htm",
-      "rank": 7
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "04:15",
       "source": "GitHub Blog",
-      "heat": 89,
+      "heat": 86,
       "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
       "summary": "GitHub Copilot CLI 为初学者提供了常用斜杠命令的概述，帮助用户通过命令控制终端中的 AI 智能体。",
       "reason": "观点方向的新动态,值得关注。",
@@ -176,14 +222,14 @@
         "CLI"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-      "rank": 8
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:30",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 88,
+      "heat": 85,
       "title": "Meta 在 Facebook 上线\"AI Mode\"，基于平台公开信息合成答案",
       "summary": "Meta 宣布在 Facebook 推出\"AI Mode\"搜索功能，利用 Meta AI 从公开帖子（含群组和 Reels）提取信息并合成答案，用户可用自然语言提问获得摘要。同时新增视频拼贴剪辑、过渡效果及 AI 照片预设（可更换服装、发型和配饰），体育迷可在 Stories 中点击\"AI Edit\"虚拟穿上队服。这些更新延续了此前动态头像、Marketplace 自动回复和创作者 AI 助手的部署节奏。此外，Meta 近期启动了 Facebook、Instagram 和 WhatsApp 的全球订阅计划（每月 3.99 美元起），更多 AI 订阅层级正在规划中。",
       "reason": "工具方向的新动态,值得关注。",
@@ -193,14 +239,14 @@
         "Mode"
       ],
       "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms",
-      "rank": 9
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:16",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 87,
+      "heat": 84,
       "title": "OpenRouter新增免费模型gpt-oss-20b和Gemma4 26B",
       "summary": "OpenRouter 上新增免费容量，由 @eigenlabs 的 Darkbloom 提供：gpt-oss-20b 和 Gemma 4 26B。\n今天就开始使用这些模型吧 ↓",
       "reason": "工具方向的新动态,值得关注。",
@@ -210,14 +256,14 @@
         "26B"
       ],
       "url": "https://x.com/OpenRouter/status/2066585705581797616",
-      "rank": 10
+      "rank": 13
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "01:25",
       "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "heat": 86,
+      "heat": 83,
       "title": "下一代投机解码：DFlash 与 Spec V2",
       "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
       "reason": "大模型方向的新动态,值得关注。",
@@ -227,14 +273,48 @@
         "Lab"
       ],
       "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
-      "rank": 11
+      "rank": 14
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "01:00",
+      "source": "OpenRouter：Announcements（RSS）",
+      "heat": 82,
+      "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+      "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "API",
+        "OpenRouter"
+      ],
+      "url": "https://openrouter.ai/blog/tutorials/free-llm-apis-compared",
+      "rank": 15
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "00:00",
+      "source": "OpenRouter：Announcements（RSS）",
+      "heat": 81,
+      "title": "智能体AI治理：你的API密钥就是护栏",
+      "summary": "智能体AI使用量将在未来两年急剧上升，但治理滞后--仅五分之一企业拥有成熟治理模型。典型事故：销售智能体重试失败调用后自行升级到GPT-5.5，一夜消耗200美元。API路由层位于智能体与模型之间，是强制执行预算上限、模型白名单、提供方准入和请求日志的理想点。IBM报告指出97%遭遇AI安全事件的组织缺乏AI访问控制。最小可行治理方案：为每个智能体工作流分配独立API密钥，在API密钥层面实现预算控制、模型准入和审计追踪。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "API",
+        "GPT-5.5",
+        "IBM"
+      ],
+      "url": "https://openrouter.ai/blog/insights/agentic-ai-governance",
+      "rank": 16
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "23:43",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 85,
+      "heat": 80,
       "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
       "summary": "Nvidia 计划通过自 2021 年以来的首次债券发行筹集至少 200 亿美元，消息援引知情人士透露。此举标志着 Nvidia 加入 AI 领域的债务融资热潮。",
       "reason": "商业方向的新动态,值得关注。",
@@ -242,14 +322,14 @@
         "Nvidia"
       ],
       "url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
-      "rank": 12
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "22:40",
       "source": "公众号：MiniMax（稀宇科技）",
-      "heat": 84,
+      "heat": 79,
       "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
       "summary": "MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30-40%；Token Plan 后台新增调用量看板。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -259,14 +339,14 @@
         "428B"
       ],
       "url": "https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww",
-      "rank": 13
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "22:34",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 83,
+      "heat": 78,
       "title": "Salesforce以36亿美元收购AI客服平台Fin",
       "summary": "Salesforce宣布以36亿美元收购AI客服平台Fin（前身为Intercom）。Fin提供可跨实时聊天、WhatsApp、短信、电话、Slack等多渠道解决客户问题的AI智能体。Salesforce计划利用Fin的技术和团队增强其企业级Agentforce平台，该平台允许企业构建自定义AI智能体以自动化任务。交易预计在Salesforce 2027财年第四季度（即2027年初）完成。Fin联合创始人兼CEO Eoghan McCabe将继续担任CEO，研发负责人Des继续领导研发。",
       "reason": "商业方向的新动态,值得关注。",
@@ -276,14 +356,14 @@
         "Fin"
       ],
       "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b",
-      "rank": 14
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "22:00",
       "source": "The Verge：AI（RSS）",
-      "heat": 82,
+      "heat": 77,
       "title": "Skydio CEO Adam Bry：硅谷不应为无人机使用画红线",
       "summary": "Skydio是美国最大的无人机制造商，主攻公共安全、军事、能源、基建巡检等企业市场。CEO Adam Bry表示，特朗普政府去年底禁止中国产无人机后，廉价消费级无人机几乎消失，Skydio产品成为主要替代方案。公司认为无人机正从工具转向自主基础设施--通过机库、远程操控和软件整合实现规模化应用，AI在其中扮演关键角色。访谈还涉及Skydio与军方合作的态度，以及自主技术如何带动公司扩张。",
       "reason": "观点方向的新动态,值得关注。",
@@ -293,14 +373,14 @@
         "Adam"
       ],
       "url": "https://www.theverge.com/podcast/949195/skydio-ceo-adam-bry-autonmous-drones-china-red-lines-military",
-      "rank": 15
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "18:26",
       "source": "公众号：月之暗面（Kimi）",
-      "heat": 81,
+      "heat": 76,
       "title": "6倍速！Kimi K2.7 Code 高速版已上线",
       "summary": "Kimi K2.7 Code 高速版上线，与普通版为同一模型，输出速度约 5-6 倍，常规编程场景约 180 Token/s，短上下文可达 260 Token/s。API 定价为普通版 2 倍，模型 ID：kimi-k2.7-code-highspeed。Kimi Code Plan 用户可通过「抢先体验计划」使用，用量消耗为普通版 3 倍。使用须开启思考模式，关闭会报错或回退至 K2.6。庆祝发布，Kimi API 开放平台推出为期三周充赠活动，充值 500 元及以上享 20%-30% 代金券。相比 K2.6，K2.7 Code 在长上下文编程指令遵循、长程任务性能提升，平均 token 消耗减少 30%，内部基准测试显著提升。普通版输入 6.5 元/百万 token、输出 27 元，缓存输入 1.3 元。非编程任务推荐 K2.6。",
       "reason": "工具方向的新动态,值得关注。",
@@ -310,91 +390,6 @@
         "Code"
       ],
       "url": "https://mp.weixin.qq.com/s/p87ebkY1xqKtkGZ2N3DGSw",
-      "rank": 16
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "17:16",
-      "source": "MarkTechPost（RSS）",
-      "heat": 80,
-      "title": "Flash-KMeans：IO感知的精确K-Means，在GPU上比FAISS快200倍以上",
-      "summary": "UC Berkeley与UT Austin团队开源Flash-KMeans（Apache 2.0，`pip install flash-kmeans`），精确实现标准Lloyd's k-Means，通过重构GPU数据流而非改变数学或近似来提速。在NVIDIA H200上，端到端速度比最佳基线快17.9×，比cuML快33×，比FAISS快200×以上。其FlashAssign核避免物化完整N×K距离矩阵，将IO复杂度从O（NK）降至O（Nd+Kd），单核加速最高21.2×；Sort-Inverse Update核通过排序聚类ID减少原子争用，单核加速最高6.3×。支持out-of-core处理，在1B数据点、K=32768时单次迭代仅41.4s。适用于向量搜索索引、稀疏注意力路由、KV缓存压缩等在线场景。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "Flash-KMeans",
-        "K-Means",
-        "GPU"
-      ],
-      "url": "https://www.marktechpost.com/2026/06/15/meet-flash-kmeans-an-io-aware-exact-k-means-that-runs-over-200x-faster-than-faiss-on-gpus",
-      "rank": 17
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "15:25",
-      "source": "TechCrunch：AI（RSS）",
-      "heat": 79,
-      "title": "AI裁员浪潮成为火药桶",
-      "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "15万",
-        "4万",
-        "Block"
-      ],
-      "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
-      "rank": 18
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "08:00",
-      "source": "Tomer Tunguz 博客（VC 分析）",
-      "heat": 78,
-      "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
-      "summary": "美国政府关闭 Anthropic 的 Fable 访问，开源和本地模型成必备；Satya Nadella 主张 AI 生态护城河应是人类专业知识和模型外围系统；Salesforce 以 36 亿美元收购 Fin（前 Intercom），Fin 利用开源模型实现性价比。这三件事标志 AI 应用进入黄金时代。构建 AI 应用的难点：在 Kimi K2.6、Qwen 3.6 27b、GLM 5.1 等不同特性模型中选择；设计智能体系统的 hill-climbing 循环；持续评估模型+循环性能以最大化 token 预算中的智能。掌握这三项技能的公司将主导这一时代。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "Fable",
-        "Nadella",
-        "Salesforce"
-      ],
-      "url": "https://www.tomtunguz.com/golden-age-of-applications",
-      "rank": 19
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "08:00",
-      "source": "xAI：News（网页）",
-      "heat": 77,
-      "title": "Grok Build 推出 Agent Dashboard 管理多个编码会话",
-      "summary": "xAI 为 Grok Build 推出 Agent Dashboard，提供单一屏幕管理多个编码会话。仪表板按状态分组（等待输入、工作中、空闲），每行显示状态标记、名称、分支、权限模式和当前操作。选中会话可打开 peek 面板查看最新输出并直接回复，等待输入的会话支持用箭头键或数字键选择选项。底部输入框用于分派新会话，支持设置模型、启动计划模式或自动批准编辑。通过 `grok dashboard`、`/dashboard` 或 `Ctrl+\\` 打开，关闭后会话继续运行，重新打开即可恢复。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Grok",
-        "Build",
-        "Agent"
-      ],
-      "url": "https://x.ai/news/agent-dashboard",
-      "rank": 20
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "01:00",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 76,
-      "title": "OpenAI 推出合作伙伴网络 OpenAI Partner Network",
-      "summary": "OpenAI 宣布推出 OpenAI Partner Network，并投资 1.5 亿美元支持全球合作伙伴构建、销售和交付 AI 解决方案。该计划设立 Select、Advanced、Elite 三级合作伙伴层级，提供 Codex、网络安全、智能体等专业方向认证，并试点 Forward Deployed Experts 项目以支持复杂企业部署。目标在 2026 年底前培训认证 30 万名顾问。案例显示，Paychex 借助 Bain 和 OpenAI 的方案将等待时间降低 80%，人工审核时间减少 30%。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "Partner",
-        "Network"
-      ],
-      "url": "https://openai.com/index/introducing-openai-partner-network",
       "rank": 21
     }
   ]
