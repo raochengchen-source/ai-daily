@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="ai-daily-build" content="2026-06-18|1781751322">
+<meta name="ai-daily-build" content="2026-06-18|1781761955">
 <title>AI 精选日报 · 2026-06-18</title>
 <style>
 :root{
@@ -88,7 +88,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 <script>
 // 自动防缓存:每次打开后台静默拉取最新构建戳,发现页面变旧就自动强刷一次(不打扰用户)。
 (function(){
-  var CUR = "2026-06-18|1781751322";
+  var CUR = "2026-06-18|1781761955";
   function check(){
     fetch(location.pathname + "?_=" + Date.now(), {cache:"no-store"})
       .then(function(r){return r.text();})
@@ -124,43 +124,51 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
       <div class="cal-icon">📅</div>
       <div class="cal-info"><div class="label">今日日期</div><div class="date">2026-06-18 周四</div></div>
     </div>
-    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">3</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">4</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">1</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">9</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">2</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">2</span></span></div>
+    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">3</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">5</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">1</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">8</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">2</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">2</span></span></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">🏆 今日 TOP 3</div><div class="section-sub">综合热度与价值评分</div></div>
-    <div class="top3-grid"><a href="https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg" target="_blank" rel="noopener" class="top-card rank1" data-cat="model">
+    <div class="top3-grid"><a href="https://github.com/nvlabs/cutile-rs" target="_blank" rel="noopener" class="top-card rank1" data-cat="infra">
   <div class="rank-badge">1</div>
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 96</span><span>10:31</span><span class="dot"></span><span>公众号：通义实验室（千问）</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 96</span><span>11:09</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h3>cuTile Rust：安全无数据竞争的 GPU 内核系统</h3>
+  <div class="summary">cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Tile</span><span class="tag">#Rust</span><span class="tag">#GPU</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg" target="_blank" rel="noopener" class="top-card" data-cat="model">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 95</span><span>10:31</span><span class="dot"></span><span>公众号：通义实验室（千问）</span></div>
   <h3>首个统一科学大模型 LOGOS 正式开源</h3>
   <div class="summary">LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一"科学语法"的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#LOGOS</span><span class="tag">#ATH-Token</span><span class="tag">#Foundry</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/midjourney/status/2067422898407837797" target="_blank" rel="noopener" class="top-card" data-cat="tool">
-  <div class="rank-badge">2</div>
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 95</span><span>09:43</span><span class="dot"></span><span>X：Midjourney (@midjourney)</span></div>
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 94</span><span>09:43</span><span class="dot"></span><span>X：Midjourney (@midjourney)</span></div>
   <h3>深入解析 Midjourney Scanner 技术内幕</h3>
   <div class="summary">我们全新"Midjourney Scanner"的技术深潜。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Midjourney</span><span class="tag">#Scanner</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.ithome.com/0/965/735.htm" target="_blank" rel="noopener" class="top-card" data-cat="biz">
-  <div class="rank-badge">3</div>
-  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 94</span><span>08:49</span><span class="dot"></span><span>IT之家（RSS）</span></div>
-  <h3>上交所发布指引：AI大模型企业可适用科创板第五套上市标准</h3>
-  <div class="summary">上海证券交易所6月17日发布指引，支持尚未形成稳定收入的优质人工智能大模型企业通过科创板第五套上市标准发行上市。申报企业需在行业地位、产业链优势、目标市场需求、研发进度及关键指标方面具备突出竞争力。指引明确，申报时至少有一个大模型产品已完成上线发布并实现规模化应用，以验证商业模式可行性。下一步，上交所将在中国证监会指导下推进符合标准的企业上市。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#商业</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">📰 精选资讯</div><div class="section-sub">共 18 条 · 按热度排序</div></div>
-    <div class="grid-3"><a href="https://www.ithome.com/0/965/734.htm" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+    <div class="grid-3"><a href="https://www.ithome.com/0/965/735.htm" target="_blank" rel="noopener" class="news-card" data-cat="biz">
   
-  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 93</span><span>08:43</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 93</span><span>08:49</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h4>上交所发布指引：AI大模型企业可适用科创板第五套上市标准</h4>
+  <div class="summary">上海证券交易所6月17日发布指引，支持尚未形成稳定收入的优质人工智能大模型企业通过科创板第五套上市标准发行上市。申报企业需在行业地位、产业链优势、目标市场需求、研发进度及关键指标方面具备突出竞争力。指引明确，申报时至少有一个大模型产品已完成上线发布并实现规模化应用，以验证商业模式可行性。下一步，上交所将在中国证监会指导下推进符合标准的企业上市。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#商业</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.ithome.com/0/965/734.htm" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 92</span><span>08:43</span><span class="dot"></span><span>IT之家（RSS）</span></div>
   <h4>苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App</h4>
   <div class="summary">在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
@@ -168,7 +176,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/Yuchenj_UW/status/2067401895178817999" target="_blank" rel="noopener" class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 92</span><span>08:19</span><span class="dot"></span><span>X：Yuchen Jin (@Yuchenj_UW)</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 91</span><span>08:19</span><span class="dot"></span><span>X：Yuchen Jin (@Yuchenj_UW)</span></div>
   <h4>Noam Shazeer 离开 Google 加入 OpenAI</h4>
   <div class="summary">两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。
 
@@ -178,7 +186,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year" target="_blank" rel="noopener" class="news-card" data-cat="biz">
   
-  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 91</span><span>07:09</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 90</span><span>07:09</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
   <h4>泄露文件显示OpenAI年营收130亿但亏损远超收入</h4>
   <div class="summary">OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
@@ -186,7 +194,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.ithome.com/0/965/694.htm" target="_blank" rel="noopener" class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 90</span><span>06:41</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 89</span><span>06:41</span><span class="dot"></span><span>IT之家（RSS）</span></div>
   <h4>库克：AI 浪潮引发存储芯片价格暴涨，iPhone 等苹果产品涨价已"不可避免"</h4>
   <div class="summary">苹果CEO库克确认，AI热潮导致存储芯片严重短缺和价格暴涨，苹果产品涨价已"不可避免"。库克未透露涨价具体细节。华尔街日报指出，全球AI巨头大幅增加资本开支，高带宽内存需求激增，挤压消费电子芯片供应。自2024年以来内存和存储芯片价格已翻四倍，涨势预计延续至2027年。研究机构估算，下一代iPhone 18 Pro售价或需增加约270美元。苹果已在上月提高Mac Mini起售价。摩根士丹利预测，今年美国智能手机和PC价格将上涨15%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
@@ -194,7 +202,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 89</span><span>06:07</span><span class="dot"></span><span>Claude Code：GitHub Releases（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 88</span><span>06:07</span><span class="dot"></span><span>Claude Code：GitHub Releases（RSS）</span></div>
   <h4>Claude Code v2.1.181 发布</h4>
   <div class="summary">Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示器残留、AWS 凭证刷新等问题。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -202,7 +210,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://developers.googleblog.com/a2ui-and-mcp-apps" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 88</span><span>05:13</span><span class="dot"></span><span>Google Developers Blog（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 87</span><span>05:13</span><span class="dot"></span><span>Google Developers Blog（RSS）</span></div>
   <h4>Google 分享 A2UI 与 MCP Apps 三种集成架构模式</h4>
   <div class="summary">Google 分享了三种集成 A2UI 与 MCP Apps 的架构模式，旨在结合两者优势。A2UI 采用声明式框架，通过 JSON payload 定义 UI，由宿主原生渲染，确保一致性与安全性，但受限于预定义组件库。MCP Apps 在 iframe 中使用标准 Web 技术提供自定义界面，但存在设计碎片化、性能与安全挑战。三种模式包括：通过 MCP 服务器提供 A2UI，利用 MCP Resources 或 Tool 调用传递 JSON，实现"一次编写，原生渲染"的跨平台能力；以及静态与动态交付方案。Google 正考虑扩展 MCP 以原生支持 A2UI。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -210,7 +218,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://claude.com/blog/workload-identity-federation" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 87</span><span>04:44</span><span class="dot"></span><span>Claude：Blog（网页）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 86</span><span>04:44</span><span class="dot"></span><span>Claude：Blog（网页）</span></div>
   <h4>借助 Workload Identity Federation 安全访问 Claude Platform</h4>
   <div class="summary">Workload Identity Federation （WIF） 已在 Claude Platform 上全面可用。WIF 兼容任何 OIDC 身份提供者，覆盖所有 Claude API 端点（包括第一方 SDK 和 Claude Code）。WIF 用短生命期凭证替代静态 API 密钥，并引入服务账户，每个工作负载拥有独立身份、角色和审计日志。Claude Console 提供引导设置流程，支持 Admin API 进行组织管理。API 密钥可并行使用以便逐步迁移。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -218,7 +226,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 86</span><span>04:44</span><span class="dot"></span><span>Claude：Blog（网页）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 85</span><span>04:44</span><span class="dot"></span><span>Claude：Blog（网页）</span></div>
   <h4>Claude Design 更新：跨项目保持品牌一致，与Claude Code协同</h4>
   <div class="summary">6月17日，Claude Design 更新，支持跨项目使用统一设计系统，并与Claude Code同步工作流。用户可直接拖拽、对齐和缩放画布元素，编辑器稳定性大幅提升。设计系统可从GitHub、设计文件或原始上传导入，团队管理员可锁定标准系统防止篡改。新增桌面端侧边栏入口及独立网页端claude.ai/design。使用限制与聊天、Claude Cowork、Claude Code共享，每次任务消耗更少token，错误率下降。支持导出PDF、PPT，集成Adobe、Canva、Gamma等工具。发布首周用户超一百万。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -226,7 +234,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 85</span><span>03:41</span><span class="dot"></span><span>GitHub Blog</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 84</span><span>03:41</span><span class="dot"></span><span>GitHub Blog</span></div>
   <h4>GitHub 发布 CC0-1.0 开源多语言仓库级数据集，覆盖 README、Issue 和 PR</h4>
   <div class="summary">GitHub 推出一个新的仓库级数据集，采用 CC0-1.0 许可证，旨在帮助研究人员和开发者发现跨 README、Issue 和 Pull Request 的多语言开发者内容，加速多语言 AI 开发。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -234,7 +242,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/Replit/status/2067328501003497684" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 84</span><span>03:28</span><span class="dot"></span><span>X：Replit (@Replit)</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 83</span><span>03:28</span><span class="dot"></span><span>X：Replit (@Replit)</span></div>
   <h4>Claude Design与Replit联动，设计变应用</h4>
   <div class="summary">在Claude中设计。在Replit中构建。
 
@@ -244,7 +252,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/AYi_AInotes/status/2067327021005656135" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 83</span><span>03:22</span><span class="dot"></span><span>X：阿易 AI Notes (@AYi_AInotes)</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 82</span><span>03:22</span><span class="dot"></span><span>X：阿易 AI Notes (@AYi_AInotes)</span></div>
   <h4>Matt Pocock 开源 skills v1：将技能描述 Token 成本降低 63%</h4>
   <div class="summary">Matt Pocock（Total TypeScript 作者）开源了 skills v1，将技能描述的 Token 成本降低 63%。该工具包将技能分为模型可调用和用户可调用，新增 /codebase-design、/domain-modeling、/grilling 三项技能；重写 /writing-great-skills；将 /diagnose 更新为 /diagnosing-bugs 并改为模型可调用；新增 /ask-matt 路由技能，帮助 AI 自动判断时机触发合适工程流程。主推文评价其将 prompt 从咒语拆解为纪律性流程。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -252,7 +260,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/kimmonismus/status/2067310431669223425" target="_blank" rel="noopener" class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 82</span><span>02:16</span><span class="dot"></span><span>X：Kim (@kimmonismus)</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 81</span><span>02:16</span><span class="dot"></span><span>X：Kim (@kimmonismus)</span></div>
   <h4>Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国</h4>
   <div class="summary">Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
@@ -260,7 +268,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.lmsys.org/blog/2026-06-17-ling-2-6-tpu" target="_blank" rel="noopener" class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 81</span><span>01:53</span><span class="dot"></span><span>LMSYS：Blog（Chatbot Arena 团队）</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 80</span><span>01:53</span><span class="dot"></span><span>LMSYS：Blog（Chatbot Arena 团队）</span></div>
   <h4>用SGLang-JAX在TPU上优化Ling-2.6-1T：一个Pallas核将MoE数据移动隐藏在计算中</h4>
   <div class="summary">SGLang-JAX现已支持inclusionAI的Ling-2.6-1T（1T稀疏MoE，63B激活参数，256路由专家，top-8路由加共享专家）在TPU v7x上高效推理。团队开发了Fused MoE V2--一个融合scatter、专家FFN和gather的Pallas核，通过将MoE数据移动隐藏在计算中，使MoE预填充延迟从5.16ms降至2.42ms（降幅53%），解码核延迟从0.249ms降至0.211ms（降幅约15%）。仅替换MoE核即提升预填充吞吐量24.8%，解码吞吐量18.5%-35.3%。在SGLang解码基准测试中，16块TPU v7x芯片输出吞吐量达16块H200 GPU的1.29倍（mc=128）至1.77倍（mc=512）。完整上线还包含混合KV/循环内存池、GLA线性注意力和单控制器数据并行支持。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
@@ -268,7 +276,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.marktechpost.com/2026/06/17/vercel-releases-eve" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 80</span><span>01:22</span><span class="dot"></span><span>MarkTechPost（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 79</span><span>01:22</span><span class="dot"></span><span>MarkTechPost（RSS）</span></div>
   <h4>Vercel 发布开源 AI 智能体框架 Eve：每个智能体就是一个文件目录</h4>
   <div class="summary">Vercel 发布开源 AI 智能体框架 Eve（npm 包，Apache-2.0 许可）。Eve 采用文件系统优先设计：每个智能体对应一个磁盘目录，目录结构直接映射模型、指令、工具、技能、连接、子智能体等能力，无需额外注册代码。内置六大生产级能力：持久执行（每步检查点，崩溃后可恢复）、沙箱计算、人机审批、安全连接（支持 MCP 和 OpenAPI）、多通道（Slack、Discord、Teams 等）以及追踪与评估（OpenTelemetry）。Vercel 内部运行了上百个智能体，包括数据分析工具 d0（月处理超3万查询）、自动销售代理 Lead Agent（年费约5000美元、回报32倍）和支持智能体 Vertex（自主解决92%工单）。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -276,7 +284,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/DrJimFan/status/2067283904986517866" target="_blank" rel="noopener" class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 79</span><span>00:31</span><span class="dot"></span><span>X：Jim Fan (@DrJimFan)</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 78</span><span>00:31</span><span class="dot"></span><span>X：Jim Fan (@DrJimFan)</span></div>
   <h4>NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验</h4>
   <div class="summary">NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
@@ -284,7 +292,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 78</span><span>00:30</span><span class="dot"></span><span>TechCrunch：AI（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 77</span><span>00:30</span><span class="dot"></span><span>TechCrunch：AI（RSS）</span></div>
   <h4>Google发布99美元Gemini智能音箱</h4>
   <div class="summary">Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -292,25 +300,11 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification" target="_blank" rel="noopener" class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 77</span><span>00:08</span><span class="dot"></span><span>Google Developers Blog（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 76</span><span>00:08</span><span class="dot"></span><span>Google Developers Blog（RSS）</span></div>
   <h4>谷歌发布Agentic Resource Discovery（ARD）开放规范</h4>
   <div class="summary">Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Agentic</span><span class="tag">#Resource</span><span class="tag">#Discovery</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/Yuchenj_UW/status/2067273020352380950" target="_blank" rel="noopener" class="news-card" data-cat="tool">
-  
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 76</span><span>23:47</span><span class="dot"></span><span>X：Yuchen Jin (@Yuchenj_UW)</span></div>
-  <h4>Omnigent开源：AI智能体团队元框架</h4>
-  <div class="summary">编程的未来不是单一智能体，而是一个完整的AI团队。
-
-Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。
-
-它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。
-
-由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Omnigent</span><span class="tag">#Claude</span><span class="tag">#Code</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a></div>
   </div></section>
