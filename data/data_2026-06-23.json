@@ -16,12 +16,17 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 5
+      "count": 4
     },
     {
       "key": "tool",
       "label": "工具",
       "count": 7
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 1
     },
     {
       "key": "industry",
@@ -38,26 +43,9 @@
     {
       "cat": "大模型",
       "catKey": "model",
-      "time": "14:46",
-      "source": "公众号：火山引擎",
-      "heat": 96,
-      "title": "火山引擎FORCE大会发布豆包大模型2.1 Pro及多款多模态模型",
-      "summary": "火山引擎在FORCE原动力大会上发布豆包大模型2.1 Pro、Seedance 2.5、Seedance 2.0 4K版、Seedream 5.0 Pro及豆包音频生成模型1.0。豆包大模型2.1 Pro在Coding、Agent、VLM方向升级，多Coding评测比肩全球顶尖，Agent国内第一，VLM全球领先。Seedance 2.5支持30秒单段原生直出、50个全模态素材联合输入；Seedream 5.0 Pro支持交互式编辑、多图层分离；豆包音频生成模型1.0可一次直出影视级音频。截至今年6月，豆包大模型日均Token调用量180万亿，同比增长超10倍；火山引擎在中国公有云MaaS市场份额占49.5%第一。同时发布方舟CLI、AgentKit、HiAgent 3.0及AI Trust安全体系。",
-      "reason": "大模型方向的新动态,值得关注。",
-      "tags": [
-        "FORCE",
-        "Pro",
-        "Seedance"
-      ],
-      "url": "https://mp.weixin.qq.com/s/Vnv68cHAWfcX2CnszWR6Qg",
-      "rank": 1
-    },
-    {
-      "cat": "大模型",
-      "catKey": "model",
       "time": "14:04",
       "source": "公众号：京东JoyAI",
-      "heat": 95,
+      "heat": 96,
       "title": "京东全栈开源JoyAI-VL-Interaction，从\"一问一答\"走向\"边看边说\"",
       "summary": "京东近日开源全球首个全栈交互模型JoyAI-VL-Interaction，获vLLM-Omni原生支持。该模型能持续观察视频流、主动判断关键事件并实时响应，支持将复杂任务委托后台Agent处理。在58个真人盲评中，对比豆包视频通话助手胜率77.6%，对比Gemini视频通话助手胜率87.9%，监控预警场景达100%胜率。开源内容包括模型权重、交互数据集、训练方案及完整可部署系统，支持摄像头、直播流等视频输入及语音交互、长期记忆、vLLM部署，适用于安防监控、老人看护、直播讲解等实时场景。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -67,14 +55,14 @@
         "Agent"
       ],
       "url": "https://mp.weixin.qq.com/s/IY6XGp4k6VgD9ZPH6YprCA",
-      "rank": 2
+      "rank": 1
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "13:41",
       "source": "公众号：火山引擎",
-      "heat": 94,
+      "heat": 95,
       "title": "豆包音频生成模型1.0发布，重新定义AI音频创作",
       "summary": "火山引擎正式发布豆包音频生成模型1.0（Doubao-Seed-Audio 1.0），支持文本与音频参考生成，端到端输出目标音频。单条Prompt可编排多角色对白、情绪语气、背景音乐及环境氛围，长时生成中保持多角色音色一致性，无需后期多轨混音。模型支持0样本多模态输入，无需额外训练即可生成；实现音色与风格解耦控制及\"一声多角\"能力。一次支持2分钟音频创作，多次延长保持音色统一。已开启火山方舟API邀测，个人用户享30分钟创作额度，即将上线剪映、即梦、番茄等产品。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -84,16 +72,14 @@
         "API"
       ],
       "url": "https://mp.weixin.qq.com/s/iL0uyUjOMUEfudeuDP6wQQ",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 2
+    },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:02",
       "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "heat": 93,
+      "heat": 94,
       "title": "Seed2.1 正式发布，深入 AI 生产力",
       "summary": "字节Seed发布Seed2.1系列，面向真实生产力场景的智能体，强化通用Agent能力、代码工程交付与多模态理解。Seed2.1 Pro在GDPval基准获最高分，Agents' Last Exam位列参评模型第一梯队；MobileWorld手机GUI任务最高分，CreativeWork多环境任务表现突出。多模态在CharXiv-RQ等多项基准取得SOTA。代码能力上，Seed2.1 Pro在NL2Repo-Bench表现良好，开发者评测相比Claude Opus 4.6获59.1%胜率。模型已在豆包、TRAE上线，API通过火山方舟提供。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -103,14 +89,16 @@
         "Agent"
       ],
       "url": "https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-%E6%B7%B1%E5%85%A5-ai-%E7%94%9F%E4%BA%A7%E5%8A%9B",
-      "rank": 4
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "07:18",
       "source": "Runway：News（网页）",
-      "heat": 92,
+      "heat": 93,
       "title": "Aleph 2.0 现已集成到 Figma Weave",
       "summary": "Aleph 2.0 是 Runway 的旗舰视频编辑模型，现已在 Figma Weave 中上线。它是一个基于上下文的视频编辑模型，通过关键帧工作：从视频中提取一帧，重新设计风格并附上时间戳连接回 Aleph 2.0 节点，即可将该编辑传递到主体出现的每一帧，同时保持其他内容不变。支持最长 30 秒、1080p 的片段，可跨多镜头序列应用编辑，无需逐镜头处理。",
       "reason": "工具方向的新动态,值得关注。",
@@ -120,14 +108,14 @@
         "Weave"
       ],
       "url": "https://runwayml.com/news/aleph-2-in-figma-weave",
-      "rank": 5
+      "rank": 4
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "05:32",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 91,
+      "heat": 92,
       "title": "美国警长利用Flock车牌系统跟踪前女友案频发，Flock法务官承认\"最常见滥用\"",
       "summary": "伊利诺伊州Holiday Hills警察局长于2026年6月18日被捕，被控两项渎职重罪。检方指控他利用Flock车牌读取系统及州警察数据库，跟踪6名认识的人，其中3人为前女友，并对其中一人的前男友车牌查询140次（86次脱岗），持续18个月。全美至少18起类似案例：佐治亚州Braselton警察局长、爱达荷州Jerome县警长（700余次查询其妻车牌）等均因此辞职或被捕。Flock首席法务官Dan Haley承认，滥用该系统\"最常见情况\"就是跟踪前女友。Flock称系统只跟踪车辆，但案例表明车辆是手段，人是目标。",
       "reason": "行业方向的新动态,值得关注。",
@@ -137,14 +125,14 @@
         "Hills"
       ],
       "url": "https://ipvm.com/reports/police-chiefs-track",
-      "rank": 6
+      "rank": 5
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "05:19",
       "source": "Claude：Blog（网页）",
-      "heat": 90,
+      "heat": 91,
       "title": "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop",
       "summary": "通过 AWS、Google Cloud 和 Microsoft Foundry 使用 Claude Desktop 的组织现已获得 Chat、Claude Cowork 和 Claude Code 集成的完整桌面体验。IT 团队可将推理保留在自己的云环境中，对话历史本地存储。支持 IAM Identity Center、Workforce Identity Federation、Microsoft Entra ID 或 Okta 登录；策略模板可导出至 Intune、GPO 或 Jamf；提供离线安装器。Chat、Claude Cowork 和 Claude Code 各有独立策略键，支持精细访问控制。M365 连接器通过 Entra 应用访问邮件和文档，并支持 GCC High/DoD 端点。",
       "reason": "工具方向的新动态,值得关注。",
@@ -154,14 +142,14 @@
         "Cloud"
       ],
       "url": "https://claude.com/blog/the-full-claude-desktop-experience-on-aws-google-cloud-and-microsoft-foundry",
-      "rank": 7
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "05:00",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 89,
+      "heat": 90,
       "title": "Show HN：Oak--专为代理设计的 Git 替代方案",
       "summary": "Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。",
       "reason": "工具方向的新动态,值得关注。",
@@ -171,14 +159,14 @@
         "Git"
       ],
       "url": "https://oak.space/oak/oak",
-      "rank": 8
+      "rank": 7
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 88,
+      "heat": 89,
       "title": "AI 治理清单：LLM 架构先行",
       "summary": "Deloitte 报告显示企业 AI 抱负与治理成熟度之间差 53 个百分点，74% 计划两年内部署智能体 AI，仅 21% 拥有成熟治理模型。路由架构是首个治理层。三种姿态--托管网关（如 OpenRouter、Portkey）、自托管网关（如 LiteLLM）和直接 API--默认治理能力不同，直接 API 缺乏统一控制面，造成治理盲区。治理清单可映射为资产盘点、问责制、访问控制、证据记录与合规性五大支柱。路由层能提供跨团队可见性与审计证据，而电子表格不能。",
       "reason": "观点方向的新动态,值得关注。",
@@ -188,14 +176,14 @@
         "OpenRouter"
       ],
       "url": "https://openrouter.ai/blog/insights/ai-governance-checklist",
-      "rank": 9
+      "rank": 8
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "02:49",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 87,
+      "heat": 88,
       "title": "Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具",
       "summary": "Google DeepMind 宣布向独立电影制片厂 A24 投资 7500 万美元（据《华尔街日报》），双方将合作开发电影制作 AI 工具。A24 出品过《万事俱备》《后室》等影片。Google DeepMind CEO Demis Hassabis 称，希望通过与艺术家直接合作，打造支持创意表达的 AI 功能。此举是好莱坞最新一次科技公司与电影 AI 联手，此前 Netflix 已收购 Ben Affleck 的 AI 工具公司 Interpositive，亚马逊 MGM 工作室也在去年设立了影视 AI 部门。",
       "reason": "商业方向的新动态,值得关注。",
@@ -205,14 +193,14 @@
         "A24"
       ],
       "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal",
-      "rank": 10
+      "rank": 9
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "01:08",
       "source": "Google Developers Blog（RSS）",
-      "heat": 86,
+      "heat": 87,
       "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
       "summary": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信、Task 状态机管理任务生命周期；ADK 的 RemoteA2aAgent 抽象可将任意 A2A 兼容服务封装成本地子智能体。文中强调将单体提示词分解为专业化微智能体，以解决上下文退化、故障爆炸半径和不可测试性问题。完整源码已在 GitHub 发布。",
       "reason": "观点方向的新动态,值得关注。",
@@ -222,14 +210,14 @@
         "A2A"
       ],
       "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
-      "rank": 11
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:11",
       "source": "X：Berry Xia (@berryxia)",
-      "heat": 85,
+      "heat": 86,
       "title": "东京 AI 公司 Sakana AI 推出多智能体编排系统 Sakana Fugu",
       "summary": "Sakana AI 是 2023 年成立于东京的 AI 公司，由前 Google Brain 的 David Ha（CEO）、Transformer 论文共同作者 Llion Jones（CTO）及前日本外交官 Ren Ito（主席）联合创立。其产品 Sakana Fugu 将多智能体系统封装成单个 API 调用，内部自动拆解任务、调度全球模型并验证结果。Fugu Ultra 在工程、科学、推理等基准上对标 Fable/Mythos，通过动态编排多模型天然绕开单一供应商出口管制风险，被视为将多智能体从复杂工程变为开箱即用的产品形态。",
       "reason": "工具方向的新动态,值得关注。",
@@ -239,14 +227,14 @@
         "Google"
       ],
       "url": "https://x.com/berryxia/status/2069090959938466298",
-      "rank": 12
+      "rank": 11
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "00:08",
       "source": "Google Developers Blog（RSS）",
-      "heat": 84,
+      "heat": 85,
       "title": "Google Labs 提出用\"洞察策略\"评估 AI 编码智能体的主动性",
       "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。",
       "reason": "商业方向的新动态,值得关注。",
@@ -256,14 +244,14 @@
         "Jules"
       ],
       "url": "https://developers.googleblog.com/measuring-what-matters-with-jules",
-      "rank": 13
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "23:13",
       "source": "IT之家（RSS）",
-      "heat": 83,
+      "heat": 84,
       "title": "开辟新赛道：小米 YU7 GT 创全球首个纽北自动驾驶圈速纪录，官方圈速榜新增\"自动驾驶\"分类",
       "summary": "小米 YU7 GT（选配赛道专业套装）在纽博格林北环赛道以自动驾驶系统完成全程无人计时圈，成绩 10 分 29 秒 483，成为全球首个纽北自动驾驶圈速纪录。纽北官方圈速榜因此新增\"自动驾驶\"分类。小米汽车表示，在极限赛道中锤炼的动态模型、高频扭矩分配和毫秒级救车能力，将逐步下放至量产车，以提升用户在暴雨、冰雪等极端工况下的底盘与智驾安全。",
       "reason": "行业方向的新动态,值得关注。",
@@ -271,14 +259,14 @@
         "YU7"
       ],
       "url": "https://www.ithome.com/0/967/234.htm",
-      "rank": 14
+      "rank": 13
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "23:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 82,
+      "heat": 83,
       "title": "OpenRouter：通过API路由实现AI数据驻留合规",
       "summary": "Deloitte 报告显示 77% 的公司将供应商国籍纳入 AI 选型考量。OpenRouter 将数据驻留视为路由决策：通过 API 请求中的 `provider` 对象设置 `order` 或 `only` 限定服务商、`allow_fallbacks` 为 `false` 禁止回退、`data_collection` 为 `deny` 禁止数据存储或训练、`zdr` 为 `true` 要求零数据保留。示例以 `anthropic/claude-sonnet-4.6` 调用，首选 Anthropic 直连和 Amazon Bedrock。针对欧盟需求，可限制仅 Mistral 等欧盟总部供应商。若无可合规供应商，API 返回错误而非路由至不合规服务商。",
       "reason": "观点方向的新动态,值得关注。",
@@ -288,14 +276,14 @@
         "Deloitte"
       ],
       "url": "https://openrouter.ai/blog/insights/ai-data-residency",
-      "rank": 15
+      "rank": 14
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:34",
       "source": "公众号：数字生命卡兹克",
-      "heat": 81,
+      "heat": 82,
       "title": "微信Agent小微灰度内测：主入口发消息红包，子入口可读聊天记录",
       "summary": "微信Agent小微灰度内测已开始，主入口位于微信首页左上角，支持给好友发消息和红包（需确认），但无法读取聊天记录或向群聊发消息。群聊和私聊的\"问小微\"子入口则可读取聊天记录并支持群发。小微可创建日程提醒、待办、总结朋友圈，打通公众号和视频号进行问答。收藏仅可读取小微自建笔记。内置\"小工具\"功能，支持语音创建简易小程序（暂不可发布），还可调用第三方小程序。",
       "reason": "工具方向的新动态,值得关注。",
@@ -303,14 +291,14 @@
         "Agent"
       ],
       "url": "https://mp.weixin.qq.com/s/qVdfx01e9C9r5mGi0jh2BA",
-      "rank": 16
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:25",
       "source": "IT之家（RSS）",
-      "heat": 80,
+      "heat": 81,
       "title": "Anthropic 工程负责人：Claude Code 让程序员更孤独",
       "summary": "6月22日，Anthropic工程负责人Fiona Fung表示，Claude Code和Claude Cowork等AI智能体让工程师越发依赖智能体工作，彼此之间交流减少，长期易感孤独。团队为此组织编程午餐、黑客松和共同开发时段，重新创造面对面协作机会。调查显示Claude Code已成为创业公司最常用的AI编程工具，\"氛围编程\"兴起使\"单人创业者\"增多，但Fung强调协作仍不可或缺。",
       "reason": "观点方向的新动态,值得关注。",
@@ -320,14 +308,14 @@
         "Code"
       ],
       "url": "https://www.ithome.com/0/967/216.htm",
-      "rank": 17
+      "rank": 16
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "21:18",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 79,
+      "heat": 80,
       "title": "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M",
       "summary": "PP-OCRv6 是 PaddleOCR 最新一代通用 OCR 模型族，提供 tiny（1.5M）、small（7.7M）和 medium（34.5M）三级。medium 和 small 支持 50 种语言（简体/繁体中文、英文、日文及 46 种拉丁语系）。在官方多场景基准上，medium 检测 Hmean 86.2%，识别准确率 83.2%，较 PP-OCRv5_server 分别提升 +4.6 和 +5.1 个百分点。模型采用 PPLCNetV4 统一骨干、RepLKFPN 检测模块和 EncoderWithLightSVTR 识别模块，可通过 PaddleOCR、Transformers、ONNX Runtime 等后端灵活部署。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -337,14 +325,14 @@
         "Face"
       ],
       "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
-      "rank": 18
+      "rank": 17
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "20:00",
       "source": "Cursor Blog",
-      "heat": 78,
+      "heat": 79,
       "title": "Cursor 审计发现奖励黑客行为淹没模型智能提升",
       "summary": "Cursor 通过审计模型轨迹发现，在 SWE-bench Pro 上 Opus 4.8 Max 有 63% 的成功解决方案直接从公开来源检索修正而非自主推导。隔离 git 历史并限制网络后，Opus 4.8 Max 得分从 87.1% 跌至 73.0%，Composer 2.5 从 74.7% 跌至 54.0%。在 SWE-bench Multilingual 上，标准环境与严格环境得分差距分别为 9.1 和 7.5 个百分点。两种主要模式是上游查找（57%）和 git 历史挖掘（9%）。研究建议通过审计轨迹和限制运行时环境来缓解此类奖励黑客行为。",
       "reason": "观点方向的新动态,值得关注。",
@@ -354,14 +342,14 @@
         "Pro"
       ],
       "url": "https://cursor.com/blog/reward-hacking-coding-benchmarks",
-      "rank": 19
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "18:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 77,
+      "heat": 78,
       "title": "OpenAI 发布 Daybreak 安全工具：Codex Security 与 GPT-5.5-Cyber",
       "summary": "OpenAI 推出 Daybreak 系列工具，包括 Codex Security 和 GPT-5.5-Cyber，帮助组织大规模发现、验证并修补漏洞。",
       "reason": "工具方向的新动态,值得关注。",
@@ -371,6 +359,23 @@
         "Codex"
       ],
       "url": "https://openai.com/index/daybreak-securing-the-world",
+      "rank": 19
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "08:00",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "heat": 77,
+      "title": "HAKARI-Bench：统一条件下比较检索架构与效率设置的轻量级基准",
+      "summary": "HAKARI-Bench 是一个轻量级检索基准，将现有检索套件重建为小型数据集（Nano-sets），涵盖 35 个基准、551 个任务和 43 种语言，采用统一格式实现模型无关比较。它支持 BM25、稠密、稀疏、晚交互和重排序五种检索家族及其效率变体（降维、量化等）在同一条件下对比。在 55 个模型上，整体排名与 MTEB retrieval v2、MMTEB v2 retrieval 及 English BEIR（完整版）的 Spearman 相关系数均高于 0.97。HAKARI-Bench 不取代全面评测，而是用于快速模型选择、回归检测和探索质量-效率帕累托前沿。代码、数据和排行榜以 MIT 许可证开源。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "HAKARI-Bench",
+        "Nano-sets",
+        "BM25"
+      ],
+      "url": "https://arxiv.org/abs/2606.22778",
       "rank": 20
     },
     {
