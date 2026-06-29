@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "10:08",
+      "source": "公众号：数字生命卡兹克",
+      "heat": 96,
+      "title": "分享两个Vibe Coding必备的实用Prompt：第一性原理与对抗式审查",
+      "summary": "作者分享Vibe Coding中两个关键Prompt：一是\"从第一性原理出发\"，强制AI跳出类比推理，从基本事实重新推导本质，曾帮作者发现AIHOT抓取海外信源的底层流量路由隐患并彻底重构；二是\"对抗式审查\"，让AI站在恶意用户角度攻防式审查代码，检出OOM死循环、未来时间污染等手工难发现的BUG。两个Prompt形成生成与验证闭环，使纯Vibe Coding项目AIHOT最近一周请求量超千万次。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Vibe",
+        "Coding",
+        "Prompt"
+      ],
+      "url": "https://mp.weixin.qq.com/s/umPqTD_-IubbhXIgiS47eQ",
+      "rank": 1
+    },
+    {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "01:03",
       "source": "Nathan Lambert：Interconnects（RSS）",
-      "heat": 96,
+      "heat": 95,
       "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
       "summary": "开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。Cohere 以 Apache 2.0 开源其旗舰模型 Command A+（05-2026-bf16），这是一款 218B-A25B MoE 模型，具备多模态、多语言和智能体能力。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "Cohere"
       ],
       "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:58",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 95,
+      "heat": 94,
       "title": "Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由",
       "summary": "Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。",
       "reason": "工具方向的新动态,值得关注。",
@@ -77,14 +94,16 @@
         "RouteLLM"
       ],
       "url": "https://github.com/itsthelore/wayfinder-router",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "18:50",
       "source": "X：Elon Musk (@elonmusk, xAI)",
-      "heat": 94,
+      "heat": 93,
       "title": "Grok 4.5 私测于 SpaceX 和 Tesla，性能接近 Opus",
       "summary": "Grok 4.5，基于我们的1.5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。初步评估显示其性能接近，或许超越Opus。\n\n强化学习仍在持续显著改进模型，Grok Build工具链也在日益完善。\n\n所有参与者的出色工作！\n\n今年，@SpaceX 将每月发布完全从头训练的新模型。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -94,16 +113,14 @@
         "Tesla"
       ],
       "url": "https://x.com/elonmusk/status/2071184354756477041",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "18:16",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 93,
+      "heat": 92,
       "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
       "summary": "普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.8（2780万美元）和GPT-5.5（2130万美元）在最佳运行中超过起始资本。一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。多数模型无法保持连贯策略，在模拟结束前破产。该测试旨在衡量AI的长期战略决策能力。",
       "reason": "商业方向的新动态,值得关注。",
@@ -113,14 +130,14 @@
         "100万"
       ],
       "url": "https://the-decoder.com/only-three-ai-models-finished-above-starting-capital-in-a-500-day-startup-survival-test",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "15:44",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "新浪开源VibeThinker-3B：推理可压缩，事实知识不能",
       "summary": "新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.2等大200-333倍的模型，LiveCodeBench超越所有20B以下模型，LeetCode竞赛解决123/128题超过GPT-5.2、Kimi K2.5等。但知识密集型GPQA-Diamond大幅落后。模型基于阿里Qwen2.5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。研究提出\"参数压缩-覆盖假说\"：逻辑推理依赖少数可压缩模式，而广泛世界知识仍需大参数。模型已开源。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -130,14 +147,14 @@
         "AIME26"
       ],
       "url": "https://the-decoder.com/sinas-open-model-vibethinker-3b-aims-to-show-reasoning-compresses-well-but-factual-knowledge-doesnt",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "11:55",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 91,
+      "heat": 90,
       "title": "阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具",
       "summary": "Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。",
       "reason": "工具方向的新动态,值得关注。",
@@ -147,14 +164,14 @@
         "Claude"
       ],
       "url": "https://github.com/kageroumado/adrafinil",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "10:45",
       "source": "IT之家（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "四大顶级AI对决《文明VI》：Claude核平法国仍输，暴露感知与执行短板",
       "summary": "英国前首相府数据科学家Liam Wilkinson搭建76个MCP工具，将Claude Opus 4.6、GPT-5.4、Gemini 3.1 Pro等四个模型放入《文明VI》进行23场对局。Claude扮演葡萄牙时，因法国文化胜利逼近，花50回合研发核弹核平图卢兹，但法国最终以外交胜利获胜。Wilkinson发现：AI主动检查全局状态仅占1-2%（感知盲区），计划后10回合内执行率仅48-66%（知行差距）。结论是智商非瓶颈，感知与执行才是关键。",
       "reason": "观点方向的新动态,值得关注。",
@@ -164,14 +181,14 @@
         "Wilkinson"
       ],
       "url": "https://www.ithome.com/0/969/570.htm",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:51",
       "source": "X：cb_doge (@cb_doge)",
-      "heat": 89,
+      "heat": 88,
       "title": "SpaceX 注册 SpaceXAI 商标，将合并 xAI",
       "summary": "消息：SpaceX 刚刚注册了\"SpaceXAI\"商标。\n\n埃隆·马斯克表示 xAI 将解散，不再作为独立公司，因此它将只是 SpaceXAI，SpaceX 的 AI 产品。",
       "reason": "行业方向的新动态,值得关注。",
@@ -180,14 +197,14 @@
         "SpaceXAI"
       ],
       "url": "https://x.com/cb_doge/status/2070973276562530507",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "01:05",
       "source": "X：Berry Xia (@berryxia)",
-      "heat": 88,
+      "heat": 87,
       "title": "苹果Vision负责人跳槽OpenAI，触控OLED MacBook用M5芯片",
       "summary": "2026年6月26日，Mark Gurman称苹果Vision产品组副总裁Paul Meade下周离职加入OpenAI硬件部门。他负责Vision Pro、无屏幕AI智能眼镜及AR眼镜研发。苹果计划首款触控OLED MacBook使用M5 Pro/Max芯片，2026年底到2027年初发布；M7 Pro/Max版本2027年底跟进。苹果此前因涨价市值蒸发2300多亿美元。核心高管流失至OpenAI凸显AI硬件竞争加速。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -197,14 +214,14 @@
         "OLED"
       ],
       "url": "https://x.com/berryxia/status/2070916520822321292",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "00:59",
       "source": "MarkTechPost（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
       "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60-85% 和 57-78%。离线测试中，接受长度比 Eagle3 高 26-31%，比 DFlash 高 16-18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
       "reason": "研究方向的新动态,值得关注。",
@@ -214,14 +231,14 @@
         "DeepSeek-V4"
       ],
       "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "23:39",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 86,
+      "heat": 85,
       "title": "一次失败的（民族国家？）攻击的剖析",
       "summary": "作者收到伪装成新加坡VC Lua Ventures的虚假面试邮件，要求完成一个TypeScript仓库的\"测试\"。作者将仓库交给Claude扫描，在`typescript+5.9.2.patch`中发现base64混淆载荷，该载荷在`patch-package`安装时触发，向`~/.cache-`等目录写入`payload.js`和`mutex.js`，构成后门（命名PinpinRAT）。攻击者使用虚构身份和空洞LinkedIn资料，目标是作者在crates.io上的Rust包。相关信息已报告加拿大CCCS等机构。",
       "reason": "观点方向的新动态,值得关注。",
@@ -231,14 +248,14 @@
         "TypeScript"
       ],
       "url": "https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:02",
       "source": "X：Runway (@runwayml)",
-      "heat": 85,
+      "heat": 84,
       "title": "Runway API 推出广告本地化 Recipe",
       "summary": "广告本地化现在可通过 Runway API 以 Recipe 形式使用。\n\n现在您可以通过单次 API 调用翻译静态广告和图形资产。",
       "reason": "工具方向的新动态,值得关注。",
@@ -248,14 +265,14 @@
         "Recipe"
       ],
       "url": "https://x.com/runwayml/status/2070855164584726791",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "20:25",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
       "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
       "reason": "行业方向的新动态,值得关注。",
@@ -265,14 +282,14 @@
         "Raimondo"
       ],
       "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "16:16",
       "source": "IT之家（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "AI 账单失控后 DeepSeek 成\"香饽饽\"，部分美国企业已 100% 切换",
       "summary": "美国企业面临 AI 账单失控，开始转向 Token 最小化策略。旧金山公司 Lindy 此前主要调用 Anthropic 的 Claude 模型，每月 AI 账单超支甚至超过员工工资。该公司 CEO 弗洛·克里维洛表示，本月初已将 100% 流量切换到 DeepSeek，预计未来几个月可节省数百万美元。企业开始采用按任务匹配模型的\"模型路由\"，不再将最贵的前沿模型用于所有场景。部分客户已决定暂停 AI 投入，待证明投资回报率后再继续。",
       "reason": "商业方向的新动态,值得关注。",
@@ -282,14 +299,14 @@
         "Lindy"
       ],
       "url": "https://www.ithome.com/0/969/400.htm",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "11:39",
       "source": "IT之家（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "阿里千问输入法上线 macOS 版：最快 300 字/分，AI 自动润色",
       "summary": "阿里千问输入法 macOS 版今日上线官网，支持最快 300 字/分的 AI 语音输入，可自动润色、将口语转为工整文字，并支持 9 种方言，纯净无广告。官方预告 iOS、Android、Windows 版将于近日发布。此前千问团队已于今年 5 月推出千问语音输入法（千问 App 内的组件），具备去语气词、纠错、格式化整理及基于上下文的智能回复等能力，而本次上线的输入法则定位为独立 App，填补千问在移动端 AI 输入法赛道的空白。",
       "reason": "工具方向的新动态,值得关注。",
@@ -299,14 +316,14 @@
         "App"
       ],
       "url": "https://www.ithome.com/0/969/334.htm",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "09:43",
       "source": "IT之家（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "国家统计局：1-5月规上工业企业利润增18.8%，电子行业利润增103.9%贡献43.1%",
       "summary": "1-5月全国规上工业企业利润同比增18.8%。电子行业利润增103.9%，贡献率43.1%，主因全球AI技术变革推动高端算力芯片和存储芯片需求爆发。原材料制造业利润增83.1%，其中有色增117.1%、化工增71.6%。高技术制造业利润增44.7%，电子专用材料制造增665.4%。企业每百元营收成本降0.59元，营收利润率5.56%，为2024年以来累计最高。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -314,14 +331,14 @@
         "基础设施"
       ],
       "url": "https://www.ithome.com/0/969/311.htm",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "07:31",
       "source": "MarkTechPost（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
       "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。",
       "reason": "研究方向的新动态,值得关注。",
@@ -331,14 +348,14 @@
         "Pro"
       ],
       "url": "https://www.marktechpost.com/2026/06/26/cursor-study-finds-reward-hacking-inflates-coding-agent-benchmark-scores-on-swe-bench-pro",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:04",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "纽约时报修订诉讼，指控微软为OpenAI建造版权侵权超级计算机",
       "summary": "《纽约时报》周四提交经大量编辑的法庭文件，提议修订对OpenAI和微软的版权诉讼，明确指控微软通过建造全球最强大的超级计算系统之一，主动鼓励OpenAI窃取其作品。此举源于最高法院在Cox案中确立的新帮助侵权标准，要求原告证明被告有意诱导非法行为。《纽约时报》认为新证据显示该超级计算机专为帮助OpenAI未经许可训练AI而设计，其文章在训练数据中被加权处理。微软称修订是\"挽救不利先例的最后手段\"。",
       "reason": "行业方向的新动态,值得关注。",
@@ -347,14 +364,14 @@
         "Cox"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:51",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 78,
+      "heat": 77,
       "title": "华盛顿邮报报告：AI聊天机器人存在左翼偏见",
       "summary": "《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。GPT-5.5仅给出左倾立场占80%，双方立场17%，右倾3%；Gemini 3.1 Pro则93%给出双方立场，左倾仅7%；Claude Opus 4.8双方立场占57%；Grok 4.3是唯一右倾占33%的模型。文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。",
       "reason": "观点方向的新动态,值得关注。",
@@ -364,14 +381,14 @@
         "Pro"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2070550479621488896",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "00:40",
       "source": "Hacker News：AI 热帖",
-      "heat": 77,
+      "heat": 76,
       "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
       "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -381,22 +398,6 @@
         "Code"
       ],
       "url": "https://github.com/workweave/router",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "23:51",
-      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-      "heat": 76,
-      "title": "下一个重大突破：AI在工作中学习",
-      "summary": "AI实验室的研究赌注是：在数千个多样化RL环境中训练模型完成数百万可验证任务，就能构建AGI。这种训练会培养出能连续数周处理开放任务、应对错误和歧义的问题解决技能。虽然模型训练时的样本效率仅为人类的百万分之一，但训练成本是一次性的，可摊销到数十亿次用户会话中；真正重要的是模型在单个会话内的智能和样本效率，而这随着RL训练正在提升。持续学习或许不再必要--如果上下文内的学习能力足够强、时间跨度足够长，就无需将经验蒸馏回权重。Transformer架构创新已能大幅扩展上下文存储，未来可能实现任意大的上下文窗口。论文还指出，一个领域不仅需要可验证性，还需要可碾压性--能在确定性、可重播的模拟器中并行运行大量rollout。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "AGI",
-        "Transformer"
-      ],
-      "url": "https://www.dwarkesh.com/p/the-next-paradigm",
       "rank": 21
     }
   ]
