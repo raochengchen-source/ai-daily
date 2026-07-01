@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "10:24",
+      "source": "公众号：龙猫LongCat（美团）",
+      "heat": 96,
+      "title": "美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型",
+      "summary": "美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "LongCat-2.0",
+        "48B",
+        "LSA"
+      ],
+      "url": "https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow",
+      "rank": 1
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:14",
       "source": "X：邵猛 (@shao__meng)",
-      "heat": 96,
+      "heat": 95,
       "title": "mattpocockuk 的 /writing-great-skills：编写可预测 AI Skill 的指南",
       "summary": "mattpocockuk 的 /writing-great-skills 成为其最常调用的 Skill，指导如何编写稳定可预测的 AI Skill。核心：以过程可预测为目标；区分 model-invoked（自动触发）与 user-invoked（用户调用），description 应作触发器；采用三层信息结构（主步骤、参考、外部文件）实现渐进式披露；每步骤需明确完成标准；拆分 Skill 是为了控制模型注意力；利用 leading word 压缩行为要求。同时诊断五种失败模式：Premature completion、Duplication、Sediment、Sprawl、No-op，并提供 No-op 测试作为判断句子是否有效的标准。",
       "reason": "观点方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "Duplication"
       ],
       "url": "https://x.com/shao__meng/status/2072126769986220157",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "08:11",
       "source": "公众号：数字生命卡兹克",
-      "heat": 95,
+      "heat": 94,
       "title": "Anthropic在Claude Code中植入隐写术代码识别中国用户",
       "summary": "Anthropic在Claude Code中植入隐写术：读取本地时区（Asia/Shanghai或Asia/Urumqi）和ANTHROPIC_BASE_URL环境变量，与一份经base64+XOR（密钥91）加密的147个域名列表（含美团、字节跳动、月之暗面等）比对，识别中国用户。识别后，在请求发送前将系统提示词中日期字符串的单引号（U+0027）替换为其他Unicode字符，连字符改为斜杠，作为2-3比特分类标记传回服务器。该隐蔽行为被社区逆向发现后引发争议，被认为破坏用户信任。",
       "reason": "行业方向的新动态,值得关注。",
@@ -77,14 +94,16 @@
         "Code"
       ],
       "url": "https://mp.weixin.qq.com/s/yLb4T2UC16ebKHApdBbgWw",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:43",
       "source": "IT之家（RSS）",
-      "heat": 94,
+      "heat": 93,
       "title": "库克与欧盟科技主管就新版Siri AI举行建设性会谈",
       "summary": "苹果CEO库克与欧盟科技事务负责人维尔库宁就新版Siri AI在欧推出举行建设性视频会议。新版Siri将转为可调用用户个人数据的聊天机器人，但因《数字市场法》互操作义务苹果拒绝向竞争对手开放同等数据权限，暂不在欧盟iPhone和iPad上推出。苹果提出\"可信系统代理\"方案，拟在设备与第三方AI模型间增加软件层，但未开发，并要求18个月监管宽限期，遭欧盟拒绝。欧盟收到数百封消费者邮件及死亡威胁。",
       "reason": "行业方向的新动态,值得关注。",
@@ -94,16 +113,14 @@
         "Phone"
       ],
       "url": "https://www.ithome.com/0/970/810.htm",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "06:32",
       "source": "X：AI Safety Memes (@AISafetyMemes)",
-      "heat": 93,
+      "heat": 92,
       "title": "AI 用 prover-verifier LLM 循环攻克 9 个未解数学难题",
       "summary": "AI Safety Memes 推文指出，AI 刚刚解决了 9 个未解决的数学问题，但全球没有记者报道。引用 @WeinsteinOmri 的推文称，采用\"prover-verifier\"LLM 循环的方法，成功解决了理论计算机科学中 9 个重大开放问题，其中包括一个困扰其长达 2 年的难题。该研究由哥伦比亚大学合作者完成，并计划将这一方法扩展到所有科学领域。",
       "reason": "研究方向的新动态,值得关注。",
@@ -113,14 +130,14 @@
         "Memes"
       ],
       "url": "https://x.com/AISafetyMemes/status/2072085914558558402",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "03:44",
       "source": "X：NotebookLM (@NotebookLM)",
-      "heat": 92,
+      "heat": 91,
       "title": "NotebookLM Short Video Overviews 全量上线 Web 英文版",
       "summary": "NotebookLM 正式向 Web 英文用户全量推出 Short Video Overviews（短视频概览）功能。该功能可将复杂资料自动转化为 60 秒竖屏视频，深入讲解任意概念。此前，这一功能已面向 Google AI Ultra 和 Pro 订阅者（移动端及 Web）推出，免费用户即将可用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -130,14 +147,14 @@
         "Video"
       ],
       "url": "https://x.com/NotebookLM/status/2072043680442245276",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:02",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 91,
+      "heat": 90,
       "title": "Claude Sonnet 5 发布",
       "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -147,14 +164,14 @@
         "Anthropic"
       ],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "01:52",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "Acti 将 AI 智能体直接放入手机键盘",
       "summary": "新加坡初创公司 Acti 发布基于 Google Gemini 的智能体键盘，可代替用户在应用中执行操作。核心功能 Skills 允许用自然语言创建快捷方式，如长按 T 键翻译消息、C 键发送会议链接。早期测试者两周内创建超 1000 个 Skills。采用本地优先架构，默认不访问私人消息。公司获 530 万美元种子轮融资，由 BITKRAFT Ventures 领投，现已开放下载。",
       "reason": "商业方向的新动态,值得关注。",
@@ -164,14 +181,14 @@
         "Gemini"
       ],
       "url": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "01:32",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 89,
+      "heat": 88,
       "title": "Claude Science 科研工作台正式上线",
       "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器轨迹等），内置reviewer agent自动检查引用与计算错误。通过NVIDIA BioNeMo接入Evo 2、Boltz-2等模型，也支持连接自有模型与管道。今日以beta版面向Claude Pro、Max、Team和Enterprise用户开放。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -181,14 +198,14 @@
         "Anthropic"
       ],
       "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "01:28",
       "source": "Claude：Blog（网页）",
-      "heat": 88,
+      "heat": 87,
       "title": "Claude Code 入门：智能体循环",
       "summary": "Claude Code 团队将智能体循环定义为 agent 重复工作直到满足停止条件的过程，并划分出四种主要类型：turn-based 循环（用户提示触发，Claude 自行判断完成或需更多上下文）、goal-based 循环（通过 `/goal` 命令设定可验证完成标准与最大轮次）、time-based 循环（通过 `/loop` 按时间间隔重复执行，可用 `/schedule` 移至云端）、以及 proactive 循环（基于事件或计划自动运行，无人实时参与）。文章还介绍了如何编写 SKILL.md 文件将人工验证步骤编码，让 Claude 进行端到端自检，减少 turn-based 循环中的手动操作。",
       "reason": "商业方向的新动态,值得关注。",
@@ -198,14 +215,14 @@
         "SKILL.md"
       ],
       "url": "https://claude.com/blog/getting-started-with-loops",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:17",
       "source": "Google Developers Blog（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "ADK Go 2.0 发布：构建可靠的多智能体应用，新增基于图的工作流引擎、人工参与循环与动态编排",
       "summary": "Agent Development Kit （ADK） for Go 2.0 发布，引入了一类基于图的工作流引擎，用于组合复杂多智能体应用。新版本内置人工参与循环（HITL）编排、使用纯 Go 代码的动态执行、以及指数退避重试等自动弹性特性。统一执行模型后，单智能体应用与复杂图均运行在同一运行时上，简化了遥测与状态持久化。",
       "reason": "工具方向的新动态,值得关注。",
@@ -215,14 +232,14 @@
         "Development"
       ],
       "url": "https://developers.googleblog.com/announcing-adk-go-20",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:59",
       "source": "Apple：Newsroom（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "Apple Creator Studio 更新：更智能、更快速、更互联",
       "summary": "Apple Creator Studio 推出多项 AI 增强更新。Final Cut Pro 新增 on-device AI 驱动的 Generate Captions（自动转录音频生成字幕）和 Edit Detection（自动检测剪辑点）。Mac 版加入 Auto Mask（自动识别皮肤、天空等主体）、增强的 Match Color 和 Advanced Trimming。支持将帧发送至 Pixelmator Pro 编辑，并在 Keynote、Pages、Numbers 中直接调用 Pixelmator Pro 修改图片。Logic Pro 新增 Grammy 制作人制作的 Producer Project 及 Chord ID 改进。订阅价 $12.99/月或 $129/年，新用户免费试用一个月，教育用户 $2.99/月。",
       "reason": "工具方向的新动态,值得关注。",
@@ -232,14 +249,14 @@
         "Studio"
       ],
       "url": "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:54",
       "source": "Simon Willison 博客",
-      "heat": 85,
+      "heat": 84,
       "title": "用 shot-scraper video 让 AI 智能体录制工作演示视频",
       "summary": "shot-scraper 1.10 新增 shot-scraper video 命令，支持通过 storyboard.yml 文件定义操作步骤，并利用 Playwright 录制浏览器视频。演示视频展示了 Datasette 中从粘贴的 CSV/TSV/JSON 数据创建新表的功能。该功能依赖 Playwright 1.61.0 新增的 screencast 机制，解决了此前视频开头白帧、宽度固定 800px 等问题。开发者 Simon Willison 强调，将 --help 输出设计得足够详细，可使编码 Agent 直接利用该命令生成演示视频。",
       "reason": "工具方向的新动态,值得关注。",
@@ -249,14 +266,14 @@
         "CSV"
       ],
       "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:06",
       "source": "X：Claude Devs (@ClaudeDevs)",
-      "heat": 84,
+      "heat": 83,
       "title": "Claude Desktop 推出 Linux 公测版",
       "summary": "Claude Desktop 现已在 Linux（Ubuntu 和 Debian）上推出测试版。\n\n除了浏览器和终端，你现在可以在所有付费计划中获得一流的桌面体验，包括 Claude Code、Claude Cowork 和聊天。",
       "reason": "工具方向的新动态,值得关注。",
@@ -266,14 +283,14 @@
         "Linux"
       ],
       "url": "https://x.com/ClaudeDevs/status/2071988881717871065",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "00:02",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash",
       "summary": "Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -283,14 +300,14 @@
         "Nano"
       ],
       "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "23:53",
       "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "Grant Sanderson 谈 AI 与数学的未来",
       "summary": "3Blue1Brown 创办人 Grant Sanderson 正在制作记录 AI 在数学领域进展的新项目。他在与 Dwarkesh Patel 的对谈中指出，AI 在 IMO 获金牌并不等于 AGI，只是又一个被攻克的基准。即使 AI 未来解决千禧年大奖难题，仍可能存在大量人类任务无法被自动化。对话还探讨了概念突破验证周期可长达一个世纪、Riemann 假设的 AI 证明能否被人类理解、AI 能否在已有文献间发现隐藏联系，以及现实经济任务难以套用强化学习环境等话题。",
       "reason": "观点方向的新动态,值得关注。",
@@ -300,14 +317,14 @@
         "3B"
       ],
       "url": "https://www.dwarkesh.com/p/grant-sanderson-2",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "19:14",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
       "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
       "reason": "商业方向的新动态,值得关注。",
@@ -317,14 +334,14 @@
         "Covelen"
       ],
       "url": "https://the-decoder.com/meta-secretly-tested-chatgpt-gemini-and-character-ai-with-thousands-of-minor-perspective-crisis-prompts",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "17:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 80,
+      "heat": 79,
       "title": "OpenAI Signals 数据揭示 ChatGPT 全球采用趋势",
       "summary": "OpenAI Signals 数据显示，用户注册六个月后日均消息量增加50%，尝试任务种类翻倍。自2023年7月以来，各大洲活跃用户均大幅增长，非洲和亚洲增速最快，低人类发展指数国家增长尤为显著。用户群体更加多元化，女性名字用户已占全球多数，巴西、哥伦比亚、波兰和纳米比亚等国女性用户显著多于男性。非英语用户占活跃用户半数以上，领先语言为西班牙语、葡萄牙语和阿拉伯语；乌兹别克语、哈萨克语和缅甸语用户占比增长百分比最大。",
       "reason": "观点方向的新动态,值得关注。",
@@ -334,14 +351,14 @@
         "ChatGPT"
       ],
       "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "15:56",
       "source": "IT之家（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
       "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
       "reason": "商业方向的新动态,值得关注。",
@@ -351,14 +368,14 @@
         "OpenAI"
       ],
       "url": "https://www.ithome.com/0/970/583.htm",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "14:45",
       "source": "IT之家（RSS）",
-      "heat": 78,
+      "heat": 77,
       "title": "特斯拉Cybercab量产版在奥斯汀启动公开道路工程测试",
       "summary": "2026年6月30日，特斯拉在奥斯汀公共道路启动首批量产版Cybercab工程测试。车辆无方向盘与脚踏板，配有安全监督员，马斯克发布实拍视频。从2024年10月概念车首秀到实车上路约20个月。目前不对外开放乘客，投入34台Cybercab在市中心验证硬件可靠性。Cybercab为双座车型，完全围绕无人驾驶打造，无后期改装。此前奥斯汀已有无安全员Model Y无人驾驶出租于1月启用、6月22日开放付费服务。",
       "reason": "行业方向的新动态,值得关注。",
@@ -367,23 +384,6 @@
         "Model"
       ],
       "url": "https://www.ithome.com/0/970/539.htm",
-      "rank": 19
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "13:42",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "heat": 77,
-      "title": "美团 LongCat 发布旗舰模型 LongCat-2.0",
-      "summary": "美团 LongCat 推出旗舰模型 LongCat-2.0，采用 1.6T 参数 MoE 架构（约 48B 活跃参数），原生支持 1M 上下文窗口。定价为 Input Cache $0.015/1M tokens、Input $0.75/1M tokens、Output $2.95/1M tokens。模型专为 Agentic Coding 设计，包含三大技术：LSA 稀疏注意力实现高效 1M 扩展；Zero-Compute Experts 动态激活 33B-56B 参数/token，无算力浪费；MOPD 将专家分为 Agent / Reasoning / Interaction 三组，按任务门控路由。在 SWE-bench Pro 上取得 59.5 分，性能接近主流闭源模型。现已上线 SiliconFlow Day 0 服务。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "LongCat",
-        "LongCat-2.0",
-        "MoE"
-      ],
-      "url": "https://x.com/SiliconFlowAI/status/2071831773076746715",
       "rank": 20
     },
     {
