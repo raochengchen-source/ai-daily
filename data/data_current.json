@@ -16,7 +16,7 @@
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 3
+      "count": 4
     },
     {
       "key": "model",
@@ -41,16 +41,33 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 7
+      "count": 6
     }
   ],
   "top3": [
     {
       "cat": "基础设施",
       "catKey": "infra",
+      "time": "14:32",
+      "source": "MarkTechPost（RSS）",
+      "heat": 96,
+      "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+      "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "NVIDIA",
+        "ASPIRE",
+        "UIUC"
+      ],
+      "url": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks",
+      "rank": 1
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
       "time": "13:01",
       "source": "IT之家（RSS）",
-      "heat": 96,
+      "heat": 95,
       "title": "我国研制全球首款基于可控存内计算的忆阻器神经动力学芯片",
       "summary": "北京大学集成电路学院联合中科院上海微系统所，发布全球首款基于可控存内计算的忆阻器神经动力学芯片，首次将单步运算时延压缩至2.12毫秒。芯片采用40纳米工艺，存内计算阵列与外围电路总面积0.28平方毫米，运行频率50 MHz，单步积分仅需9级流水。在脑皮层重建等任务中较当前GPU提速50至478倍，突破神经动力学实时计算瓶颈。相关成果7月3日发表于《科学》。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -59,14 +76,14 @@
         "GPU"
       ],
       "url": "https://www.ithome.com/0/972/526.htm",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:19",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 95,
+      "heat": 94,
       "title": "pxpipe：通过图像化压缩输入token降低Claude Code成本",
       "summary": "pxpipe是一个本地代理，将系统提示、工具文档和历史记录等密集文本渲染为PNG图像，利用图像token成本取决于像素尺寸的特性压缩输入token。在Fable 5模型上，约25k文本token压缩为约2.7k图像token，端到端账单降低59-70%。SWE-bench Lite 10个实例全部通过，成本从$54降至$27；SWE-bench Pro 19对测试中18对判定一致，单次请求成本降低约60%。该方法有损（精确ID等需保持文本），默认仅处理`claude-fable-5`请求，可通过`PXPIPE_MODELS`变量控制。",
       "reason": "观点方向的新动态,值得关注。",
@@ -76,14 +93,16 @@
         "PNG"
       ],
       "url": "https://github.com/teamchong/pxpipe",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:51",
       "source": "Simon Willison 博客",
-      "heat": 94,
+      "heat": 93,
       "title": "Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧",
       "summary": "Simon Willison 在 AIE 上与 Claude Code 团队交流后建议，让 Fable（以及 Opus）用自己的判断力工作，而非硬性规定行为。例如，直接让 Fable 自行决定何时编写测试，比给出具体规则更好。为应对价格即将上涨、节省 Fable token，Jesse Vincent 的另一个技巧是告诉 Fable 将较小任务委托给较低功耗模型（Sonnet 用于实质性实现、Haiku 用于机械修改），主循环保留判断、审计和数据合成等任务。Willison 已将提示词存入 Claude Code 记忆文件，实际效果良好，Fable token 消耗速度明显下降。",
       "reason": "观点方向的新动态,值得关注。",
@@ -93,16 +112,14 @@
         "Willison"
       ],
       "url": "https://simonwillison.net/2026/Jul/3/judgement",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "20:25",
       "source": "X：歸藏 (@op7418)",
-      "heat": 93,
+      "heat": 92,
       "title": "藏师傅PPT与Pencil结合使用技巧",
       "summary": "用户将藏师傅的AI生成PPT导入Pencil设计软件，可在Pencil中一次性浏览所有页面并手动调整AI常见的排版问题，如元素重叠、对齐不准、字体错误。Pencil提供比PPT更强的编辑能力（对齐、嵌套、打组），支持导出网页和编辑文件，也可导出PNG后直接放入PPT演示。这种工作流昨天经朋友分享验证，大幅提升AI生成内容的可编辑性。",
       "reason": "观点方向的新动态,值得关注。",
@@ -112,14 +129,14 @@
         "PNG"
       ],
       "url": "https://x.com/op7418/status/2073020264083050811",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "19:57",
       "source": "IT之家（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "全球首例 AI Agent 勒索攻击曝光，从漏洞利用到数据库加密全程自主完成",
       "summary": "安全厂商 Sysdig 首次记录到 AI Agent\"JADEPUFFER\"自动完成的勒索攻击。攻击利用暴露的 Langflow 服务漏洞 CVE-2025-3248 远程执行 Python 代码，随后自主收集 OpenAI、Anthropic、DeepSeek、Gemini 等 API 密钥及阿里云、腾讯云、华为云、AWS、Google Cloud、Azure 等云平台凭证，通过 MinIO 默认密码访问对象存储并创建每 30 分钟连接的计划任务。横向移动到 MySQL 和 Nacos 服务器，利用数据库 Root 账号及 Nacos 漏洞 CVE-2021-29441 获取管理权限，加密全部 1342 条配置数据，留下包含比特币钱包地址和 Proton Mail 的勒索信息。AI 在首次操作失败后 31 秒内自主完成错误分析与修复，累计执行超过 600 个攻击载荷，全程无需人类操作。",
       "reason": "行业方向的新动态,值得关注。",
@@ -129,14 +146,14 @@
         "JADEPUFFER"
       ],
       "url": "https://www.ithome.com/0/972/424.htm",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "19:17",
       "source": "公众号：生数科技（Vidu·视频）",
-      "heat": 91,
+      "heat": 90,
       "title": "生数科技发布 Vidu S1，推动视频生成迈向\"实时交互\"新时代",
       "summary": "7月3日，生数科技在2026全球数字经济大会上发布Vidu S1实时交互模型，支持实时视频通话和语音控制视频走向，实现无限时长连续互动。模型采用自回归扩散路线，基于已生成画面和语音指令持续预测后续内容；无需传统建模，一张图片即可创建角色并自定义音色。Vidu S1在540P分辨率下实现25FPS（最高42FPS）实时生成，通过TurboDiffusion等技术降低计算成本，已开启内测。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -146,14 +163,14 @@
         "TurboDiffusion"
       ],
       "url": "https://mp.weixin.qq.com/s/RuukpnoOA2tI0ERCNrLgtQ",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "18:03",
       "source": "公众号：京东JoyAI",
-      "heat": 90,
+      "heat": 89,
       "title": "JoyAI App 上线 UGC 数字人功能，用户可\"捏\"出专属虚拟玩伴",
       "summary": "JoyAI App 近日上线 UGC 数字人功能，用户只需上传一张照片即可生成专属虚拟数字分身，支持一键复刻写实形象或通过模板重塑为卡通风格，搭配用户自己的语音即可解锁专属陪伴。该功能复用\"万能博士\"技术底座，集成 JoyAI 语言、语音、数字人大模型，实现行业领先的全双工对话，支持随时打断、自然接话。数字人兼具情绪陪伴与全能助手属性，可提供点外卖、金融咨询、学英语、规划行程等生活服务。",
       "reason": "工具方向的新动态,值得关注。",
@@ -163,14 +180,14 @@
         "UGC"
       ],
       "url": "https://mp.weixin.qq.com/s/XfpxdblzNWa5HxahRoT9pg",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "17:59",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 89,
+      "heat": 88,
       "title": "面向 Web 开发者的 Safari MCP 服务器",
       "summary": "Safari Technology Preview 247 推出 Safari MCP 服务器，基于 Model Context Protocol，允许任何 MCP 兼容客户端连接 Safari 浏览器窗口。智能体可获取 DOM、网络请求、截图、控制台输出等信息，自主完成调试、性能分析、可访问性检查等任务。内置 `browser_console_messages`、`screenshot`、`evaluate_javascript`、`list_network_requests` 等工具。开发者安装后启用\"远程自动化与外部智能体\"选项，即可通过命令接入，减少窗口切换。",
       "reason": "工具方向的新动态,值得关注。",
@@ -180,14 +197,14 @@
         "MCP"
       ],
       "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "17:15",
       "source": "IT之家（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "国家网信办就《互联网信息服务管理办法》再次征求意见，首设\"智能信息服务\"专章规范AI服务",
       "summary": "7月3日，国家互联网信息办公室就《互联网信息服务管理办法（修订草案征求意见稿）》再次公开征求意见。草案新增\"智能信息服务\"专章，要求AI服务提供者公示技术基本原理、训练数据来源，对生成合成内容进行标识，禁止强制用户使用智能服务或利用算法扰乱网络舆论。草案还强化用户账号管理，明确对超过6个月不登录账号可依约注销；要求平台建立网络暴力信息特征库，提供屏蔽、禁止转载等防护选项。意见反馈截止8月2日。",
       "reason": "行业方向的新动态,值得关注。",
@@ -195,14 +212,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/0/972/341.htm",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "17:12",
       "source": "公众号：面壁智能（MiniCPM）",
-      "heat": 87,
+      "heat": 86,
       "title": "面壁智能发布AI全自动预训练框架ForgeTrain，8小时追平Megatron-LM",
       "summary": "面壁智能发布全球首个完全由AI编写、无人类干预的生产级大模型预训练框架ForgeTrain。该框架针对特定模型和硬件从零自动\"锻造\"专用训练代码。基准测试显示，ForgeTrain在8小时内追平Megatron-LM，1.5至2天内实现稳定反超，模型FLOPS利用率提升约8%~10%，且可迁移至不同模型（MiniCPM4-0.5B/8B）和硬件（H100及昇腾NPU）。其采用四阶段Harness优化流程，全程自动判定。面壁智能将其工程思想概括为Forge Engineering。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -212,14 +229,14 @@
         "FLOPS"
       ],
       "url": "https://mp.weixin.qq.com/s/JVBbqU1O967ktzfEPuDERQ",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "16:55",
       "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "heat": 86,
+      "heat": 85,
       "title": "Wan Video 推出\"音乐伴舞\"新功能",
       "summary": "Wan Video 新功能：**音乐伴舞** 💃\n上传一个角色，添加一首歌曲，让 Wan Video 生成与节奏同步的舞蹈视频。\n可用舞种：\n• 街舞\n• 踢踏舞\n• 拉丁舞\n• K-Pop\n• 中国古典舞\n从节拍至动作，你的角色随音乐起舞。\n\n前往 wan.video 体验音乐伴舞 👉 https://int.alibabacloud.com/m/1000412428/",
       "reason": "工具方向的新动态,值得关注。",
@@ -229,14 +246,14 @@
         "K-Pop"
       ],
       "url": "https://x.com/alibaba_cloud/status/2072967570441834771",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "14:16",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 85,
+      "heat": 84,
       "title": "《Fable》通关指南：短绳AI编程法",
       "summary": "专业开发者经过一年多研究，总结出使用AI编码代理的\"短绳方法\"。该方法要求开发者全程参与：先规划并分解任务，从不使用YOLO模式，每次变更前审查差异并拒绝不想要的更改，每个子任务后提交以防止AI误操作（如Opus曾出现破坏性行为）。最终需进行人工与AI双重PR审查，PR须注明使用模型，提交者须亲自审查自己PR的代码。即便不用前沿模型，此法也能产出超越Fable 5的代码质量。",
       "reason": "观点方向的新动态,值得关注。",
@@ -246,14 +263,14 @@
         "Opus"
       ],
       "url": "https://blog.okturtles.org/2026/07/short-leash-ai-method",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "12:56",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 84,
+      "heat": 83,
       "title": "claude-real-video ─ 让任何大语言模型（LLM）都能观看视频",
       "summary": "claude-real-video 是一个开源工具，让大语言模型基于视频画面而非字幕进行理解。它通过场景变化检测提取关键帧、滑动窗口去重并转录音频，生成干净的本地文件夹供模型读取。支持 YouTube 链接或本地文件，依赖 ffmpeg 和 Whisper，通过 pip 安装。全部处理在本地完成，不上传云端。",
       "reason": "观点方向的新动态,值得关注。",
@@ -263,14 +280,14 @@
         "Whisper"
       ],
       "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "11:27",
       "source": "IT之家（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "阿里达摩院发布超导材料发现AI智能体Elements Claw",
       "summary": "7月3日，阿里达摩院联合中国人民大学、中国科学院大学发布首个超导材料发现AI智能体Elements Claw。该智能体采用\"专通融合\"架构，基于1.25亿分子/晶体结构预训练的1B参数原子基础模型Elements，判断超导性AUC达0.996，预测临界温度平均误差小于1K。AI仅用28个GPU小时筛选240万晶体结构，预测出6.8万个候选材料，其中4种（Hf21Re25、Zr4VRe7、HfZrRe4、Zr3ScRe8）已合成并验证超导性，临界温度最高6.5K。全部240万稳定晶体数据库已开放。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -280,14 +297,14 @@
         "25亿"
       ],
       "url": "https://www.ithome.com/0/972/089.htm",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:16",
       "source": "公众号：数字生命卡兹克",
-      "heat": 82,
+      "heat": 81,
       "title": "Claude Fable 5 自主优化 AIHOT 网站 SEO/GEO 全记录",
       "summary": "作者用 Claude Fable 5 优化 AIHOT 网站的 SEO 与 GEO。模型自主启动 22 个 Agent 调研 40 分钟，发现豆包 App 每天六千多次访问未被统计等异常。规划境外加速时，否定 Claude Opus 4.8 的 Cloudflare 方案（无法国内直连/国外分流，且 2025 年起默认拦截 AI 爬虫），改用火山引擎 CDN。因需白名单，模型自行找到工单入口提交专业工单，22 分钟开通；发现工程师漏答回源 IP 网段问题，礼貌追问并补充备选方案；发现官方方案有安全漏洞，自行加暗号验证。23：30 切换域名解析，10 分钟后 616 个海外请求走新线路。最终生成运维文档，提醒边缘证书 10 月 2 日到期并附续期步骤。",
       "reason": "观点方向的新动态,值得关注。",
@@ -297,14 +314,14 @@
         "AIHOT"
       ],
       "url": "https://mp.weixin.qq.com/s/L6R_SPWlOBv6dI0wWWHQrg",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:43",
       "source": "IT之家（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "得州特斯拉致命车祸：司机嫌FSD太保守，加速踏板踩死致76岁居民死亡",
       "summary": "44岁的迈克尔·巴特勒驾驶特斯拉Model 3冲入得州住宅，致76岁玛莎·阿维拉死亡，现被控过失杀人。警方从其手机发现2026年5月多次搜索\"FSD不够激进\"\"特斯拉FSD过于保守\"等记录。特斯拉AI负责人称驾驶员将加速踏板踩到底（100%），手动操作覆盖了FSD。车辆数据显示，约6秒内加速踏板被完全踩下，时速升至117公里（超限速两倍），制动踏板始终未踩。阿维拉家属已起诉特斯拉和巴特勒，美国NHTSA和NTSB已介入调查。",
       "reason": "行业方向的新动态,值得关注。",
@@ -314,14 +331,14 @@
         "NHTSA"
       ],
       "url": "https://www.ithome.com/0/971/971.htm",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "07:38",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "扎克伯格称AI智能体开发速度未如预期",
       "summary": "Meta CEO 扎克伯格在本周内部全体会议上表示，AI 智能体的开发速度并未像高管们此前预期的那样加速。今年早些时候Meta裁减约8000名员工（约占10%），并将另外7000人调至多个AI团队，包括Agent Transformation小组。扎克伯格称裁员不够\"干净\"，原因是高管担心公司无法足够快地适应技术行业变化。他还指出以AI为中心的新公司结构所预期的好处尚未实现，但相信未来三到六个月将开始看到AI投资的改善。路透社报道，Meta今年预计在AI基础设施上投入高达1450亿美元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -331,14 +348,14 @@
         "Agent"
       ],
       "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:51",
       "source": "MarkTechPost（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控",
       "summary": "阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，嵌入网页后可通过自然语言指令直接操作 DOM 元素。与 Playwright、Puppeteer 等外部浏览器自动化工具不同，Page Agent 不依赖截图或多模态模型，而是将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作。它继承用户 cookies 和会话，无需独立后端，并支持任意 OpenAI 兼容端点的模型（示例使用 `qwen3.5-plus`）。项目采用 MIT 许可证，适合在自有应用内构建 AI 副驾、智能表单填充或无障碍控制等场景，但限于单页面范围，风险操作仍需服务端验证。",
       "reason": "工具方向的新动态,值得关注。",
@@ -348,14 +365,14 @@
         "JavaScript"
       ],
       "url": "https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "04:24",
       "source": "X：Ethan Mollick (@emollick)",
-      "heat": 78,
+      "heat": 77,
       "title": "关于Mythos和网络安全的讨论并非炒作",
       "summary": "关于Mythos和网络安全的讨论并非炒作。\n（正如任何使用Fable进行自主工作的人可能已经认识到的那样。）",
       "reason": "研究方向的新动态,值得关注。",
@@ -364,14 +381,14 @@
         "Fable"
       ],
       "url": "https://x.com/emollick/status/2072778376494895139",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:18",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "Microsoft 成立\"Frontier Company\"，斥资 25 亿美元派驻 6000 名 AI 工程师到企业客户现场",
       "summary": "Microsoft 新设业务部门\"Frontier Company\"，拨款 25 亿美元，将 6000 名行业与工程专家派驻企业客户现场，\"共同设计、共同创新、部署并持续改进 AI 系统\"。该部门由 Rodrigo Kede Lima 领导，旨在超越\"前部署工程\"模式，成为\"最大、以结果为导向的工程组织\"。Microsoft 将自己定位为 OpenAI 和 Anthropic 的\"平台中立\"替代方案，后两者也已设立专门部署公司。Microsoft 将借助埃森哲、凯捷、安永等系统集成商扩大覆盖范围。",
       "reason": "行业方向的新动态,值得关注。",
@@ -381,23 +398,6 @@
         "Company"
       ],
       "url": "https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "01:46",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 76,
-      "title": "Fable 5 仅 4.44 美元搭建 Rube Goldberg 机器",
-      "summary": "用 Fable 5 构建的鲁布·戈德堡机械，仅需 4.44 美元 👀\n提示词在此：https://www.reddit.com/r/openrouter/comments/1ulkilz/i_asked_claude_fable_5_to_build_a_rube_goldberg/",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Fable",
-        "Rube",
-        "Goldberg"
-      ],
-      "url": "https://x.com/OpenRouter/status/2072738704922439689",
       "rank": 21
     }
   ]
