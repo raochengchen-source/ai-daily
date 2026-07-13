@@ -6,8 +6,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="ai-daily-build" content="2026-07-12|1783837748">
-<title>AI 精选日报 · 2026-07-12</title>
+<meta name="ai-daily-build" content="2026-07-13|1783908463">
+<title>AI 精选日报 · 2026-07-13</title>
 <style>
 :root{
   --primary:#4982C9;--primary-deep:#2A5A9C;--primary-light:#D9E8FB;
@@ -88,7 +88,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 <script>
 // 自动防缓存:每次打开后台静默拉取最新构建戳,发现页面变旧就自动强刷一次(不打扰用户)。
 (function(){
-  var CUR = "2026-07-12|1783837748";
+  var CUR = "2026-07-13|1783908463";
   function check(){
     fetch(location.pathname + "?_=" + Date.now(), {cache:"no-store"})
       .then(function(r){return r.text();})
@@ -117,50 +117,120 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 
 <div id="selected">
   <section class="hero"><div class="container">
-    <div class="hero-badge">✨ 每日 AI 精选 · 2026-07-12 周日 · 共 21 条</div>
+    <div class="hero-badge">✨ 每日 AI 精选 · 2026-07-13 周一 · 共 21 条</div>
     <h1>今天的 AI 圈,<span class="accent">这 21 条就够了</span></h1>
     <p class="hero-sub">每日凌晨自动抓取全网最新动态,经多维度评分模型筛选,精选大模型、商业、工具、研究、基础设施等核心赛道高价值资讯。</p>
     <div class="cal-card">
       <div class="cal-icon">📅</div>
-      <div class="cal-info"><div class="label">今日日期</div><div class="date">2026-07-12 周日</div></div>
+      <div class="cal-info"><div class="label">今日日期</div><div class="date">2026-07-13 周一</div></div>
     </div>
-    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">1</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">1</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">2</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">4</span></span><span class="chip " onclick="filterCat('research',this)">研究<span class="count">4</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">6</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">3</span></span></div>
+    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">2</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">2</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">3</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">3</span></span><span class="chip " onclick="filterCat('research',this)">研究<span class="count">1</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">4</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">6</span></span></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">🏆 今日 TOP 3</div><div class="section-sub">综合热度与价值评分</div></div>
-    <div class="top3-grid"><a href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547" target="_blank" rel="noopener" class="top-card rank1" data-cat="opinion">
+    <div class="top3-grid"><a href="https://www.ithome.com/0/975/865.htm" target="_blank" rel="noopener" class="top-card rank1" data-cat="infra">
   <div class="rank-badge">1</div>
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 96</span><span>11:59</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
-  <h3>xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史</h3>
-  <div class="summary">对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示"不要读取任何文件"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭"改进模型"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Grok</span><span class="tag">#Build</span><span class="tag">#CLI</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.ithome.com/0/975/666.htm" target="_blank" rel="noopener" class="top-card" data-cat="industry">
-  <div class="rank-badge">2</div>
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 95</span><span>10:37</span><span class="dot"></span><span>IT之家（RSS）</span></div>
-  <h3>苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划</h3>
-  <div class="summary">苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#Paolo</span><span class="tag">#Pescatore</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener" class="top-card" data-cat="infra">
-  <div class="rank-badge">3</div>
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 94</span><span>10:23</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
-  <h3>Mesh LLM：在 iroh 上进行分布式人工智能计算</h3>
-  <div class="summary">Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称"Skippy"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。</div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 96</span><span>08:55</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h3>黄仁勋：英伟达季度收入逼近千亿美元，Rubin Ultra 架构未延期</h3>
+  <div class="summary">英伟达CEO黄仁勋在摩根士丹利路演中表示，公司季度营收即将逼近1000亿美元，且增长速度仍在加快。他否认下一代旗舰架构Rubin Ultra延期传闻，称其仍按计划于明年出货，当前机架设计调整仅为系统架构优化。一个此前主要依赖ASIC的前沿AI模型项目，如今英伟达GPU算力占比已接近50%，市场普遍指向Anthropic。英伟达预计本财年CPU业务收入约200亿美元，下一代Vera CPU将进军通用服务器市场。摩根士丹利维持英伟达"增持"评级，目标价288美元。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Mesh</span><span class="tag">#LLM</span><span class="tag">#GPU</span></div>
+  <div class="tags-row"><span class="tag">#Rubin</span><span class="tag">#Ultra</span><span class="tag">#CEO</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://mp.weixin.qq.com/s/6c6vGMJAVMbh6UhNVw4dcg" target="_blank" rel="noopener" class="top-card" data-cat="biz">
+  <div class="rank-badge">2</div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 95</span><span>08:05</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
+  <h3>xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥</h3>
+  <div class="summary">安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upload` 字段，将默认上传行为关闭，但此前该功能默认开启。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Grok</span><span class="tag">#CLI</span><span class="tag">#Google</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6" target="_blank" rel="noopener" class="top-card" data-cat="opinion">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 94</span><span>07:41</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h3>Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol</h3>
+  <div class="summary">Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Ploy</span><span class="tag">#Claude</span><span class="tag">#Opus</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">📰 精选资讯</div><div class="section-sub">共 18 条 · 按热度排序</div></div>
-    <div class="grid-3"><a href="https://x.com/thsottiaux/status/2076119366647894371" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+    <div class="grid-3"><a href="https://x.com/thsottiaux/status/2076365965915467978" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 93</span><span>09:40</span><span class="dot"></span><span>X：Tibo (@thsottiaux)</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 93</span><span>01:59</span><span class="dot"></span><span>X：Tibo (@thsottiaux)</span></div>
+  <h4>Codex与ChatGPT Work多项更新：取消5小时限制</h4>
+  <div class="summary">早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新：
+
+- 暂时取消所有Plus、Business和Pro计划的5小时使用限制
+- 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布
+- 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置
+
+去创造吧。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Codex</span><span class="tag">#ChatGPT</span><span class="tag">#Work</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/AYi_AInotes/status/2076341952023310580" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 92</span><span>00:24</span><span class="dot"></span><span>X：阿易 AI Notes (@AYi_AInotes)</span></div>
+  <h4>腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户</h4>
+  <div class="summary">腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Hy3</span><span class="tag">#295B</span><span class="tag">#MoE</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/satyanadella/status/2076323181154230284" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 91</span><span>23:09</span><span class="dot"></span><span>X：Satya Nadella (@satyanadella)</span></div>
+  <h4>纳德拉提出"反向信息悖论"：企业使用AI时需保护自身知识</h4>
+  <div class="summary">微软CEO萨提亚·纳德拉提出"反向信息悖论"：AI时代，买家为使用AI支付金钱，同时必须暴露专有知识（提示词、工具使用、纠正反馈等），这些"智力废气"被模型学习，导致信息不对称向卖家倾斜。企业需要真正的信任边界，确保自身数据、痕迹、评估、适配权重和记忆在边界内积累，未经同意不得外泄。纳德拉呼吁企业拥有私有评估、保留组织记忆所有权，并主张企业应有权使用模型输出微调或训练自有模型，以控制自身学习循环。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#CEO</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://github.com/cosmtrek/mindwalk" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 90</span><span>21:51</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>Mindwalk：在代码库 3D 地图上回放编码代理会话</h4>
+  <div class="summary">Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Mindwalk</span><span class="tag">#Claude</span><span class="tag">#Code</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 89</span><span>17:15</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
+  <h4>OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论</h4>
+  <div class="summary">OpenAI CEO Sam Altman 表示，他"相当确信"AI 迄今为止净创造了就业，并承认"这并非我预期"。此前他曾警告 AI 影响可能快得"有点吓人"。Anthropic CEO Dario Amodei 也修正了早期言论，将自动化描述为生产力倍增器而非岗位杀手。然而，多项研究未发现 AI 对整体生产力或劳动力市场产生显著影响。一项多校联合研究指出，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。耶鲁预算实验室也未发现与 AI 相关的就业市场变化。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#CEO</span><span class="tag">#Altman</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 88</span><span>11:59</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史</h4>
+  <div class="summary">对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示"不要读取任何文件"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭"改进模型"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Grok</span><span class="tag">#Build</span><span class="tag">#CLI</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.ithome.com/0/975/666.htm" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 87</span><span>10:37</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <h4>苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划</h4>
+  <div class="summary">苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#Paolo</span><span class="tag">#Pescatore</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 86</span><span>10:23</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>Mesh LLM：在 iroh 上进行分布式人工智能计算</h4>
+  <div class="summary">Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称"Skippy"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#Mesh</span><span class="tag">#LLM</span><span class="tag">#GPU</span></div>
+  <span class="read-btn">阅读原文 →</span>
+</a><a href="https://x.com/thsottiaux/status/2076119366647894371" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 85</span><span>09:40</span><span class="dot"></span><span>X：Tibo (@thsottiaux)</span></div>
   <h4>Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法</h4>
   <div class="summary">用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -168,7 +238,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.ithome.com/0/975/646.htm" target="_blank" rel="noopener" class="news-card" data-cat="research">
   
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 92</span><span>08:44</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 84</span><span>08:44</span><span class="dot"></span><span>IT之家（RSS）</span></div>
   <h4>OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想</h4>
   <div class="summary">OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题"循环双覆盖猜想"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科"未解决数学问题"列表中的难题。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
@@ -176,7 +246,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.ithome.com/0/975/634.htm" target="_blank" rel="noopener" class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 91</span><span>07:21</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 83</span><span>07:21</span><span class="dot"></span><span>IT之家（RSS）</span></div>
   <h4>彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句"哈哈"成窃密关键</h4>
   <div class="summary">苹果起诉 OpenAI，指控前工程师 Chang Liu 离职时带走未归还的 MacBook、一名可分享内情的员工，并利用软件漏洞持续访问苹果内网。他发现漏洞后向同事分享"哈哈，我发现我还能访问网络存储"，后者协助其获取更多机密。苹果称 OpenAI 试图复制 iPhone 产品研发体系，核心从非法窃取的商业机密腐烂。目前已有超 400 名苹果员工跳槽至 OpenAI，包括前苹果高管、现任 OpenAI 首席硬件官 Tang Tan。苹果曾于今年 2 月尝试私了，但 OpenAI 未回应。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
@@ -184,7 +254,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development" target="_blank" rel="noopener" class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 90</span><span>01:04</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 82</span><span>01:04</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
   <h4>研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发</h4>
   <div class="summary">剑桥大学CASP研究员Antonia Jülich对27名前成员的57次访谈显示，博科圣地已使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek等主流AI聊天机器人，用于袭击策划、制造更强爆炸装置、武器维护及行动安全。该组织两个派系均设立了专门的AI部门。ISIS自2023年起便提供提示工程和越狱培训，并训练尼日利亚的博科圣地指挥官绕过AI安全过滤器。研究指出，安全过滤器未能可靠防止滥用。Anthropic近期承认，越狱可能永远无法完全消除。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
@@ -192,7 +262,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/sama/status/2075985056846451123" target="_blank" rel="noopener" class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 89</span><span>00:46</span><span class="dot"></span><span>X：Sam Altman (@sama)</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 81</span><span>00:46</span><span class="dot"></span><span>X：Sam Altman (@sama)</span></div>
   <h4>OpenAI 发布 GPT-5.6 系列医疗评估结果</h4>
   <div class="summary">OpenAI 发布 GPT-5.6 系列在医疗领域的评估结果。最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，且成本低 25 倍；最大变体 GPT-5.6 Sol 树立新标杆。在涵盖患者端与临床端的多样化任务中，专科医生被要求以无限时间和网络访问权限撰写回答，随后由其他医生盲评。评估基于准确性、沟通、完整性、指令遵循及健康决策帮助性五个维度，共 20000 次评分。结果显示，所有 GPT-5.6 模型表现均显著优于医生，且医生发现 GPT-5.6 回答中的缺陷少于医生自己撰写的回答。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
@@ -200,7 +270,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.mixfont.com/ghost-font" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 88</span><span>00:31</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 80</span><span>00:31</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
   <h4>Ghost Font：一种人类能读懂但AI无法识别的反AI字体</h4>
   <div class="summary">Ghost Font 是一种利用运动、视频、噪点和诱饵来隐藏文字的反AI字体。用户输入文字后可生成并下载视频片段，视频中的字母由与背景完全相同的点组成，单帧截图无法显示任何信息。该字体生成的视频被传递给Claude Fable和GPT Sol 5.6 Ultra等前沿模型时，这些模型即使具备编程能力也无法解码移动信息，直到被提示具体技术。视频中还包含一条诱饵信息，使模型误以为找到真实内容。项目灵感来自2013年Sang Mun设计的ZXX字体，但现代AI已能轻松读取ZXX。Ghost Font目前为本地原型，数据不发送至任何服务器。作者计划未来将视频生成代码开源，并探索将其用于CAPTCHA系统或AI视觉感知基准测试。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -208,7 +278,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0" target="_blank" rel="noopener" class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 87</span><span>15:56</span><span class="dot"></span><span>MarkTechPost（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 79</span><span>15:56</span><span class="dot"></span><span>MarkTechPost（RSS）</span></div>
   <h4>蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型</h4>
   <div class="summary">蚂蚁集团旗下具身智能团队 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型。该模型采用因果 DiT 架构，视频专家约 13.0B 参数（约 1.9B 激活），训练规模约 15.3B 参数，推理时每 token 约 2.5B 激活。模型引入多块预测（MCP）实现 2.3 倍训练加速，并通过前瞻推理将推理延迟降至 142 ms/chunk。在 RoboTwin 2.0 的 50 个任务上，干净与随机演示数据平均成功率分别达 93.8% 和 93.4%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
@@ -216,7 +286,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://www.ithome.com/0/975/469.htm" target="_blank" rel="noopener" class="news-card" data-cat="biz">
   
-  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 86</span><span>15:33</span><span class="dot"></span><span>IT之家（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 78</span><span>15:33</span><span class="dot"></span><span>IT之家（RSS）</span></div>
   <h4>11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun</h4>
   <div class="summary">开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
@@ -224,7 +294,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/AYi_AInotes/status/2075761215251312722" target="_blank" rel="noopener" class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 85</span><span>09:56</span><span class="dot"></span><span>X：阿易 AI Notes (@AYi_AInotes)</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 77</span><span>09:56</span><span class="dot"></span><span>X：阿易 AI Notes (@AYi_AInotes)</span></div>
   <h4>OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘</h4>
   <div class="summary">知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示"1000x 更信任 Anthropic 的 Fable"。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长时自主运行 + 全权限构成灾难放大器；模型厂商安全底线差异巨大。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
@@ -232,81 +302,11 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.207" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 84</span><span>08:52</span><span class="dot"></span><span>Claude Code：GitHub Releases（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 76</span><span>08:52</span><span class="dot"></span><span>Claude Code：GitHub Releases（RSS）</span></div>
   <h4>Claude Code v2.1.207 发布</h4>
   <div class="summary">Claude Code v2.1.207 发布。Auto 模式在 Bedrock、Vertex AI 和 Foundry 上无需 `CLAUDE_CODE_ENABLE_AUTO_MODE` 即可使用，可通过 `disableAutoMode` 设置关闭。修复了流式响应中包含超长列表、表格、段落或代码块时终端冻结和按键延迟的问题；修复了非交互式运行中远程托管设置被永久记录为已同意而未显示安全同意对话框的问题；修复了自动更新程序每次发布时覆盖 `~/.local/bin/claude` 自定义启动脚本或符号链接的问题。Bedrock、Vertex 和 Claude Platform on AWS 默认切换为 Claude Opus 4.8。Auto 模式不再从 `.claude/settings.local.json` 读取 `autoMode`，改为使用 `~/.claude/settings.json`。修复了 Windows 上 AWS 凭证解析卡住时无限挂起的问题，60 秒超时保护现在生效。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Claude</span><span class="tag">#Code</span><span class="tag">#v2.1</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes" target="_blank" rel="noopener" class="news-card" data-cat="industry">
-  
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 83</span><span>07:49</span><span class="dot"></span><span>The Verge：AI（RSS）</span></div>
-  <h4>Meta 关闭 Instagram 用户可基于公开账户生成 AI 深度伪造图片的功能</h4>
-  <div class="summary">在遭到强烈反对后，Meta 关闭了本周早些时候推出的一项 Instagram 功能。该功能允许用户通过 @ 提及公开 Instagram 账户，基于其内容生成 AI 图片，且无需账户所有者许可。Meta 在关于其新 Muse Image AI 模型的博客文章更新中表示，其初衷是提供有用的创意工具并给予用户认可，但用户反馈表明该功能可能被滥用。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Meta</span><span class="tag">#Instagram</span><span class="tag">#Muse</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/dotey/status/2075712647723397452" target="_blank" rel="noopener" class="news-card" data-cat="industry">
-  
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 82</span><span>06:43</span><span class="dot"></span><span>X：宝玉 (@dotey)</span></div>
-  <h4>苹果起诉OpenAI窃取商业机密开发AI硬件</h4>
-  <div class="summary">苹果公司今日在加州北区联邦地方法院对OpenAI提起诉讼，指控其系统性窃取苹果商业机密，用于开发AI硬件设备。被告包括OpenAI、其硬件负责人Tang Tan（前苹果iPhone和Apple Watch产品设计副总裁，在苹果任职24年）、前苹果高级系统电气工程师Chang Liu，以及Jony Ive联合创立的io Products。Jony Ive本人未被列为被告。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#Tang</span><span class="tag">#Tan</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://casp.ac/reports/ai-enabled-terrorism" target="_blank" rel="noopener" class="news-card" data-cat="research">
-  
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 81</span><span>06:07</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
-  <h4>博科圣地如何利用前沿AI技术</h4>
-  <div class="summary">2025至2026年间对尼日利亚东北部27名前"博科圣地"成员的半结构化访谈揭示了该组织在2024年系统性地利用前沿AI技术。两大派系均使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek辅助作战与日常运作，AI应用已通过专门小组和内部培训实现制度化。成员成功绕过部分安全限制，将AI用于袭击策划、武器故障排查及爆炸装置设计。相关技术通过跨国圣战网络传播，伊斯兰国特工提供了面对面培训。受访者对AI表现出强烈热情，部分人对大规模杀伤性武器持开放态度，但记录在案的使用仍限于常规手段。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#ChatGPT</span><span class="tag">#Claude</span><span class="tag">#Gemini</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf" target="_blank" rel="noopener" class="news-card" data-cat="research">
-  
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 80</span><span>03:59</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
-  <h4>OpenAI 论文：GPT-5.6 Sol Ultra 证明图论"循环双覆盖猜想"</h4>
-  <div class="summary">OpenAI 发布论文，称 GPT-5.6 Sol Ultra 证明了图论中悬而未决的"循环双覆盖猜想"。该猜想断言每个无桥无向图都存在一组环，每条边恰好被覆盖两次。论文利用 GPT-5.6 Sol Ultra 完成证明，并借助 Codex 撰写。证明过程首先将问题简化为三次图，利用 8-流定理和 Tutte 的结果将边标记为 F32 的非零元，再转化为每个顶点处每个元素出现零次或两次的二元集标记，最终归结为线性代数论证。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#GPT-5.6</span><span class="tag">#Sol</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/thexpin/status/2075640168896516139" target="_blank" rel="noopener" class="news-card" data-cat="research">
-  
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 79</span><span>01:55</span><span class="dot"></span><span>X：X.PIN (@thexpin)</span></div>
-  <h4>宇树G1人形机器人完成首例活体微创手术</h4>
-  <div class="summary">一篇新的《自然》论文展示了宇树G1人形机器人执行研究人员所称的首例由人形机器人完成的活体标准微创手术。加州大学圣地亚哥团队使用G1，以常规手术器械完成了对两只活猪的腹腔镜胆囊切除术；第二次手术耗时32分钟。该机器人仍需反复校正，且尚无法满足手术无菌标准，但其成本可能仅为达芬奇系统的约5%。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#研究</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/ClaudeDevs/status/2075635283211772279" target="_blank" rel="noopener" class="news-card" data-cat="tool">
-  
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 78</span><span>01:36</span><span class="dot"></span><span>X：Claude Devs (@ClaudeDevs)</span></div>
-  <h4>Claude Code桌面版新增应用内浏览器</h4>
-  <div class="summary">Claude Code 桌面版现在有了应用内浏览器。
-
-Claude 可以调出文档、设计稿或任何其他网站。它可以像操作本地开发服务器一样，进行阅读、点击浏览和交互。
-
-该浏览器采用沙盒机制且可配置：你可以自行选择会话是否持久保留。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Claude</span><span class="tag">#Code</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/perplexity_ai/status/2075599540640714863" target="_blank" rel="noopener" class="news-card" data-cat="tool">
-  
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 77</span><span>23:14</span><span class="dot"></span><span>X：Perplexity (@perplexity_ai)</span></div>
-  <h4>Perplexity 推出跨模型信用额度分析功能</h4>
-  <div class="summary">推出 Computer Analytics：你现在可以跨模型跟踪信用额度支出。
-
-该功能现已面向个人和企业用户开放，可在账户设置的 Analytics 下使用。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Perplexity</span><span class="tag">#Computer</span><span class="tag">#Analytics</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://mp.weixin.qq.com/s/Haqbjim9YGmRu1XpxG_VvA" target="_blank" rel="noopener" class="news-card" data-cat="tool">
-  
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 76</span><span>21:58</span><span class="dot"></span><span>公众号：百度智能云（文心）</span></div>
-  <h4>百度搭子在成都AI Day发布四项更新：个人版升级、自媒体套件、企业版及搭子联盟</h4>
-  <div class="summary">百度搭子在成都百度AI Day上发布四项更新。个人版新增浏览器调用、智能路由（平均任务耗时降20%，Token利用率提升25%）、多端共享记忆及强化PPT生成，并上架"一镜"数字人制作、"灵医"报告解读等Skill。行业首个自媒体专业套件支持选题到复盘全链路。企业版支持团队协作与权限管理。搭子联盟启动，中国联通等已加入。上线三个月，日均提问量增长20倍。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Day</span><span class="tag">#Token</span><span class="tag">#PPT</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a></div>
   </div></section>
