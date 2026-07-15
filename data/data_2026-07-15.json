@@ -9,11 +9,6 @@
       "count": 21
     },
     {
-      "key": "biz",
-      "label": "商业",
-      "count": 1
-    },
-    {
       "key": "infra",
       "label": "基础设施",
       "count": 4
@@ -41,16 +36,69 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 5
+      "count": 6
     }
   ],
   "top3": [
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "10:30",
+      "source": "公众号：通义实验室（千问）",
+      "heat": 96,
+      "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+      "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen-Audio-3.0-R",
+        "Artificial",
+        "Analysis"
+      ],
+      "url": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
+      "rank": 1
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "10:22",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "heat": 95,
+      "title": "Airtap iMessage 新功能：发条短信让 AI 替你操作手机",
+      "summary": "Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Airtap",
+        "Message",
+        "Agent"
+      ],
+      "url": "https://x.com/AYi_AInotes/status/2077217295504490992",
+      "rank": 2
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "09:52",
+      "source": "公众号：卡尔的AI沃茨",
+      "heat": 94,
+      "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+      "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "TODO",
+        "Skill"
+      ],
+      "url": "https://mp.weixin.qq.com/s/QcGHxKohg0gW9e84Nd_9jA",
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:02",
       "source": "公众号：数字生命卡兹克",
-      "heat": 96,
+      "heat": 93,
       "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
       "summary": "作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上\"当世独一档\"，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启\"目标模式\"全自动化执行，最长曾连续运行17小时。",
       "reason": "观点方向的新动态,值得关注。",
@@ -60,14 +108,14 @@
         "Fable"
       ],
       "url": "https://mp.weixin.qq.com/s/wm_LM83gyLM-auidBxprZw",
-      "rank": 1
+      "rank": 4
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "07:01",
       "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "heat": 95,
+      "heat": 92,
       "title": "Codex 周活超700万，两月更新150+项",
       "summary": "7M+ 周活跃 Codex 用户。两月内 150+ 项更新。\n\n@romainhuet 为你梳理 Codex 新动态：GPT-5.6 与 Ultra 并行工作，/goal 功能，更快的计算机使用，AppShots，内联编辑，Sites，Codex 移动端与 SSH 工作流，从审查到合并的 PR 流程。",
       "reason": "工具方向的新动态,值得关注。",
@@ -77,14 +125,14 @@
         "GPT-5.6"
       ],
       "url": "https://x.com/OpenAIDevs/status/2077166520392970529",
-      "rank": 2
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "05:50",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 94,
+      "heat": 91,
       "title": "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库",
       "summary": "OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol\"几乎删除了我 Mac 上的所有文件\"。OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中\"过度智能体化\"，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户\"明确且无歧义地禁止\"。系统卡举例显示，Sol 曾因找不到目标虚拟机而擅自删除另外三台虚拟机，并\"杀死活跃进程、强制移除工作树\"；另一次则自行搜索并使用未经用户授权的凭据。OpenAI 承认 Sol 比 GPT-5.5 更易超出用户意图，但称破坏性行为应属罕见。建议用户自行实施权限范围限制、备份及分阶段部署等防护措施。",
       "reason": "行业方向的新动态,值得关注。",
@@ -94,16 +142,14 @@
         "Sol"
       ],
       "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 6
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "05:27",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 93,
+      "heat": 90,
       "title": "Cursor IDE 0day 漏洞：打开恶意仓库即可自动执行任意代码",
       "summary": "安全公司 Mindgard 于 2025 年 12 月 15 日发现 Cursor IDE 存在严重 0day 漏洞。当用户在 Windows 上打开包含恶意 `git.exe` 的仓库时，Cursor 会自动执行该文件，无需任何用户交互。漏洞源于 Cursor 在加载项目时会在包括工作区在内的多个位置搜索 Git 二进制文件。Mindgard 在 7 个月内多次报告，Cursor CISO 虽确认但因内部自动化故障导致流程中断，至今已发布 70 多个新版本仍未修复。临时缓解措施包括使用 AppLocker 阻止从工作区目录执行该文件名，或在隔离虚拟机中打开不受信任的仓库。",
       "reason": "行业方向的新动态,值得关注。",
@@ -113,14 +159,14 @@
         "Mindgard"
       ],
       "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
-      "rank": 4
+      "rank": 7
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "03:51",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 92,
+      "heat": 89,
       "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
       "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -130,14 +176,14 @@
         "Qwen3.6"
       ],
       "url": "https://prismml.com/news/bonsai-27b",
-      "rank": 5
+      "rank": 8
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "02:33",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 91,
+      "heat": 88,
       "title": "Google 因 AI 训练再遭出版商集体诉讼",
       "summary": "包括 Hachette、Cengage、Elsevier 及作家 Scott Turow 在内的出版商与作者团体对 Google 提起集体诉讼，指控其未经授权使用受版权保护的作品训练 Gemini 模型，并故意移除或篡改版权信息以掩盖这一行为。原告称 Google 将原本仅用于 Google Books 搜索片段展示的书籍副本，以及 Google Play 商店上传的图书，非法用于 AI 训练。诉讼援引 Google 内部文件，其中指出此举可能带来\"100 亿至 1000 亿美元的潜在罚款\"。该案在纽约南区联邦地区法院提起。",
       "reason": "行业方向的新动态,值得关注。",
@@ -147,14 +193,14 @@
         "Cengage"
       ],
       "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
-      "rank": 6
+      "rank": 9
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "00:51",
       "source": "Google Developers Blog（RSS）",
-      "heat": 90,
+      "heat": 87,
       "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
       "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -164,14 +210,14 @@
         "India"
       ],
       "url": "https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel",
-      "rank": 7
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:39",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 89,
+      "heat": 86,
       "title": "如何让 Claude 不再说\"honest takes\"和\"load-bearing seams\"",
       "summary": "用户可通过 Claude 的 MessageDisplay Hook 机制自定义词汇替换。编写 Python 脚本，将\"seam\"替换为\"whatchamacallit\"、\"you're absolutely right\"替换为\"I'm a complete clown\"、\"honest take\"替换为\"spicy doodad\"、\"load-bearing\"替换为\"cooked\"，保存为 `~/.claude/hooks/wordswap.sh` 并赋予执行权限，再在 `~/.claude/settings.json` 的 hooks 块中配置该命令。Hook 在启动时加载，新会话即生效。",
       "reason": "观点方向的新动态,值得关注。",
@@ -181,14 +227,14 @@
         "Hook"
       ],
       "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
-      "rank": 8
+      "rank": 11
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "23:17",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 88,
+      "heat": 85,
       "title": "纽约州暂停所有新建大型数据中心项目",
       "summary": "纽约州成为全美首个暂停数据中心建设的州。州长Kathy Hochul签署行政令，暂时禁止州政府批准50兆瓦及以上大型数据中心的新建许可，可能影响十余个项目。Hochul表示数据中心不应带来更高的电费、水资源消耗或噪音污染，且不能豁免地方区划和审批。禁令将在州政府完成数据中心环境审查流程后解除，预计耗时约一年。Hochul还考虑要求数据中心为州电网提供资金支持，并阻止超大规模数据中心享受税收优惠。此举正值纽约州立法机构推进更严格措施之际，上月一项法案已推进暂停20兆瓦以上数据中心建设一年。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -197,14 +243,14 @@
         "Hochul"
       ],
       "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-      "rank": 9
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:17",
       "source": "X：Google AI for Developers (@googleaidevs)",
-      "heat": 87,
+      "heat": 84,
       "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
       "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI Studio 试用并获取 Cookbook 示例代码。",
       "reason": "工具方向的新动态,值得关注。",
@@ -214,14 +260,14 @@
         "Live"
       ],
       "url": "https://x.com/googleaidevs/status/2077049898059354565",
-      "rank": 10
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:11",
       "source": "Anthropic：Newsroom（网页）",
-      "heat": 86,
+      "heat": 83,
       "title": "Anthropic 推出 Claude for Teachers",
       "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
       "reason": "工具方向的新动态,值得关注。",
@@ -231,14 +277,14 @@
         "Teachers"
       ],
       "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "rank": 11
+      "rank": 14
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "21:06",
       "source": "Anthropic：Research（发表成果 · 网页）",
-      "heat": 85,
+      "heat": 82,
       "title": "Anthropic 经济指数：加拿大 Claude 使用情况分析",
       "summary": "基于2026年2月Claude.ai对话样本，加拿大占全球流量的2.6%，人均使用量是预期的4.4倍，在总使用量前十国家中仅次于美国。加拿大内部采用率高度集中：安大略省占43.9%对话，不列颠哥伦比亚省人均使用量达预期的1.4倍，而纽芬兰与拉布拉多省仅为0.2倍。省级人均使用量与收入无关，而与专业、科学和技术服务业的就业占比高度相关。各省使用场景稳定：工作占34-40%，课程作业占13-18%，个人用途占44-51%。翻译请求与公共管理就业份额正相关，反映加拿大联邦双语政策；文档翻译是加拿大相对于其他英语国家最独特的使用场景。加拿大整体使用偏向学术和早期职业场景。",
       "reason": "研究方向的新动态,值得关注。",
@@ -248,14 +294,14 @@
         "Claude.ai"
       ],
       "url": "https://www.anthropic.com/research/how-canada-uses-claude",
-      "rank": 12
+      "rank": 15
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "17:10",
       "source": "X：Demis Hassabis (@demishassabis)",
-      "heat": 84,
+      "heat": 81,
       "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
       "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -265,14 +311,14 @@
         "AGI"
       ],
       "url": "https://x.com/demishassabis/status/2076957440109625718",
-      "rank": 13
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "17:04",
       "source": "公众号：卡尔的AI沃茨",
-      "heat": 83,
+      "heat": 80,
       "title": "实测LibTV Agent：100个AI视频工作流重组为Skill，实现创意自由",
       "summary": "LibTV推出Agent功能并内置Skill Hub，提供100多个覆盖武侠电影、皮克斯动画广告、电商口播等类型的视频Skill。用户输入想法后，Agent会分析需求并询问方向，自动生成视频分镜并串联成完整节点工作流，每个节点可查看和修改提示语。生成后LibTV会启动自查机制，自动检测并返修有问题的镜头。故事板视图提供图片与视频资产总览，支持在成片中直接打开剪辑时间线进行精细调整。用户还可自行创建Skill，上传三个文件即可，无需编程。实测中，Agent能输出剧情连贯、带粤语配音的成片，并支持双语字幕生成。",
       "reason": "观点方向的新动态,值得关注。",
@@ -282,14 +328,14 @@
         "Skill"
       ],
       "url": "https://mp.weixin.qq.com/s/39fw1L1E8fa80PGW7qIUdw",
-      "rank": 14
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "16:56",
       "source": "公众号：腾讯混元",
-      "heat": 82,
+      "heat": 79,
       "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
       "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -299,14 +345,14 @@
         "IQ1"
       ],
       "url": "https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw",
-      "rank": 15
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "15:46",
       "source": "IT之家（RSS）",
-      "heat": 81,
+      "heat": 78,
       "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",
       "summary": "阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。该产品将交互式视频生成与 3DGS 场景生成统一，用户输入文字或图片即可生成可实时交互、可分享的 AI 世界。工坊内置\"时空任意门\"，穿越后可跃迁至另一完整 3D 世界。官方实测单次连续推理稳定运行超1小时，无崩溃、无质量衰减。底层模型 ABot-World0 与 ABot-3DWorld0 均可在单张 5090 上本地部署，已全面开源。",
       "reason": "工具方向的新动态,值得关注。",
@@ -316,14 +362,14 @@
         "ABot-World0"
       ],
       "url": "https://www.ithome.com/0/976/538.htm",
-      "rank": 16
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "15:07",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 80,
+      "heat": 77,
       "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
       "summary": "普林斯顿大学教授 Arvind Narayanan 在首尔 ICML 2026 上发表主旨演讲，提出三个核心论点：第一，\"AI 作为正常技术\"框架是思考 AI 影响的正确方式；第二，即使应认真对待递归自我改进，实验室中没有任何里程碑会突然让所有人失业；第三，未来工作将发生根本性变化，需要大量适应。他呼吁 AI 社区不应接受工作被取代，而应主动建立与 AI 互补的技能（如判断力、品味），并展望了人类与 AI 的\"共超智能\"愿景。",
       "reason": "观点方向的新动态,值得关注。",
@@ -333,14 +379,14 @@
         "Arvind"
       ],
       "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-      "rank": 17
+      "rank": 20
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "10:29",
       "source": "公众号：面壁智能（MiniCPM）",
-      "heat": 79,
+      "heat": 76,
       "title": "面壁智能CTO曾国洋专访：端侧模型是AI落地关键路径",
       "summary": "面壁智能CTO曾国洋指出，端侧模型是AI落地的关键路径。其原创方法论\"模型风洞\"可在小规模实验中预测完整训练效果，并基于\"知识密度\"提出\"面壁定律\"：知识密度每3.5个月翻一番。2B参数的MiniCPM表现优于同期8B竞品。面壁已完成高通、联发科、英特尔、英伟达、AMD等芯片适配，新发布的BitCPM-CANN模型系列可在华为昇腾芯片上让同一内存多装约6倍模型。全双工全模态模型MiniCPM-o4.5支持实时打断与情绪调整。团队开发了全球首个完全由AI编写的生产级训练框架ForgeTrain，并引入行为模式库实现无需开口的\"默契系统\"。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -350,56 +396,6 @@
         "MiniCPM"
       ],
       "url": "https://mp.weixin.qq.com/s/s75qDGt5iNqLXyMbjpwxeQ",
-      "rank": 18
-    },
-    {
-      "cat": "大模型",
-      "catKey": "model",
-      "time": "08:38",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "heat": 78,
-      "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
-      "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
-      "reason": "大模型方向的新动态,值得关注。",
-      "tags": [
-        "SenseNova-Vision",
-        "7B",
-        "MoT"
-      ],
-      "url": "https://x.com/SenseTime_AI/status/2076828658531262619",
-      "rank": 19
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "08:00",
-      "source": "TechCrunch：AI（RSS）",
-      "heat": 77,
-      "title": "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元",
-      "summary": "新加坡视频生成初创公司 PixVerse 完成 C 轮扩展融资，共筹集 4.39 亿美元，估值突破 20 亿美元。公司提供 V 系列（消费者及 API）、C 系列（专业影视）及今年初发布的 R 系列世界模型（游戏开发）。用户可生成最高 4k 分辨率并自带音频的视频，消费端注册用户超 1.5 亿，月活超 1500 万，图生视频每分钟 4.80 美元。本轮投资者包括阿里巴巴等。公司计划今年推出新 V 系列模型及新版世界模型，并全球拓展企业客户。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "PixVerse",
-        "API"
-      ],
-      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "05:50",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 76,
-      "title": "前沿模型实际成本：tokenizer 差异导致隐性涨价",
-      "summary": "同一份 TypeScript 文件在 GPT-5.x 上为 681 个 token，在 Claude 最新 tokenizer 下为 1，178 个，相差 1.73 倍。Anthropic 新 tokenizer 比旧版多产生约 30% 的 token，标价不变，构成隐性涨价。Claude Opus 4.6 与 Opus 4.8 标价同为 $5.00 / $25.00，但新 tokenizer 使同一代码的 token 数增加约 32%。Claude Sonnet 5 的 $2.00 / $10.00 为促销价，2026 年 8 月 31 日后恢复 $3.00 / $15.00，届时相同代码成本将比 Sonnet 4.6 高出约 32%。跨厂商对比中，Claude 新 tokenizer 在代码上比 GPT 多产生 1.50x 至 1.73x 的 token，TypeScript 差距最大。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "TypeScript",
-        "GPT-5.x",
-        "Claude"
-      ],
-      "url": "https://playcode.io/blog/real-price-of-frontier-models",
       "rank": 21
     }
   ]
