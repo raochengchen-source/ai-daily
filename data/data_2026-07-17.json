@@ -19,9 +19,14 @@
       "count": 2
     },
     {
+      "key": "model",
+      "label": "大模型",
+      "count": 1
+    },
+    {
       "key": "tool",
       "label": "工具",
-      "count": 8
+      "count": 7
     },
     {
       "key": "research",
@@ -41,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "12:57",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "heat": 96,
+      "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
+      "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Kimi",
+        "Frontend",
+        "Code"
+      ],
+      "url": "https://x.com/AYi_AInotes/status/2077981025905316253",
+      "rank": 1
+    },
+    {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:40",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 96,
+      "heat": 95,
       "title": "生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格",
       "summary": "AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -54,14 +76,14 @@
         "Claude"
       ],
       "url": "https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "05:39",
       "source": "xAI：News（网页）",
-      "heat": 95,
+      "heat": 94,
       "title": "Grok 推出 Automations 功能：定时或邮件触发，自动执行任务并汇报结果",
       "summary": "xAI 为 Grok 引入 Automations 功能，用户可描述一次任务，让 Grok 按计划（一次/每日/工作日/每周/每月/每年）或邮件触发（按发件人、收件人或主题过滤）自动运行。每次执行都是一次完整对话，结果保存至运行历史，支持邮件或应用内通知。定时自动化对所有用户开放，邮件触发需 SuperGrok 订阅。",
       "reason": "工具方向的新动态,值得关注。",
@@ -71,14 +93,16 @@
         "SuperGrok"
       ],
       "url": "https://x.ai/news/grok-automations",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:26",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 94,
+      "heat": 93,
       "title": "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用",
       "summary": "xAI 首次对一名 Grok 用户提起诉讼，指控其利用该模型制作儿童性虐待图像（CSAM）。此前 xAI 一直否认 Grok 能生成此类内容，此次诉讼标志着其立场转变。案件聚焦用户滥用行为，而非模型本身的技术缺陷。",
       "reason": "行业方向的新动态,值得关注。",
@@ -87,16 +111,14 @@
         "CSAM"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "03:11",
       "source": "Moonshot AI：Kimi Blog",
-      "heat": 93,
+      "heat": 92,
       "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
       "summary": "Moonshot AI 发布 PerceptionBench，一个从 40 多个现有基准中模型实际失败案例归纳出的视觉感知基准，包含 10 项原子感知能力和 3000 道验证题。所有测试模型准确率均未超过 60%，且大量正确答案在重复提问时无法复现，表明模型更多是猜测而非真正感知。PerceptionBench 旨在精确诊断多模态 AI 的视觉感知断裂点，推动其实现忠实、一致的视觉理解。",
       "reason": "研究方向的新动态,值得关注。",
@@ -105,14 +127,14 @@
         "PerceptionBench"
       ],
       "url": "https://www.kimi.com/blog/perception-bench",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:02",
       "source": "VentureBeat：AI（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "54%企业已遭遇AI智能体安全事件，多数仍共享凭证",
       "summary": "VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。",
       "reason": "行业方向的新动态,值得关注。",
@@ -120,14 +142,14 @@
         "VentureBeat"
       ],
       "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:44",
       "source": "X：ChatGPT (@ChatGPTapp)",
-      "heat": 91,
+      "heat": 90,
       "title": "ChatGPT 工作区支持文档表格幻灯片编辑",
       "summary": "在 ChatGPT 工作区中创建和编辑精美的文档、电子表格和幻灯片。\n\n@nickbaumann_ 为你演示操作。",
       "reason": "工具方向的新动态,值得关注。",
@@ -135,14 +157,14 @@
         "ChatGPT"
       ],
       "url": "https://x.com/ChatGPTapp/status/2077826846373380535",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "02:32",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 90,
+      "heat": 89,
       "title": "Decoy 字体：用空间频率混淆让 AI 看不清你输入的文字",
       "summary": "Decoy Font 是一款 TTF 字体，通过在同一字符中叠加不同空间频率的图形（前景细轮廓与背景低频模糊块），使近距离观看时 AI 读到\"诱饵\"字母，而人眼远距离或眯眼时才能看到真实隐藏信息。",
       "reason": "商业方向的新动态,值得关注。",
@@ -152,14 +174,14 @@
         "TTF"
       ],
       "url": "https://www.mixfont.com/experiments/decoy-font",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "01:32",
       "source": "Claude：Blog（网页）",
-      "heat": 89,
+      "heat": 88,
       "title": "Anthropic 用 Claude Code 大规模迁移代码：Bun 百万行 Zig 转 Rust，两周完成",
       "summary": "Anthropic 工程师用 Claude Code 在两周内将 Bun 的百万行 Zig 代码迁移至 Rust，100% 现有测试通过，合并后出现 19 个回归问题已全部修复。另一工程师用周末将 Python 代码库迁移至 16.5 万行 TypeScript。迁移消耗约 16.5 万美元 API 成本，但编译时间从八分钟降至两秒，二进制启动快 6 倍。",
       "reason": "观点方向的新动态,值得关注。",
@@ -169,14 +191,14 @@
         "Code"
       ],
       "url": "https://claude.com/blog/ai-code-migration",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:40",
       "source": "VentureBeat：AI（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "企业AI智能体评估存在\"现实对齐\"缺口：半数组织曾将通过内部测试的智能体部署到生产环境后导致客户故障",
       "summary": "对157家企业的调查显示，50%的组织在过去一年曾部署通过内部评估但导致客户故障的AI智能体或大语言模型功能，5%的企业完全信任自动化评估，29%认为评估与现实结果对齐不佳是最大局限。尽管信任度低，66%的企业已允许或正计划在12个月内实现低风险智能体的全自动、无人工干预部署。",
       "reason": "观点方向的新动态,值得关注。",
@@ -184,14 +206,14 @@
         "观点"
       ],
       "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Google Blog：AI（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "Google Vids 上线 Gemini Omni 与个人数字分身功能",
       "summary": "Google Vids 推出两项更新：Gemini Omni 支持用户通过自然语言提示词和图片参考生成、逐步编辑高质量视频片段；个人数字分身功能允许用户上传自拍和语音录制后，输入文字即可让数字分身出镜。两项功能面向 Google AI Pro 和 Ultra 订阅者及 Google Workspace 商业客户开放，所有生成内容均含不可见的 SynthID 数字水印。",
       "reason": "工具方向的新动态,值得关注。",
@@ -201,14 +223,14 @@
         "Gemini"
       ],
       "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "22:38",
       "source": "IT之家（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "世界人工智能合作组织协定签署仪式在上海举行，总部设中国上海",
       "summary": "7月16日，成立世界人工智能合作组织协定签署仪式在上海举行，中共中央政治局委员、外交部长王毅代表中国政府签署协定。该组织是独立的政府间国际组织，总部设在中国上海，旨在促进人工智能国际合作与全球治理。哈萨克斯坦、老挝、巴基斯坦等29个国家代表签署协定成为创始成员国。",
       "reason": "行业方向的新动态,值得关注。",
@@ -216,14 +238,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/0/977/793.htm",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "22:32",
       "source": "Claude：Blog（网页）",
-      "heat": 85,
+      "heat": 84,
       "title": "在 Claude Cowork 中使用 Claude Fable 5",
       "summary": "Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。",
       "reason": "工具方向的新动态,值得关注。",
@@ -233,14 +255,14 @@
         "Fable"
       ],
       "url": "https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:07",
       "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "heat": 84,
+      "heat": 83,
       "title": "面壁智能开源企业AI数字员工平台StaffDeck",
       "summary": "面壁智能联合多团队开源StaffDeck，一个用于构建与管理数字员工的企业平台。该平台旨在将专业知识、标准作业程序（SOP）和决策规则转化为持续工作、改进并保留组织知识的数字员工，而非传统聊天机器人。项目代码已发布于GitHub。",
       "reason": "工具方向的新动态,值得关注。",
@@ -250,14 +272,14 @@
         "GitHub"
       ],
       "url": "https://x.com/OpenBMB/status/2077741814799548451",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "20:17",
       "source": "公众号：百度智能云（文心）",
-      "heat": 83,
+      "heat": 82,
       "title": "秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级",
       "summary": "百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -267,14 +289,14 @@
         "Mac"
       ],
       "url": "https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "20:06",
       "source": "The Verge：AI（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务",
       "summary": "欧盟依据《数字市场法案》（DMA）裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，包括允许第三方 AI 助手和搜索引擎获得更大访问权限。这两项决定可能削弱 Google 对两大核心平台的控制，并为其 AI 工具 Gemini 的未来格局带来深远影响，同时为竞争对手创造新的发展机会。",
       "reason": "行业方向的新动态,值得关注。",
@@ -284,14 +306,14 @@
         "Search"
       ],
       "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "18:00",
       "source": "公众号：小红书技术（dots.llm）",
-      "heat": 81,
+      "heat": 80,
       "title": "HYPIC：小红书联合北大、上交提出首个混合注意力大模型位置无关缓存系统",
       "summary": "HYPIC 在混合注意力大模型上实现了位置无关缓存，将首 token 延迟平均降低 3.25 倍。在 4 个生产级模型上，同 SLO 下可持续 QPS 提升 1.66 倍，任务质量与完全重算仅相差 1.71 分。",
       "reason": "研究方向的新动态,值得关注。",
@@ -301,14 +323,14 @@
         "QPS"
       ],
       "url": "https://mp.weixin.qq.com/s/RWveWvw9yBH6YQINBQ-XjA",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "17:58",
       "source": "Google Developers Blog（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商",
       "summary": "Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。",
       "reason": "工具方向的新动态,值得关注。",
@@ -318,14 +340,14 @@
         "Agent"
       ],
       "url": "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "15:59",
       "source": "IT之家（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "台积电上调2026年资本支出预测至600~640亿美元，A14制程进展顺利",
       "summary": "台积电在2026Q2财报说明会上将2026年资本支出预测上调至600~640亿美元，此前预测接近560亿美元。董事长魏哲家表示，预计2028年量产的A14制程（1.4nm）开发进展顺利，移动和HPC客户兴趣强烈，将成为比2nm更大、更持久的工艺。台积电预计2026Q3合并营收446~458亿美元，2026全年美元收入增幅将超过40%。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -335,14 +357,14 @@
         "560亿"
       ],
       "url": "https://www.ithome.com/0/977/544.htm",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "15:42",
       "source": "MarkTechPost（RSS）",
-      "heat": 78,
+      "heat": 77,
       "title": "Patter SDK 教程：构建餐厅预订电话智能体，支持动态变量、护栏、延迟仪表盘与评估检查",
       "summary": "Patter SDK 发布教程，演示如何构建一个餐厅预订场景的语音智能体工作流。该流程支持动态调用变量、注册可调用工具、应用输出护栏（如PII脱敏、脏话过滤、话题范围限制），并可在无需实时电话凭证的情况下运行脚本化通话模拟。教程还涵盖延迟与成本指标追踪、回归式评估检查，以及将智能体逻辑、工具调用、安全检查和通话模拟整合为单一结构化管线。",
       "reason": "观点方向的新动态,值得关注。",
@@ -352,14 +374,14 @@
         "PII"
       ],
       "url": "https://www.marktechpost.com/2026/07/16/patter-sdk-guide-to-building-a-restaurant-booking-phone-agent-with-dynamic-variables-guardrails-latency-dashboards-and-eval-checks",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "11:27",
       "source": "公众号：千问APP（阿里）",
-      "heat": 77,
+      "heat": 76,
       "title": "千问APP联合武汉发布举办AI求职实战课，演示简历诊断与办公自动化",
       "summary": "千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出\"给全材料、说明目标、定义标准、划定边界、索要可编辑文件\"五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的\"建、理、算、析、呈\"方法论。",
       "reason": "观点方向的新动态,值得关注。",
@@ -368,22 +390,6 @@
         "PPT"
       ],
       "url": "https://mp.weixin.qq.com/s/dCk6IXbFyOSSc1JxcWsglA",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "10:00",
-      "source": "公众号：昆仑万维（天工）",
-      "heat": 76,
-      "title": "天工短剧工作台发布\"Agent智能分镜+无限画布\"双轨创作模式",
-      "summary": "天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。已有三部作品上线DramaWave 7天实现百万美元级营收。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Agent",
-        "DramaWave"
-      ],
-      "url": "https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ",
       "rank": 21
     }
   ]
