@@ -26,7 +26,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 2
+      "count": 1
     },
     {
       "key": "research",
@@ -41,7 +41,7 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 5
+      "count": 6
     }
   ],
   "top3": [
@@ -166,11 +166,28 @@
       "rank": 7
     },
     {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "20:11",
+      "source": "Simon Willison 博客",
+      "heat": 89,
+      "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
+      "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如\"no fluff， no filler， no jargon\"这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "Simon",
+        "Willison"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
+      "rank": 8
+    },
+    {
       "cat": "行业",
       "catKey": "industry",
       "time": "19:10",
       "source": "IT之家（RSS）",
-      "heat": 89,
+      "heat": 88,
       "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
       "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
       "reason": "行业方向的新动态,值得关注。",
@@ -178,14 +195,14 @@
         "OpenAI"
       ],
       "url": "https://www.ithome.com/0/978/277.htm",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "18:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 88,
+      "heat": 87,
       "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值",
       "summary": "OpenAI 提出\"Useful Intelligence per Dollar\"（有用智能每美元）作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估。",
       "reason": "商业方向的新动态,值得关注。",
@@ -195,14 +212,14 @@
         "Intelligence"
       ],
       "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "17:41",
       "source": "公众号：通义实验室（千问）",
-      "heat": 87,
+      "heat": 86,
       "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
       "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
       "reason": "观点方向的新动态,值得关注。",
@@ -212,14 +229,14 @@
         "Agent"
       ],
       "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "16:41",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 86,
+      "heat": 85,
       "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
       "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
       "reason": "研究方向的新动态,值得关注。",
@@ -229,14 +246,14 @@
         "ARC-AGI-3"
       ],
       "url": "https://schema-harness.github.io/",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "15:53",
       "source": "MarkTechPost（RSS）",
-      "heat": 85,
+      "heat": 84,
       "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
       "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -246,14 +263,14 @@
         "Embed"
       ],
       "url": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "15:14",
       "source": "公众号：通义实验室（千问）",
-      "heat": 84,
+      "heat": 83,
       "title": "通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms",
       "summary": "通义实验室发布 Wan-Streamer v0.2，这是一款将\"听、看、说、演\"统一进单个 Transformer 的端到端全模态模型。其端到端响应延迟仅 550ms，输出分辨率从 v0.1 的 192×336 提升至 640×368 @ 25FPS，并采用 Thinker-Performer 双通路架构在提升画质的同时维持了极低延迟。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -263,14 +280,14 @@
         "Transformer"
       ],
       "url": "https://mp.weixin.qq.com/s/_eaO0wmsiQFGsrE2_zW_Dg",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "12:57",
       "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "heat": 83,
+      "heat": 82,
       "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
       "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -280,14 +297,14 @@
         "Code"
       ],
       "url": "https://x.com/AYi_AInotes/status/2077981025905316253",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:40",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 82,
+      "heat": 81,
       "title": "生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格",
       "summary": "AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -296,14 +313,14 @@
         "Claude"
       ],
       "url": "https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:26",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用",
       "summary": "xAI 首次对一名 Grok 用户提起诉讼，指控其利用该模型制作儿童性虐待图像（CSAM）。此前 xAI 一直否认 Grok 能生成此类内容，此次诉讼标志着其立场转变。案件聚焦用户滥用行为，而非模型本身的技术缺陷。",
       "reason": "行业方向的新动态,值得关注。",
@@ -312,14 +329,14 @@
         "CSAM"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:02",
       "source": "VentureBeat：AI（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "54%企业已遭遇AI智能体安全事件，多数仍共享凭证",
       "summary": "VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。",
       "reason": "行业方向的新动态,值得关注。",
@@ -327,14 +344,14 @@
         "VentureBeat"
       ],
       "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:44",
       "source": "X：ChatGPT (@ChatGPTapp)",
-      "heat": 79,
+      "heat": 78,
       "title": "ChatGPT 工作区支持文档表格幻灯片编辑",
       "summary": "在 ChatGPT 工作区中创建和编辑精美的文档、电子表格和幻灯片。\n\n@nickbaumann_ 为你演示操作。",
       "reason": "工具方向的新动态,值得关注。",
@@ -342,14 +359,14 @@
         "ChatGPT"
       ],
       "url": "https://x.com/ChatGPTapp/status/2077826846373380535",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "02:32",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 78,
+      "heat": 77,
       "title": "Decoy 字体：用空间频率混淆让 AI 看不清你输入的文字",
       "summary": "Decoy Font 是一款 TTF 字体，通过在同一字符中叠加不同空间频率的图形（前景细轮廓与背景低频模糊块），使近距离观看时 AI 读到\"诱饵\"字母，而人眼远距离或眯眼时才能看到真实隐藏信息。",
       "reason": "商业方向的新动态,值得关注。",
@@ -359,14 +376,14 @@
         "TTF"
       ],
       "url": "https://www.mixfont.com/experiments/decoy-font",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:40",
       "source": "VentureBeat：AI（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "企业AI智能体评估存在\"现实对齐\"缺口：半数组织曾将通过内部测试的智能体部署到生产环境后导致客户故障",
       "summary": "对157家企业的调查显示，50%的组织在过去一年曾部署通过内部评估但导致客户故障的AI智能体或大语言模型功能，5%的企业完全信任自动化评估，29%认为评估与现实结果对齐不佳是最大局限。尽管信任度低，66%的企业已允许或正计划在12个月内实现低风险智能体的全自动、无人工干预部署。",
       "reason": "观点方向的新动态,值得关注。",
@@ -374,23 +391,6 @@
         "观点"
       ],
       "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "00:00",
-      "source": "Google Blog：AI（RSS）",
-      "heat": 76,
-      "title": "Google Vids 上线 Gemini Omni 与个人数字分身功能",
-      "summary": "Google Vids 推出两项更新：Gemini Omni 支持用户通过自然语言提示词和图片参考生成、逐步编辑高质量视频片段；个人数字分身功能允许用户上传自拍和语音录制后，输入文字即可让数字分身出镜。两项功能面向 Google AI Pro 和 Ultra 订阅者及 Google Workspace 商业客户开放，所有生成内容均含不可见的 SynthID 数字水印。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Google",
-        "Vids",
-        "Gemini"
-      ],
-      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
       "rank": 21
     }
   ]
