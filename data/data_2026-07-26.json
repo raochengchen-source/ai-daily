@@ -21,7 +21,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 6
+      "count": 5
     },
     {
       "key": "research",
@@ -36,16 +36,33 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 2
+      "count": 3
     }
   ],
   "top3": [
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "13:33",
+      "source": "IT之家（RSS）",
+      "heat": 96,
+      "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
+      "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Opus",
+        "Eversmile1"
+      ],
+      "url": "https://www.ithome.com/0/981/688.htm",
+      "rank": 1
+    },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "11:54",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 96,
+      "heat": 95,
       "title": "在 8 美元的 ESP32-S3 微控制器上运行 28.9M 参数大语言模型",
       "summary": "开发者成功在售价约 8 美元的 ESP32-S3 微控制器上运行了一个 28.9M 参数的大语言模型，完全在芯片本地运行，无需连接服务器，生成速度约 9.5 tok/s。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -53,14 +70,14 @@
         "ESP32-S3"
       ],
       "url": "https://github.com/slvDev/esp32-ai",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:25",
       "source": "X：Elon Musk (@elonmusk, xAI)",
-      "heat": 95,
+      "heat": 94,
       "title": "xAI 发布 Grok CLI 并支持 /tutorial 命令",
       "summary": "下载 Grok Build 并输入 /tutorial\n\nhttp://X.ai/cli",
       "reason": "工具方向的新动态,值得关注。",
@@ -70,14 +87,16 @@
         "Build"
       ],
       "url": "https://x.com/elonmusk/status/2081174079969632347",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:45",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 94,
+      "heat": 93,
       "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
       "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
       "reason": "行业方向的新动态,值得关注。",
@@ -87,16 +106,14 @@
         "Face"
       ],
       "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "09:08",
       "source": "IT之家（RSS）",
-      "heat": 93,
+      "heat": 92,
       "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
       "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
       "reason": "行业方向的新动态,值得关注。",
@@ -106,14 +123,14 @@
         "Face"
       ],
       "url": "https://www.ithome.com/0/981/432.htm",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "06:18",
       "source": "Midjourney：Updates（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
       "summary": "Midjourney 今日推出 V8.2 图像模型，重点提升美学质量、图像创意与个性化表现。低质量图像出现频率将显著降低，个性化功能能更精准理解用户审美偏好。V8.2 的个性化配置文件拥有更大、更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -122,14 +139,14 @@
         "V8.2"
       ],
       "url": "https://updates.midjourney.com/version-8-2",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:07",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 91,
+      "heat": 90,
       "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
       "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。",
       "reason": "行业方向的新动态,值得关注。",
@@ -139,14 +156,14 @@
         "Anthropic"
       ],
       "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "23:25",
       "source": "Anthropic：Research（发表成果 · 网页）",
-      "heat": 90,
+      "heat": 89,
       "title": "Anthropic 联合 Andon Labs 发布 Drone-Bench，评估 AI 模型自主操控无人机执行定位追踪任务的能力",
       "summary": "Anthropic 与 Andon Labs 合作推出 Drone-Bench，用于测试 AI 模型自主操控四旋翼无人机在室内环境中定位并追踪指定人员的能力。该基准将任务分解为 3D 地图重建、定位、导航、目标检测与跟随五个子任务，并通过软件复现实现快速评估。实验表明，该任务链的难度足以区分不同智能水平的模型，并揭示 AI 在物理世界操控能力上的进步轨迹。",
       "reason": "研究方向的新动态,值得关注。",
@@ -156,14 +173,14 @@
         "Labs"
       ],
       "url": "https://www.anthropic.com/research/project-pilot",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "21:40",
       "source": "公众号：蚂蚁百灵（Ling）",
-      "heat": 89,
+      "heat": 88,
       "title": "蚂蚁百灵发布Ling-3.0-flash原生混合推理模型",
       "summary": "蚂蚁百灵发布新一代原生混合推理模型Ling-3.0-flash，总参数量124B，激活参数量仅5.1B，在传统推理、指令遵循与长文本等指标上对标甚至超越上一代旗舰Ring-2.6-1T。模型采用原生混合线性注意力架构与1/64稀疏MoE，并扩展至10，000+可交互训练环境，长输入下TTFT降低60%至80%以上。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -173,14 +190,14 @@
         "1B"
       ],
       "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:40",
       "source": "X：Runway (@runwayml)",
-      "heat": 88,
+      "heat": 87,
       "title": "Runway Agent 推出自然语言工作流功能",
       "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。\n\n立即尝试，点击下方链接调用 / Workflow 技能。",
       "reason": "工具方向的新动态,值得关注。",
@@ -190,14 +207,14 @@
         "Workflow"
       ],
       "url": "https://x.com/runwayml/status/2080649234672439389",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:27",
       "source": "X：Satya Nadella (@satyanadella)",
-      "heat": 87,
+      "heat": 86,
       "title": "微软阐述开源模型助力美国竞争力路径",
       "summary": "开放权重模型对健康的 AI 生态系统至关重要。我们与行业同仁一道，正在规划一条路径，让开放权重模型在保护国家安全的同时，增强美国竞争力并扩大经济机会。",
       "reason": "行业方向的新动态,值得关注。",
@@ -205,14 +222,14 @@
         "行业"
       ],
       "url": "https://x.com/satyanadella/status/2080646162483417097",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "20:28",
       "source": "公众号：百度智能云（文心）",
-      "heat": 86,
+      "heat": 85,
       "title": "百度搭子更新：电脑手机接力、桌面端内嵌浏览器上线，复杂任务可跨端连续执行",
       "summary": "百度搭子在近期AI Day上推出多项升级，支持电脑与手机双端互联，同步任务上下文与执行进度，用户可跨设备接力完成复杂工作。桌面端内嵌浏览器正式上线，能自动打开多个网页执行调研、下载等操作，手机端支持云端远程操控。智能路由自动匹配任务模式，平均任务耗时降低20%，Token利用率提升25%；简单任务完成度达100%，复杂任务高交付率94%，积分消耗最高降低75%。",
       "reason": "工具方向的新动态,值得关注。",
@@ -221,14 +238,14 @@
         "Token"
       ],
       "url": "https://mp.weixin.qq.com/s/HRySK1LU53clPe2I_M-Fug",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "19:55",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 85,
+      "heat": 84,
       "title": "FLUX 3 x mimic：新一代视频动作模型",
       "summary": "Black Forest Labs 发布多模态基础模型 FLUX 3，联合训练图像、视频和音频，其中视频预测占训练算力的 95% 以上。该模型与机器人公司 mimic 合作推出 FLUX-mimic，已在奥迪生产线上测试部署。加入动作预测后，视频生成质量最初下降最多 10%，但经 3500 步训练后恢复原有水平。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -238,14 +255,14 @@
         "Forest"
       ],
       "url": "https://bfl.ai/blog/flux-3-mimic",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "17:48",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
       "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于智谱GLM-5.2的24.4%。",
       "reason": "行业方向的新动态,值得关注。",
@@ -255,14 +272,14 @@
         "GLM-5.2"
       ],
       "url": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "17:47",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 83,
+      "heat": 82,
       "title": "Claude-thermos：保持 Claude 会话缓存热度，避免重新编码费用",
       "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。",
       "reason": "观点方向的新动态,值得关注。",
@@ -272,14 +289,14 @@
         "Code"
       ],
       "url": "https://github.com/izeigerman/claude-thermos",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "14:48",
       "source": "IT之家（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "Black Forest Labs 发布 FLUX 3 多模态模型，支持单次生成 20 秒视频与原生音频",
       "summary": "Black Forest Labs 以 Early Access 方式推出 FLUX 3 多模态基础模型，采用统一架构联合学习图像、视频和音频。该模型基于 Self-Flow 学习框架扩展，可在单次生成中输出最长 20 秒视频并附带原生音频，支持文生视频、图生视频、多镜头串联等任务。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -289,14 +306,14 @@
         "Labs"
       ],
       "url": "https://www.ithome.com/0/981/137.htm",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
       "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
       "reason": "工具方向的新动态,值得关注。",
@@ -306,14 +323,14 @@
         "Gemini"
       ],
       "url": "https://openrouter.ai/blog/announcements/classifiers",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:30",
       "source": "IT之家（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼",
       "summary": "美国佛罗里达州 55 岁男子 Scott Winters 起诉 OpenAI，称 ChatGPT-4o 多次建议其无需就医，导致其因双肺血栓引发大面积肺栓塞，一度濒临死亡。诉状指控 OpenAI 存在疏忽和\"无证行医\"行为，要求经济赔偿并暂停 ChatGPT Health 服务。OpenAI 回应称 ChatGPT 不是医生，不应替代专业医疗护理。",
       "reason": "行业方向的新动态,值得关注。",
@@ -323,14 +340,14 @@
         "CEO"
       ],
       "url": "https://www.ithome.com/0/980/890.htm",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:11",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 79,
+      "heat": 78,
       "title": "DARPA 与美国空军试飞 AI 操控的 F-16 战机",
       "summary": "DARPA 与美国空军成功试飞了由人工智能操控的 F-16 战机。该 AI 系统在真实空战环境中完成了自主飞行与战术机动测试，标志着 AI 在军事航空领域的重大进展。",
       "reason": "行业方向的新动态,值得关注。",
@@ -339,14 +356,14 @@
         "F-16"
       ],
       "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "03:43",
       "source": "X：OpenAI (@OpenAI)",
-      "heat": 78,
+      "heat": 77,
       "title": "ChatGPT 桌面版上线语音控制多智能体",
       "summary": "ChatGPT 语音功能现已登陆桌面应用。\n\n只需使用语音，即可控制你的电脑，并指挥在 ChatGPT Work 或 Codex 中运行的多个智能体。\n\n该功能由 GPT-Live 驱动，因此它能够同时在该应用中说话、聆听并协调工作。\n\n今日起，面向 macOS 和 Windows 平台的 Plus、Pro、Business、Edu 及 Enterprise 计划用户全球推送。",
       "reason": "工具方向的新动态,值得关注。",
@@ -356,14 +373,14 @@
         "Codex"
       ],
       "url": "https://x.com/OpenAI/status/2080378182469857576",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:35",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 77,
+      "heat": 76,
       "title": "TheNumbers.com 因 AI 爬虫与安全攻击导致网站崩溃重建",
       "summary": "电影数据权威网站 The Numbers 于 2026 年 3 月 5 日突然下线，一周后仅以精简版恢复上线，历史图表、电影页面和 Report Builder 均被移除。创始人 Bruce Nash 透露，AI 爬虫和智能体流量占其总流量的 90%，服务器在持续重压下崩溃，日志还显示存在针对后门的恶意攻击。团队被迫放弃运行 30 年、包含 16 万源文件的旧系统，在新基础设施上重建网站。",
       "reason": "观点方向的新动态,值得关注。",
@@ -373,23 +390,6 @@
         "Numbers"
       ],
       "url": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "01:55",
-      "source": "X：Greg Brockman (@gdb)",
-      "heat": 76,
-      "title": "ChatGPT 向美国用户推出健康功能",
-      "summary": "OpenAI 宣布向美国用户推出 ChatGPT 健康功能，支持安全连接 Apple Health 及受支持的医疗记录。每周有 3 亿用户使用 ChatGPT 进行健康咨询，新功能可让 ChatGPT 理解个人健康上下文，追踪变化并提供更个性化的帮助。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "ChatGPT",
-        "OpenAI",
-        "Apple"
-      ],
-      "url": "https://x.com/gdb/status/2080351159638704615",
       "rank": 21
     }
   ]
