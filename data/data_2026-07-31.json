@@ -21,7 +21,7 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 4
     },
     {
       "key": "tool",
@@ -31,7 +31,7 @@
     {
       "key": "research",
       "label": "研究",
-      "count": 3
+      "count": 2
     },
     {
       "key": "industry",
@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "14:02",
+      "source": "IT之家（RSS）",
+      "heat": 96,
+      "title": "DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力基准测试远超 V4-Pro 预览版",
+      "summary": "DeepSeek 今日宣布 DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Cybergym 76.7，DeepSWE 54.4，Toolathlon verified 70.3，多项基准远超 V4-Pro-Preview。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek-V4-Flas",
+        "API",
+        "Agent"
+      ],
+      "url": "https://www.ithome.com/0/984/116.htm",
+      "rank": 1
+    },
+    {
       "cat": "研究",
       "catKey": "research",
       "time": "12:57",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 96,
+      "heat": 95,
       "title": "Show HN：将 DeepSeek 整合到 GPT-OSS 中不会带来审查机制",
       "summary": "一项受控实验表明，用深度审查的中国模型 DeepSeek V4 Flash 的输出训练美国模型 GPT-OSS-120B，可显著提升其金融推理能力，但审查行为并未迁移。",
       "reason": "研究方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "GPT-OSS"
       ],
       "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:48",
       "source": "IT之家（RSS）",
-      "heat": 95,
+      "heat": 94,
       "title": "国家发改委：将加快《人工智能法》立法进程",
       "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。",
       "reason": "行业方向的新动态,值得关注。",
@@ -75,14 +92,16 @@
         "100亿"
       ],
       "url": "https://www.ithome.com/0/983/974.htm",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "X：Replit (@Replit)",
-      "heat": 94,
+      "heat": 93,
       "title": "Replit Design 推出数百设计模板",
       "summary": "再也不用从空白页开始了。\n\nReplit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。\n\n可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。\n\n立即尝试：http://replit.com/design",
       "reason": "工具方向的新动态,值得关注。",
@@ -91,16 +110,14 @@
         "Design"
       ],
       "url": "https://x.com/Replit/status/2082979584799060267",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:02",
       "source": "X：Anthropic (@AnthropicAI)",
-      "heat": 93,
+      "heat": 92,
       "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
       "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。",
       "reason": "行业方向的新动态,值得关注。",
@@ -110,14 +127,14 @@
         "Irregular"
       ],
       "url": "https://x.com/AnthropicAI/status/2082965101083320543",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:26",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
       "summary": "美国地区法官Rita Lin表示，特朗普政府未能提供充分证据，证明将Anthropic列为供应链风险并禁止联邦政府使用其技术的合理性。争议源于Anthropic拒绝将其AI用于大规模监控或致命武器决策，而国防部主张私营公司不应限制军方技术使用。",
       "reason": "行业方向的新动态,值得关注。",
@@ -127,14 +144,14 @@
         "Lin"
       ],
       "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:15",
       "source": "X：Gemini (@GeminiApp)",
-      "heat": 91,
+      "heat": 90,
       "title": "Gemini Spark 集成 Chrome 自动浏览功能",
       "summary": "Gemini Spark 🤝 @GoogleChrome\n\nGemini Spark 现已与 Google Chrome 的自动浏览功能集成。经你许可，Spark 可直接在你的 Chrome 浏览器中处理网页任务，例如预约看房或自动填写航班信息。",
       "reason": "工具方向的新动态,值得关注。",
@@ -144,14 +161,14 @@
         "Chrome"
       ],
       "url": "https://x.com/GeminiApp/status/2082923048362299629",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:53",
       "source": "X：Google AI (@GoogleAI)",
-      "heat": 90,
+      "heat": 89,
       "title": "Google Earth 集成 Nano Banana 2 图像生成",
       "summary": "Google Earth 网页版上线基于 Nano Banana 2 的图像生成功能，用户可通过文本提示词将卫星与 3D 影像结合，重新想象全球任意地点（如百年前的城市风貌或社区新球场）。该功能现已面向所有用户开放。",
       "reason": "工具方向的新动态,值得关注。",
@@ -161,14 +178,14 @@
         "Nano"
       ],
       "url": "https://x.com/GoogleAI/status/2082902334984609936",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:32",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 89,
+      "heat": 88,
       "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
       "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
       "reason": "工具方向的新动态,值得关注。",
@@ -178,14 +195,14 @@
         "Terra"
       ],
       "url": "https://x.com/OpenRouter/status/2082882158574911564",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:30",
       "source": "GitHub Blog",
-      "heat": 88,
+      "heat": 87,
       "title": "GitHub Copilot 应用新增堆叠会话与拉取请求功能",
       "summary": "GitHub Copilot 应用推出堆叠会话功能，允许用户在同一个仓库中创建一系列相互承接的任务，每个会话可基于前一个会话的成果继续工作。作者通过一个十余年历史的个人项目演示了该功能：先使用 Plan 模式制定前端现代化计划，再通过堆叠会话将 React-Bootstrap 替换工作拆分为独立会话，并自动为每个会话创建对应的拉取请求，避免范围蔓延。",
       "reason": "工具方向的新动态,值得关注。",
@@ -195,14 +212,14 @@
         "Plan"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:54",
       "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "heat": 87,
+      "heat": 86,
       "title": "Perplexity Computer 推出 Projects 功能",
       "summary": "在 Perplexity Computer 上推出 Projects。\n随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。\n现已向所有用户开放！",
       "reason": "工具方向的新动态,值得关注。",
@@ -212,14 +229,14 @@
         "Projects"
       ],
       "url": "https://x.com/AravSrinivas/status/2082872551538380939",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "00:00",
       "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "heat": 86,
+      "heat": 85,
       "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
       "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。",
       "reason": "商业方向的新动态,值得关注。",
@@ -228,14 +245,14 @@
         "API"
       ],
       "url": "https://seed.bytedance.com/zh/blog/%E4%B8%80%E9%95%9C%E6%88%90%E7%89%87-%E9%9A%8F%E5%BF%83%E5%8F%82%E8%80%83-seedance-2-5-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "23:50",
       "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "heat": 85,
+      "heat": 84,
       "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
       "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -245,14 +262,14 @@
         "Cloud"
       ],
       "url": "https://www.lmsys.org/blog/2026-07-30-sglang-google-tpu",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:43",
       "source": "Simon Willison 博客",
-      "heat": 84,
+      "heat": 83,
       "title": "llm-chat-completions-server 0.1a0 发布",
       "summary": "Simon Willison 发布 llm-chat-completions-server 0.1a0 插件，可在本地 9001 端口启动一个兼容 OpenAI Chat Completions API 的服务器，暴露 LLM 工具中所有已安装的模型。",
       "reason": "工具方向的新动态,值得关注。",
@@ -262,14 +279,14 @@
         "OpenAI"
       ],
       "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "23:02",
       "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "heat": 83,
+      "heat": 82,
       "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
       "summary": "One brain. For any robot. 🤖\n\n我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -279,14 +296,14 @@
         "Gemini"
       ],
       "url": "https://x.com/GoogleDeepMind/status/2082844162928381956",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "23:00",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
       "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -296,14 +313,14 @@
         "Google"
       ],
       "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "20:47",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "FCC 禁止进口中国新型机器人与联网逆变器",
       "summary": "美国 FCC 自 7 月 28 日起禁止进口中国新型\"先进机器人设备\"和联网电源逆变器，理由包括防止供应链中断、数据窃取和网络攻击。禁令覆盖几乎所有重量超 2 公斤、具备无线连接和感知能力的软件控制地面机器人，但已上市型号不受影响。",
       "reason": "商业方向的新动态,值得关注。",
@@ -311,14 +328,14 @@
         "FCC"
       ],
       "url": "https://the-decoder.com/fcc-bans-new-chinese-robots-and-power-inverters-to-protect-us-ai-buildout-from-foreign-threats",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "18:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 80,
+      "heat": 79,
       "title": "GPT-5.6 如何推进性价比前沿",
       "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -328,14 +345,14 @@
         "Luna"
       ],
       "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "15:43",
       "source": "MarkTechPost（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展",
       "summary": "Marktechpost AI 团队发布 Token Saver，一款面向 Claude Desktop 的开源 MCP 扩展，通过本地混合 RAG 在设备端检索 PDF，无需上传文件。该工具将 token 消耗削减 92%-99%，并保证数据隐私，设置无需 Python 环境或终端配置。",
       "reason": "工具方向的新动态,值得关注。",
@@ -345,14 +362,14 @@
         "RAG"
       ],
       "url": "https://www.marktechpost.com/2026/07/30/token-saver-an-open-source-mcp-extension-using-local-hybrid-rag",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "10:49",
       "source": "IT之家（RSS）",
-      "heat": 78,
+      "heat": 77,
       "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
       "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面\"有点乱\"，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。",
       "reason": "观点方向的新动态,值得关注。",
@@ -362,14 +379,14 @@
         "Codex"
       ],
       "url": "https://www.ithome.com/0/983/444.htm",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "10:33",
       "source": "X：腾讯混元 (@TencentHunyuan)",
-      "heat": 77,
+      "heat": 76,
       "title": "腾讯混元Hyra破解50年数学难题",
       "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
       "reason": "研究方向的新动态,值得关注。",
@@ -379,23 +396,6 @@
         "A-A"
       ],
       "url": "https://x.com/TencentHunyuan/status/2082655737541726636",
-      "rank": 20
-    },
-    {
-      "cat": "研究",
-      "catKey": "research",
-      "time": "08:00",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "heat": 76,
-      "title": "BM25 在大规模语料中胜出：检索增强生成范式的规模扩展研究",
-      "summary": "一项受控研究在约450倍跨度、28个严格嵌套的语料规模层级上比较多种RAG范式，发现存在规模依赖的交叉点而非绝对赢家。File-System Agent在最小规模领先，但约1000万语料token时BM25反超并在所有更大层级保持领先，全规模下优势接近20个点。BM25还锚定了无需LLM构建的低成本帕累托前沿。",
-      "reason": "研究方向的新动态,值得关注。",
-      "tags": [
-        "BM25",
-        "RAG",
-        "File-System"
-      ],
-      "url": "https://arxiv.org/abs/2607.26497",
       "rank": 21
     }
   ]
