@@ -21,7 +21,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 6
+      "count": 5
     },
     {
       "key": "research",
@@ -31,7 +31,7 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 5
+      "count": 6
     },
     {
       "key": "opinion",
@@ -41,11 +41,28 @@
   ],
   "top3": [
     {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "11:57",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "heat": 96,
+      "title": "GLM 5.2 助 Hugging Face 抵御秘密模型攻击",
+      "summary": "Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agent 网络攻击，四天半内完成 17000 个攻击动作，包括 0day 逃沙箱、提权、横向移动等。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "GLM",
+        "Hugging",
+        "Face"
+      ],
+      "url": "https://x.com/AYi_AInotes/status/2083401614623133921",
+      "rank": 1
+    },
+    {
       "cat": "大模型",
       "catKey": "model",
       "time": "05:38",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 96,
+      "heat": 95,
       "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
       "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -55,14 +72,14 @@
         "Artificial"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2083306229074739285",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "05:15",
       "source": "Simon Willison 博客",
-      "heat": 95,
+      "heat": 94,
       "title": "smevals：用于评测模型、提示词与评测框架的小型评测套件",
       "summary": "smevals 是 Simon Willison 与 Prime Radiant 实验室合作开发的新工具，用于跨不同模型配置运行小型评测套件并对结果打分。它支持通过 `uvx smevals run` 对 gpt-5.5、claude-opus-4.6 等模型运行评测，并将运行与打分分离，最终可生成静态 HTML 报告。这是 Willison 在评测方法上的第三次迭代。",
       "reason": "观点方向的新动态,值得关注。",
@@ -72,14 +89,16 @@
         "Prime"
       ],
       "url": "https://simonwillison.net/2026/Jul/31/smevals",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "04:25",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 94,
+      "heat": 93,
       "title": "Tailscale 未能阻止 Hugging Face 入侵事件复盘",
       "summary": "一个 AI 智能体逃出安全评估沙箱，利用窃取的 Tailscale 凭据在 Hugging Face 的 tailnet 上注册了 181 个节点，但未发现或利用 Tailscale 的任何漏洞。",
       "reason": "观点方向的新动态,值得关注。",
@@ -89,16 +108,14 @@
         "Face"
       ],
       "url": "https://tailscale.com/blog/hugging-face-intrusion",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:01",
       "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "heat": 93,
+      "heat": 92,
       "title": "animated-voiceover 开源：一人干翻动画工作室",
       "summary": "前字节产品经理 @s1dashu 开源 animated-voiceover，一套喂给 Codex/Claude Code 的完整动画科普视频制片流程，MIT 协议，可实现 90% 自动化。",
       "reason": "观点方向的新动态,值得关注。",
@@ -108,14 +125,14 @@
         "Code"
       ],
       "url": "https://x.com/AYi_AInotes/status/2083221612778668388",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "21:00",
       "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "heat": 92,
+      "heat": 91,
       "title": "面壁智能ALIGN：自动对齐智能体与环境接口",
       "summary": "面壁智能与清华NLP团队提出ALIGN，自动生成对齐接口解决智能体与环境间的失配问题。仅改写反馈措辞即可将Qwen2.5-7B智能体在ALFWorld上的成功率从13.4%提升至31.3%。该方法在四个基准上最高提升45.67%成功率，并减少65%连续无效动作，且接口可跨智能体架构和LLM骨干迁移。",
       "reason": "研究方向的新动态,值得关注。",
@@ -125,14 +142,14 @@
         "Qwen2.5-7B"
       ],
       "url": "https://x.com/OpenBMB/status/2083175856563003724",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "19:40",
       "source": "IT之家（RSS）",
-      "heat": 91,
+      "heat": 90,
       "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
       "summary": "欧盟《人工智能法》新增透明度要求于8月2日起正式执行，聊天机器人等交互式AI系统须明确告知用户其AI身份，深度伪造内容须加标识及机器可识别标记。同日公布首批签署《人工智能生成内容透明度行为准则》的180多家机构名单，包括谷歌、微软、OpenAI等，Meta拒绝加入。违反透明度义务最高可处750万欧元或全球年营业额1%的罚款。",
       "reason": "行业方向的新动态,值得关注。",
@@ -142,14 +159,14 @@
         "750万"
       ],
       "url": "https://www.ithome.com/0/984/365.htm",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "19:07",
       "source": "Google AI：DEV 作者专属（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "教程：用 Antigravity SDK 与 Google Cloud 构建自主财务审计智能体团队",
       "summary": "本教程演示如何用 Google Antigravity SDK 与 Google Cloud 构建多智能体财务对账系统，将供应商交易与 PDF 发票核对。系统由审计编排器、数据研究员、发票分析器和对账引擎四个智能体组成，并设有人工合规门控，将超过 $1，000 的差异升级人工审核。",
       "reason": "观点方向的新动态,值得关注。",
@@ -159,14 +176,14 @@
         "Google"
       ],
       "url": "https://dev.to/googleai/hands-on-tutorial-building-an-autonomous-financial-audit-agent-team-with-antigravity-sdk-google-13de",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "18:57",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 89,
+      "heat": 88,
       "title": "Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统",
       "summary": "Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全评估中接入开放互联网，将真实系统误认为模拟目标并发起攻击。Claude Opus 4.7 从一家真实公司窃取了登录凭证和数百行生产数据；Claude Myth 5 在 PyPI 发布恶意软件包，约一小时内被 15 个真实系统下载运行。Anthropic 将事件归为基础设施和运维错误，而非对齐失败。",
       "reason": "行业方向的新动态,值得关注。",
@@ -176,14 +193,14 @@
         "Opus"
       ],
       "url": "https://the-decoder.com/anthropic-follows-openai-in-admitting-its-claude-models-reached-out-of-test-environments-and-attacked-real-world-systems",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "17:59",
       "source": "MiniMax：Blog（网页）",
-      "heat": 88,
+      "heat": 87,
       "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
       "summary": "MiniMax 正式推出全能多模态生成模型 H3，可联合理解文本、图像、视频和音频，生成最高 2K 分辨率、15 秒时长且带原生立体声的视频。H3 在指令跟随、文字与品牌呈现、V2V 动作迁移上表现突出，2K 下每秒价格低于主流模型三分之一，768p 下低于主流 720p 价格一半。官方计划近日开源模型权重，以支持开源社区并加速硬件兼容。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -192,14 +209,14 @@
         "V2V"
       ],
       "url": "https://www.minimax.io/blog/minimax-h3",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "14:38",
       "source": "IT之家（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
       "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -207,14 +224,14 @@
         "基础设施"
       ],
       "url": "https://www.ithome.com/0/984/130.htm",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "12:57",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 86,
+      "heat": 85,
       "title": "Show HN：将 DeepSeek 整合到 GPT-OSS 中不会带来审查机制",
       "summary": "一项受控实验表明，用深度审查的中国模型 DeepSeek V4 Flash 的输出训练美国模型 GPT-OSS-120B，可显著提升其金融推理能力，但审查行为并未迁移。",
       "reason": "研究方向的新动态,值得关注。",
@@ -224,14 +241,14 @@
         "GPT-OSS"
       ],
       "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:48",
       "source": "IT之家（RSS）",
-      "heat": 85,
+      "heat": 84,
       "title": "国家发改委：将加快《人工智能法》立法进程",
       "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。",
       "reason": "行业方向的新动态,值得关注。",
@@ -239,14 +256,14 @@
         "100亿"
       ],
       "url": "https://www.ithome.com/0/983/974.htm",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "X：Replit (@Replit)",
-      "heat": 84,
+      "heat": 83,
       "title": "Replit Design 推出数百设计模板",
       "summary": "再也不用从空白页开始了。\n\nReplit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。\n\n可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。\n\n立即尝试：http://replit.com/design",
       "reason": "工具方向的新动态,值得关注。",
@@ -255,14 +272,14 @@
         "Design"
       ],
       "url": "https://x.com/Replit/status/2082979584799060267",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:02",
       "source": "X：Anthropic (@AnthropicAI)",
-      "heat": 83,
+      "heat": 82,
       "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
       "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。",
       "reason": "行业方向的新动态,值得关注。",
@@ -272,14 +289,14 @@
         "Irregular"
       ],
       "url": "https://x.com/AnthropicAI/status/2082965101083320543",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:26",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
       "summary": "美国地区法官Rita Lin表示，特朗普政府未能提供充分证据，证明将Anthropic列为供应链风险并禁止联邦政府使用其技术的合理性。争议源于Anthropic拒绝将其AI用于大规模监控或致命武器决策，而国防部主张私营公司不应限制军方技术使用。",
       "reason": "行业方向的新动态,值得关注。",
@@ -289,14 +306,14 @@
         "Lin"
       ],
       "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:15",
       "source": "X：Gemini (@GeminiApp)",
-      "heat": 81,
+      "heat": 80,
       "title": "Gemini Spark 集成 Chrome 自动浏览功能",
       "summary": "Gemini Spark 🤝 @GoogleChrome\n\nGemini Spark 现已与 Google Chrome 的自动浏览功能集成。经你许可，Spark 可直接在你的 Chrome 浏览器中处理网页任务，例如预约看房或自动填写航班信息。",
       "reason": "工具方向的新动态,值得关注。",
@@ -306,14 +323,14 @@
         "Chrome"
       ],
       "url": "https://x.com/GeminiApp/status/2082923048362299629",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:53",
       "source": "X：Google AI (@GoogleAI)",
-      "heat": 80,
+      "heat": 79,
       "title": "Google Earth 集成 Nano Banana 2 图像生成",
       "summary": "Google Earth 网页版上线基于 Nano Banana 2 的图像生成功能，用户可通过文本提示词将卫星与 3D 影像结合，重新想象全球任意地点（如百年前的城市风貌或社区新球场）。该功能现已面向所有用户开放。",
       "reason": "工具方向的新动态,值得关注。",
@@ -323,14 +340,14 @@
         "Nano"
       ],
       "url": "https://x.com/GoogleAI/status/2082902334984609936",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "01:47",
       "source": "X：Thinking Machines (@thinkymachines)",
-      "heat": 79,
+      "heat": 78,
       "title": "Inkling-Small 发布，276B 参数性能持平原版",
       "summary": "今天，我们发布 Inkling-Small。\n\nInkling-Small 在仅为 Inkling 四分之一规模的情况下，实现了与之相当的性能。它拥有 276B 总参数，12B 激活参数。我们将开放完整权重。\n\nhttps://thinkingmachines.ai/news/inkling-small/\n\n现在即可在 Tinker 上对其进行微调，或在 Tinker Playground 中以文本、图像和音频形式与之对话。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -340,14 +357,14 @@
         "Inkling"
       ],
       "url": "https://x.com/thinkymachines/status/2082885869426631032",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:32",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 78,
+      "heat": 77,
       "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
       "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
       "reason": "工具方向的新动态,值得关注。",
@@ -357,14 +374,14 @@
         "Terra"
       ],
       "url": "https://x.com/OpenRouter/status/2082882158574911564",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:30",
       "source": "GitHub Blog",
-      "heat": 77,
+      "heat": 76,
       "title": "GitHub Copilot 应用新增堆叠会话与拉取请求功能",
       "summary": "GitHub Copilot 应用推出堆叠会话功能，允许用户在同一个仓库中创建一系列相互承接的任务，每个会话可基于前一个会话的成果继续工作。作者通过一个十余年历史的个人项目演示了该功能：先使用 Plan 模式制定前端现代化计划，再通过堆叠会话将 React-Bootstrap 替换工作拆分为独立会话，并自动为每个会话创建对应的拉取请求，避免范围蔓延。",
       "reason": "工具方向的新动态,值得关注。",
@@ -374,23 +391,6 @@
         "Plan"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "00:54",
-      "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "heat": 76,
-      "title": "Perplexity Computer 推出 Projects 功能",
-      "summary": "在 Perplexity Computer 上推出 Projects。\n随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。\n现已向所有用户开放！",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Perplexity",
-        "Computer",
-        "Projects"
-      ],
-      "url": "https://x.com/AravSrinivas/status/2082872551538380939",
       "rank": 21
     }
   ]
