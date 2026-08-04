@@ -16,12 +16,17 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 4
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 7
+      "count": 6
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 1
     },
     {
       "key": "industry",
@@ -31,7 +36,7 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 9
+      "count": 8
     }
   ],
   "top3": [
@@ -317,11 +322,43 @@
       "rank": 17
     },
     {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "08:00",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "heat": 79,
+      "title": "SwanTale：面向指令与零样本任务的统一多说话人语音与音频生成",
+      "summary": "SwanTale 提出统一的多说话人语音与音频生成模型，同时支持零样本与指令任务。研究配套推出 SwanData-Caption 数据方案，通过清洗、合成覆盖与多级标注解决数据稀缺问题，并引入 SwanVAE、Unified MoE、GRPO 后训练等技术。实验显示，SwanTale 在多项零样本与指令指标上领先，并在两项任务的表达力评分中均取得最佳成绩。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "SwanTale",
+        "SwanData-Caption",
+        "SwanVAE"
+      ],
+      "url": "https://arxiv.org/abs/2608.02023",
+      "rank": 18
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "08:00",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "heat": 78,
+      "title": "UEmbed：统一稀疏与稠密的多模态嵌入模型",
+      "summary": "UEmbed 是一种仅解码器的多模态嵌入模型，可在单次因果前向传播中同时生成稀疏词级和稠密表示，通过可学习特殊 token 与词汇表分区突破单 token 信息瓶颈。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "UEmbed"
+      ],
+      "url": "https://arxiv.org/abs/2608.02583",
+      "rank": 19
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "05:25",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 79,
+      "heat": 77,
       "title": "OpenAI 新模型 Astra 数学表现出色，但被过度吹捧",
       "summary": "OpenAI 内部测试的新模型 Astra 在数学问题上表现惊艳，但 Gary Marcus 指出相关讨论犯了\"合成谬误\"：擅长某类数学不等于擅长所有数学、科学乃至一切认知任务。数学之所以成为突破口，是因为它便于用符号工具验证且能廉价生成海量合成数据，而开放世界问题无法如此模拟。此外，OpenAI 未公布方法细节，尚无法评估其真实意义。",
       "reason": "观点方向的新动态,值得关注。",
@@ -331,14 +368,14 @@
         "Gary"
       ],
       "url": "https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold",
-      "rank": 18
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:26",
       "source": "公众号：卡尔的AI沃茨",
-      "heat": 78,
+      "heat": 76,
       "title": "实测MiniMax H3做后期和动效：视频届的审美王来了",
       "summary": "MiniMax H3视频模型实测覆盖广告TVC、短剧、创意片头、动态海报、UI动效和游戏实机六类场景，可生成5-15秒视频、原生双声道、直出2K，一次最多放9张图、3段视频和3段音频，提示语最高支持7000字符。",
       "reason": "观点方向的新动态,值得关注。",
@@ -347,39 +384,6 @@
         "TVC"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509055&idx=1&sn=28254c9e78532b336895b8c541905d49",
-      "rank": 19
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "18:47",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "heat": 77,
-      "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
-      "summary": "Codex 高阶玩法：让 Sol 在 `~/.codex/agents/` 下创建 `luna-worker.toml` 子代理，模型设 `gpt-5.6-luna`、reasoning effort 设 max，Sol 负责拆任务与审代码，具体实现自动委托给 Luna Max。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Codex",
-        "Sol",
-        "Luna"
-      ],
-      "url": "https://x.com/AYi_AInotes/status/2083867265179537565",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "14:23",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "heat": 76,
-      "title": "Grok 支持分析任意视频",
-      "summary": "Grok 可以分析任何视频 https://grok.com/share/bGVnYWN5_8013f7a3-f604-4351-8cd7-acecf3ef165b",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Grok",
-        "GVnYWN5"
-      ],
-      "url": "https://x.com/elonmusk/status/2083800942927839307",
       "rank": 21
     }
   ]
