@@ -16,12 +16,12 @@
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 4
+      "count": 3
     },
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 4
     },
     {
       "key": "tool",
@@ -36,11 +36,28 @@
   ],
   "top3": [
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "10:40",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "heat": 96,
+      "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
+      "summary": "阿里通义千问发布 Qwen-Image-3.0-Pro 与 Standard，现已在 Qwen Cloud 上线。该模型在 Arena 文生图榜单中位列中国模型第一、主流模型第二，支持 4.5k-token 提示词、10px 级文字渲染及 12 种语言。Pro 版起价 $0.04/张，Standard 版起价 $0.03/张。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen-Image-3.0-P",
+        "Qwen",
+        "Cloud"
+      ],
+      "url": "https://x.com/Alibaba_Qwen/status/2084831888729072121",
+      "rank": 1
+    },
+    {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:35",
       "source": "公众号：数字生命卡兹克",
-      "heat": 96,
+      "heat": 95,
       "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
       "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
       "reason": "观点方向的新动态,值得关注。",
@@ -50,14 +67,14 @@
         "Qwen"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684946&idx=1&sn=ae7edcc572b998dc4e1ac3591977aa85",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "07:58",
       "source": "Simon Willison 博客",
-      "heat": 95,
+      "heat": 94,
       "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
       "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。",
       "reason": "工具方向的新动态,值得关注。",
@@ -67,14 +84,16 @@
         "Responses"
       ],
       "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "06:00",
       "source": "X：Replit (@Replit)",
-      "heat": 94,
+      "heat": 93,
       "title": "Replit 环境智能：免提示词自动生成设计",
       "summary": "你无需提示词，也无需设计语言。\n\n环境智能（Ambient Intelligence）会在每个画面旁显示建议卡片，每张卡片都指向你的设计的一个不同方向。点击你喜欢的那张，即可看到它生成一个新的画面。\n\n你再也不必纠结下一步该做什么。\n\n立即在 http://replit.com/design 体验。",
       "reason": "工具方向的新动态,值得关注。",
@@ -84,16 +103,14 @@
         "Intelligence"
       ],
       "url": "https://x.com/Replit/status/2084761337570144424",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:10",
       "source": "Simon Willison 博客",
-      "heat": 93,
+      "heat": 92,
       "title": "MiniMax-H3 通过 MLX 移植可在 Apple Silicon 上运行",
       "summary": "MiniMax 发布 MiniMax-H3，一个可接受文本、图像、音频和视频并生成最长 15 秒带音频视频片段的通用全模态生成系统。Python 包 PipeNetwork/minimax-h3-mlx 将其移植到 MLX，支持 Apple Silicon 运行。作者在 M5 Max MacBook Pro 上实测，下载约 115 GB 模型文件，视频生成耗时不到 45 分钟。",
       "reason": "观点方向的新动态,值得关注。",
@@ -103,14 +120,14 @@
         "Apple"
       ],
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "02:17",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 92,
+      "heat": 91,
       "title": "Soup v0.72.4：在4 GB显存笔记本GPU上微调8B模型",
       "summary": "Soup 推出 v0.72.4，支持在配备 4 GB 显存的笔记本 GPU 上通过 QLoRA 微调 8B 模型，无需 SSH 或云服务。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -120,14 +137,14 @@
         "GPU"
       ],
       "url": "https://github.com/MakazhanAlpamys/Soup",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "01:54",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 91,
+      "heat": 90,
       "title": "OpenRouter 上线 FLUX 3 Video 统一多模态模型",
       "summary": "@bfl_ai 的 FLUX 3 Video 现已在 OpenRouter 上向所有人开放。\n\n一个统一的视频、音频、图像和动作预测多模态模型家族。严肃、有趣、创意、真实、电影感，随你所需。基于统一架构联合训练。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -137,14 +154,14 @@
         "Video"
       ],
       "url": "https://x.com/OpenRouter/status/2084699413898027064",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:51",
       "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "heat": 90,
+      "heat": 89,
       "title": "SpecForge v0.3.0 发布：统一解耦与共置投机解码栈，新增开放 SpecBundle 草稿模型",
       "summary": "SpecForge v0.3.0 将目标模型推理与草稿模型训练分离，支持 EAGLE3、EAGLE3.1、P-EAGLE、DFlash、Domino、DSpark 等多种投机解码算法，并统一在线、离线与解耦工作流。",
       "reason": "工具方向的新动态,值得关注。",
@@ -154,14 +171,14 @@
         "SpecBundle"
       ],
       "url": "https://www.lmsys.org/blog/2026-08-04-specforge-v0-3",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:47",
       "source": "GitHub Blog",
-      "heat": 89,
+      "heat": 88,
       "title": "GitHub 如何用堆叠式 Pull Request 拆解 AI 生成的巨型代码",
       "summary": "GitHub 介绍用堆叠式 Pull Request（stacked PR）解决 AI 编码智能体生成巨型代码难以审查的问题。通过将 1，000+ 行的大 diff 按数据、API、接线、UI 拆成 L1-L4 四个独立分层，每层可分配不同审查者。",
       "reason": "观点方向的新动态,值得关注。",
@@ -171,14 +188,14 @@
         "Request"
       ],
       "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:45",
       "source": "Google Developers Blog（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
       "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。",
       "reason": "工具方向的新动态,值得关注。",
@@ -188,14 +205,14 @@
         "API"
       ],
       "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Google Cloud：Databases（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
       "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。",
       "reason": "工具方向的新动态,值得关注。",
@@ -205,14 +222,14 @@
         "Database"
       ],
       "url": "https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "23:46",
       "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "heat": 86,
+      "heat": 85,
       "title": "商汤 SenseNova U1 开源：统一推理与图像生成",
       "summary": "商汤发布开源模型 SenseNova U1，可在统一流程中同时进行推理与图像生成。其信息图模式可将单条提示词转为结构化幻灯片，交错模式则逐步生成图文内容，如演示六步画龙教程。模型已上线 SenseNova Studio、HuggingFace 及 GitHub。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -222,14 +239,14 @@
         "HuggingFace"
       ],
       "url": "https://x.com/SenseTime_AI/status/2084667189479837741",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "23:03",
       "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "heat": 85,
+      "heat": 84,
       "title": "蚂蚁百灵发布Ling-3.0-flash开源权重",
       "summary": "今天，我们发布了 Ling-3.0-flash 的开源权重。🎉\n\n官方 BF16 和 FP8 量化版本现已可用，您可以根据自己的硬件、性能要求和部署需求选择最合适的版本。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -239,14 +256,14 @@
         "FP8"
       ],
       "url": "https://x.com/AntLingAGI/status/2084656533489754475",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "23:00",
       "source": "NVIDIA Blog（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
       "summary": "NVIDIA Alpamayo 2 Super 现已开放商用，基于 Cosmos 3 Super Reasoner 构建，采用强化学习后训练，支持轨迹预测、因果链推理、元动作、自动标注及视觉问答等多任务输出。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -256,14 +273,14 @@
         "Super"
       ],
       "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "23:00",
       "source": "NVIDIA Blog（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "NVIDIA 开源 cuFile API，推动 GPU 直连存储",
       "summary": "NVIDIA 在 FMS 大会上宣布开源 cuFile API 及底层存储软件栈，让 GPU 可直接读写存储，访问延迟降至微秒级。其 Vera CPU 在两级压缩与加密流水线中吞吐量比 x86 CPU 最高提升 3.21 倍，并联合 40 多家厂商推出 Storage-Next 计划。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -273,14 +290,14 @@
         "API"
       ],
       "url": "https://blogs.nvidia.com/blog/ai-storage-fms",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "22:58",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 82,
+      "heat": 81,
       "title": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议",
       "summary": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议，约合每年 17 亿美元。Volta 估值 24 亿美元，硬件几乎全为租用：算力来自比特币矿商 Bitdeer 挪威 121MW 站点，芯片由 Nvidia 供应、Dell 组装。Anthropic 买的是交付速度，代价是承担超大规模云厂商合同从未有过的交易对手风险。",
       "reason": "商业方向的新动态,值得关注。",
@@ -290,14 +307,14 @@
         "Bitdeer"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2084655258102546579",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:00",
       "source": "Cloudflare Blog",
-      "heat": 81,
+      "heat": 80,
       "title": "Cloudflare 如何用软件工厂将 Astro 的 GitHub issue 数降至零",
       "summary": "Cloudflare 在 Astro 仓库上运行自动化 triage 流水线，通过隔离的 AI 子代理复现、诊断并修复 bug，将开放 issue 从 200 多个降至约 30 个，预计下月归零。该流水线由 issue 标签驱动，修复后自动发布预览版本供用户验证。其底层引擎已发展为 Flue，一个开源的平台无关框架，用于构建持久化智能体与工作流。",
       "reason": "观点方向的新动态,值得关注。",
@@ -307,14 +324,14 @@
         "GitHub"
       ],
       "url": "https://blog.cloudflare.com/astro-issue-triage",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:00",
       "source": "Cloudflare Blog",
-      "heat": 80,
+      "heat": 79,
       "title": "Cloudflare 让智能体通过本地追踪调试 Workers",
       "summary": "Cloudflare 即日起在 wrangler dev 和 vite dev 中自动为本地 Worker 调用捕获 OpenTelemetry 追踪，无需安装 SDK 或配置智能体。智能体可通过 Local Explorer API 查询追踪数据，定位失败操作、修复本地环境并验证结果。开发者也可在浏览器界面 Local Explorer 中可视化查看 spans、时序、错误及关联控制台日志。",
       "reason": "工具方向的新动态,值得关注。",
@@ -324,14 +341,14 @@
         "Worker"
       ],
       "url": "https://blog.cloudflare.com/local-tracing",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:00",
       "source": "Cloudflare Blog",
-      "heat": 79,
+      "heat": 78,
       "title": "Cloudflare 推出 Agents 平台，率先上线智能体追踪功能",
       "summary": "Cloudflare 推出 Cloudflare Agents，将部署在平台上的智能体会话统一到一个视图中，并率先上线 agent tracing 功能。该功能支持 OpenTelemetry 兼容的 Think、Flue 和 AI SDK 等智能体框架，可测量每次模型调用、工具执行和 token 消耗。",
       "reason": "工具方向的新动态,值得关注。",
@@ -341,14 +358,14 @@
         "OpenTelemetry"
       ],
       "url": "https://blog.cloudflare.com/agents-on-cloudflare",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:00",
       "source": "Cloudflare Blog",
-      "heat": 78,
+      "heat": 77,
       "title": "Cloudflare 推出 CI SDK：在 Cloudflare 上为百万级仓库运行 CI/CD 流水线",
       "summary": "Cloudflare 推出基于 Workflows 和 Sandbox SDK 的 CI SDK，让平台方直接在 Cloudflare 上运行 CI/CD 流水线，支持构建、lint、类型检查、单元测试、依赖缓存及条件部署。",
       "reason": "工具方向的新动态,值得关注。",
@@ -358,14 +375,14 @@
         "Workflows"
       ],
       "url": "https://blog.cloudflare.com/ci-workflows",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:00",
       "source": "Cloudflare Blog",
-      "heat": 77,
+      "heat": 76,
       "title": "Cloudflare 推出 Agent Development Lifecycle，让智能体接管更多软件开发生命周期",
       "summary": "Cloudflare 宣布推出 Agent Development Lifecycle（ADLC），以取代传统 SDLC，让 AI 智能体从仅生成代码扩展到承担更多开发流程。",
       "reason": "工具方向的新动态,值得关注。",
@@ -375,23 +392,6 @@
         "Development"
       ],
       "url": "https://blog.cloudflare.com/agent-development-lifecycle",
-      "rank": 20
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "20:56",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 76,
-      "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
-      "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "AMD",
-        "MI300X",
-        "DeepSeek"
-      ],
-      "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
       "rank": 21
     }
   ]
