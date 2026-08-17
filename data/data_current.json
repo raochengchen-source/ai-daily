@@ -200,18 +200,18 @@
     {
       "cat": "大模型",
       "catKey": "model",
-      "time": "13:31",
-      "source": "公众号：智谱（GLM）",
+      "time": "14:00",
+      "source": "智谱：研究（网页内嵌数据）",
       "heat": 87,
       "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
-      "summary": "智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一，并接近Claude Fable 5。模型在白盒代码审查等安全任务中表现持平Mythos 5，在CyberGym测试中得分84.5%。模型权重将在两周后开源，即日起上线ZCode、AutoClaw等工具。",
+      "summary": "智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一。模型在白盒代码审查等安全任务中表现持平Mythos 5，并在CyberGym测试中得分84.5%。GLM-5.3即日起上线ZCode、AutoClaw等工具，API很快上线，完整模型权重将在两周内开源。",
       "reason": "大模型方向的新动态,值得关注。",
       "tags": [
         "GLM-5.3",
         "GLM-5.2",
         "Scaling"
       ],
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492",
+      "url": "https://www.zhipuai.cn/zh/research/162",
       "rank": 10
     },
     {
