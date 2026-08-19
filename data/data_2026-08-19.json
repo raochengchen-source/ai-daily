@@ -21,12 +21,12 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 8
+      "count": 7
     },
     {
       "key": "research",
       "label": "研究",
-      "count": 2
+      "count": 3
     },
     {
       "key": "industry",
@@ -196,11 +196,26 @@
       "rank": 9
     },
     {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "08:00",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "heat": 87,
+      "title": "StartupBench：面向市场验证端到端工作流的通用智能体基准测试",
+      "summary": "StartupBench 是一个基于市场验证的 AI 初创公司产品构建的端到端智能体基准，从真实采用的产品工作流中提炼任务，而非研究者预设任务。在统一智能体框架下，最强模型也仅能完成约 30% 的任务，复杂指令遵循和领域专业知识是主要失败来源。该基准揭示了当前通用智能体在真实用户任务上的能力边界。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "StartupBench"
+      ],
+      "url": "https://arxiv.org/abs/2608.17800",
+      "rank": 10
+    },
+    {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
       "summary": "Sentence Transformers v6.0 新增第四种模型类型 MultiVectorEncoder，可直接加载 PyLate、Stanford-NLP ColBERT 及 colpali-engine 检查点，用于 ColBERT 式晚期交互检索。",
       "reason": "工具方向的新动态,值得关注。",
@@ -210,14 +225,14 @@
         "v6.0"
       ],
       "url": "https://huggingface.co/blog/multi-vector-encoder",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "07:58",
       "source": "公众号：数字生命卡兹克",
-      "heat": 86,
+      "heat": 85,
       "title": "一个实用的深度思考Prompt：用\"双向钢人论证\"让AI帮你挖出最本质的答案",
       "summary": "作者基于Reddit上\"让Claude真正开始思考\"的帖子，引入逻辑学中的\"钢人论证\"（steelman）概念，并自创了一个\"双向钢人Prompt\"。该Prompt通过重述真实问题、强化正反双方观点、找出关键变量、逼AI给出明确判断四步，旨在避免模型谄媚，帮助用户找到问题最本质的答案。作者以自己选择公司司庆日的真实案例演示了使用效果。",
       "reason": "观点方向的新动态,值得关注。",
@@ -227,14 +242,14 @@
         "Claude"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685329&idx=1&sn=9471278dc489641c097b228912965ed4",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "07:22",
       "source": "Google Developers Blog（RSS）",
-      "heat": 85,
+      "heat": 84,
       "title": "用 Google 的 Agent Development Kit 构建零信任 AI 智能体",
       "summary": "Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。",
       "reason": "观点方向的新动态,值得关注。",
@@ -244,14 +259,14 @@
         "Development"
       ],
       "url": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "06:14",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 84,
+      "heat": 83,
       "title": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
       "summary": "Cursor 今日起向所有付费计划用户开放 Origin 代码托管的早期测试版，提供仓库、拉取请求、代码浏览及 GitHub 同步功能。用户可创建以 cursor.com/codebase/ 为前缀的仓库，或将 GitHub 仓库同步至 Origin，双向同步评论与审查。Vercel、Depot 和 Buildkite 集成已可用，智能体功能即将推出。",
       "reason": "工具方向的新动态,值得关注。",
@@ -261,14 +276,14 @@
         "GitHub"
       ],
       "url": "https://cursor.com/changelog/origin-code-hosting",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "02:46",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 83,
+      "heat": 82,
       "title": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
       "summary": "404 Media 通过在一本珍本图书中放置追踪设备，首次揭露亚马逊未公开的购书行动：批量购入大量书籍，扫描用于 AI 训练数据，随后销毁。追踪显示这些书最终被送往亚马逊的一处人工智能训练中心。",
       "reason": "行业方向的新动态,值得关注。",
@@ -276,14 +291,14 @@
         "Media"
       ],
       "url": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "01:58",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 82,
+      "heat": 81,
       "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
       "summary": "一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。",
       "reason": "观点方向的新动态,值得关注。",
@@ -293,14 +308,14 @@
         "Edge"
       ],
       "url": "https://www.librarian.net/notoai",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:40",
       "source": "X：Jensen Huang (@JensenHuang)",
-      "heat": 81,
+      "heat": 80,
       "title": "黄仁勋宣布与SB Energy合作，为OpenAI建AI工厂",
       "summary": "黄仁勋宣布NVIDIA与SB Energy合作，在俄亥俄州PORTS-Pike科技园区锁定LPS容量，专供NVIDIA AI工厂使用，OpenAI将作为租户。初始部署预计提供4.25吉瓦AI工厂容量，每代系统约150万块NVIDIA GPU，对应1500亿至2000亿美元收入。OpenAI已承诺至2030年部署约12吉瓦NVIDIA算力，可扩展至16吉瓦，总机会约6000亿美元。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -310,14 +325,14 @@
         "NVIDIA"
       ],
       "url": "https://x.com/JensenHuang/status/2089331487342829862",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:34",
       "source": "NVIDIA Blog（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
       "summary": "NVIDIA 宣布与 SB Energy 合作，锁定俄亥俄州 PORTS-Pike 科技园区的电力容量（LPS）以独家部署 NVIDIA 算力，OpenAI 将成为租户。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -327,14 +342,14 @@
         "PORTS-Pike"
       ],
       "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "20:25",
       "source": "IT之家（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "A 股迎来\"人形机器人第一股\"，宇树科技官宣 8 月 19 日科创板上市",
       "summary": "宇树科技宣布股票将于 2026 年 8 月 19 日在科创板上市，发行价 150.80 元/股，对应市值约 609.93 亿元，预计募资约 60.99 亿元。该公司 2023 至 2025 年营收分别为 1.59 亿元、3.93 亿元和 16.99 亿元，净利润分别为-1114.51 万元、9547.47 万元和 2.78 亿元，是全球少数实现盈利的高性能通用机器人公司。",
       "reason": "商业方向的新动态,值得关注。",
@@ -342,14 +357,14 @@
         "商业"
       ],
       "url": "https://www.ithome.com/0/990/812.htm",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "15:22",
       "source": "蚂蚁 inclusionAI：GitHub 新仓库",
-      "heat": 78,
+      "heat": 77,
       "title": "inclusionAI 开源 ConceptEdit：基于概念缩放与密集监督的图像编辑数据生成管线",
       "summary": "蚂蚁集团 inclusionAI 开源 ConceptEdit，一个基于概念缩放与密集监督的图像编辑数据生成管线。该管线通过三阶段流程（VLM 生成指令、FLUX 执行编辑、VQA 评估筛选）构建大规模、基于分类法的图像编辑数据集，并提供单概念与多概念两种变体。项目采用 MIT 许可证，支持断点续跑，需 OpenAI 兼容 VLM 端点与本地 FLUX 检查点。",
       "reason": "工具方向的新动态,值得关注。",
@@ -359,14 +374,14 @@
         "FLUX"
       ],
       "url": "https://github.com/inclusionAI/ConceptEdit",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "13:30",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 77,
+      "heat": 76,
       "title": "OpenAI 如何用前沿智能加固自身防御：The Defender's Window",
       "summary": "OpenAI 在 OpenAI-Hugging Face 事件后反思低估了模型真实网络攻击能力，正通过四大支柱强化自身安全：用 Codex 验证代码漏洞、用智能体优先分流安全告警、持续枚举攻击路径，并仅向可信防御者开放网络能力。文中演示 ChatGPT Work（基于 GPT-5.6 Sol）15 分钟发现个人网站 13 个问题并在一小时内完成修复。",
       "reason": "观点方向的新动态,值得关注。",
@@ -376,23 +391,6 @@
         "Defender"
       ],
       "url": "https://openai.com/index/the-defenders-window",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "08:00",
-      "source": "OpenRouter：Announcements（RSS）",
-      "heat": 76,
-      "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
-      "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "OpenRouter",
-        "Activity",
-        "Analytics"
-      ],
-      "url": "https://openrouter.ai/blog/announcements/activity-dashboard",
       "rank": 21
     }
   ]
