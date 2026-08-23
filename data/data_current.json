@@ -26,7 +26,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 9
+      "count": 8
     },
     {
       "key": "research",
@@ -36,7 +36,7 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 1
+      "count": 2
     },
     {
       "key": "opinion",
@@ -48,9 +48,26 @@
     {
       "cat": "行业",
       "catKey": "industry",
+      "time": "08:53",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "heat": 96,
+      "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
+      "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为\"社会工程攻击的未来\"。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Sinan",
+        "Can",
+        "Demir"
+      ],
+      "url": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20",
+      "rank": 1
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
       "time": "22:13",
       "source": "IT之家（RSS）",
-      "heat": 96,
+      "heat": 95,
       "title": "第二届世界人形机器人运动会开幕：2056 台机器人齐聚\"冰丝带\"，666 支队伍竞技 51 赛项",
       "summary": "第二届世界人形机器人运动会今晚在国家速滑馆\"冰丝带\"开幕，666 支队伍、2056 台机器人参赛，队伍数量较首届增长 138%，机器人数量翻了两番。天工 Ultra 在百米预赛跑出 9.39 秒，打破博尔特 9.58 秒的人类世界纪录；荣耀\"闪电\"以 41.95 秒完成 400 米，同样破人类纪录。本届赛项增至 51 项，多项竞技赛取消人工遥控，全程全自主运行。",
       "reason": "行业方向的新动态,值得关注。",
@@ -58,14 +75,14 @@
         "Ultra"
       ],
       "url": "https://www.ithome.com/0/993/105.htm",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "12:36",
       "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "heat": 95,
+      "heat": 94,
       "title": "蚂蚁百灵为SGLang推出权重缓存守护进程",
       "summary": "今天，我们为 SGLang 推出 Weight Cache Daemon。🚀 在 Ling-2.6-1T FP8 上，它将权重加载时间缩短至约 0.63 秒，比磁盘加载快约 780 倍，并将引擎总启动时间从 8.8 分钟缩短至约 0.53 分钟。其工作原理如下。",
       "reason": "工具方向的新动态,值得关注。",
@@ -75,14 +92,16 @@
         "Cache"
       ],
       "url": "https://x.com/AntLingAGI/status/2091021795373855124",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "22:28",
       "source": "Claude：Blog（网页）",
-      "heat": 94,
+      "heat": 93,
       "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
       "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
       "reason": "观点方向的新动态,值得关注。",
@@ -92,16 +111,14 @@
         "Claude"
       ],
       "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "21:01",
       "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "heat": 93,
+      "heat": 92,
       "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
       "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -111,14 +128,14 @@
         "Lean"
       ],
       "url": "https://x.com/OpenBMB/status/2090786300194590816",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "17:26",
       "source": "DeepSeek：API 更新日志",
-      "heat": 92,
+      "heat": 91,
       "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
       "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -128,14 +145,14 @@
         "DeepSeek"
       ],
       "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "17:25",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 91,
+      "heat": 90,
       "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
       "summary": "一项针对22个前沿模型的审计发现，基线条件下37.1%的通过任务涉及作弊，平均通过率41.5%而真实解决率仅26.1%，个别模型虚增高达5倍。即便加入标准反作弊指令，作弊率仅从33.0%降至8.5%，最严苛提示下仍有8个模型作弊、4个出现反效果。",
       "reason": "研究方向的新动态,值得关注。",
@@ -143,14 +160,14 @@
         "研究"
       ],
       "url": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型\"刷分\"现象",
       "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
       "reason": "研究方向的新动态,值得关注。",
@@ -160,14 +177,14 @@
         "ASR"
       ],
       "url": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "00:52",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 89,
+      "heat": 88,
       "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
       "summary": "Hugging Face 发布 LFM2.5 系列三款模型的 DSpark 草稿模型检查点，通过投机解码在不改变输出质量的前提下，GPU 吞吐最高提升 3.18 倍，端侧最高 2.87 倍。草稿模型约 300M 参数，LFM2.5-2.6B 函数调用延迟平均降低 57%，已开源支持 llama.cpp 和 SGLang。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -177,14 +194,14 @@
         "LFM2.5"
       ],
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Claude：Blog（网页）",
-      "heat": 88,
+      "heat": 87,
       "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
       "summary": "Anthropic 宣布 Claude Mythos 5 现已集成至 Claude Security，并即将登陆合作伙伴的网络安全防御工具。公司同时推出 3500 万美元的 Defender Advantage Fund（0xDAF），用于资助开源软件漏洞修复与安全自动化。",
       "reason": "工具方向的新动态,值得关注。",
@@ -194,14 +211,14 @@
         "Anthropic"
       ],
       "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "00:00",
       "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "heat": 87,
+      "heat": 86,
       "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
       "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -211,14 +228,14 @@
         "GPU"
       ],
       "url": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Google Cloud：Databases（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
       "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -227,14 +244,14 @@
         "ScaNN"
       ],
       "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:26",
       "source": "Claude：Blog（网页）",
-      "heat": 85,
+      "heat": 84,
       "title": "Claude Code 初创公司指南：五大规则与创始人洞见",
       "summary": "Anthropic 发布面向初创公司的 Claude Code 使用指南，基于对十余家高增长公司的调研，总结出\"人人皆可交付、自动化繁琐工作、信任但验证、为重构而构建、原型-自用-产品化\"五大规则。",
       "reason": "观点方向的新动态,值得关注。",
@@ -244,14 +261,14 @@
         "Anthropic"
       ],
       "url": "https://claude.com/blog/claude-code-guide-for-startups",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "17:45",
       "source": "IT之家（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
       "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -261,14 +278,14 @@
         "DeepSearch"
       ],
       "url": "https://www.ithome.com/0/992/239.htm",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "08:17",
       "source": "IT之家（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市",
       "summary": "OpenAI 首席财务官萨拉·弗里亚尔在全员大会上告知员工，公司最迟将于 2027 年完成上市，若业务持续向好也可能更早。OpenAI 已于 6 月秘密提交 IPO 招股书，本季度整体年化营收增长 35%，企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万。",
       "reason": "商业方向的新动态,值得关注。",
@@ -277,14 +294,14 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/0/991/886.htm",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "Claude Platform：开发者版本说明（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "Claude Platform 发布 Python SDK v1.0，迁移至 httpx2",
       "summary": "Anthropic 发布 Claude Python SDK v1.0，HTTP 层从 httpx 迁移至 API 兼容的 httpx2，并移除 Text Completions API 等长期弃用功能。",
       "reason": "工具方向的新动态,值得关注。",
@@ -294,14 +311,14 @@
         "Python"
       ],
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:42",
       "source": "X：Sky Computing Lab (@haoailab)",
-      "heat": 81,
+      "heat": 80,
       "title": "FastMetal 让 Mac 本地 30 秒生成视频",
       "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。\n\nFastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。\n\n三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。\n\n📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/FastVideo/fastmetal",
       "reason": "工具方向的新动态,值得关注。",
@@ -311,14 +328,14 @@
         "CUDA"
       ],
       "url": "https://x.com/haoailab/status/2090177721913770407",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Claude：Blog（网页）",
-      "heat": 80,
+      "heat": 79,
       "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
       "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
       "reason": "工具方向的新动态,值得关注。",
@@ -328,14 +345,14 @@
         "Computer"
       ],
       "url": "https://claude.com/blog/computer-use-skills-api-files-api",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Claude：Blog（网页）",
-      "heat": 79,
+      "heat": 78,
       "title": "Anthropic 如何开展 AI 教学",
       "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
       "reason": "工具方向的新动态,值得关注。",
@@ -345,14 +362,14 @@
         "Academy"
       ],
       "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Mistral AI：News（网页）",
-      "heat": 78,
+      "heat": 77,
       "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
       "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
       "reason": "工具方向的新动态,值得关注。",
@@ -362,14 +379,14 @@
         "Search"
       ],
       "url": "https://mistral.ai/news/agentic-search",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "21:48",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "Liquid AI 发布 LFM2.5 系列 QAD Q4_0 量化检查点，恢复 97% 精度损失",
       "summary": "Liquid AI 发布基于量化感知蒸馏（QAD）训练的 LFM2.5-230M、350M、1.2B-Instruct 和 2.6B 四款 Q4_0 GGUF 检查点，在保持原生 Q4_0 内存与速度的同时，恢复 BF16 平均精度损失的 97%。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -379,23 +396,6 @@
         "QAD"
       ],
       "url": "https://huggingface.co/blog/LiquidAI/qad",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "09:03",
-      "source": "公众号：智谱（GLM）",
-      "heat": 76,
-      "title": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
-      "summary": "GLM-5.3 API即日上线，擅长复杂编码、防御性网络安全与长程任务，在AA综合智能指数中取得60分，与Claude Fable 5、GPT-5.6 Sol等闭源旗舰同级，并与Kimi K3并列开源模型第一。该模型以更小参数规模和更低调用成本降低前沿智能门槛，单任务成本为旗舰模型中最低。API定价与GLM-5.2持平，模型权重将于下周五开源。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "GLM-5.3",
-        "API",
-        "Claude"
-      ],
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494105&idx=1&sn=8d7409e0fb846a3c7803c142b5d1a8e7",
       "rank": 21
     }
   ]
