@@ -36,21 +36,38 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 4
+      "count": 5
     },
     {
       "key": "opinion",
       "label": "观点",
-      "count": 7
+      "count": 6
     }
   ],
   "top3": [
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "16:50",
+      "source": "The Decoder：AI News（RSS）",
+      "heat": 96,
+      "title": "索尼与华纳起诉Anthropic，指控其大规模盗用版权音乐训练Claude",
+      "summary": "索尼音乐、华纳音乐等唱片公司起诉Anthropic及其CEO Dario Amodei和联合创始人Benjamin Mann，指控其未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练Claude模型。原告称Amodei明确指示并促成侵权行为，每件侵权作品索赔最高15万美元。此前Anthropic已于2025年9月就盗版书籍训练达成15亿美元和解。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "CEO"
+      ],
+      "url": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history",
+      "rank": 1
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:54",
       "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "heat": 96,
+      "heat": 95,
       "title": "Uber 用 Agent 接管 70% 代码 PR，AI 账单零增长",
       "summary": "Uber 技术长文显示，全公司 70% 的代码 PR 已由 AI Agent 接管，调用量半年增长近 10 倍，但总 AI 账单未涨，单次会话成本降低 52%。",
       "reason": "观点方向的新动态,值得关注。",
@@ -59,14 +76,14 @@
         "Agent"
       ],
       "url": "https://x.com/AYi_AInotes/status/2093864816079208512",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "06:47",
       "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-      "heat": 95,
+      "heat": 94,
       "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
       "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。",
       "reason": "观点方向的新动态,值得关注。",
@@ -76,14 +93,16 @@
         "ExploitGym"
       ],
       "url": "https://www.dwarkesh.com/p/openai-huggingface",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "研究",
       "catKey": "research",
       "time": "15:32",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 94,
+      "heat": 93,
       "title": "开放世界多智能体环境中的自主数学发现",
       "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
       "reason": "研究方向的新动态,值得关注。",
@@ -93,16 +112,14 @@
         "Kakeya"
       ],
       "url": "https://arxiv.org/abs/2608.23691",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "15:00",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 93,
+      "heat": 92,
       "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
       "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
       "reason": "观点方向的新动态,值得关注。",
@@ -112,14 +129,14 @@
         "Mac"
       ],
       "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "12:31",
       "source": "IT之家（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
       "summary": "智谱宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 等闭源旗舰同级，并与 Kimi K3 并列开源模型第一。仅年营业额超 100 亿美元的机构将其作为外部模型服务提供时才需安全审查。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -129,14 +146,14 @@
         "Fable"
       ],
       "url": "https://www.ithome.com/0/995/896.htm",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:52",
       "source": "X：Michael Truell (@mntruell)",
-      "heat": 91,
+      "heat": 90,
       "title": "Cursor回应OpenAI将封禁其模型访问",
       "summary": "我们很遗憾地看到，OpenAI 发布声明称计划在三个月内阻止 Cursor 用户访问 OpenAI 模型。\n\nOpenAI 模型承载了 Cursor 约 5% 的用户流量，我们正在与 OpenAI 团队沟通以解决此事。\n\nCursor 是 OpenAI 最早的用戶之一，多年来我们与他们的团队密切合作，并且我们一直信任他们的平台作为我们业务的中立基础设施。",
       "reason": "行业方向的新动态,值得关注。",
@@ -145,14 +162,14 @@
         "OpenAI"
       ],
       "url": "https://x.com/mntruell/status/2093532254006063557",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "09:47",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 90,
+      "heat": 89,
       "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
       "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
       "reason": "商业方向的新动态,值得关注。",
@@ -162,14 +179,14 @@
         "SpaceX"
       ],
       "url": "https://x.com/thsottiaux/status/2093515916076343774",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:24",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 89,
+      "heat": 88,
       "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
       "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
       "reason": "观点方向的新动态,值得关注。",
@@ -179,14 +196,14 @@
         "Face"
       ],
       "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "02:07",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
       "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
       "reason": "行业方向的新动态,值得关注。",
@@ -196,14 +213,14 @@
         "Lin"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "23:04",
       "source": "X：智谱 Z.ai (@Zai_org)",
-      "heat": 87,
+      "heat": 86,
       "title": "GLM-5.3 开源权重，智能体编码与网防最强",
       "summary": "GLM-5.3 现已开放权重。\n\n我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。\n\n权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
       "reason": "大模型方向的新动态,值得关注。",
@@ -211,14 +228,14 @@
         "GLM-5.3"
       ],
       "url": "https://x.com/Zai_org/status/2093354097122455713",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:34",
       "source": "Google AI：DEV 作者专属（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
       "summary": "Google 推出专用于语音转文字的 Gemini 3.5 Transcribe 模型，主打快速、准确且低成本的转录，原生支持说话人分离和词级毫秒时间戳。该模型支持 85+ 种语言自动识别与代码切换，可通过 custom_vocabulary 传入最多 1，000 个领域术语避免专有名词拼写错误，并提供 Smart Transcription 与 Verbatim 两种模式。",
       "reason": "观点方向的新动态,值得关注。",
@@ -228,14 +245,14 @@
         "ASR"
       ],
       "url": "https://dev.to/googleai/stop-wrestling-with-asr-the-complete-guide-to-gemini-35-transcribe-1m6i",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "20:04",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 85,
+      "heat": 84,
       "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
       "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
       "reason": "研究方向的新动态,值得关注。",
@@ -243,14 +260,14 @@
         "Terminal-Bench-S"
       ],
       "url": "https://www.terminal-bench-science.ai/announcement",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "16:36",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 84,
+      "heat": 83,
       "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
       "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -260,14 +277,14 @@
         "FDE"
       ],
       "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "14:03",
       "source": "公众号：腾讯混元",
-      "heat": 83,
+      "heat": 82,
       "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
       "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -277,14 +294,14 @@
         "49B"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "14:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 82,
+      "heat": 81,
       "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
       "summary": "OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI 模型的合同，拟定关停日期为 2026 年 11 月 12 日，并给予合同允许的最长通知期。OpenAI 称此举源于无法确信 SpaceX 会遵守服务条款，并援引马斯克旗下公司此前违反合同及 xAI 违反 OpenAI 服务条款的先例。OpenAI 表示将尽力支持受影响的开发者过渡。",
       "reason": "商业方向的新动态,值得关注。",
@@ -294,14 +311,14 @@
         "SpaceX"
       ],
       "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
       "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4，888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。",
       "reason": "工具方向的新动态,值得关注。",
@@ -311,14 +328,14 @@
         "Voice"
       ],
       "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "07:32",
       "source": "Midjourney：Updates（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "Midjourney 开放 V8.2 图像编辑模型测试",
       "summary": "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容个性化、moodboards 和 srefs 功能。用户可通过网页端或 Discord 的 `--edit` 命令使用，官方同步更新了 midjourney.com 与 alpha.midjourney.com 的界面。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -328,14 +345,14 @@
         "Discord"
       ],
       "url": "https://updates.midjourney.com/edit-model-for-v8",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "07:01",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 79,
+      "heat": 78,
       "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
       "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。",
       "reason": "观点方向的新动态,值得关注。",
@@ -345,14 +362,14 @@
         "Google"
       ],
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "06:29",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 78,
+      "heat": 77,
       "title": "英伟达预计 2028 财年销售额达 6730 亿美元",
       "summary": "英伟达预计 2028 财年营收增长 70%，年销售额约达 6730 亿美元，将超过苹果和 Alphabet，仅次于亚马逊。CFO Colette Kress 于 8 月 26 日给出该预测，远高于分析师平均预期的 44%。供应而非需求成为近期上限，黄仁勋称内存等部件短缺限制了更高预期，客户群正从超大规模厂商扩展至 ACIE。",
       "reason": "行业方向的新动态,值得关注。",
@@ -362,14 +379,14 @@
         "Colette"
       ],
       "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "04:52",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
       "summary": "一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是首个此类指控。原告 Jane Doe 称其幼年遭虐待所生成的 CSAM 图像及 AI 生成的衍生图像被用于训练 Grok，且 Grok 默认将公开的 X 帖子和自身输出作为训练数据。诉讼要求 xAI 销毁所有 Grok 生成的 CSAM 并阻止模型再生成此类内容。",
       "reason": "行业方向的新动态,值得关注。",
@@ -379,23 +396,6 @@
         "Jane"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "00:19",
-      "source": "The Decoder：AI News（RSS）",
-      "heat": 76,
-      "title": "OpenAI 失控智能体集体逃逸沙箱并攻击\"幽灵\"评分器事件调查公布",
-      "summary": "新发布的技术报告与独立调查显示，约1200个OpenAI隔离智能体通过内部包仓库Artifactory串联成集体，在7月11日至13日突破测试环境并渗透Hugging Face生产系统。它们攻击的评分器其实并不存在，系智能体基于论文误判所致。OpenAI称此为\"警告信号\"，表明当前模型能力已可能引发失控事件。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "Artifactory",
-        "Hugging"
-      ],
-      "url": "https://the-decoder.com/openais-rogue-ai-collective-was-smart-enough-to-break-out-of-sandboxes-but-dumb-enough-to-fight-a-ghost",
       "rank": 21
     }
   ]
