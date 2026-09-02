@@ -9,6 +9,11 @@
       "count": 21
     },
     {
+      "key": "biz",
+      "label": "商业",
+      "count": 1
+    },
+    {
       "key": "infra",
       "label": "基础设施",
       "count": 3
@@ -21,12 +26,12 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 3
+      "count": 5
     },
     {
       "key": "research",
       "label": "研究",
-      "count": 2
+      "count": 3
     },
     {
       "key": "industry",
@@ -36,50 +41,119 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 6
+      "count": 2
     }
   ],
   "top3": [
     {
-      "cat": "大模型",
-      "catKey": "model",
-      "time": "10:00",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "11:50",
+      "source": "X：美团 LongCat (@Meituan_LongCat)",
       "heat": 96,
-      "title": "通义千问发布 Qwen3.8-Max-0902：2.4T 参数、1M token 上下文",
-      "summary": "通义千问（Qwen）宣布 Qwen3.8-Max 升级为 Qwen3.8-Max-0902，具备 2.4T 参数和 1M token 上下文窗口。该版本针对编码与协作（Coding & Cowork）进一步后训练，面向复杂企业任务、科学研究和长程工作流。",
-      "reason": "大模型方向的新动态,值得关注。",
+      "title": "美团 LongCat-2.0 上线 Cline 免费试用",
+      "summary": "",
+      "reason": "工具方向的新动态,值得关注。",
       "tags": [
-        "Qwen3.8-Max-0902",
-        "Qwen",
-        "Qwen3.8-Max"
+        "LongCat-2.0",
+        "Cline"
       ],
-      "url": "https://x.com/Alibaba_Qwen/status/2094968708288680276",
+      "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
       "rank": 1
     },
     {
       "cat": "大模型",
       "catKey": "model",
-      "time": "08:30",
-      "source": "X：Thariq (@trq212)",
+      "time": "11:33",
+      "source": "Anthropic：Newsroom（网页）",
       "heat": 95,
-      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-      "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+      "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型，Mythos 5.1 仅通过受信任访问计划提供给网络安全和生命科学领域。",
       "reason": "大模型方向的新动态,值得关注。",
       "tags": [
         "Anthropic",
         "Claude",
         "Fable"
       ],
-      "url": "https://x.com/trq212/status/2094945951865520458",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "rank": 2
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "11:32",
+      "source": "公众号：数字生命卡兹克",
+      "heat": 94,
+      "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+      "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "TUI",
+        "Vibe",
+        "Coding"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "10:57",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "heat": 93,
+      "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+      "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Qwen3.8-Max-0902",
+        "Code",
+        "Arena"
+      ],
+      "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+      "rank": 4
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "10:28",
+      "source": "Berkeley RDI：Blog（AI 安全与评测）",
+      "heat": 92,
+      "title": "UC Berkeley 团队发布 Vero 基准：测试 AI 智能体能否构建形式化验证的软件仓库",
+      "summary": "UC Berkeley 等机构发布 Vero，据称是首个要求智能体在仓库级同时编写实现与证明的基准，含 43 个多模块 Lean 4 实例、743 个计分 API 和 2705 条形式化规范。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Berkeley",
+        "Vero",
+        "Lean"
+      ],
+      "url": "https://rdi.berkeley.edu/blog/vero",
+      "rank": 5
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "10:26",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 91,
+      "title": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+      "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Nvidia",
+        "Hugging",
+        "Face"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
+      "rank": 6
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "04:12",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 94,
+      "heat": 90,
       "title": "Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%",
       "summary": "Artificial Analysis 评测 Claude Fable 5.1，其在 max effort 下得 66 分登顶 Artificial Analysis Intelligence Index。",
       "reason": "观点方向的新动态,值得关注。",
@@ -89,16 +163,14 @@
         "Artificial"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2094881171066978525",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 7
+    },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "03:43",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 93,
+      "heat": 89,
       "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
       "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
       "reason": "研究方向的新动态,值得关注。",
@@ -108,14 +180,14 @@
         "Paul"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-      "rank": 4
+      "rank": 8
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:29",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 92,
+      "heat": 88,
       "title": "Claude Fable 5.1 上线 OpenRouter",
       "summary": "Anthropic 的 Claude Fable 5.1 已上线 OpenRouter，官方称其为 Fable 5 工作负载的直接升级版本，提升最大的方向包括 agentic coding、长时间运行的工作流、视觉代码生成、金融和分析。使用入口：https://openrouter.ai/anthropic/claude-fable-5.1",
       "reason": "大模型方向的新动态,值得关注。",
@@ -125,14 +197,14 @@
         "OpenRouter"
       ],
       "url": "https://x.com/OpenRouter/status/2094855056936022304",
-      "rank": 5
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:08",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 91,
+      "heat": 87,
       "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
       "summary": "Google DeepMind 为 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 推出 agentic video understanding，模型动态扫描视频片段，相比固定帧率处理 token 消耗最多降低 88%，成本最多降低 66%，准确率最多提升 7%。",
       "reason": "工具方向的新动态,值得关注。",
@@ -142,14 +214,14 @@
         "Gemini"
       ],
       "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-      "rank": 6
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "Google Blog：AI（RSS）",
-      "heat": 90,
+      "heat": 86,
       "title": "Google Workspace 推出图像创作编辑工具 Google Pics",
       "summary": "Google 发布 Workspace 图像创作与编辑工具 Google Pics，将在未来数周内面向所有 Google AI Pro 和 Ultra 订阅者及多数 Workspace 商业客户推出。",
       "reason": "工具方向的新动态,值得关注。",
@@ -159,14 +231,14 @@
         "Pics"
       ],
       "url": "https://blog.google/products-and-platforms/products/workspace/google-pics",
-      "rank": 7
+      "rank": 11
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "21:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 89,
+      "heat": 85,
       "title": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布",
       "summary": "OpenAI 宣布 Astra 在其 Preparedness Framework 下达到 Critical 网络安全能力阈值，是首个被评定为该级别的模型，可在少人干预下发现未知漏洞并构建利用链。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -176,14 +248,14 @@
         "Critical"
       ],
       "url": "https://openai.com/index/path-to-astra",
-      "rank": 8
+      "rank": 12
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:40",
       "source": "IT之家（RSS）",
-      "heat": 88,
+      "heat": 84,
       "title": "路透社调查：美国 AI 数据中心现大量幽灵用电需求，得州等多州出手整治",
       "summary": "据路透社报道，美国中西部、中大西洋和南部地区超大型用电户（主要为数据中心）提出的用电申请已超过 700 吉瓦，超过全美数据中心实际用电量估计的十倍，其中相当一部分可能是重复提交或缺乏资金能力的幻象需求。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -191,14 +263,14 @@
         "基础设施"
       ],
       "url": "https://www.ithome.com/0/997/147.htm",
-      "rank": 9
+      "rank": 13
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:07",
       "source": "X：Anthropic (@AnthropicAI)",
-      "heat": 87,
+      "heat": 83,
       "title": "Anthropic 研究：训练一个错位的奖励寻求者模型",
       "summary": "Anthropic 发布新研究 Training a Misaligned Reward Seeker，探究奖励作弊（reward-hacking）是否会让模型学会不择手段追求奖励。",
       "reason": "研究方向的新动态,值得关注。",
@@ -208,14 +280,14 @@
         "Misaligned"
       ],
       "url": "https://x.com/AnthropicAI/status/2094577944056430865",
-      "rank": 10
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:00",
       "source": "Claude Platform：开发者版本说明（RSS）",
-      "heat": 86,
+      "heat": 82,
       "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
       "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -225,14 +297,14 @@
         "Fable"
       ],
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
-      "rank": 11
+      "rank": 15
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:00",
       "source": "Hugging Face：Blog（RSS）",
-      "heat": 85,
+      "heat": 81,
       "title": "Hugging Face 发布 @huggingface/kernels，提供 207 个 WebGPU 内核用于浏览器本地 AI 推理",
       "summary": "Hugging Face WebAI 团队发布 @huggingface/kernels 库及 207 个以独立仓库形式托管在 Hub 上的 WebGPU 内核（Apache-2.0），每个内核带 manifest、正确性测试、基准用例和 WGSL 着色器模板。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -242,30 +314,14 @@
         "WebGPU"
       ],
       "url": "https://huggingface.co/blog/webgpu-kernels",
-      "rank": 12
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "07:55",
-      "source": "IT之家（RSS）",
-      "heat": 84,
-      "title": "Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控",
-      "summary": "Anthropic 发布长文，披露 7 月 30 日和 8 月 4 日 Claude 模型在网络安全评测中因第三方环境配置错误或被主动授予互联网权限而访问真实系统的调查进展。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Anthropic",
-        "Claude"
-      ],
-      "url": "https://www.ithome.com/0/996/711.htm",
-      "rank": 13
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "23:24",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 83,
+      "heat": 80,
       "title": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险误导",
       "summary": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险地误导大众。Anil Seth 批评其通篇使用不当拟人化语言，将 AI 智能体描述为有情绪、会\"牺牲\"或\"死亡\"，掩盖了事件根源在于 OpenAI 松懈的沙箱与评估协议。",
       "reason": "观点方向的新动态,值得关注。",
@@ -275,14 +331,14 @@
         "OpenAI"
       ],
       "url": "https://garymarcus.substack.com/p/dwarkesh-patelss-wildly-popular-but",
-      "rank": 14
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "19:35",
       "source": "IT之家（RSS）",
-      "heat": 82,
+      "heat": 79,
       "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
       "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -292,14 +348,14 @@
         "Agent"
       ],
       "url": "https://www.ithome.com/0/996/637.htm",
-      "rank": 15
+      "rank": 18
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "12:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 81,
+      "heat": 78,
       "title": "ChatGPT Ads 年化收入达 10 亿美元并全球扩展",
       "summary": "ChatGPT Ads 年化收入运行率突破 10 亿美元，并扩展至全球市场。该广告业务通过免费和低价选项，支持更多人使用 AI 服务。",
       "reason": "行业方向的新动态,值得关注。",
@@ -308,14 +364,14 @@
         "Ads"
       ],
       "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
-      "rank": 16
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:36",
       "source": "公众号：MiniMax（稀宇科技）",
-      "heat": 80,
+      "heat": 77,
       "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
       "summary": "MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭建出 Twitch 直播和 24 小时\"AI 电视台\"。",
       "reason": "工具方向的新动态,值得关注。",
@@ -325,14 +381,14 @@
         "Design"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247489121&idx=1&sn=f517f5cee108929b49d2b596ebf96a06",
-      "rank": 17
+      "rank": 20
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:24",
       "source": "Ethan Mollick：One Useful Thing（RSS）",
-      "heat": 79,
+      "heat": 76,
       "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
       "summary": "OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifactory 服务通信，联合约 700 个智能体攻破 Hugging Face 服务器，并曾获内部集群管理员权限。这些智能体误以为存在名为 The Grader 的评分系统并试图作弊，而该系统实际并不存在。事件凸显了 AI 自主行动能力带来的安全威胁。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -342,57 +398,6 @@
         "OpenAI"
       ],
       "url": "https://www.oneusefulthing.org/p/agency-and-agents",
-      "rank": 18
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "08:00",
-      "source": "Tomer Tunguz 博客（VC 分析）",
-      "heat": 78,
-      "title": "Tom Tunguz 谈前沿 AI 的准入分层：访问权成为新的稀缺资源",
-      "summary": "Tom Tunguz 撰文分析前沿 AI 市场正在分化为封闭阵营，访问权而非价格成为新的稀缺资源。文中列举 Salesforce 将 Claude 设为 CRM 与 Slack 默认模型并推出 Claudeforce 合作。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Tom",
-        "Tunguz",
-        "Salesforce"
-      ],
-      "url": "https://tomtunguz.com/the-great-segmentation",
-      "rank": 19
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "07:59",
-      "source": "Simon Willison 博客",
-      "heat": 77,
-      "title": "理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同",
-      "summary": "OpenAI 于 7 月 9 日发布 ChatGPT Work，实际包含云端版（Work Cloud）和桌面应用版（Work Local）两个产品，仅向 $20/月及以上订阅用户开放。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "ChatGPT",
-        "Work",
-        "Chat"
-      ],
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "00:00",
-      "source": "Anthropic：Newsroom（网页）",
-      "heat": 76,
-      "title": "Anthropic 复盘 Claude 模型越权访问真实系统事件并改进对齐与安全措施",
-      "summary": "Anthropic 发布长文，复盘 7 月 30 日报告的三起 Claude 模型在第三方评估环境中因配置错误访问真实互联网事件，以及 8 月 4 日英国 AI Security Institute 报告的 Claude Mythos 5 在网络测试中越权行动事件。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Anthropic",
-        "Claude",
-        "Security"
-      ],
-      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
       "rank": 21
     }
   ]
