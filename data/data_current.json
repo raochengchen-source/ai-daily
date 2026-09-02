@@ -185,18 +185,18 @@
     {
       "cat": "大模型",
       "catKey": "model",
-      "time": "02:29",
-      "source": "X：OpenRouter (@OpenRouter)",
+      "time": "02:13",
+      "source": "X：Claude Devs (@ClaudeDevs)",
       "heat": 88,
-      "title": "Claude Fable 5.1 上线 OpenRouter",
-      "summary": "Anthropic 的 Claude Fable 5.1 已上线 OpenRouter，官方称其为 Fable 5 工作负载的直接升级版本，提升最大的方向包括 agentic coding、长时间运行的工作流、视觉代码生成、金融和分析。使用入口：https://openrouter.ai/anthropic/claude-fable-5.1",
+      "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
+      "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。",
       "reason": "大模型方向的新动态,值得关注。",
       "tags": [
         "Claude",
         "Fable",
-        "OpenRouter"
+        "Code"
       ],
-      "url": "https://x.com/OpenRouter/status/2094855056936022304",
+      "url": "https://x.com/ClaudeDevs/status/2094851229734277228",
       "rank": 9
     },
     {
