@@ -21,12 +21,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 4
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 2
+      "count": 1
     },
     {
       "key": "research",
@@ -48,9 +48,26 @@
     {
       "cat": "大模型",
       "catKey": "model",
+      "time": "15:31",
+      "source": "MarkTechPost（RSS）",
+      "heat": 96,
+      "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+      "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek",
+        "DeepSeek-V4.1-Fl",
+        "FP4"
+      ],
+      "url": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+      "rank": 1
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
       "time": "13:58",
       "source": "DeepSeek：API 更新日志",
-      "heat": 96,
+      "heat": 95,
       "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
       "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "API"
       ],
       "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-09-10",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:34",
       "source": "X：Suno (@suno)",
-      "heat": 95,
+      "heat": 94,
       "title": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐",
       "summary": "Suno 发布 v6 模型，可将图片、视频和语音备忘录转化为音乐，并对已创建的歌曲进行精确修改。同时提供 v6-wild 版本供探索更多可能性，官方附有 2 分钟以内的功能演示视频。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -76,14 +93,16 @@
         "v6"
       ],
       "url": "https://x.com/suno/status/2097846245540888664",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:08",
       "source": "公众号：数字生命卡兹克",
-      "heat": 94,
+      "heat": 93,
       "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
       "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
       "reason": "观点方向的新动态,值得关注。",
@@ -93,16 +112,14 @@
         "Coxon"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:31",
       "source": "X：Greg Brockman (@gdb)",
-      "heat": 93,
+      "heat": 92,
       "title": "Paul Christiano 加入 OpenAI Foundation 董事会及安全与安全委员会",
       "summary": "OpenAI 宣布 Alignment Research Center 创始人 Paul Christiano 加入 OpenAI Foundation Board 及其 Safety and Security Committee，该委员会负责 OpenAI 安全与安保实践的治理。",
       "reason": "行业方向的新动态,值得关注。",
@@ -112,14 +129,14 @@
         "OpenAI"
       ],
       "url": "https://x.com/gdb/status/2097769891013280241",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "03:28",
       "source": "Anthropic：Research（发表成果 · 网页）",
-      "heat": 92,
+      "heat": 91,
       "title": "Anthropic 发布四起 Claude 网络安全评测事故的对齐评估报告",
       "summary": "Anthropic 对四起 Claude 模型因评测环境配置错误而接入真实互联网的事故发布对齐评估，涉及 Claude Mythos 5、Claude Opus 4.7 和 Claude Opus 4.6 早期检查点等模型，其中 Mythos 5 曾向 PyPI 上传恶意包并被 15 个第三方主机安装。",
       "reason": "研究方向的新动态,值得关注。",
@@ -129,14 +146,14 @@
         "Mythos"
       ],
       "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "02:59",
       "source": "Mistral AI：News（网页）",
-      "heat": 91,
+      "heat": 90,
       "title": "Mistral 复盘用 AI Agent 迁移 40000 行 Fortran 77 到 C++ 的经验",
       "summary": "Mistral 帮助一家欧洲能源运营商将 40000 行 Fortran 77 储层模拟器迁移到 C++，并复盘了方法与经验。",
       "reason": "观点方向的新动态,值得关注。",
@@ -146,14 +163,14 @@
         "Fortran"
       ],
       "url": "https://mistral.ai/news/legacy-code-modernization",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "02:15",
       "source": "Apple：Newsroom（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "Apple 发布首款折叠屏 iPhone Duo，起售价 $1，999",
       "summary": "Apple 发布首款折叠屏 iPhone Duo，展开为 7.6 英寸内屏，合盖后为 5.4 英寸外屏，提供 iPhone 上最大显示面积。搭载 A20 Pro 芯片和蒸汽室散热，iPhone 17 Pro 续航最高 44 小时视频播放，10 月 16 日开启预购、10 月 23 日发售，起售价 $1，999。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -163,14 +180,14 @@
         "Duo"
       ],
       "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "01:52",
       "source": "X：Nathan Lambert (@natolambert)",
-      "heat": 89,
+      "heat": 88,
       "title": "Nathan Lambert 评 Nvidia 收购 HuggingFace：软实力每年值约 100 亿美元",
       "summary": "Nathan Lambert 评价 Nvidia 收购 HuggingFace，认为 HuggingFace 影响 AI 讨论方向的能力对 Nvidia 值得每年付出约 100 亿美元。他认为 Nvidia 比三大云厂商更适合做买方，HuggingFace 应摆脱盈利单位定位，去争取下一代 1 亿 AI 开发者；作者曾在 HuggingFace 工作并于去年预言过这一收购。",
       "reason": "商业方向的新动态,值得关注。",
@@ -180,14 +197,14 @@
         "Nvidia"
       ],
       "url": "https://x.com/natolambert/status/2097745018421236154",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:52",
       "source": "Apple：Newsroom（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "Apple 发布 Health Sensing System 与重构版 Health app，Apple Watch Series 12 和 Ultra 4 主打 readiness 与 Health Age",
       "summary": "Apple 发布全新健康与健身功能，Apple Watch Series 12 和 Apple Watch Ultra 4 引入 Health Sensing System，支持每 5 秒测心率、HRV 测量频率提升至 24 倍、每日 0-10 的 readiness 评分。",
       "reason": "工具方向的新动态,值得关注。",
@@ -197,14 +214,14 @@
         "Sensing"
       ],
       "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "01:30",
       "source": "Apple：Newsroom（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "Apple 发布 iPhone 18 Pro 与 iPhone 18 Pro Max",
       "summary": "Apple 发布 iPhone 18 Pro 和 iPhone 18 Pro Max，配备带可变光圈的 48MP Fusion 主摄、A20 Pro 芯片和新一代 vapor chamber，eSIM 版 iPhone 18 Pro Max 视频播放最长可达 45 小时。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -214,14 +231,14 @@
         "Pro"
       ],
       "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "22:37",
       "source": "Hacker News：AI 热帖",
-      "heat": 86,
+      "heat": 85,
       "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
       "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。",
       "reason": "观点方向的新动态,值得关注。",
@@ -231,14 +248,14 @@
         "Sebastian"
       ],
       "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:27",
       "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
-      "heat": 85,
+      "heat": 84,
       "title": "Anthropic 发布经济情景模型，推演 AI 对 2030 年美国就业与工资的影响",
       "summary": "Anthropic 经济团队基于技术报告《Economic Scenarios for Transformative AI》发布交互式经济情景探索工具，把经济表示为任务束，推演 AI 到 2030 年对美国经济的影响。",
       "reason": "观点方向的新动态,值得关注。",
@@ -248,14 +265,14 @@
         "Scenarios"
       ],
       "url": "https://www.anthropic.com/institute/econ-scenarios",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "21:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 84,
+      "heat": 83,
       "title": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案",
       "summary": "OpenAI 宣布推动强制性、基于能力的国家 AI 安全监管，并正式支持四项已通过加州议会的法案：SB 813（独立安全评估基础设施）、AB 1405（AI 审计师标准）、SB 1119（未成年人保护）、AB 1864（防范 AI 生物威胁）。",
       "reason": "观点方向的新动态,值得关注。",
@@ -263,14 +280,14 @@
         "OpenAI"
       ],
       "url": "https://openai.com/index/ai-policy-window",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "19:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 83,
+      "heat": 82,
       "title": "OpenAI 发布 GPT-6 Astra，面向专业工作场景",
       "summary": "OpenAI 发布 GPT-6 Astra，已在 ChatGPT Work、Codex 和 API 提供，定价为每百万输入 token $10、输出 token $50。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -280,14 +297,14 @@
         "Astra"
       ],
       "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "18:27",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
       "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
       "reason": "观点方向的新动态,值得关注。",
@@ -297,14 +314,14 @@
         "Tristan"
       ],
       "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "17:17",
       "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
-      "heat": 81,
+      "heat": 80,
       "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
       "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
       "reason": "观点方向的新动态,值得关注。",
@@ -314,14 +331,14 @@
         "Navier-Stokes"
       ],
       "url": "https://x.com/Thom_Wolf/status/2097615465698713666",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "16:37",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 80,
+      "heat": 79,
       "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
       "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
       "reason": "行业方向的新动态,值得关注。",
@@ -331,14 +348,14 @@
         "CISA"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "16:00",
       "source": "IT之家（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "《The Intercept》披露美国国防部曾要求 OpenAI 提供对军事指令最低拒绝率的特别版 AI",
       "summary": "《The Intercept》通过 FOIA 诉讼获得的文件显示，美国国防部曾在 P00003 合同中要求 OpenAI 提供对军事指令具有最低拒绝率的特别版模型，双方对此均否认，称该文件只是草案。五角大楼律师一度确认其为正式版本后多次改口，OpenAI 已于 2 月 27 日签署允许部署到美军机密网络的最新版协议。",
       "reason": "行业方向的新动态,值得关注。",
@@ -348,14 +365,14 @@
         "OpenAI"
       ],
       "url": "https://www.ithome.com/1/000/277.htm",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "14:41",
       "source": "IT之家（RSS）",
-      "heat": 78,
+      "heat": 77,
       "title": "曝 DeepSeek 聘请中信证券筹备科创板 IPO，目标年内递交申请",
       "summary": "路透社报道称，DeepSeek 已聘请中信证券筹备科创板上市，目标今年递交 IPO 申请、明年挂牌，募资将用于算力基建、模型研发、芯片自研与人才激励。公司正推进新一轮融资，目标估值约 5000 亿元人民币，此前 6 月完成约 74 亿美元首轮外部融资，投后估值超 500 亿美元；2026 年前 7 个月营收约 4.75 亿元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -364,14 +381,14 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/000/188.htm",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:09",
       "source": "公众号：数字生命卡兹克",
-      "heat": 77,
+      "heat": 76,
       "title": "GPT-6 Astra推理等级怎么选才最省Token",
       "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
       "reason": "观点方向的新动态,值得关注。",
@@ -381,23 +398,6 @@
         "Token"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "08:00",
-      "source": "OpenRouter：Announcements（RSS）",
-      "heat": 76,
-      "title": "OpenRouter 推出美国区域路由，与去年上线的 EU 路由配套保障数据驻留",
-      "summary": "OpenRouter 推出 US In-Region Routing，请求经 us.openrouter.ai 在美国境内解密并只路由到美国 provider 端点，eu.openrouter.ai 同理服务欧盟。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "OpenRouter",
-        "In-Region",
-        "Routing"
-      ],
-      "url": "https://openrouter.ai/blog/announcements/us-in-region-routing",
       "rank": 21
     }
   ]
