@@ -31,30 +31,30 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 2
+      "count": 1
     },
     {
       "key": "opinion",
       "label": "观点",
-      "count": 8
+      "count": 9
     }
   ],
   "top3": [
     {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "12:52",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "15:25",
+      "source": "X：Haider (@haider1)",
       "heat": 96,
-      "title": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码",
-      "summary": "据 WSJ 报道，三名研究人员使用 Claude Opus 5 将 Discourse 的一个漏洞串联成对 OpenAI 私有代码的访问。 researchers 在 Discourse 服务器上获得了包括 OpenAI 员工在内的认证 token，部分 forum token 可用于 ChatGPT 并触达 OpenAI 的 GitHub 服务。",
-      "reason": "行业方向的新动态,值得关注。",
+      "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
+      "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。",
+      "reason": "观点方向的新动态,值得关注。",
       "tags": [
-        "WSJ",
-        "Claude",
-        "Opus"
+        "OpenAI",
+        "ChatGPT",
+        "Codex"
       ],
-      "url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+      "url": "https://x.com/haider1/status/2100848578340220987",
       "rank": 1
     },
     {
