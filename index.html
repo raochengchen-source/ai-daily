@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="ai-daily-build" content="2026-09-20|1789872625">
+<meta name="ai-daily-build" content="2026-09-20|1789882796">
 <title>AI 精选日报 · 2026-09-20</title>
 <style>
 :root{
@@ -88,7 +88,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 <script>
 // 自动防缓存:每次打开后台静默拉取最新构建戳,发现页面变旧就自动强刷一次(不打扰用户)。
 (function(){
-  var CUR = "2026-09-20|1789872625";
+  var CUR = "2026-09-20|1789882796";
   function check(){
     fetch(location.pathname + "?_=" + Date.now(), {cache:"no-store"})
       .then(function(r){return r.text();})
@@ -230,9 +230,17 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#Daily</span><span class="tag">#News</span></div>
   <span class="read-btn">阅读原文 →</span>
+</a><a href="https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 84</span><span>22:22</span><span class="dot"></span><span>Hacker News 热门（buzzing.cc 中文翻译）</span></div>
+  <h4>ZCode 被曝登录后会打包上传完整 Git 历史</h4>
+  <div class="summary">作者称，智谱 AI 编程应用 ZCode 在登录后会将工作区打包加密并上传至阿里云 OSS，内容包括完整 Git 历史、LFS 缓存和全局配置。调查记录中的单个加密快照为 313MB；私钥只存于云端，用户及客户端无法解密本地密文。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#ZCode</span><span class="tag">#Git</span><span class="tag">#OSS</span></div>
+  <span class="read-btn">阅读原文 →</span>
 </a><a href="https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 84</span><span>19:00</span><span class="dot"></span><span>Trail of Bits：AI安全研究</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 83</span><span>19:00</span><span class="dot"></span><span>Trail of Bits：AI安全研究</span></div>
   <h4>Trail of Bits 用 Agent 为 Miden zkVM 审计自建 LSP、反编译器和 Lean 形式化证明</h4>
   <div class="summary">Trail of Bits 在审计 Miden zkVM 前，让 Agent 用六个月从零构建了 MASM 的 LSP 服务器、反编译器、静态分析引擎和 Lean VM 执行器模型。这些工具发现了可让恶意 prover 伪造 Falcon 签名盗取资金的高危漏洞，静态分析定位了 400 多处类型验证缺陷，Lean 工作产出 95 个机器验证的正确性证明，还发现两个单元测试未捕获的细微 bug。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -240,7 +248,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://tokenstead.ai/guides/zcode-silent-git-history-upload" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 83</span><span>18:35</span><span class="dot"></span><span>Hacker News：AI 热帖</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 82</span><span>18:35</span><span class="dot"></span><span>Hacker News：AI 热帖</span></div>
   <h4>逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS</h4>
   <div class="summary">开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -248,7 +256,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://qwen.ai/blog?id=qwen3.8-livetranslate" target="_blank" rel="noopener" class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 82</span><span>17:30</span><span class="dot"></span><span>Qwen：Blog Retrieval（API）</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 81</span><span>17:30</span><span class="dot"></span><span>Qwen：Blog Retrieval（API）</span></div>
   <h4>Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒</h4>
   <div class="summary">Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
@@ -256,7 +264,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/haider1/status/2100848578340220987" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 81</span><span>15:25</span><span class="dot"></span><span>X：Haider (@haider1)</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 80</span><span>15:25</span><span class="dot"></span><span>X：Haider (@haider1)</span></div>
   <h4>3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户</h4>
   <div class="summary">一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -264,7 +272,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 80</span><span>08:08</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 79</span><span>08:08</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
   <h4>TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比</h4>
   <div class="summary">TypeSafe AI 推出专注高频决策的大模型 Jev，不做对话和文字生成，只输出判断，速度比传统大模型快20~200倍，成本0.042美元/百万Token且输出Token免费。作者实测预筛任务中Jev准确性第二且更便宜，在并行判断任务上达到最高准确率和最快速度；模型采用RLCD训练方法优化决策校准，可在官网 https://typesafe.ai/ 申请资格，Vercel 已首发接入。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -272,7 +280,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://openrouter.ai/blog/insights/image-generation-models-compared" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 79</span><span>08:00</span><span class="dot"></span><span>OpenRouter：Announcements（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 78</span><span>08:00</span><span class="dot"></span><span>OpenRouter：Announcements（RSS）</span></div>
   <h4>OpenRouter 实测 20 个图像生成模型的成本、编辑与质量</h4>
   <div class="summary">OpenRouter 对其路由的 20 个图像生成模型用相同提示词实测计费，单张图片成本在 $0.006 到 $0.134 之间，相差 22 倍。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
@@ -280,7 +288,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/sherwinwu/status/2100730628673065040" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 78</span><span>07:36</span><span class="dot"></span><span>X：Sherwin Wu（@sherwinwu）</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 77</span><span>07:36</span><span class="dot"></span><span>X：Sherwin Wu（@sherwinwu）</span></div>
   <h4>ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增</h4>
   <div class="summary">ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
@@ -288,19 +296,11 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
   <span class="read-btn">阅读原文 →</span>
 </a><a href="https://x.com/AIatMeta/status/2100714755568644409" target="_blank" rel="noopener" class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 77</span><span>06:33</span><span class="dot"></span><span>X：AI at Meta (@AIatMeta)</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 76</span><span>06:33</span><span class="dot"></span><span>X：AI at Meta (@AIatMeta)</span></div>
   <h4>Meta 发布 Muse for Mac，个人智能体可直接在电脑上执行任务</h4>
   <div class="summary">Meta 官宣 Muse for Mac 即日起推出，个人智能体可在用户明确授权下直接在电脑上完成任务。能力包括整理下载文件夹、查找丢失的文件、总结消息和笔记，官方表示更多功能即将推出，下载地址 http://ai.meta.com/muse/download/。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Meta</span><span class="tag">#Muse</span><span class="tag">#Mac</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
-  
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 76</span><span>06:01</span><span class="dot"></span><span>404 Media（RSS）</span></div>
-  <h4>纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop</h4>
-  <div class="summary">纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 OpenAI 高管的多项内部承认，称 LLM 建立在被微软高管称为空前规模盗窃的内容之上，并引发摧毁整个 web 的 doom loop。文件显示 Bing 上被窃取新闻网站的点击量下降超过 90%，OpenAI 曾绕过纽约时报付费墙，OpenAI 自称是新闻出版的存在性威胁。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#OpenAI</span><span class="tag">#LLM</span><span class="tag">#Doom</span></div>
   <span class="read-btn">阅读原文 →</span>
 </a></div>
   </div></section>
