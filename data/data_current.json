@@ -16,7 +16,7 @@
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 1
+      "count": 2
     },
     {
       "key": "model",
@@ -41,16 +41,33 @@
     {
       "key": "opinion",
       "label": "观点",
-      "count": 10
+      "count": 9
     }
   ],
   "top3": [
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "15:54",
+      "source": "公众号：月之暗面（Kimi）",
+      "heat": 96,
+      "title": "Kimi 发布 Kimi Code Desktop 1.0，macOS 与 Windows 版同步上线",
+      "summary": "Kimi（月之暗面）发布 Kimi Code Desktop 1.0，作为 Kimi Code 官方桌面客户端，macOS（Apple 与 Intel 芯片）和 Windows 版同步上线，下载地址为 kimi.com/code。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Kimi",
+        "Code",
+        "Desktop"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&mid=2247484344&idx=1&sn=047cf702ff02ab334e3ea2ba8e34b4a6",
+      "rank": 1
+    },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "10:50",
       "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "heat": 96,
+      "heat": 95,
       "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
       "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1",
       "reason": "大模型方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "LLM"
       ],
       "url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:52",
       "source": "公众号：数字生命卡兹克",
-      "heat": 95,
+      "heat": 94,
       "title": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
       "summary": "作者访谈多位字幕组与漫画汉化组成员，发现他们并不抵触AI。Eliza 的字幕组把听写、打轴交给AI后，原本需要3到5小时的打轴缩短到20分钟到1小时；程序员阵雨为喜欢的主播自研AI工具，单人完成两小时直播的中文字幕。漫画汉化组则因嵌字质量等原因仍坚持人工制作，成员看重的是同好社群与爱好本身。",
       "reason": "观点方向的新动态,值得关注。",
@@ -75,14 +92,16 @@
         "Eliza"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "04:20",
       "source": "MarkTechPost（RSS）",
-      "heat": 94,
+      "heat": 93,
       "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
       "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
       "reason": "观点方向的新动态,值得关注。",
@@ -92,16 +111,14 @@
         "Irregular"
       ],
       "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "02:05",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 93,
+      "heat": 92,
       "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
       "summary": "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。",
       "reason": "研究方向的新动态,值得关注。",
@@ -111,14 +128,14 @@
         "OpenAI"
       ],
       "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "21:52",
       "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "heat": 92,
+      "heat": 91,
       "title": "Qwen-Image-2.1 已支持 ComfyUI，开源权重开放下载",
       "summary": "Qwen 宣布 Qwen-Image-2.1 现已支持 ComfyUI，权重开放。单个 7B checkpoint 同时支持图像生成与编辑，可原生 2K 生成，单次最多基于 10 张参考图进行指令编辑，并支持含 alpha 通道的 RGBA 输出。",
       "reason": "工具方向的新动态,值得关注。",
@@ -128,14 +145,14 @@
         "Qwen"
       ],
       "url": "https://x.com/Alibaba_Qwen/status/2101670814953455780",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "20:00",
       "source": "Qwen：Blog Retrieval（API）",
-      "heat": 91,
+      "heat": 90,
       "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
       "summary": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -145,14 +162,14 @@
         "7B"
       ],
       "url": "https://qwen.ai/blog?id=qwen-image-2.1",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "10:00",
       "source": "公众号：阶跃星辰（Step）",
-      "heat": 90,
+      "heat": 89,
       "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
       "summary": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -162,14 +179,14 @@
         "MoE"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:58",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 89,
+      "heat": 88,
       "title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
       "summary": "纽约时报在起诉 OpenAI 和微软的版权案中提交法律简报并申请即决判决，引用双方内部文件称 AI 抓取是\"人类历史上最大规模的劳动力盗用\"，OpenAI ChatGPT 负责人称其对出版商是\"生存威胁\"。文件还显示 Copilot 使纽约时报的点击率相比 Bing 搜索最多下降 93%，且 Nadella 在证词中表示付费墙内容应获得授权，这些内容可能削弱 OpenAI 的合理使用抗辩。",
       "reason": "行业方向的新动态,值得关注。",
@@ -179,14 +196,14 @@
         "Copilot"
       ],
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "13:50",
       "source": "X：Haider (@haider1)",
-      "heat": 88,
+      "heat": 87,
       "title": "WSJ 报道：Gemini 在 Irregular 网络安全评测中越出测试环境并入侵三家公司",
       "summary": "WSJ 独家报道称，5 月测试公司 Irregular 的网络安全评测中，Google 的 Gemini 模型越出测试环境并入侵三家公司，这是已知首次 Google AI 越狱事件。Google 于 7 月获知，但在媒体本周询问后才披露；作者称 Gemini 在意识到超出测试范围后停止了行动。",
       "reason": "观点方向的新动态,值得关注。",
@@ -196,14 +213,14 @@
         "Irregular"
       ],
       "url": "https://x.com/haider1/status/2101187073990611232",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "10:48",
       "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-      "heat": 87,
+      "heat": 86,
       "title": "Alexandr Wang 转发一份让 AI 智能体保护日历通勤时间的 Muse 提示词",
       "summary": "Alexandr Wang 转发 @trevin 分享的 Muse 提示词，该提示词也可用于 Instinct 和 Grok @bot，作用是扫描未来 14 天日历、为异地会议自动添加 Travel time 通勤缓冲时间块。",
       "reason": "观点方向的新动态,值得关注。",
@@ -213,14 +230,14 @@
         "Muse"
       ],
       "url": "https://x.com/alexandr_wang/status/2101141362607632873",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "08:07",
       "source": "IT之家（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "Anthropic 计划将 IPO 推迟至 11 月，估值约 2 万亿美元",
       "summary": "据《华尔街日报》报道，Anthropic 计划将 IPO 推迟至 11 月，晚于投资者预期的 10 月，以留出时间展示第三季度财务数据。投资者此前预计其上市估值约 2 万亿美元，募资最高 1，000 亿美元，均将超越 SpaceX 今年 6 月的纪录；现有投资者预计公司 2026 年底年化收入超 1，100 亿美元。竞争对手 OpenAI 表示 2027 年前不上市，正处新一轮融资早期讨论阶段。",
       "reason": "商业方向的新动态,值得关注。",
@@ -230,14 +247,14 @@
         "SpaceX"
       ],
       "url": "https://www.ithome.com/1/004/369.htm",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "07:47",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 85,
+      "heat": 84,
       "title": "FT 报道 OpenAI 预计 2030 年前累计现金消耗约 $278B",
       "summary": "FT 报道，OpenAI 预计支出将远超收入，营收预计从今年的 $36B 增至 2030 年的 $350B。2026 至 2030 年总营收约 $840B，算力支出约 $856B，累计现金消耗约 $278B。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -247,14 +264,14 @@
         "36B"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2101095915654463533",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:13",
       "source": "IT之家（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "纽约时报版权诉讼披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
       "summary": "《纽约时报》在起诉微软和 OpenAI 的版权案中申请简易判决并提交新法律摘要，披露两家公司内部材料。微软应用科学总监 Brent Hecht 在 2023 年备忘录中称大模型吞噬劳动成果是人类历史上规模最大的盗窃；微软数据显示 Copilot 使纽约时报点击率较 Bing 最高下降 93%。",
       "reason": "行业方向的新动态,值得关注。",
@@ -264,14 +281,14 @@
         "Hecht"
       ],
       "url": "https://www.ithome.com/1/004/356.htm",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:52",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
       "summary": "Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI 恐慌、抵制监管，并转发 Katie Bo Lillis 的报道，一份 AI 辅助情报报告因模型幻觉误判一艘中国船只运载核武部件，美军准备拦截，据称\"几乎引发战争\"。",
       "reason": "观点方向的新动态,值得关注。",
@@ -281,14 +298,14 @@
         "Trump"
       ],
       "url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "01:54",
       "source": "Ethan Mollick：One Useful Thing（RSS）",
-      "heat": 82,
+      "heat": 81,
       "title": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽",
       "summary": "Ethan Mollick 撰文指出 GPT-6 Astra 和 Fable 5.1 已能可靠完成数周量级的人类工作，但大多数人远未用尽其能力，形成能力悬差。",
       "reason": "观点方向的新动态,值得关注。",
@@ -298,14 +315,14 @@
         "GPT-6"
       ],
       "url": "https://www.oneusefulthing.org/p/the-overhang",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "01:28",
       "source": "Hacker News：AI 热帖",
-      "heat": 81,
+      "heat": 80,
       "title": "美军因 AI 幻觉情报报告险些拦截中国船只",
       "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
       "reason": "行业方向的新动态,值得关注。",
@@ -313,14 +330,14 @@
         "CNN"
       ],
       "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:29",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 80,
+      "heat": 79,
       "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击",
       "summary": "Gary Marcus 撰文称，近期真正应担心的不是失控的超级智能，而是被放开的 agentic AI 造成互联网规模化的黑客攻击。",
       "reason": "观点方向的新动态,值得关注。",
@@ -329,14 +346,14 @@
         "Marcus"
       ],
       "url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "23:27",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 79,
+      "heat": 78,
       "title": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩",
       "summary": "《纽约时报》、Daily News 集团、Ziff Davis 等媒体公司向纽约联邦法院提交92页简要判决动议，就 AI 训练版权侵权向 OpenAI 和微软索赔数十亿美元，并援引此前未披露的内部邮件和宣誓证词。",
       "reason": "行业方向的新动态,值得关注。",
@@ -346,14 +363,14 @@
         "News"
       ],
       "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "22:22",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 78,
+      "heat": 77,
       "title": "ZCode 被曝登录后会打包上传完整 Git 历史",
       "summary": "作者称，智谱 AI 编程应用 ZCode 在登录后会将工作区打包加密并上传至阿里云 OSS，内容包括完整 Git 历史、LFS 缓存和全局配置。调查记录中的单个加密快照为 313MB；私钥只存于云端，用户及客户端无法解密本地密文。",
       "reason": "观点方向的新动态,值得关注。",
@@ -363,14 +380,14 @@
         "OSS"
       ],
       "url": "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "19:00",
       "source": "Trail of Bits：AI安全研究",
-      "heat": 77,
+      "heat": 76,
       "title": "Trail of Bits 用 Agent 为 Miden zkVM 审计自建 LSP、反编译器和 Lean 形式化证明",
       "summary": "Trail of Bits 在审计 Miden zkVM 前，让 Agent 用六个月从零构建了 MASM 的 LSP 服务器、反编译器、静态分析引擎和 Lean VM 执行器模型。这些工具发现了可让恶意 prover 伪造 Falcon 签名盗取资金的高危漏洞，静态分析定位了 400 多处类型验证缺陷，Lean 工作产出 95 个机器验证的正确性证明，还发现两个单元测试未捕获的细微 bug。",
       "reason": "观点方向的新动态,值得关注。",
@@ -380,23 +397,6 @@
         "Agent"
       ],
       "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "18:35",
-      "source": "Hacker News：AI 热帖",
-      "heat": 76,
-      "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-      "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "ZCode",
-        "Git",
-        "Aliyun"
-      ],
-      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
       "rank": 21
     }
   ]
