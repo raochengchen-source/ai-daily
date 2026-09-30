@@ -11,12 +11,12 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 4
+      "count": 3
     },
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 1
+      "count": 2
     },
     {
       "key": "model",
@@ -41,28 +41,11 @@
   ],
   "top3": [
     {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "11:10",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 96,
-      "title": "Artificial Analysis 开源 AA-AgentPerf-Local 本地模型智能体推理测试工具并公布首批结果",
-      "summary": "Artificial Analysis 发布开源工具 AA-AgentPerf-Local，通过在笔记本和工作站硬件上回放 8 个真实智能体任务共 168 轮模型交互（上下文增长至约 56K tokens）来测试本地推理性能。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "Artificial",
-        "Analysis",
-        "AA-AgentPerf-Loc"
-      ],
-      "url": "https://x.com/ArtificialAnlys/status/2105133181536243942",
-      "rank": 1
-    },
-    {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:25",
       "source": "X：Sundar Pichai (@sundarpichai)",
-      "heat": 95,
+      "heat": 96,
       "title": "Google 与白宫及科技领袖签署 White House Accord on Super Intelligence",
       "summary": "Sundar Pichai 宣布 Google 在与特朗普总统、JD Vance、Speaker Johnson 及政府与科技领袖会晤后，签署了 White House Accord on Super Intelligence 及 Joint Commitment on Frontier Responsibilities。",
       "reason": "行业方向的新动态,值得关注。",
@@ -72,6 +55,23 @@
         "House"
       ],
       "url": "https://x.com/sundarpichai/status/2105121763176894804",
+      "rank": 1
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "10:01",
+      "source": "公众号：DeepSeek（深度求索）",
+      "heat": 95,
+      "title": "DeepSeek 开源面向华为昇腾平台的基础设施组件",
+      "summary": "DeepSeek 开源面向华为昇腾算力平台的基础设施组件，包括 TileLang 编译工具、DeepGEMM、DeepEP、TileKernels、FlashMLA、DeepSelect，与此前英伟达平台开源组件一一对应。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek",
+        "TileLang",
+        "DeepGEMM"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485843&idx=1&sn=565102c3642d88e814331390bf62d276&chksm=c2b41a7a4ae29752ec9555ae3de574d2c8f60b42aaf1db0aaf4511c38f174d7abc860a8ee56c&scene=126&sessionid=1790739034#rd",
       "rank": 2
     },
     {
