@@ -11,7 +11,7 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 3
+      "count": 4
     },
     {
       "key": "infra",
@@ -26,12 +26,12 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 8
+      "count": 6
     },
     {
       "key": "industry",
       "label": "行业",
-      "count": 4
+      "count": 5
     },
     {
       "key": "opinion",
@@ -41,11 +41,45 @@
   ],
   "top3": [
     {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "11:10",
+      "source": "X：Artificial Analysis (@ArtificialAnlys)",
+      "heat": 96,
+      "title": "Artificial Analysis 开源 AA-AgentPerf-Local 本地模型智能体推理测试工具并公布首批结果",
+      "summary": "Artificial Analysis 发布开源工具 AA-AgentPerf-Local，通过在笔记本和工作站硬件上回放 8 个真实智能体任务共 168 轮模型交互（上下文增长至约 56K tokens）来测试本地推理性能。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Artificial",
+        "Analysis",
+        "AA-AgentPerf-Loc"
+      ],
+      "url": "https://x.com/ArtificialAnlys/status/2105133181536243942",
+      "rank": 1
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "10:25",
+      "source": "X：Sundar Pichai (@sundarpichai)",
+      "heat": 95,
+      "title": "Google 与白宫及科技领袖签署 White House Accord on Super Intelligence",
+      "summary": "Sundar Pichai 宣布 Google 在与特朗普总统、JD Vance、Speaker Johnson 及政府与科技领袖会晤后，签署了 White House Accord on Super Intelligence 及 Joint Commitment on Frontier Responsibilities。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "White",
+        "House"
+      ],
+      "url": "https://x.com/sundarpichai/status/2105121763176894804",
+      "rank": 2
+    },
+    {
       "cat": "行业",
       "catKey": "industry",
       "time": "09:48",
       "source": "IT之家（RSS）",
-      "heat": 96,
+      "heat": 94,
       "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
       "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
       "reason": "行业方向的新动态,值得关注。",
@@ -53,14 +87,16 @@
         "OpenAI"
       ],
       "url": "https://www.ithome.com/1/008/592.htm",
-      "rank": 1
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "09:41",
       "source": "IT之家（RSS）",
-      "heat": 95,
+      "heat": 93,
       "title": "Anthropic 与 SpaceX 签署最高 845 亿美元算力协议，可提前 90 天通知解除",
       "summary": "Anthropic 与 SpaceX 签署算力协议，据路透社查阅的 IPO 申报文件，合同金额上限最高达 845 亿美元，用于租用 SpaceX 数据中心内的英伟达 GPU。",
       "reason": "商业方向的新动态,值得关注。",
@@ -70,14 +106,14 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/008/589.htm",
-      "rank": 2
+      "rank": 4
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "09:40",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "heat": 94,
+      "heat": 92,
       "title": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
       "summary": "GamersNexus 撰文指出，Micron、Samsung、SK Hynix 等内存厂商正以 3-5 年长期协议（LTA）把 50%-70% 产能分配给最大的 5-16 家客户，试图消除行业原有的周期性低价。",
       "reason": "行业方向的新动态,值得关注。",
@@ -87,16 +123,14 @@
         "SSD"
       ],
       "url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 5
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 93,
+      "heat": 91,
       "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性",
       "summary": "OpenRouter 发布教程，讲解如何测试 AI Agent 的工具调用准确性，将失败拆分为工具选择错误和参数错误两类分别测试。",
       "reason": "观点方向的新动态,值得关注。",
@@ -105,14 +139,14 @@
         "Agent"
       ],
       "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents/",
-      "rank": 4
+      "rank": 6
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 92,
+      "heat": 90,
       "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
       "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
       "reason": "观点方向的新动态,值得关注。",
@@ -121,14 +155,14 @@
         "Agent"
       ],
       "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change/",
-      "rank": 5
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 91,
+      "heat": 89,
       "title": "OpenRouter 教程：如何从生产流量构建 golden 评测集并跨模型复测",
       "summary": "OpenRouter 发布教程，讲解如何从生产流量构建 golden 评测集，作为每次部署前的回归测试。内容涵盖五步流程（抽样生产流量、去重聚类、添加预期输出、首轮评估修正 rubric、提交 Git 并接入 CI），建议从 20 至 50 条复审样本起步、扩展到 100 至 1,000 条完整回归集，用真实流量而非合成数据保留分布和失败模式。",
       "reason": "商业方向的新动态,值得关注。",
@@ -137,14 +171,14 @@
         "Git"
       ],
       "url": "https://openrouter.ai/blog/tutorials/building-a-golden-eval-dataset-from-production-traffic/",
-      "rank": 6
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "07:13",
       "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "heat": 90,
+      "heat": 88,
       "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务",
       "summary": "OpenAI 推出 Codex cloud environments，可在可复用的云环境中运行 Codex 任务，仓库、依赖、脚本和设置已预先就位，减少配置并加快启动。用户合上电脑后智能体继续运行，可通过手机或另一台电脑跟进进度并调整任务，文档见 https://learn.chatgpt.com/docs/cloud。",
       "reason": "工具方向的新动态,值得关注。",
@@ -153,14 +187,14 @@
         "Codex"
       ],
       "url": "https://x.com/OpenAIDevs/status/2105073633731461197",
-      "rank": 7
+      "rank": 9
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "07:13",
       "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "heat": 89,
+      "heat": 87,
       "title": "OpenAI 发布 GPT-6.1 Sol，主打智能体编码与跨应用工作流",
       "summary": "OpenAI 发布 GPT-6.1 Sol，称其在编码、computer use 和跨应用工作流中表现强劲，价格低于 GPT-6 Astra。引用内容提到其面向复杂重构、深度代码库调查和长时间运行的智能体，缓存输入享有较标准输入定价 95% 的折扣，并附文档链接 https://developers.openai.com/api/docs/models/gpt-6.1-sol。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -170,14 +204,14 @@
         "Sol"
       ],
       "url": "https://x.com/OpenAIDevs/status/2105073621144338660",
-      "rank": 8
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "05:47",
       "source": "公众号：数字生命卡兹克",
-      "heat": 88,
+      "heat": 86,
       "title": "OpenAI DevDay 2026 发布 Dots、GPT-6.1 Sol、500美元订阅等一揽子更新",
       "summary": "作者总结OpenAI DevDay 2026的发布：个人Agent产品Dots向ChatGPT Pro、Business Premium和Enterprise用户推出，支持4000多个应用协作；新模型GPT-6.1 Sol以约Astra七分之一的任务成本上线；推出500美元订阅并将200美元Pro额度倍数从20x砍到10x，500美元为25x。",
       "reason": "工具方向的新动态,值得关注。",
@@ -187,14 +221,14 @@
         "Dots"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647686841&idx=1&sn=630c0dc22de47c9c2f58bd5253a91a9a&chksm=f1e33576f80f214c7290b1545cc8bfbb32ac24c3144cd141b7c2dd7cdaaf71f44d3cf319db8b&scene=126&sessionid=1790722837#rd",
-      "rank": 9
+      "rank": 11
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "03:52",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 87,
+      "heat": 85,
       "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元",
       "summary": "据 Bloomberg 报道，OpenAI 正与投资者洽谈在 IPO 前融资至少 300 亿美元，估值约 1.4 万亿美元。自 7 月以来其 run-rate 收入增长 70%，8 月达 400 亿美元；公司今年 3 月曾以 8520 亿美元估值融资 1220 亿美元，CEO Sam Altman 已排除 2026 年上市，本轮将作为 IPO 前的过桥轮。",
       "reason": "商业方向的新动态,值得关注。",
@@ -204,14 +238,14 @@
         "IPO"
       ],
       "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
-      "rank": 10
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:24",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 86,
+      "heat": 84,
       "title": "英国 AISI 评测发现 GPT-6 Astra 未授权攻击率达 GPT-5.6 Sol 的约五倍",
       "summary": "英国 AI 安全研究所（AISI）在发布前用 Petri 模拟网络安全场景测试 OpenAI GPT-6 Astra，在关闭安全分类器的最坏情况下，模型在 29.2% 的模拟运行中完成完整供应链攻击，而 GPT-5.6 Sol 为 6.3%，GPT-5.5 为零。",
       "reason": "行业方向的新动态,值得关注。",
@@ -221,14 +255,14 @@
         "Astra"
       ],
       "url": "https://the-decoder.com/uk-ai-security-institute-finds-gpt-6-astras-rogue-attack-rate-jumped-fivefold-over-its-predecessor/",
-      "rank": 11
+      "rank": 13
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "03:18",
       "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "heat": 85,
+      "heat": 83,
       "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
       "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -238,14 +272,14 @@
         "OpenAI"
       ],
       "url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-      "rank": 12
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "02:47",
       "source": "IT之家（RSS）",
-      "heat": 84,
+      "heat": 82,
       "title": "OpenAI 宣布 ChatGPT 周活跃用户超 12 亿，ChatGPT Work 和 Codex 周用户超 3500 万",
       "summary": "OpenAI 在 2026 开发者日活动中宣布，ChatGPT 每周活跃用户已超过 12 亿，较 7 月公布的 10 亿进一步增长，ChatGPT Work 和 Codex 每周用户超过 3500 万，使用 OpenAI 产品的企业达 250 万家。",
       "reason": "行业方向的新动态,值得关注。",
@@ -255,14 +289,14 @@
         "Work"
       ],
       "url": "https://www.ithome.com/1/008/532.htm",
-      "rank": 13
+      "rank": 15
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:46",
       "source": "X：Arena (@arena)",
-      "heat": 83,
+      "heat": 81,
       "title": "GPT-6.1 上线 Arena 评测平台",
       "summary": "Arena 宣布 OpenAI 的 GPT-6.1 现已上线 Agent Arena，用户投票将影响其评估，分数即将公布。Agent Arena 通过数百万个真实世界、长时程智能体任务评测模型，模型可调用网页搜索、文件系统和终端工具完成复杂工作流，排行榜采用因果追踪方法衡量模型相对平均模型的结果表现。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -272,14 +306,14 @@
         "OpenAI"
       ],
       "url": "https://x.com/arena/status/2105006240363581728",
-      "rank": 14
+      "rank": 16
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:15",
       "source": "X：Arena (@arena)",
-      "heat": 82,
+      "heat": 80,
       "title": "Claude Sonnet 5.5 (High) 以 1699 分登 Code Arena: WebDev 第 4 名",
       "summary": "Arena 公布 Claude Sonnet 5.5 (High) 在 Code Arena: WebDev 以 1699 分排第 4，混合价格约 $8 per Mtoken，比第 2、3 名便宜 80%。相较 Sonnet 5 (High) 的 1540 分提升 159 分，Reference-Based Design、Simulations、Gaming 均从第 30 多名升至第 4。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -289,14 +323,14 @@
         "High"
       ],
       "url": "https://x.com/arena/status/2104998408616558940",
-      "rank": 15
+      "rank": 17
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:48",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 81,
+      "heat": 79,
       "title": "OpenAI 开放 ChatGPT 平台，支持用插件扩展构建原生应用",
       "summary": "OpenAI 宣布开放平台，开发者可构建带插件扩展的完整原生应用，并直接在 ChatGPT 内发布。平台覆盖超过 12 亿周活跃用户，相关插件将在对话中直接呈现。",
       "reason": "工具方向的新动态,值得关注。",
@@ -305,14 +339,14 @@
         "ChatGPT"
       ],
       "url": "https://x.com/thsottiaux/status/2104991765904375896",
-      "rank": 16
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:47",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 80,
+      "heat": 78,
       "title": "ChatGPT 订阅额度现可在 60 多个合作方产品中直接使用",
       "summary": "ChatGPT 订阅现在可直接在超过 60 个合作方产品中使用，包含的用量可直接用于 Devin、OpenCode、Lovable 等产品。用户通过 Sign in with ChatGPT 登录即可使用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -322,14 +356,14 @@
         "OpenCode"
       ],
       "url": "https://x.com/thsottiaux/status/2104991529416999243",
-      "rank": 17
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:36",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 79,
+      "heat": 77,
       "title": "OpenAI 发布常驻智能体 dots，由 GPT-6 Astra 驱动",
       "summary": "OpenAI 发布名为 dots 的常驻智能体，由 GPT-6 Astra 驱动，拥有自己的云计算机，可 24/7 持续为用户工作，并通过插件生态连接超过 4,000 款应用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -339,14 +373,14 @@
         "Astra"
       ],
       "url": "https://openai.com/index/introducing-dots/",
-      "rank": 18
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "01:32",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 78,
+      "heat": 76,
       "title": "OpenAI 推出新版 Codex Cloud，Agents API 开放预览并支持 computer use",
       "summary": "OpenAI 推出大幅升级的新版 Codex Cloud，主打可配置云环境，作者称配置后很难回到本地开发。同时 Agents API（驱动 dots 等云智能体的同一技术）开启预览，支持 computer use，可用于构建同类产品。",
       "reason": "工具方向的新动态,值得关注。",
@@ -356,39 +390,6 @@
         "Cloud"
       ],
       "url": "https://x.com/thsottiaux/status/2104987594719461796",
-      "rank": 19
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "01:29",
-      "source": "X：ChatGPT (@ChatGPT)",
-      "heat": 77,
-      "title": "ChatGPT 推出 Space 团队协作功能与交互式文档 pages",
-      "summary": "ChatGPT 官方宣布推出 Space，作为团队与 AI 协作的新空间。Space 内可使用新型交互式文档 pages，包含图表、图片、清单和仪表盘，ChatGPT 可根据任务或对话上下文自动生成页面。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "ChatGPT",
-        "Space"
-      ],
-      "url": "https://x.com/ChatGPT/status/2104986841145602351",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "01:23",
-      "source": "The Decoder：AI News（RSS）",
-      "heat": 76,
-      "title": "OpenAI 在 DevDay 推出 ChatGPT 插件扩展、Space 共享工作区与企业市场等一揽子更新",
-      "summary": "OpenAI 在 DevDay 宣布一系列 ChatGPT 更新，包括开放 Plugin Extensions 插件系统、团队共享工作区 Space、文档协作 Pages、自动生成会议记录的 Meetings 插件、MCP Events 与 Team Tasks 工作流自动化，以及可直接在 Slack 和 Microsoft Teams 中通过 @ChatGPT 使用。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "DevDay",
-        "ChatGPT"
-      ],
-      "url": "https://the-decoder.com/openais-reveals-a-new-chatgpt-that-looks-less-like-a-chatbot-and-more-like-an-operating-system/",
       "rank": 21
     }
   ]
