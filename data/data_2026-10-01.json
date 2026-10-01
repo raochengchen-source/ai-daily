@@ -26,7 +26,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 3
+      "count": 4
     },
     {
       "key": "research",
@@ -36,7 +36,7 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 5
+      "count": 4
     },
     {
       "key": "opinion",
@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "12:44",
+      "source": "X：Tibo (@thsottiaux)",
+      "heat": 96,
+      "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
+      "summary": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "ChatGPT",
+        "MCP",
+        "Sites"
+      ],
+      "url": "https://x.com/thsottiaux/status/2105519215092584786",
+      "rank": 1
+    },
+    {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:09",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 96,
+      "heat": 95,
       "title": "Artificial Analysis：GPT-6.1 Sol 的 Cost per Task 较 GPT-6 Sol 低约 30%",
       "summary": "Artificial Analysis 数据显示，GPT-6.1 Sol 的 Cost per Task 约 $0.72，比 GPT-6 Sol（$1.05）低约 30%，后者已约为 GPT-5.6 Sol（$1.99）的一半。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -60,22 +77,6 @@
         "GPT-6.1"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2105449959554441580",
-      "rank": 1
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "08:00",
-      "source": "OpenRouter：Announcements（RSS）",
-      "heat": 95,
-      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架",
-      "summary": "OpenRouter 发布一个三步框架，用于为 Agent 任务选出以最低成本达到质量门槛的模型，而不是按排行榜排名选最高分模型。方法是先按任务设定质量门槛，再用 20 到 50 条自己的示例运行廉价、中档和前沿模型并用统一评分标准计算每质量点成本，最后选出以超过运行间分数波动的余量过线的最便宜模型。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "OpenRouter",
-        "Agent"
-      ],
-      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models/",
       "rank": 2
     },
     {
@@ -84,15 +85,14 @@
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
       "heat": 94,
-      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request",
-      "summary": "OpenRouter 发布教程，讲解如何用固定的 eval 集在 CI 中门禁 pull request，当通过率低于阈值时脚本以非零退出码阻止合并，做法与单元测试门禁一致。",
+      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架",
+      "summary": "OpenRouter 发布一个三步框架，用于为 Agent 任务选出以最低成本达到质量门槛的模型，而不是按排行榜排名选最高分模型。方法是先按任务设定质量门槛，再用 20 到 50 条自己的示例运行廉价、中档和前沿模型并用统一评分标准计算每质量点成本，最后选出以超过运行间分数波动的余量过线的最便宜模型。",
       "reason": "观点方向的新动态,值得关注。",
       "tags": [
         "OpenRouter",
-        "LLM",
-        "Pull"
+        "Agent"
       ],
-      "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci/",
+      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models/",
       "rank": 3
     }
   ],
@@ -103,6 +103,23 @@
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
       "heat": 93,
+      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request",
+      "summary": "OpenRouter 发布教程，讲解如何用固定的 eval 集在 CI 中门禁 pull request，当通过率低于阈值时脚本以非零退出码阻止合并，做法与单元测试门禁一致。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "OpenRouter",
+        "LLM",
+        "Pull"
+      ],
+      "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci/",
+      "rank": 4
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "08:00",
+      "source": "OpenRouter：Announcements（RSS）",
+      "heat": 92,
       "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由",
       "summary": "OpenRouter 发布教程，讲解如何让廉价模型通过结构化输出返回 0 到 1 的置信度字段，低置信度的请求再升级到更强模型。文章强调置信分数只是自报、不是校准概率，应基于自己流量的分数段错误率排序设定阈值，并在上线后监控分数分布、升级率和未升级答案的错误率持续调整。",
       "reason": "观点方向的新动态,值得关注。",
@@ -110,14 +127,14 @@
         "OpenRouter"
       ],
       "url": "https://openrouter.ai/blog/insights/confidence-thresholds-for-model-escalation-routing/",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "05:35",
       "source": "X：Arena (@arena)",
-      "heat": 92,
+      "heat": 91,
       "title": "Gemini 4 Argon (High) 登 Arena Agent Arena 第 8 名，净提升 +7.92%",
       "summary": "Arena 公布 Gemini 4 Argon (High) 在 Agent Arena 排名第 8，净提升分 +7.92%，每任务成本 $0.62。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -127,14 +144,14 @@
         "High"
       ],
       "url": "https://x.com/arena/status/2105411271525052418",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "05:09",
       "source": "MarkTechPost（RSS）",
-      "heat": 91,
+      "heat": 90,
       "title": "OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格接近其编码与计算机操作水平",
       "summary": "OpenAI 发布 GPT-6.1 Sol，定价为每百万 token 2 美元输入、10 美元输出、0.10 美元缓存输入，为 GPT-6 Astra 标准价格约五分之一。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -144,14 +161,14 @@
         "Sol"
       ],
       "url": "https://www.marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price/",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "04:01",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放",
       "summary": "Google DeepMind 发布新前沿模型 Gemini 4 Argon，先通过 Fairwind Program 向可信网络防御者开放，后续将逐步面向开发者、企业和消费者推出。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -161,14 +178,14 @@
         "Gemini"
       ],
       "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:49",
       "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "heat": 89,
+      "heat": 88,
       "title": "Perplexity 开放 Computer 邮件委托入口并限时免费运行任务",
       "summary": "Perplexity 向所有人开放 Computer 的邮件委托功能，无需 Perplexity 账号，将转发或抄送 computer@perplexity.com 的任务限时免费运行。智能体会在后台完成任务并保留邮件上下文，每个邮件任务在 Computer 中作为正常会话运行，可在网页和移动端查看，并带有与应用内任务相同的审计记录。",
       "reason": "工具方向的新动态,值得关注。",
@@ -177,14 +194,14 @@
         "Computer"
       ],
       "url": "https://x.com/AravSrinivas/status/2105369479190601754",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "02:47",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
       "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。",
       "reason": "行业方向的新动态,值得关注。",
@@ -194,14 +211,14 @@
         "FTC"
       ],
       "url": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:42",
       "source": "X：Arena (@arena)",
-      "heat": 87,
+      "heat": 86,
       "title": "GPT-6.1 Sol (Max) 以 1759 分登上 Code Arena: WebDev 第 3 名",
       "summary": "Arena 评测榜单显示，OpenAI 的 GPT-6.1 Sol (Max) 以 1759 分位列 Code Arena: WebDev 第 3 名，混合价格为 $8/MToken。相比 GPT-6 Sol (Max) 同价提升 70 分，排名上升 4 位，且在 Consumer Product 等所有类目均有提升。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -211,14 +228,14 @@
         "Max"
       ],
       "url": "https://x.com/arena/status/2105367591174995999",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "01:25",
       "source": "X：Jensen Huang (@JensenHuang)",
-      "heat": 86,
+      "heat": 85,
       "title": "Jensen Huang 称行业领袖在白宫签署超级智能协定",
       "summary": "多家行业公司的领袖在白宫签署 White House Accord on Super Intelligence，约定开发该技术的公司负有安全部署和担责的首要责任。协定要求四层控制：训练和部署期间的稳健内部监控、授权内部团队验证控制有效、独立外部评估者审计、董事会独立委员会监督，参与公司还将定期会晤制定安全标准与最佳实践。",
       "reason": "行业方向的新动态,值得关注。",
@@ -228,14 +245,14 @@
         "White"
       ],
       "url": "https://x.com/JensenHuang/status/2105348324484342238",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "00:20",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 85,
+      "heat": 84,
       "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
       "summary": "FTC 正以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部 AI 实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。",
       "reason": "商业方向的新动态,值得关注。",
@@ -245,14 +262,14 @@
         "Anthropic"
       ],
       "url": "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:03",
       "source": "Google DeepMind：Blog（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Google DeepMind 发布 SynthID Bio，为 AI 生成的蛋白质嵌入可验证水印",
       "summary": "Google DeepMind 于 9 月 30 日发布 SynthID Bio，将水印技术引入合成生物学，把不可见签名嵌入生物序列和预测结构中，使水印可在合成的物理蛋白质上验证，且在湿实验中不损害生物功能。",
       "reason": "工具方向的新动态,值得关注。",
@@ -262,14 +279,14 @@
         "SynthID"
       ],
       "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "23:00",
       "source": "MIT News（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "MIT 等机构发布 Ataraxos，以极低成本战胜顶级人类 Stratego 选手",
       "summary": "MIT、CMU、NYU 与 Stanford 的研究人员开发出 AI 系统 Ataraxos，在隐藏信息棋盘战棋 Stratego 上大幅超越世界顶级人类选手，论文发表于 Nature。",
       "reason": "研究方向的新动态,值得关注。",
@@ -279,14 +296,14 @@
         "Stratego"
       ],
       "url": "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "22:58",
       "source": "X：Arena (@arena)",
-      "heat": 82,
+      "heat": 81,
       "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
       "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。",
       "reason": "工具方向的新动态,值得关注。",
@@ -296,14 +313,14 @@
         "Sonnet"
       ],
       "url": "https://x.com/arena/status/2105311267619848419",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "20:41",
       "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
-      "heat": 81,
+      "heat": 80,
       "title": "Hugging Face CEO 称收到数千条私信，将花几天逐一处理",
       "summary": "Clément Delangue 表示收到数千条私信，但 @bot 无法自动分析私信，需要几天时间处理。他称暂时只会关注特别匹配的人选，未获回复不代表负面评价，并可前往 https://apply.workable.com/huggingface 申请具体职位。",
       "reason": "行业方向的新动态,值得关注。",
@@ -313,14 +330,14 @@
         "CEO"
       ],
       "url": "https://x.com/ClementDelangue/status/2105276853632094607",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "20:30",
       "source": "公众号：蚂蚁百灵（Ling）",
-      "heat": 80,
+      "heat": 79,
       "title": "蚂蚁百灵发布 Ling-3.1-flash，面向真实世界长任务升级",
       "summary": "蚂蚁百灵推出 Ling-3.1-flash，总参数约 560B，每个 Token 激活约 25B，上下文窗口上限 1M，延续混合线性架构并提高线性 Attention 层比例（7 层 KDA 配 1 层 Gated MLA，512 个路由专家选 8 个加 1 个共享专家）。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -330,14 +347,14 @@
         "Token"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw==&mid=2247488041&idx=1&sn=e895cef2129ff2a96598d78b5a45c17b&chksm=c3a0565f2837a278a1a2f05d010189577c4e94fb18ccdd5e25001862b11c205fcd792160b382&scene=126&sessionid=1790772500#rd",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "20:00",
       "source": "ElevenLabs：Blog（网页）",
-      "heat": 79,
+      "heat": 78,
       "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
       "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。",
       "reason": "商业方向的新动态,值得关注。",
@@ -347,14 +364,14 @@
         "Wellington"
       ],
       "url": "https://elevenlabs.io/blog/tender-22bn",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "18:30",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 78,
+      "heat": 77,
       "title": "OpenAI 披露并处置一起有组织的模型蒸馏攻击行动",
       "summary": "OpenAI 披露其识别并处置了一起有组织的攻击行动，该行动旨在系统性提取模型受保护的推理内容，最早活动出现在 7 月第一周。",
       "reason": "行业方向的新动态,值得关注。",
@@ -362,14 +379,14 @@
         "OpenAI"
       ],
       "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "10:01",
       "source": "公众号：DeepSeek（深度求索）",
-      "heat": 77,
+      "heat": 76,
       "title": "DeepSeek 开源面向华为昇腾平台的基础设施组件",
       "summary": "DeepSeek 开源面向华为昇腾算力平台的基础设施组件，包括 TileLang 编译工具、DeepGEMM、DeepEP、TileKernels、FlashMLA、DeepSelect，与此前英伟达平台开源组件一一对应。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -379,21 +396,6 @@
         "DeepGEMM"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485843&idx=1&sn=565102c3642d88e814331390bf62d276&chksm=c2b41a7a4ae29752ec9555ae3de574d2c8f60b42aaf1db0aaf4511c38f174d7abc860a8ee56c&scene=126&sessionid=1790739034#rd",
-      "rank": 20
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "09:48",
-      "source": "IT之家（RSS）",
-      "heat": 76,
-      "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
-      "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI"
-      ],
-      "url": "https://www.ithome.com/1/008/592.htm",
       "rank": 21
     }
   ]
