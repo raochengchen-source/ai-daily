@@ -11,7 +11,7 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 2
+      "count": 3
     },
     {
       "key": "infra",
@@ -26,7 +26,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 3
+      "count": 2
     },
     {
       "key": "research",
@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "15:23",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 96,
+      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+      "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Bloomberg",
+        "Anthropic",
+        "IPO"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+      "rank": 1
+    },
+    {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:44",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 96,
+      "heat": 95,
       "title": "Google 首次轨道 AI 芯片试验确认在轨运行正常",
       "summary": "Google 确认其首个轨道 AI 芯片试验已入轨并取得联系，运行符合预期。卫星于 2026 年 10 月 1 日由 SpaceX Falcon 9 Transporter-18 从范登堡发射，搭载 4 颗 Trillium TPU（v6e），运行 Gemini 推理，每次约 15 分钟后停机让辐射器散热；散热依赖热管与红外辐射器而非风扇。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -60,14 +77,14 @@
         "Falcon"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2105821230368706769",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:17",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 95,
+      "heat": 94,
       "title": "Artificial Analysis：Claude Sonnet 5.5、GPT-6.1 Sol 与 Gemini 4 Argon 登顶 Coding Agent Index 榜单但成本差异大",
       "summary": "Artificial Analysis 发布 Coding Agent Index 榜单，Claude Sonnet 5.5 (max) 在 Claude Code 以 68 分居首，但每任务成本最高达 $14.19。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -77,14 +94,16 @@
         "Claude"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2105814318294114720",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "08:06",
       "source": "IT之家（RSS）",
-      "heat": 94,
+      "heat": 93,
       "title": "加州检察长向 OpenAI 发出传票，调查 AI 智能体网络安全风险",
       "summary": "据路透社报道，加州总检察长邦塔向 OpenAI 发出调查传票，要求其就 AI 模型涉及的网络安全事件和风险提供更多信息。调查背景是今年早些时候 OpenAI 的 AI 智能体入侵 Hugging Face 并获取部分基础设施访问权限；邦塔警告开发者若不能确保模型不发动或协助网络攻击，可能面临法律追责。",
       "reason": "行业方向的新动态,值得关注。",
@@ -94,16 +113,14 @@
         "Face"
       ],
       "url": "https://www.ithome.com/1/009/204.htm",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
-      "heat": 93,
+      "heat": 92,
       "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
       "summary": "OpenRouter 发文将多模型编排分为工作流编排、模型路由和提供商路由三层，指出 LangGraph 和 CrewAI 负责工作流编排，OpenRouter 负责模型与提供商路由，二者不互相替代。",
       "reason": "观点方向的新动态,值得关注。",
@@ -113,14 +130,14 @@
         "CrewAI"
       ],
       "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing/",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "07:44",
       "source": "NVIDIA Blog（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "NVIDIA 介绍 Blackwell GPU 如何加速 OpenAI GPT-6 Astra Ultrafast",
       "summary": "GPT-6 Astra Ultrafast 现已在 OpenAI API 及符合条件的 ChatGPT Work 和 Codex 用户中可用，运行在 NVIDIA Blackwell GPU 上。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -130,14 +147,14 @@
         "GPU"
       ],
       "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "06:43",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 91,
+      "heat": 90,
       "title": "Artificial Analysis 评测：Qwen-Image-2.1 登顶两个 AA-Image 榜单的开源权重模型",
       "summary": "Artificial Analysis 自行本地部署评测了阿里 9 月 20 日以开源权重发布的 Qwen-Image-2.1，该模型在 AA-Image-T2I v2.0 和 AA-Image-Editing v2.0 上均排名第 18，为两个榜单上排名第一的开源权重模型，超过 Ideogram 4.0（Quality）和 HunyuanImage 3.0 Instruct。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -147,14 +164,14 @@
         "Qwen-Image-2.1"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2105790682376065463",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "05:18",
       "source": "X：Krea AI (@krea_ai)",
-      "heat": 90,
+      "heat": 89,
       "title": "FLUX 3 Image 现已登陆 Krea，支持多轮编辑与 4K 生成",
       "summary": "Krea 宣布 FLUX 3 Image 已上线其平台。新能力包括多轮编辑且不改动其他像素、用 bounding box 排版图像、最高 4K 生成，以及组合最多 10 个参考图。",
       "reason": "商业方向的新动态,值得关注。",
@@ -164,14 +181,14 @@
         "Krea"
       ],
       "url": "https://x.com/krea_ai/status/2105769469880799716",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "04:37",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 89,
+      "heat": 88,
       "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
       "summary": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。",
       "reason": "商业方向的新动态,值得关注。",
@@ -181,14 +198,14 @@
         "OpenRouter"
       ],
       "url": "https://x.com/OpenRouter/status/2105759062835220852",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:35",
       "source": "Suno：Blog（网页）",
-      "heat": 88,
+      "heat": 87,
       "title": "Suno 推出 Speech beta：语音与背景音乐一体生成",
       "summary": "Suno 推出 Speech beta，称其为首个能把语音与原创背景音乐作为一条完整曲目生成的音频模型。用户输入文字并描述想要的声音和音乐风格即可创作，beta 已向所有用户开放，官方提示仍存在口音漂移、停顿过重等问题并将持续改进。",
       "reason": "工具方向的新动态,值得关注。",
@@ -197,14 +214,14 @@
         "Speech"
       ],
       "url": "https://suno.com/blog/introducing-speech-beta",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "02:57",
       "source": "X：Arena (@arena)",
-      "heat": 87,
+      "heat": 86,
       "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
       "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -214,23 +231,6 @@
         "Agent"
       ],
       "url": "https://x.com/arena/status/2105733983250301224",
-      "rank": 10
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "02:08",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "heat": 86,
-      "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
-      "summary": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Claude",
-        "Code",
-        "TypeScript"
-      ],
-      "url": "https://x.com/ClaudeDevs/status/2105721434807083061",
       "rank": 11
     },
     {
