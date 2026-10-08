@@ -16,12 +16,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 3
+      "count": 2
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 8
+      "count": 9
     },
     {
       "key": "research",
@@ -77,9 +77,28 @@
     {
       "cat": "工具",
       "catKey": "tool",
+      "time": "08:46",
+      "source": "Hacker News：AI 热帖",
+      "heat": 94,
+      "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
+      "summary": "ts-rust（tsc-rs）将 microsoft/TypeScript（Go 实现）的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写，本人未读过代码。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "TypeScript",
+        "LSP"
+      ],
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "工具",
+      "catKey": "tool",
       "time": "04:21",
       "source": "X：OpenRouter (@OpenRouter)",
-      "heat": 94,
+      "heat": 93,
       "title": "GPT-6 Luna Decisions 上架 OpenRouter",
       "summary": "OpenRouter 宣布 GPT-6 Luna Decisions 上线。OpenAI 的 Decisions API 可让应用选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；引用 OpenAI 开发者账号称其决策速度比通过 Responses API 的 GPT-6 Luna 最快 10 倍。",
       "reason": "工具方向的新动态,值得关注。",
@@ -89,16 +108,14 @@
         "Decisions"
       ],
       "url": "https://x.com/OpenRouter/status/2107929204142874759",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:49",
       "source": "LangChain：Blog（RSS）",
-      "heat": 93,
+      "heat": 92,
       "title": "LangChain 重构 Deep Agents 的 Skills 支持，新增工具绑定、固定技能与线程内重载",
       "summary": "LangChain 重构 Deep Agents 的 Skills 支持，针对企业技能库增至数千个技能的场景推出三项更新：工具可绑定到技能、仅在该技能被读取时加载，用户可通过 /meeting-prep 之类的显式请求固定技能以在首次模型调用前加载，长线程可通过将 skills_metadata 设为 None 重载新增或变更的技能。",
       "reason": "工具方向的新动态,值得关注。",
@@ -108,14 +125,14 @@
         "Agents"
       ],
       "url": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "02:45",
       "source": "NVIDIA Blog（RSS）",
-      "heat": 92,
+      "heat": 91,
       "title": "NVIDIA 与 Microsoft 推出 RTX Spark 平台并宣布 MXC 让 AI Agent 落地 Windows PC",
       "summary": "NVIDIA 与 Microsoft 在旧金山活动上宣布为 Windows PC 共同打造 AI Agent 软硬件。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -125,14 +142,14 @@
         "RTX"
       ],
       "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:14",
       "source": "X：Cursor (@cursor_ai)",
-      "heat": 91,
+      "heat": 90,
       "title": "Cursor 公布 Claude Haiku 5.5 定价并下调 Claude Sonnet 5.5 缓存读取价格",
       "summary": "Cursor 公布 Claude Haiku 5.5 定价为每 M 输入 token $0.10、输出 token $0.50，输入超过 100k token 时为 $0.50/M 和 $2.50/M。Claude Sonnet 5.5 缓存读取价格也从 $0.20/M 降至 $0.10/M，用户可在 cursor.com/evals 上通过 CursorBench 对比 Haiku 5.5 的表现。",
       "reason": "工具方向的新动态,值得关注。",
@@ -142,14 +159,14 @@
         "Haiku"
       ],
       "url": "https://x.com/cursor_ai/status/2107897257651769464",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:10",
       "source": "Claude Code：GitHub Releases（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
       "summary": "Claude Code 发布 v2.1.293，新增 Claude Haiku 5.5（claude-haiku-5-5）作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）。",
       "reason": "工具方向的新动态,值得关注。",
@@ -159,14 +176,14 @@
         "v2.1"
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:08",
       "source": "X：Claude Devs (@ClaudeDevs)",
-      "heat": 89,
+      "heat": 88,
       "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度",
       "summary": "Anthropic 正在为 Claude Max 和 Team 套餐推出月度 Claude Platform API 额度：Max 5x 为 $100，Max 20x 为 $200，Team 最多 $500 且可共享。额度适用于任何模型，包括 Haiku 5.5，可在自己的代码或第三方 harness 中使用。",
       "reason": "工具方向的新动态,值得关注。",
@@ -176,14 +193,14 @@
         "Max"
       ],
       "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:01",
       "source": "X：Claude (@claudeai)",
-      "heat": 88,
+      "heat": 87,
       "title": "Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10",
       "summary": "Anthropic 宣布将 Claude Sonnet 5.5 的缓存读取价格减半，降至每百万 token $0.10。官方称这使 Sonnet 5.5 在多数长期运行任务上的运行成本降低约 20%。",
       "reason": "工具方向的新动态,值得关注。",
@@ -193,14 +210,14 @@
         "Sonnet"
       ],
       "url": "https://x.com/claudeai/status/2107894060229034197",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "02:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 87,
+      "heat": 86,
       "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
       "summary": "OpenAI 发布面向更广泛用户的 GPT-6，并随 GPT-6 在 ChatGPT 中引入 Intelligent UI，可生成图形、按钮、表单、图表和可交互组件来回答问题。",
       "reason": "工具方向的新动态,值得关注。",
@@ -210,14 +227,14 @@
         "GPT-6"
       ],
       "url": "https://openai.com/index/gpt-6-for-everyone/",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "00:33",
       "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "heat": 86,
+      "heat": 85,
       "title": "Perplexity 开源 pplx-embed-v2-late 多模态 late-interaction 嵌入模型（9B 与 0.6B）",
       "summary": "Perplexity 开源 pplx-embed-v2-late，两个针对文本和图像的 late-interaction 多向量嵌入模型，大小为 9B 和 0.6B，共享同一嵌入空间，权重已在 Hugging Face 提供。9B 可用于索引多模态数据，0.6B 可在设备端查询，无需 OCR 即可检索 PDF 页面；模型在 MADQA 得分 92.4%，BrowseComp+ 得分 64%。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -227,14 +244,14 @@
         "9B"
       ],
       "url": "https://x.com/AravSrinivas/status/2107871834205196784",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:21",
       "source": "X：Unsloth (@UnslothAI)",
-      "heat": 85,
+      "heat": 84,
       "title": "Unsloth 开源教程：本地训练 Qwen3.5 0.8B 决策模型，准确率从 20.7% 提升至 74.3%",
       "summary": "Unsloth 发布教程与开源仓库，可将 Qwen3.8、Gemma 4 等 LLM 微调为输出选项概率的决策模型，Qwen3.5 0.8B 在 3 个决策基准上的合计准确率从 20.7% 提到 74.3%，仅需 4GB 显存。",
       "reason": "观点方向的新动态,值得关注。",
@@ -244,14 +261,14 @@
         "8B"
       ],
       "url": "https://x.com/UnslothAI/status/2107868866361930236",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "00:00",
       "source": "Microsoft Research 博客（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的真实 harness 智能体 RL 训练框架",
       "summary": "Microsoft Research Asia 提出 Harnessed Agentic RL 训练范式并开源重建的 Agent Lightning v1.0，让部署时使用的同一 agent harness 直接参与强化学习，无需在训练框架内重写 agent。",
       "reason": "研究方向的新动态,值得关注。",
@@ -261,14 +278,14 @@
         "Asia"
       ],
       "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "22:46",
       "source": "404 Media（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "亚利桑那州法院裁定 AI 生成受害者视频带有不当情感分量 将重新量刑",
       "summary": "亚利桑那州上诉法院裁定，Gabriel Horcasitas 2021 年路怒枪杀 Christopher Pelkey 一案维持过失杀人定罪，但因量刑听证中播放的 AI 生成受害者视频带有不当情感分量，法官须重新考虑刑期。",
       "reason": "行业方向的新动态,值得关注。",
@@ -278,14 +295,14 @@
         "Christopher"
       ],
       "url": "https://www.404media.co/undue-emotional-weight/",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "22:12",
       "source": "X：Google (@Google)",
-      "heat": 82,
+      "heat": 81,
       "title": "Google 开放 SynthID Detector 门户，可检测图片、视频和音频是否由 AI 生成",
       "summary": "Google 介绍检测媒体是否由 AI 生成的方法：访问 https://synthid.com 上传图片、视频或音频文件，门户会扫描文件是否包含来自 Google 或其合作伙伴的 SynthID 水印。",
       "reason": "观点方向的新动态,值得关注。",
@@ -295,14 +312,14 @@
         "Detector"
       ],
       "url": "https://x.com/Google/status/2107836410254291345",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "22:01",
       "source": "a16z：News（RSS）",
-      "heat": 81,
+      "heat": 80,
       "title": "a16z 解析德州为何让数据中心排队等电",
       "summary": "a16z 的 Ryan McEntush 分析德州电网暂停审批数据中心的原因：并网队列从 2024 年底的 63 GW 激增到今年 6 月的 474 GW，约 90% 是数据中心，开发商大量投机性申请且社区沟通不足。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -311,14 +328,14 @@
         "McEntush"
       ],
       "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:45",
       "source": "Hugging Face 社区博客（混合发现）",
-      "heat": 80,
+      "heat": 79,
       "title": "Nemotron 系列微调后达到 IOI 2026 与 IMO 2026 金牌水平",
       "summary": "NVIDIA Nemotron 团队基于 Nemotron 3，用 SFT、RL 和反馈驱动推理分别构建了在 IOI 2026 与 IMO 2026 达到金牌水平的系统。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -328,14 +345,14 @@
         "IMO"
       ],
       "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "14:18",
       "source": "X：Arena (@arena)",
-      "heat": 79,
+      "heat": 78,
       "title": "Mistral Large 4 进入 Code Arena: WebDev 排名第45，得分1534",
       "summary": "Arena 宣布 Mistral Large 4 登陆 Code Arena: WebDev，以 1534 分排名第 45，比 Mistral Large 3（第130名）高 304 分，比 Mistral Medium 3.5 高 271 分。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -345,14 +362,14 @@
         "Code"
       ],
       "url": "https://x.com/arena/status/2107717155374727602",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "Google Research：Blog（网页）",
-      "heat": 78,
+      "heat": 77,
       "title": "Google Research 三个月专利起草实验发现AI辅助未必能培养初级律师的专业判断",
       "summary": "Google Research 在 NBER 发表的论文报告了一项三个月随机田野实验，向11家知识产权律所的133名律师随机开放当时未发布的 AI 专利写作助手（现属 Gemini Notebook）。",
       "reason": "研究方向的新动态,值得关注。",
@@ -362,14 +379,14 @@
         "NBER"
       ],
       "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "Google Developers Blog（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "Google 发布 Developer Knowledge API 生态，为 AI 智能体提供官方文档检索",
       "summary": "Google 推出 Developer Knowledge API 生态，作为 Google Cloud、Firebase、Android 等开发者文档的官方程序化来源，用结构化 API 和 Markdown 格式文档取代网页抓取，支持语义与关键词搜索、文档分块和有依据的问答。",
       "reason": "工具方向的新动态,值得关注。",
@@ -379,23 +396,6 @@
         "Knowledge"
       ],
       "url": "https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem/",
-      "rank": 20
-    },
-    {
-      "cat": "大模型",
-      "catKey": "model",
-      "time": "08:00",
-      "source": "Liquid AI 模型与工程博客（网页）",
-      "heat": 76,
-      "title": "Liquid AI 发布开源决策模型 d1-3B 和 d1-omni-600M",
-      "summary": "Liquid AI 发布开源权重决策模型 d1-3B 和 d1-omni-600M，已在 Hugging Face 上提供。",
-      "reason": "大模型方向的新动态,值得关注。",
-      "tags": [
-        "Liquid",
-        "3B",
-        "Hugging"
-      ],
-      "url": "https://www.liquid.ai/blog/d1-open",
       "rank": 21
     }
   ]
