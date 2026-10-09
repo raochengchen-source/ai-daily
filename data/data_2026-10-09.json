@@ -26,7 +26,7 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 3
+      "count": 2
     },
     {
       "key": "research",
@@ -36,7 +36,7 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 3
+      "count": 4
     },
     {
       "key": "opinion",
@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "14:17",
+      "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+      "heat": 96,
+      "title": "OpenAI 研究负责人发声明回应三名员工离职争议",
+      "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "Jasmine",
+        "Mikita"
+      ],
+      "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+      "rank": 1
+    },
+    {
       "cat": "大模型",
       "catKey": "model",
       "time": "11:53",
       "source": "X：Arena (@arena)",
-      "heat": 96,
+      "heat": 95,
       "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
       "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -60,22 +77,6 @@
         "Agent"
       ],
       "url": "https://x.com/arena/status/2108405474391728357",
-      "rank": 1
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "08:12",
-      "source": "X：Tibo (@thsottiaux)",
-      "heat": 95,
-      "title": "Tibo 宣布发布 ChatGPT",
-      "summary": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Tibo",
-        "ChatGPT"
-      ],
-      "url": "https://x.com/thsottiaux/status/2108349826727588000",
       "rank": 2
     },
     {
