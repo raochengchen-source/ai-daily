@@ -21,12 +21,12 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 2
+      "count": 3
     },
     {
       "key": "tool",
       "label": "工具",
-      "count": 4
+      "count": 3
     },
     {
       "key": "research",
@@ -46,11 +46,28 @@
   ],
   "top3": [
     {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "11:53",
+      "source": "X：Arena (@arena)",
+      "heat": 96,
+      "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
+      "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Mistral",
+        "Large",
+        "Agent"
+      ],
+      "url": "https://x.com/arena/status/2108405474391728357",
+      "rank": 1
+    },
+    {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:12",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 96,
+      "heat": 95,
       "title": "Tibo 宣布发布 ChatGPT",
       "summary": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。",
       "reason": "工具方向的新动态,值得关注。",
@@ -59,14 +76,14 @@
         "ChatGPT"
       ],
       "url": "https://x.com/thsottiaux/status/2108349826727588000",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "07:02",
       "source": "IT之家·人工智能",
-      "heat": 95,
+      "heat": 94,
       "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
       "summary": "据金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，大幅低于此前外界估算的 700 亿美元，缺口约 200 亿美元。差异源于统计口径不同，Anthropic 计入 AWS 和谷歌云等合作方销售收入，而 OpenAI 剔除该部分。报道发布后美股科技股下跌，纳斯达克 100 指数收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。",
       "reason": "商业方向的新动态,值得关注。",
@@ -76,14 +93,16 @@
         "AWS"
       ],
       "url": "https://www.ithome.com/1/010/751.htm",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "05:36",
       "source": "X：Arena (@arena)",
-      "heat": 94,
+      "heat": 93,
       "title": "Arena 完成 2 亿美元 B 轮融资，估值 31 亿美元并发布 Alignment Index",
       "summary": "Arena 完成 2 亿美元 B 轮融资，估值 31 亿美元，由 Lightspeed 和 Khosla Ventures 联合领投，a16z、Felicis、Salesforce Ventures、The House Fund 等参投。自 A 轮以来，Arena 年化收入超 1 亿美元，平台累计 3.5 亿场次会话，约 5 个月内产生 700 万次 Agent Arena 会话，覆盖文本、视觉、代码、搜索、图像和视频的投票达 6200 万，用户遍布 150 多个国家。融资同时，Arena 发布基于真实智能体轨迹构建的 Alignment Index，对 20 多个前沿模型从 Unauthorized Action、False Attribution 和 Deceptive Completion 三个信号进行评估。Arena 于 2023 年作为 UC Berkeley 研究项目启动，2025 年成为公司。",
       "reason": "商业方向的新动态,值得关注。",
@@ -93,16 +112,14 @@
         "Index"
       ],
       "url": "https://x.com/arena/status/2108310714423423254",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "04:02",
       "source": "X：Arena (@arena)",
-      "heat": 93,
+      "heat": 92,
       "title": "Arena 公布 Claude Haiku 5.5 (High) 真实评测结果：Code Arena 1587 分首秀第 30 名",
       "summary": "Arena 公布 Anthropic Claude Haiku 5.5 (High) 的真实评测结果，在 Code Arena: WebDev 以 1587 分首秀排名第 30，略在 Pareto 前沿之外。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -112,14 +129,14 @@
         "Haiku"
       ],
       "url": "https://x.com/arena/status/2108286973119230096",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "03:01",
       "source": "Comfy Blog",
-      "heat": 92,
+      "heat": 91,
       "title": "如何在单张 RTX 5090 上用 MiniMax H3 生成实时视频",
       "summary": "ComfyUI 博客作者用智能体搜集各类优化，把 MiniMax H3 实时视频生成压缩到单张 RTX 5090（32 GB 显存）上运行，生成 30 秒视频耗时 23.51 秒，达 1.28 倍实时吞吐。",
       "reason": "观点方向的新动态,值得关注。",
@@ -129,14 +146,14 @@
         "ComfyUI"
       ],
       "url": "https://blog.comfy.org/p/how-i-generated-live-video-with-minimax",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "02:51",
       "source": "X：Arena (@arena)",
-      "heat": 91,
+      "heat": 90,
       "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
       "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
       "reason": "商业方向的新动态,值得关注。",
@@ -146,14 +163,14 @@
         "Alignment"
       ],
       "url": "https://x.com/arena/status/2108269048467513429",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "02:17",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "部分数学家呼吁抵制 OpenAI，AI 生成的数学证明涌入数学领域",
       "summary": "AHM 组织在 Terence Tao 主持下发表声明，呼吁抵制 OpenAI，称其一次性发布 700 多个 AI 生成证明文件是展示力量而非学术行为。此前 OpenAI 宣称内部模型一个月内解决逾 100 个开放数学问题，约 8000 个测试问题成功率约 5%，平均每个耗时 3 小时 GPT-Pro 级算力。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -163,14 +180,14 @@
         "Terence"
       ],
       "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "01:08",
       "source": "X：Arena (@arena)",
-      "heat": 89,
+      "heat": 88,
       "title": "Arena 宣布 2 亿美元 B 轮融资，估值达 31 亿美元，并推出 Alignment Index",
       "summary": "Arena 宣布完成 2 亿美元 B 轮融资，估值 31 亿美元，同时推出衡量 AI 智能体是否安全、真实且在用户要求范围内行动的 Alignment Index。引用 Felicis 的内容称 Arena 年化收入已超 1 亿美元，累计促成 3.5 亿次会话和 6200 万次投票。",
       "reason": "商业方向的新动态,值得关注。",
@@ -180,14 +197,14 @@
         "Index"
       ],
       "url": "https://x.com/arena/status/2108243026741248348",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "00:42",
       "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "heat": 88,
+      "heat": 87,
       "title": "Artificial Analysis 评测 Google Nano Banana 2.1，两榜居第 4 且价格为前代一半",
       "summary": "Artificial Analysis 评测 Google 于 10 月 6 日发布的图像模型 Nano Banana 2.1，在 AA-Image-T2I v2.0 和 AA-Image-Editing v2.0 两个榜单均排名第 4。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -197,14 +214,14 @@
         "Google"
       ],
       "url": "https://x.com/ArtificialAnlys/status/2108236656700768310",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "00:21",
       "source": "LangChain：Blog（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "LangChain 用 Stripe Link 和 Managed Deep Agents 构建可支付的智能体 Restock",
       "summary": "LangChain 发布示例项目 Restock，一个在 Slack 上通过 Managed Deep Agents 运行的办公用品购买智能体，演示智能体如何安全完成支付。",
       "reason": "观点方向的新动态,值得关注。",
@@ -214,14 +231,14 @@
         "Link"
       ],
       "url": "https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "23:53",
       "source": "Claude：YouTube（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "Claude 九月回顾：Chat 与 Cowork 合一，Claude 5.5 系列模型上线",
       "summary": "Claude 发布九月更新回顾，Chat 与 Cowork 合并为一个 Claude，工作流可在云端运行，合上笔记本后继续进行。Claude Docs 支持团队与 Claude 在同一文档中协作编辑，新推出的 Claude 5.5 系列提供 Opus 5.5 处理重任务、Sonnet 5.5 用于快速修改，并可通过 /slides、/docs、/designs 直接生成对应格式。",
       "reason": "工具方向的新动态,值得关注。",
@@ -231,14 +248,14 @@
         "Cowork"
       ],
       "url": "https://www.youtube.com/shorts/n9WfoNW2XnE",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "21:01",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 85,
+      "heat": 84,
       "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
       "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
       "reason": "研究方向的新动态,值得关注。",
@@ -248,14 +265,14 @@
         "AgentCore"
       ],
       "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "20:00",
       "source": "Anthropic：Claude.dev 开发者博客（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Anthropic 用 Claude Managed Agents 构建定时智能体自动化的实践指南",
       "summary": "Anthropic 发布基于 Claude Managed Agents（beta）的每日简报参考实现，按计划读取 Slack 和 GitHub 来源并向 Slack 发布简报。",
       "reason": "观点方向的新动态,值得关注。",
@@ -265,14 +282,14 @@
         "Managed"
       ],
       "url": "https://claude.dev/blog/building-effective-agent-automations/",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "17:24",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 83,
+      "heat": 82,
       "title": "Crowdstrike 报告疑似单人使用 AI 渗透工具攻击多家韩国银行",
       "summary": "Crowdstrike 报告称，一名疑似中文使用者于2026年9月底至10月初利用 AI 驱动的开源渗透测试工具 ARTEX 攻击多家韩国金融机构，窃取大量数据，其中 Shinhan Bank 超过 25,000 条包含姓名、联系方式、收入和信用额度的记录泄露。",
       "reason": "行业方向的新动态,值得关注。",
@@ -282,14 +299,14 @@
         "Shinhan"
       ],
       "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "15:00",
       "source": "Waymo：Blog（网页）",
-      "heat": 82,
+      "heat": 81,
       "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
       "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
       "reason": "商业方向的新动态,值得关注。",
@@ -299,14 +316,14 @@
         "Blackstone"
       ],
       "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "11:44",
       "source": "X：Tibo (@thsottiaux)",
-      "heat": 81,
+      "heat": 80,
       "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
       "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
       "reason": "行业方向的新动态,值得关注。",
@@ -316,14 +333,14 @@
         "Work"
       ],
       "url": "https://x.com/thsottiaux/status/2108040921044639779",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:00",
       "source": "AIHOT",
-      "heat": 80,
+      "heat": 79,
       "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移",
       "summary": "这条消息来自 AIHOT 旧版接口 /api/public/*：它将于 2026 年 10 月 31 日停用，之后这里不会再有新资讯。如果它是群机器人或脚本推送来的，请转告维护的人把地址换成 https://aihot.news/api/v1，字段一一对应；迁移指南和可以直接交给 AI 改写代码的提示词见 https://aihot.news/agent?tab=api#legacy-api-migration 。同一天起旧域名 aihot.virxact.com 的所有地址都只跳转到 aihot.news，RSS、MCP 等地址也请换成新域名；收藏的网页链接照样能打开。",
       "reason": "行业方向的新动态,值得关注。",
@@ -333,14 +350,14 @@
         "RSS"
       ],
       "url": "https://aihot.news/agent?tab=api#legacy-api-migration",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:46",
       "source": "Hacker News：AI 热帖",
-      "heat": 79,
+      "heat": 78,
       "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
       "summary": "ts-rust（tsc-rs）将 microsoft/TypeScript（Go 实现）的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写，本人未读过代码。",
       "reason": "工具方向的新动态,值得关注。",
@@ -350,14 +367,14 @@
         "LSP"
       ],
       "url": "https://github.com/pingdotgg/ts-rust",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:36",
       "source": "公众号：数字生命卡兹克",
-      "heat": 78,
+      "heat": 77,
       "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
       "summary": "OpenAI 于10月7日在 GitHub 发布 openai/math 仓库，收录其未公开内部模型产出的722份数学手稿，归为372个成果组，覆盖数论、代数几何、偏微分方程等方向，每个结果平均花费约3小时 ChatGPT Pro 级别思考算力。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -367,14 +384,14 @@
         "ChatGPT"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:00",
       "source": "Hugging Face 官方团队博客",
-      "heat": 77,
+      "heat": 76,
       "title": "Hugging Face 工程师用 ML Intern 以约 103 美元自制 7 个小模型",
       "summary": "Hugging Face 工程师 yuvraj sharma 用 HuggingChat 的 ML Intern 模式在几天内做出 7 个模型，包括可在 CPU 运行、99.7% 有效输出的 0.8B 提示词重写器，以及将柑橘病害识别准确率从 14.9% 提升到 52.8% 的 Qwen3.5-2B 微调模型等，全部计算成本约 103 美元。",
       "reason": "观点方向的新动态,值得关注。",
@@ -384,23 +401,6 @@
         "Intern"
       ],
       "url": "https://huggingface.co/blog/building-with-ml-intern",
-      "rank": 20
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "08:00",
-      "source": "Claude：Blog（网页）",
-      "heat": 76,
-      "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能",
-      "summary": "Anthropic 发布 Claude Dashboards 和 Claude Motion 两项 beta 功能。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Claude",
-        "Dashboards",
-        "Motion"
-      ],
-      "url": "https://claude.com/blog/dashboards-and-motion",
       "rank": 21
     }
   ]
