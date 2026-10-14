@@ -1,0 +1,403 @@
+{
+  "date": "2026-10-14",
+  "weekday": "周三",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 1
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 3
+    },
+    {
+      "key": "model",
+      "label": "大模型",
+      "count": 5
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 4
+    },
+    {
+      "key": "research",
+      "label": "研究",
+      "count": 1
+    },
+    {
+      "key": "industry",
+      "label": "行业",
+      "count": 6
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 1
+    }
+  ],
+  "top3": [
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "09:02",
+      "source": "X：卡兹克 (@Khazix0918)",
+      "heat": 96,
+      "title": "Gemini 4 Argon 全面开放，作者实测后认为难以撼动 Claude Opus 5.5 和 GPT-6 Astra",
+      "summary": "Google 于10月14日全面开放 Gemini 4 Argon，作者实测后认为其很难冲击 Claude Opus 5.5 和 GPT-6 Astra 的地位。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Argon",
+        "Claude"
+      ],
+      "url": "https://x.com/Khazix0918/status/2110174495420064055",
+      "rank": 1
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "06:56",
+      "source": "公众号：数字生命卡兹克",
+      "heat": 95,
+      "title": "实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra",
+      "summary": "Gemini 4 Argon于10月13日全面开放，Pro会员可在Gemini APP使用，Antigravity需100刀Ultra会员。作者实测认为其知识类专业能力强，Vals Index综合第一（68.9）且单次成本仅15.68美元，但CUA-bench仅4.83%排倒数第二；前端效果不及GPT-6 Astra，额度消耗快，中文写作味道重，整体体验糟糕，不建议订阅Ultra。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Argon",
+        "Claude"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687032&idx=1&sn=c5368ed503c4b529ee3946cce017543e",
+      "rank": 2
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "06:00",
+      "source": "Johann Rehberger / Embrace The Red（RSS）",
+      "heat": 94,
+      "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
+      "summary": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Visual",
+        "Studio",
+        "Copilot"
+      ],
+      "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "05:27",
+      "source": "X：Arena (@arena)",
+      "heat": 93,
+      "title": "Meta Muse Wonder (Max) 进入 Arena 榜单：WebDev 第15、文本第2",
+      "summary": "Arena 宣布 Meta 的 Muse Wonder (Max) 进入 Code Arena: WebDev 榜单第15名（1651分），与 Kimi K3 (Max) 的 1655 分相差 4 分。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Meta",
+        "Muse",
+        "Wonder"
+      ],
+      "url": "https://x.com/arena/status/2110120205464846828",
+      "rank": 4
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "04:06",
+      "source": "404 Media（RSS）",
+      "heat": 92,
+      "title": "Character.ai 破产文件显示 AI 商业模式难以为继",
+      "summary": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Character.ai"
+      ],
+      "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/",
+      "rank": 5
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "03:48",
+      "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+      "heat": 91,
+      "title": "OpenAI 办公室发现窃密录音装置，涉事员工被捕",
+      "summary": "OpenAI 宣布在办公室内发现一个隐蔽的录音装置，利用自家模型分析该设备及其来源，确认是一名员工几天前安放。OpenAI 已将此事移交 FBI，FBI 已迅速逮捕相关人员，调查仍在进行中。OpenAI 表示目前没有迹象显示该员工不当访问或外泄模型权重、源代码或客户数据，该员工已被解雇，并将此案视为 AI 协助应对复杂安全威胁的实例。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI",
+        "FBI"
+      ],
+      "url": "https://x.com/OpenAINewsroom/status/2110095403198849132",
+      "rank": 6
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "03:41",
+      "source": "Comfy Blog",
+      "heat": 90,
+      "title": "ComfyUI 上线 NVIDIA VFX 节点，支持视频超分、补帧与 SDR 转 HDR",
+      "summary": "NVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "ComfyUI",
+        "NVIDIA",
+        "VFX"
+      ],
+      "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling",
+      "rank": 7
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "03:15",
+      "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
+      "heat": 89,
+      "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+      "summary": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "XBOW",
+        "OpenAI",
+        "GPT-5.6"
+      ],
+      "url": "https://x.com/reach_vb/status/2110086935733833893",
+      "rank": 8
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "02:00",
+      "source": "X：Artificial Analysis (@ArtificialAnlys)",
+      "heat": 88,
+      "title": "Gemini 4 Argon 正式 GA，智能指数追平 GPT-6 Astra，Cost per Task 仅为 60%",
+      "summary": "Gemini 4 Argon 正式进入 GA，在 Artificial Analysis Intelligence Index 上与 GPT-6 Astra 排名持平，Cost per Task 为后者的 60%。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Argon",
+        "GPT-6"
+      ],
+      "url": "https://x.com/ArtificialAnlys/status/2110068185793970576",
+      "rank": 9
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "00:26",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "heat": 87,
+      "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+      "summary": "Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "DeepMind",
+        "Gemini"
+      ],
+      "url": "https://x.com/OpenRouter/status/2110044453977403412",
+      "rank": 10
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "00:00",
+      "source": "Google Blog：AI（RSS）",
+      "heat": 86,
+      "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+      "summary": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Gemini",
+        "Argon"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "rank": 11
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "23:58",
+      "source": "X：ElevenLabs (@elevenlabs)",
+      "heat": 85,
+      "title": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲",
+      "summary": "ElevenLabs 宣布，Baroness Campbell of Surbiton 今日在英国上议院使用由其构建的 AI 重建嗓音发表演讲，为英国议会首次。Baroness 患有脊髓性肌萎缩症影响说话，AI 嗓音复刻了她原声的音调、节奏和音高。ElevenLabs 称其技术已帮助超过 11,000 名因伤病失声者恢复嗓音，并承诺帮助全球 100 万失声人群。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "ElevenLabs",
+        "Baroness",
+        "Campbell"
+      ],
+      "url": "https://x.com/ElevenLabs/status/2110037384192774210",
+      "rank": 12
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "20:59",
+      "source": "Apple：Newsroom（RSS）",
+      "heat": 84,
+      "title": "Apple 发布 7 英寸智能音箱 HomeView，售价 299 美元并搭载 Siri AI",
+      "summary": "Apple 发布配备 7 英寸 Liquid Retina 显示屏的 HomeView，集娱乐、FaceTime、家庭监控和语音自动化于一体，标准版与壁挂版均定价 299 美元，11 月 13 日起在美英加澳等市场发售。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Apple",
+        "HomeView",
+        "Siri"
+      ],
+      "url": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+      "rank": 13
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "20:59",
+      "source": "LangChain：Blog（RSS）",
+      "heat": 83,
+      "title": "LangSmith 推出 AI Search，用自然语言按行为搜索 agent 轨迹",
+      "summary": "LangChain 在 LangSmith 中推出 AI Search 公测，允许用自然语言描述行为来查询 agent 轨迹，例如 PII 泄露或用户受挫等无法靠标签和全文检索回答的问题。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "LangSmith",
+        "Search",
+        "LangChain"
+      ],
+      "url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith",
+      "rank": 14
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "20:23",
+      "source": "TechCrunch：AI（RSS）",
+      "heat": 82,
+      "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney",
+      "summary": "Character.AI 已申请 Chapter 11 破产，法院文件显示其资产和负债在 5000 万至 1 亿美元之间，并同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可。出售过程预计 11 月底或 12 月初完成，期间平台继续运营，但尚无竞购方，若无买家平台将关停；此前公司因未成年用户诉讼、德州调查等困境，曾尝试 AI 视频生成、社交信息流和微短剧等转型未果。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Character.AI",
+        "Chapter",
+        "Disney"
+      ],
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "rank": 15
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "20:00",
+      "source": "NVIDIA Blog（RSS）",
+      "heat": 81,
+      "title": "NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市",
+      "summary": "NVIDIA 介绍 RTX Spark 平台生态就绪情况，RTX Spark 笔记本将于 10 月 16 日（周五）上市，搭载最高 128GB 统一内存和 1 petaflop AI 算力。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "NVIDIA",
+        "RTX",
+        "Spark"
+      ],
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "rank": 16
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "19:56",
+      "source": "LangChain：Blog（RSS）",
+      "heat": 80,
+      "title": "LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文",
+      "summary": "LangChain 发布 langchain-scaledown 集成，并在 LangSmith LLM Gateway 中支持 ScaleDown 的约束解码模型（CDM），用于降低长时智能体上下文管理的成本和延迟。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "LangChain",
+        "ScaleDown",
+        "LangSmith"
+      ],
+      "url": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+      "rank": 17
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "18:29",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "heat": 79,
+      "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+      "summary": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "MiniCPM-V",
+        "35B",
+        "A3B"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+      "rank": 18
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "17:00",
+      "source": "Pydantic AI 官方文章",
+      "heat": 78,
+      "title": "Pydantic AI 创始人 Samuel Colvin：图库是个错误，代码本身就是图",
+      "summary": "Pydantic AI 创始人 Samuel Colvin 发文认为图库是个错误，代码本身就是图，通过类型提示获得类型安全、通过 async 获得并行执行。他提出图 API 存在类似 CAP 定理的取舍，类型安全、并行与快照三者不可兼得，并以此解释为何在 pydantic-graph V2 移除持久化、将持久执行交给 Temporal。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Pydantic",
+        "Samuel",
+        "Colvin"
+      ],
+      "url": "https://pydantic.dev/articles/the-code-is-the-graph",
+      "rank": 19
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "16:06",
+      "source": "公众号：千问APP（阿里）",
+      "heat": 77,
+      "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+      "summary": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Pro"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+      "rank": 20
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "09:09",
+      "source": "X：Demis Hassabis (@demishassabis)",
+      "heat": 76,
+      "title": "Hassabis 祝贺 AMIE 前瞻性临床研究发表于 The Lancet",
+      "summary": "Google 与 BIDMC 合作的 AMIE 患者对话式诊断前瞻性研究在 TheLancet 发表，是 AMIE 首次在真实诊所外测试。临床医生报告称 AMIE 的病史摘要在 75% 的病例中有助于访视准备，其鉴别诊断与医生最终诊断的吻合率达 90%，这也是 Google 首篇登上 The Lancet 主刊的论文。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Hassabis",
+        "AMIE",
+        "The"
+      ],
+      "url": "https://x.com/demishassabis/status/2109813775377563908",
+      "rank": 21
+    }
+  ]
+}
