@@ -1,0 +1,396 @@
+{
+  "date": "2026-10-16",
+  "weekday": "周五",
+  "totalCount": 21,
+  "categories": [
+    {
+      "key": "all",
+      "label": "全部",
+      "count": 21
+    },
+    {
+      "key": "biz",
+      "label": "商业",
+      "count": 2
+    },
+    {
+      "key": "infra",
+      "label": "基础设施",
+      "count": 5
+    },
+    {
+      "key": "model",
+      "label": "大模型",
+      "count": 8
+    },
+    {
+      "key": "tool",
+      "label": "工具",
+      "count": 5
+    },
+    {
+      "key": "opinion",
+      "label": "观点",
+      "count": 1
+    }
+  ],
+  "top3": [
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "10:03",
+      "source": "X：卡兹克 (@Khazix0918)",
+      "heat": 96,
+      "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
+      "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Kling",
+        "Flash",
+        "HDR"
+      ],
+      "url": "https://x.com/Khazix0918/status/2110914404393091205",
+      "rank": 1
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "08:54",
+      "source": "IT之家·人工智能",
+      "heat": 95,
+      "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
+      "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "IPO"
+      ],
+      "url": "https://www.ithome.com/1/013/723.htm",
+      "rank": 2
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "08:18",
+      "source": "公众号：数字生命卡兹克",
+      "heat": 94,
+      "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
+      "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Kling",
+        "Flash",
+        "HDR"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "08:00",
+      "source": "vLLM 官方博客（RSS）",
+      "heat": 93,
+      "title": "vLLM 解析 Kimi K3 在 AMD Instinct MI355X 上的推理优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%",
+      "summary": "AMD 与 Embedded LLM 在 vLLM 官方博客详解 Kimi K3 在八卡 AMD Instinct MI355X 上的推理优化。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "Kimi",
+        "AMD"
+      ],
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+      "rank": 4
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "07:36",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "heat": 92,
+      "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW",
+      "summary": "Musk 转发黄仁勋在 BG2Pod 访谈中的表态并评论算力目标可能超过 10GW；访谈称 Nvidia 已把 SpaceX 归入云服务商客户，两家工程师正合作设计可用于太空的新型服务器架构。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Musk",
+        "BG2Pod",
+        "Nvidia"
+      ],
+      "url": "https://x.com/elonmusk/status/2110877572011844019",
+      "rank": 5
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "05:15",
+      "source": "Comfy Blog",
+      "heat": 91,
+      "title": "Krea 3 图像模型通过 ComfyUI Partner Nodes 上线",
+      "summary": "Krea 3 图像模型现已在 ComfyUI 通过 Partner Nodes 提供，主打基于参考图的生成与编辑。模型强调更快的迭代速度和更低的单张成本，支持按上传顺序引用多张参考图、保持产品标签形状材质不变的前提下修改环境光影构图，并可将生成结果作为新输入继续编辑。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Krea",
+        "ComfyUI",
+        "Partner"
+      ],
+      "url": "https://blog.comfy.org/p/krea-3-is-now-available-via-partner",
+      "rank": 6
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "04:09",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "heat": 90,
+      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+      "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Claude",
+        "Opus",
+        "Anthropic"
+      ],
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "rank": 7
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "04:02",
+      "source": "X：ChatGPT (@ChatGPT)",
+      "heat": 89,
+      "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
+      "summary": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "ChatGPT",
+        "Chrome"
+      ],
+      "url": "https://x.com/ChatGPT/status/2110823738531037651",
+      "rank": 8
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "03:00",
+      "source": "Meta Engineering Blog（RSS）",
+      "heat": 88,
+      "title": "Meta 如何用 AI 原生工程方式开发 Forum 应用",
+      "summary": "Meta 工程团队详解如何把 AI 智能体作为开发流程参与者来构建独立 Groups 应用 Forum，采用 human-on-the-loop 模式并以验证通过的生产级产出衡量成功。Forum 在八周内达到与 Facebook Groups 的核心功能对齐，自主压测循环在开发期发现并修复了内存问题，内存占用和缺页约减半，上线后智能体还协助根因分析用户反馈。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "Meta",
+        "Forum",
+        "Groups"
+      ],
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "rank": 9
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "02:41",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "heat": 87,
+      "title": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
+      "summary": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Black",
+        "Forest",
+        "Labs"
+      ],
+      "url": "https://x.com/OpenRouter/status/2110803343878873473",
+      "rank": 10
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "02:19",
+      "source": "X：Arena (@arena)",
+      "heat": 86,
+      "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+      "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Muse",
+        "Spark",
+        "Open"
+      ],
+      "url": "https://x.com/arena/status/2110797782953132049",
+      "rank": 11
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "02:02",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "heat": 85,
+      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+      "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Meta",
+        "Muse",
+        "Spark"
+      ],
+      "url": "https://x.com/OpenRouter/status/2110793354154008685",
+      "rank": 12
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "01:55",
+      "source": "PyTorch：Blog（RSS）",
+      "heat": 84,
+      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+      "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Meta",
+        "Muse",
+        "Spark"
+      ],
+      "url": "https://pytorch.org/blog/muse-spark-open/",
+      "rank": 13
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:32",
+      "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+      "heat": 83,
+      "title": "Perplexity 开源驱动 Perplexity Computer 的沙箱平台 SPACE",
+      "summary": "Perplexity CEO Aravind Srinivas 宣布开源沙箱平台 SPACE，该平台为 Perplexity Computer 的全部沙箱能力提供支撑，仓库地址为 https://github.com/perplexityai/space。他表示沙箱虽是 commodity，但在生产级流量下服务数百万沙箱、为企业和消费者扩展 Agent 需要大量细节，开源旨在支持生态。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Perplexity",
+        "Computer",
+        "SPACE"
+      ],
+      "url": "https://x.com/AravSrinivas/status/2110785848958759165",
+      "rank": 14
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "00:22",
+      "source": "X：ARC Prize (@arcprize)",
+      "heat": 82,
+      "title": "Gemini 4 Argon 在 ARC-AGI (Verified) 评测中公布：ARC-AGI-3 得分 97.5%",
+      "summary": "ARC Prize 公布 Gemini 4 Argon 在 ARC-AGI (Verified) 的评测成绩。ARC-AGI-3 上，provider adapter harness 得分 97.5%、成本 $4.8K，标准 harness 得分 49.8%、成本 $5.8K；ARC-AGI-2 得分 91.3%、$0.32/task；ARC-AGI-1 得分 98.5%、$0.16/task。Google DeepMind 是第二家在 ARC-AGI-3 上得分超过 95% 的前沿 AI 实验室。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "Argon",
+        "ARC-AGI"
+      ],
+      "url": "https://x.com/arcprize/status/2110768288523251762",
+      "rank": 15
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "00:09",
+      "source": "Microsoft AI：官方博客（网页）",
+      "heat": 81,
+      "title": "Microsoft AI 公布 MAI-Base-2 预训练细节，2.8T 参数 MoE 模型 FLOPs 效率达 DeepSeek-V4-Pro-Base 的 4.2 至 12.3 倍",
+      "summary": "Microsoft AI 宣布完成 MAI-Base-2 预训练，这是一个 800 亿激活、2.8T 总参数的 MoE 基础模型，在 held-out 评测中 BPB 低于所测全部开源权重模型，预训练 FLOPs 效率比 DeepSeek-V4-Pro-Base 高 4.2 至 12.3 倍。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Microsoft",
+        "MAI-Base-2",
+        "MoE"
+      ],
+      "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "rank": 16
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "23:30",
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "heat": 80,
+      "title": "Step 5 Preview 上线 FeatherlessAI，官方转发开放权重模型部署信息",
+      "summary": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Step",
+        "Preview",
+        "FeatherlessAI"
+      ],
+      "url": "https://x.com/StepFun_ai/status/2110755075845169428",
+      "rank": 17
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "23:00",
+      "source": "NVIDIA Blog（RSS）",
+      "heat": 79,
+      "title": "NVIDIA 发布开源 Nemotron 3.5 Super VL 及 Bolt 两款端侧模型",
+      "summary": "NVIDIA 发布开源 1200 亿参数的 Nemotron 3.5 Super VL 多模态模型，称在其类别中任务完成最快、比同类次优快 5x，并推出两款端侧模型 Bolt 74B-A9B 24GB 与 Bolt E4B 4GB，后者 10 月 23 日上线。模型采用 2-bit 原生量化可在 RTX/DGX Spark 上本地运行，权重、数据集和训练配方开放，已有数十家机构基于自有数据后训练。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "NVIDIA",
+        "Nemotron",
+        "Super"
+      ],
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "rank": 18
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "23:00",
+      "source": "Black Forest Labs：Blog（网页）",
+      "heat": 78,
+      "title": "Black Forest Labs 发布开源文生图模型 FLUX 3 Image Klein（5.6B）",
+      "summary": "Black Forest Labs 发布 5.6B 参数开源权重模型 FLUX 3 Image Klein，支持文生图、图像编辑和最多 10 张参考图的多参考生成，采用 FLUX Kommunity License。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Black",
+        "Forest",
+        "Labs"
+      ],
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "rank": 19
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "22:01",
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "heat": 77,
+      "title": "StepFun 展示 Step 5 Preview 在 NVIDIA GB300 上的推理性能",
+      "summary": "StepFun 表示 Step 5 Preview 在 NVIDIA GB300 上推理表现出色，并期待看到开发者用它构建的应用。其转发的 NVIDIA 内容称该模型是 StepFun 最大的开源权重发布，600B MoE 架构，可处理最长 24 小时的 Agent 任务，在 GB300 上用 NVFP4 达到近 8K tokens/sec/GPU，提供 NVFP4 checkpoint（https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4），并支持 SGLang、vLLM、NeMo Automodel 后训练和 NVIDIA NIM 一键部署。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "StepFun",
+        "Step",
+        "Preview"
+      ],
+      "url": "https://x.com/StepFun_ai/status/2110732706518835353",
+      "rank": 20
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "21:00",
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "heat": 76,
+      "title": "阶跃星辰开放 Step 5 Preview 权重",
+      "summary": "阶跃星辰（StepFun）宣布 Step 5 Preview 开放权重，BF16 和 FP8 权重已上线 Hugging Face 和 ModelScope，并附技术博客。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "Step",
+        "Preview",
+        "StepFun"
+      ],
+      "url": "https://x.com/StepFun_ai/status/2110717330657616092",
+      "rank": 21
+    }
+  ]
+}
