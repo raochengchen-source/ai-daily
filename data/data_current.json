@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-17",
-  "weekday": "周六",
+  "date": "2026-10-18",
+  "weekday": "周日",
   "totalCount": 21,
   "categories": [
     {
@@ -11,7 +11,7 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 2
+      "count": 1
     },
     {
       "key": "infra",
@@ -21,7 +21,7 @@
     {
       "key": "model",
       "label": "大模型",
-      "count": 2
+      "count": 3
     },
     {
       "key": "tool",
@@ -48,9 +48,62 @@
     {
       "cat": "观点",
       "catKey": "opinion",
+      "time": "10:04",
+      "source": "X：卡兹克 (@Khazix0918)",
+      "heat": 96,
+      "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
+      "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "ProArt",
+        "RTX",
+        "Spark"
+      ],
+      "url": "https://x.com/Khazix0918/status/2111639562720329976",
+      "rank": 1
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "18:29",
+      "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
+      "heat": 95,
+      "title": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费",
+      "summary": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "WorkBuddy",
+        "Intl",
+        "DeepSeek-V4.1-Fl"
+      ],
+      "url": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
+      "rank": 2
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "18:19",
+      "source": "公众号：数字生命卡兹克",
+      "heat": 94,
+      "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
+      "summary": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "RTX",
+        "Spark",
+        "Token"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687354&idx=1&sn=dea0d54dc3b71b361e36199db6cf4a86",
+      "rank": 3
+    }
+  ],
+  "items": [
+    {
+      "cat": "观点",
+      "catKey": "opinion",
       "time": "09:52",
       "source": "X：邵猛 (@shao__meng)",
-      "heat": 96,
+      "heat": 93,
       "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
       "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
       "reason": "观点方向的新动态,值得关注。",
@@ -60,14 +113,14 @@
         "Code"
       ],
       "url": "https://x.com/shao__meng/status/2111274173192638932",
-      "rank": 1
+      "rank": 4
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "06:22",
       "source": "X：Arena (@arena)",
-      "heat": 95,
+      "heat": 92,
       "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
       "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -77,14 +130,48 @@
         "Open"
       ],
       "url": "https://x.com/arena/status/2111221323217412318",
-      "rank": 2
+      "rank": 5
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "00:00",
+      "source": "DeepSeek：API 更新日志",
+      "heat": 91,
+      "title": "DeepSeek 开放自研搜索 API",
+      "summary": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek",
+        "API",
+        "SEO"
+      ],
+      "url": "https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api",
+      "rank": 6
+    },
+    {
+      "cat": "大模型",
+      "catKey": "model",
+      "time": "00:00",
+      "source": "DeepSeek：API 更新日志",
+      "heat": 90,
+      "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+      "summary": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。",
+      "reason": "大模型方向的新动态,值得关注。",
+      "tags": [
+        "DeepSeek-V4.1-Fl",
+        "API",
+        "DeepSeek"
+      ],
+      "url": "https://api-docs.deepseek.com/zh-cn/updates/#deepseek-v41-flash-1017-更新",
+      "rank": 7
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "22:00",
       "source": "a16z：News（RSS）",
-      "heat": 94,
+      "heat": 89,
       "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
       "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
       "reason": "行业方向的新动态,值得关注。",
@@ -94,16 +181,14 @@
         "Similarweb"
       ],
       "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 8
+    },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:00",
       "source": "NVIDIA：Newsroom（RSS）",
-      "heat": 93,
+      "heat": 88,
       "title": "NVIDIA RTX Spark 笔记本今日开售，主打 128GB 统一内存与本地 AI",
       "summary": "NVIDIA 宣布 RTX Spark 笔记本正式开售，来自 ASUS、Dell、HP、Lenovo、Microsoft 和 MSI，起价 $2,599。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -113,14 +198,14 @@
         "Spark"
       ],
       "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
-      "rank": 4
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "16:23",
       "source": "IT之家·人工智能",
-      "heat": 92,
+      "heat": 87,
       "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
       "summary": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。",
       "reason": "行业方向的新动态,值得关注。",
@@ -128,14 +213,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/1/013/983.htm",
-      "rank": 5
+      "rank": 10
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "15:00",
       "source": "Waymo：Blog（网页）",
-      "heat": 91,
+      "heat": 86,
       "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
       "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
       "reason": "行业方向的新动态,值得关注。",
@@ -145,14 +230,14 @@
         "Fleet"
       ],
       "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-      "rank": 6
+      "rank": 11
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "14:14",
       "source": "IT之家·人工智能",
-      "heat": 90,
+      "heat": 85,
       "title": "丹麦最高法院裁定持有传播 AI 生成儿童色情内容可判实刑",
       "summary": "据彭博社 15 日报道，丹麦最高法院维持对一名 31 岁男子 18 个月监禁的判决，该男子因持有并传播 3.6 万余张 AI 生成的儿童色情图像获刑，且不适用缓刑。法院裁定，即使图像无真实人物原型，也受丹麦《刑法》约束，量刑时不应考虑人物是否虚构；此案为丹麦首起此类定罪，并引发跨国调查，警方查明 273 名买家身份、逮捕 25 人。",
       "reason": "行业方向的新动态,值得关注。",
@@ -160,14 +245,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/1/013/914.htm",
-      "rank": 7
+      "rank": 12
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "10:03",
       "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 89,
+      "heat": 84,
       "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
       "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
       "reason": "工具方向的新动态,值得关注。",
@@ -177,14 +262,14 @@
         "HDR"
       ],
       "url": "https://x.com/Khazix0918/status/2110914404393091205",
-      "rank": 8
+      "rank": 13
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "08:54",
       "source": "IT之家·人工智能",
-      "heat": 88,
+      "heat": 83,
       "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
       "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -193,31 +278,31 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/013/723.htm",
-      "rank": 9
+      "rank": 14
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:18",
       "source": "公众号：数字生命卡兹克",
-      "heat": 87,
-      "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-      "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。",
+      "heat": 82,
+      "title": "可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出",
+      "summary": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。",
       "reason": "大模型方向的新动态,值得关注。",
       "tags": [
         "Kling",
-        "Flash",
-        "HDR"
+        "Ultra",
+        "Flash"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-      "rank": 10
+      "rank": 15
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "PromptArmor：Threat Intelligence",
-      "heat": 86,
+      "heat": 81,
       "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
       "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
       "reason": "研究方向的新动态,值得关注。",
@@ -227,14 +312,14 @@
         "Kimi"
       ],
       "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-      "rank": 11
+      "rank": 16
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "Google Research：Blog（网页）",
-      "heat": 85,
+      "heat": 80,
       "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计",
       "summary": "Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。",
       "reason": "研究方向的新动态,值得关注。",
@@ -244,14 +329,14 @@
         "VERID"
       ],
       "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
-      "rank": 12
+      "rank": 17
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:00",
       "source": "vLLM 官方博客（RSS）",
-      "heat": 84,
+      "heat": 79,
       "title": "vLLM 解析 Kimi K3 在 AMD Instinct MI355X 上的推理优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%",
       "summary": "AMD 与 Embedded LLM 在 vLLM 官方博客详解 Kimi K3 在八卡 AMD Instinct MI355X 上的推理优化。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -261,14 +346,14 @@
         "AMD"
       ],
       "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
-      "rank": 13
+      "rank": 18
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "LMSYS Blog",
-      "heat": 83,
+      "heat": 78,
       "title": "SGLang 原生支持 Reflection 的 Beam 并驱动其生产 API",
       "summary": "SGLang 团队宣布原生支持 Reflection 的 Beam 1.0（501B 参数 MoE、每 token 激活 23B），并以其驱动 Reflection 的生产 API。",
       "reason": "工具方向的新动态,值得关注。",
@@ -278,14 +363,14 @@
         "Beam"
       ],
       "url": "https://www.lmsys.org/blog/2026-10-16-beam",
-      "rank": 14
+      "rank": 19
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "08:00",
       "source": "Ollama：Blog（RSS）",
-      "heat": 82,
+      "heat": 77,
       "title": "Reflection 开源权重模型 Beam 上架 Ollama，限时免费可用",
       "summary": "Reflection 首个开源权重模型 Beam 发布，Ollama 作为 day-zero 合作方在 Ollama Cloud 上限时免费提供，且全程零数据保留（ZDR）。",
       "reason": "工具方向的新动态,值得关注。",
@@ -295,14 +380,14 @@
         "Ollama"
       ],
       "url": "https://ollama.com/blog/reflection-beam",
-      "rank": 15
+      "rank": 20
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "08:00",
       "source": "vLLM 官方博客（RSS）",
-      "heat": 81,
+      "heat": 76,
       "title": "vLLM 实现 Reflection Beam 501B MoE 模型 Day 0 支持",
       "summary": "vLLM 宣布从 Day 0 支持 Reflection 的 Beam 模型，这是一个 501B 参数、每 token 激活 23B 的 MoE 模型，在 NVIDIA Blackwell 上完成优化。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -312,90 +397,6 @@
         "Beam"
       ],
       "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
-      "rank": 16
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "07:36",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "heat": 80,
-      "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW",
-      "summary": "Musk 转发黄仁勋在 BG2Pod 访谈中的表态并评论算力目标可能超过 10GW；访谈称 Nvidia 已把 SpaceX 归入云服务商客户，两家工程师正合作设计可用于太空的新型服务器架构。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "Musk",
-        "BG2Pod",
-        "Nvidia"
-      ],
-      "url": "https://x.com/elonmusk/status/2110877572011844019",
-      "rank": 17
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "05:15",
-      "source": "Comfy Blog",
-      "heat": 79,
-      "title": "Krea 3 图像模型通过 ComfyUI Partner Nodes 上线",
-      "summary": "Krea 3 图像模型现已在 ComfyUI 通过 Partner Nodes 提供，主打基于参考图的生成与编辑。模型强调更快的迭代速度和更低的单张成本，支持按上传顺序引用多张参考图、保持产品标签形状材质不变的前提下修改环境光影构图，并可将生成结果作为新输入继续编辑。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Krea",
-        "ComfyUI",
-        "Partner"
-      ],
-      "url": "https://blog.comfy.org/p/krea-3-is-now-available-via-partner",
-      "rank": 18
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "04:09",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "heat": 78,
-      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
-      "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "Claude",
-        "Opus",
-        "Anthropic"
-      ],
-      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
-      "rank": 19
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "04:02",
-      "source": "X：ChatGPT (@ChatGPT)",
-      "heat": 77,
-      "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
-      "summary": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "ChatGPT",
-        "Chrome"
-      ],
-      "url": "https://x.com/ChatGPT/status/2110823738531037651",
-      "rank": 20
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "03:00",
-      "source": "Meta Engineering Blog（RSS）",
-      "heat": 76,
-      "title": "Meta 如何用 AI 原生工程方式开发 Forum 应用",
-      "summary": "Meta 工程团队详解如何把 AI 智能体作为开发流程参与者来构建独立 Groups 应用 Forum，采用 human-on-the-loop 模式并以验证通过的生产级产出衡量成功。Forum 在八周内达到与 Facebook Groups 的核心功能对齐，自主压测循环在开发期发现并修复了内存问题，内存占用和缺页约减半，上线后智能体还协助根因分析用户反馈。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Meta",
-        "Forum",
-        "Groups"
-      ],
-      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
       "rank": 21
     }
   ]
