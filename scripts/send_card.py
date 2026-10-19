@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""Send the daily AI digest card to the user via Feishu self-built app bot (DM only)."""
+"""Send the daily AI digest card to the user via bot open_id private chat."""
 import json, os, sys, glob, subprocess, urllib.request, urllib.error
 
 APP_ID     = os.environ["LARK_APP_ID"]
 APP_SECRET = os.environ["LARK_APP_SECRET"]
-OPEN_ID    = os.environ.get("LARK_OPEN_ID", "ou_844bace4f90286bede9f162a1c128782")
+# 接收人：默认本人。内部用邮箱换「本应用视角的 open_id」，最终以 open_id 发私聊。
+EMAIL      = os.environ.get("LARK_EMAIL", "raochengchen@bytedance.com")
 SITE_URL   = os.environ.get("AI_DAILY_SITE_URL", "https://raochengchen-source.github.io/ai-daily/")
 BASE       = os.environ.get("AI_DAILY_BASE") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR   = os.path.join(BASE, "data")
 
 
 def load_targets():
-    """私聊目标 = 环境变量 LARK_OPEN_ID(可逗号分隔)。只发给用户本人。"""
     ids = []
-    for x in (OPEN_ID or "").split(","):
+    for x in (EMAIL or "").split(","):
         x = x.strip()
         if x:
             ids.append(x)
@@ -29,8 +29,16 @@ def http_json(url, body=None, headers=None, method="GET"):
     h = {"Content-Type": "application/json"}
     if headers: h.update(headers)
     req = urllib.request.Request(url, data=data, headers=h, method=method)
-    with urllib.request.urlopen(req, timeout=15) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        detail = ""
+        try:
+            detail = e.read().decode("utf-8")
+        except Exception:
+            pass
+        raise RuntimeError(f"HTTP {e.code}: {detail}")
 
 
 def get_token():
@@ -42,6 +50,22 @@ def get_token():
     if r.get("code") != 0:
         raise RuntimeError(f"token failed: {r}")
     return r["tenant_access_token"]
+
+
+def resolve_open_id(token, email):
+    """用本应用 tenant token + 邮箱换出「本应用视角的 open_id」。"""
+    r = http_json(
+        "https://open.feishu.cn/open-apis/contact/v3/users/batch_get_id?user_id_type=open_id",
+        body={"emails": [email]},
+        headers={"Authorization": f"Bearer {token}"},
+        method="POST",
+    )
+    if r.get("code") != 0:
+        raise RuntimeError(f"resolve open_id failed: {r}")
+    users = r.get("data", {}).get("user_list", [])
+    if not users or not users[0].get("open_id"):
+        raise RuntimeError(f"cannot resolve open_id for {email}: {r}")
+    return users[0]["open_id"]
 
 
 def load_data():
@@ -131,7 +155,7 @@ def main():
     force = os.environ.get("AI_DAILY_FORCE_SEND") == "1"
     targets_list = load_targets()
     if not targets_list:
-        raise RuntimeError("no target open_id (set LARK_OPEN_ID)")
+        raise RuntimeError("no target email (set LARK_EMAIL)")
 
     lock = os.path.join(DATA_DIR, f".sent_{date}")
     sent = set()
@@ -144,22 +168,32 @@ def main():
         except Exception:
             sent = set()
 
-    targets = targets_list if force else [t for t in targets_list if t not in sent]
-    if not targets:
-        print(f"SKIP all {len(targets_list)} target(s) already sent for {date}.")
-        return
-
     token = get_token()
     card = build_card(d)
     results = {}
-    for tid in targets:
+    pending = []
+    for email in targets_list:
         try:
-            mid = send(token, card, tid)
-            sent.add(tid)
-            results[tid] = mid
-            print(f"OK sent {mid} for {date} -> {tid}")
+            oid = resolve_open_id(token, email)
+            if not force and oid in sent:
+                print(f"SKIP {oid} already sent for {date}.")
+                continue
+            pending.append((email, oid))
         except Exception as e:
-            print(f"WARN send to {tid} failed: {e}")
+            print(f"WARN resolve open_id for {email} failed: {e}")
+
+    if not pending:
+        print(f"SKIP all {len(targets_list)} target(s) already sent for {date}. Set AI_DAILY_FORCE_SEND=1 to override.")
+        return
+
+    for email, oid in pending:
+        try:
+            mid = send(token, card, oid)
+            sent.add(oid)
+            results[oid] = mid
+            print(f"OK sent {mid} for {date} -> {oid} ({email})")
+        except Exception as e:
+            print(f"WARN send to {oid} ({email}) failed: {e}")
 
     try:
         with open(lock, "w", encoding="utf-8") as f:
