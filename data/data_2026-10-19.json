@@ -16,7 +16,7 @@
     {
       "key": "infra",
       "label": "基础设施",
-      "count": 2
+      "count": 3
     },
     {
       "key": "model",
@@ -36,7 +36,7 @@
     {
       "key": "industry",
       "label": "行业",
-      "count": 6
+      "count": 5
     },
     {
       "key": "opinion",
@@ -65,25 +65,9 @@
     {
       "cat": "行业",
       "catKey": "industry",
-      "time": "21:22",
-      "source": "The Decoder：AI News（RSS）",
-      "heat": 95,
-      "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
-      "summary": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Anthropic",
-        "Agent"
-      ],
-      "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
-      "rank": 2
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
       "time": "18:52",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 94,
+      "heat": 95,
       "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
       "summary": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。",
       "reason": "行业方向的新动态,值得关注。",
@@ -92,16 +76,14 @@
         "Overview"
       ],
       "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 2
+    },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "10:04",
       "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 93,
+      "heat": 94,
       "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
       "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
       "reason": "观点方向的新动态,值得关注。",
@@ -111,14 +93,16 @@
         "Spark"
       ],
       "url": "https://x.com/Khazix0918/status/2111639562720329976",
-      "rank": 4
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "08:00",
       "source": "Browser Use",
-      "heat": 92,
+      "heat": 93,
       "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
       "summary": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。",
       "reason": "观点方向的新动态,值得关注。",
@@ -128,14 +112,14 @@
         "DOM"
       ],
       "url": "https://browser-use.com/posts/browser-agents",
-      "rank": 5
+      "rank": 4
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "18:29",
       "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-      "heat": 91,
+      "heat": 92,
       "title": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费",
       "summary": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。",
       "reason": "工具方向的新动态,值得关注。",
@@ -145,14 +129,14 @@
         "DeepSeek-V4.1-Fl"
       ],
       "url": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
-      "rank": 6
+      "rank": 5
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "18:19",
       "source": "公众号：数字生命卡兹克",
-      "heat": 90,
+      "heat": 91,
       "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
       "summary": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -162,14 +146,14 @@
         "Token"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687354&idx=1&sn=dea0d54dc3b71b361e36199db6cf4a86",
-      "rank": 7
+      "rank": 6
     },
     {
       "cat": "观点",
       "catKey": "opinion",
       "time": "09:52",
       "source": "X：邵猛 (@shao__meng)",
-      "heat": 89,
+      "heat": 90,
       "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
       "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
       "reason": "观点方向的新动态,值得关注。",
@@ -179,14 +163,14 @@
         "Code"
       ],
       "url": "https://x.com/shao__meng/status/2111274173192638932",
-      "rank": 8
+      "rank": 7
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "06:22",
       "source": "X：Arena (@arena)",
-      "heat": 88,
+      "heat": 89,
       "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
       "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -196,14 +180,14 @@
         "Open"
       ],
       "url": "https://x.com/arena/status/2111221323217412318",
-      "rank": 9
+      "rank": 8
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:00",
       "source": "DeepSeek：API 更新日志",
-      "heat": 87,
+      "heat": 88,
       "title": "DeepSeek 开放自研搜索 API",
       "summary": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。",
       "reason": "工具方向的新动态,值得关注。",
@@ -213,14 +197,14 @@
         "SEO"
       ],
       "url": "https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api",
-      "rank": 10
+      "rank": 9
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "00:00",
       "source": "DeepSeek：API 更新日志",
-      "heat": 86,
+      "heat": 87,
       "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
       "summary": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -230,14 +214,14 @@
         "DeepSeek"
       ],
       "url": "https://api-docs.deepseek.com/zh-cn/updates/#deepseek-v41-flash-1017-更新",
-      "rank": 11
+      "rank": 10
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "22:00",
       "source": "a16z：News（RSS）",
-      "heat": 85,
+      "heat": 86,
       "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
       "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
       "reason": "行业方向的新动态,值得关注。",
@@ -247,14 +231,14 @@
         "Similarweb"
       ],
       "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-      "rank": 12
+      "rank": 11
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "20:00",
       "source": "NVIDIA：Newsroom（RSS）",
-      "heat": 84,
+      "heat": 85,
       "title": "NVIDIA RTX Spark 笔记本今日开售，主打 128GB 统一内存与本地 AI",
       "summary": "NVIDIA 宣布 RTX Spark 笔记本正式开售，来自 ASUS、Dell、HP、Lenovo、Microsoft 和 MSI，起价 $2,599。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -264,14 +248,14 @@
         "Spark"
       ],
       "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
-      "rank": 13
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "16:23",
       "source": "IT之家·人工智能",
-      "heat": 83,
+      "heat": 84,
       "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
       "summary": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。",
       "reason": "行业方向的新动态,值得关注。",
@@ -279,14 +263,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/1/013/983.htm",
-      "rank": 14
+      "rank": 13
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "15:00",
       "source": "Waymo：Blog（网页）",
-      "heat": 82,
+      "heat": 83,
       "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
       "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
       "reason": "行业方向的新动态,值得关注。",
@@ -296,14 +280,14 @@
         "Fleet"
       ],
       "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-      "rank": 15
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "14:14",
       "source": "IT之家·人工智能",
-      "heat": 81,
+      "heat": 82,
       "title": "丹麦最高法院裁定持有传播 AI 生成儿童色情内容可判实刑",
       "summary": "据彭博社 15 日报道，丹麦最高法院维持对一名 31 岁男子 18 个月监禁的判决，该男子因持有并传播 3.6 万余张 AI 生成的儿童色情图像获刑，且不适用缓刑。法院裁定，即使图像无真实人物原型，也受丹麦《刑法》约束，量刑时不应考虑人物是否虚构；此案为丹麦首起此类定罪，并引发跨国调查，警方查明 273 名买家身份、逮捕 25 人。",
       "reason": "行业方向的新动态,值得关注。",
@@ -311,14 +295,14 @@
         "行业"
       ],
       "url": "https://www.ithome.com/1/013/914.htm",
-      "rank": 16
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "10:03",
       "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 80,
+      "heat": 81,
       "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
       "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
       "reason": "工具方向的新动态,值得关注。",
@@ -328,14 +312,14 @@
         "HDR"
       ],
       "url": "https://x.com/Khazix0918/status/2110914404393091205",
-      "rank": 17
+      "rank": 16
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "08:54",
       "source": "IT之家·人工智能",
-      "heat": 79,
+      "heat": 80,
       "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
       "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -344,14 +328,14 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/013/723.htm",
-      "rank": 18
+      "rank": 17
     },
     {
       "cat": "大模型",
       "catKey": "model",
       "time": "08:18",
       "source": "公众号：数字生命卡兹克",
-      "heat": 78,
+      "heat": 79,
       "title": "可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出",
       "summary": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -361,14 +345,14 @@
         "Flash"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-      "rank": 19
+      "rank": 18
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "PromptArmor：Threat Intelligence",
-      "heat": 77,
+      "heat": 78,
       "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
       "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
       "reason": "研究方向的新动态,值得关注。",
@@ -378,14 +362,14 @@
         "Kimi"
       ],
       "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-      "rank": 20
+      "rank": 19
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "08:00",
       "source": "Google Research：Blog（网页）",
-      "heat": 76,
+      "heat": 77,
       "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计",
       "summary": "Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。",
       "reason": "研究方向的新动态,值得关注。",
@@ -395,6 +379,23 @@
         "VERID"
       ],
       "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "rank": 20
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "08:00",
+      "source": "vLLM 官方博客（RSS）",
+      "heat": 76,
+      "title": "vLLM 解析 Kimi K3 在 AMD Instinct MI355X 上的推理优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%",
+      "summary": "AMD 与 Embedded LLM 在 vLLM 官方博客详解 Kimi K3 在八卡 AMD Instinct MI355X 上的推理优化。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "LLM",
+        "Kimi",
+        "AMD"
+      ],
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
       "rank": 21
     }
   ]

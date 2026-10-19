@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="ai-daily-build" content="2026-10-19|1792388322">
+<meta name="ai-daily-build" content="2026-10-19|1792391465">
 <title>AI 精选日报 · 2026-10-19</title>
 <style>
 :root{
@@ -20,6 +20,11 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg-base);color:var(--text-1);line-height:1.6;-webkit-font-smoothing:antialiased}
+/* 允许正文自由选中、复制,并给出选中高亮 */
+::selection{background:rgba(73,130,201,.20);color:#1A2A40}
+.top-card,.news-card{user-select:text;-webkit-user-select:text;cursor:default}
+.top-card h3,.news-card h4,.top-card .summary,.news-card .summary,.reason-box{user-select:text}
+.read-btn{cursor:pointer}
 .container{max-width:1280px;margin:0 auto;padding:0 24px}
 a{color:inherit;text-decoration:none}
 
@@ -88,7 +93,7 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
 <script>
 // 自动防缓存:每次打开后台静默拉取最新构建戳,发现页面变旧就自动强刷一次(不打扰用户)。
 (function(){
-  var CUR = "2026-10-19|1792388322";
+  var CUR = "2026-10-19|1792391465";
   function check(){
     fetch(location.pathname + "?_=" + Date.now(), {cache:"no-store"})
       .then(function(r){return r.text();})
@@ -124,185 +129,185 @@ h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:14px}
       <div class="cal-icon">📅</div>
       <div class="cal-info"><div class="label">今日日期</div><div class="date">2026-10-19 周一</div></div>
     </div>
-    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">1</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">2</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">4</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">3</span></span><span class="chip " onclick="filterCat('research',this)">研究<span class="count">2</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">6</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">3</span></span></div>
+    <div class="filter-row"><span class="chip active" onclick="filterCat('all',this)">全部<span class="count">21</span></span><span class="chip " onclick="filterCat('biz',this)">商业<span class="count">1</span></span><span class="chip " onclick="filterCat('infra',this)">基础设施<span class="count">3</span></span><span class="chip " onclick="filterCat('model',this)">大模型<span class="count">4</span></span><span class="chip " onclick="filterCat('tool',this)">工具<span class="count">3</span></span><span class="chip " onclick="filterCat('research',this)">研究<span class="count">2</span></span><span class="chip " onclick="filterCat('industry',this)">行业<span class="count">5</span></span><span class="chip " onclick="filterCat('opinion',this)">观点<span class="count">3</span></span></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">🏆 今日 TOP 3</div><div class="section-sub">综合热度与价值评分</div></div>
-    <div class="top3-grid"><a href="https://x.com/arena/status/2111894091168682086" target="_blank" rel="noopener" class="top-card rank1" data-cat="model">
+    <div class="top3-grid"><div class="top-card rank1" data-cat="model">
   <div class="rank-badge">1</div>
   <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 96</span><span>02:56</span><span class="dot"></span><span>X：Arena (@arena)</span></div>
   <h3>DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首</h3>
   <div class="summary">Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#DeepSeek-V4.1-Fl</span><span class="tag">#Code</span><span class="tag">#Arena</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/" target="_blank" rel="noopener" class="top-card" data-cat="industry">
+  <a class="read-btn" href="https://x.com/arena/status/2111894091168682086" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="top-card" data-cat="industry">
   <div class="rank-badge">2</div>
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 95</span><span>21:22</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
-  <h3>Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍</h3>
-  <div class="summary">Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#Agent</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/" target="_blank" rel="noopener" class="top-card" data-cat="industry">
-  <div class="rank-badge">3</div>
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 94</span><span>18:52</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 95</span><span>18:52</span><span class="dot"></span><span>The Decoder：AI News（RSS）</span></div>
   <h3>德国两家法院先后裁定 Google 须为其 AI Overview 内容负责</h3>
   <div class="summary">慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Overview</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a></div>
+  <a class="read-btn" href="https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="top-card" data-cat="opinion">
+  <div class="rank-badge">3</div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 94</span><span>10:04</span><span class="dot"></span><span>X：卡兹克 (@Khazix0918)</span></div>
+  <h3>卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由</h3>
+  <div class="summary">作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#ProArt</span><span class="tag">#RTX</span><span class="tag">#Spark</span></div>
+  <a class="read-btn" href="https://x.com/Khazix0918/status/2111639562720329976" target="_blank" rel="noopener">阅读原文 →</a>
+</div></div>
   </div></section>
 
   <section class="section"><div class="container">
     <div class="section-head"><div class="section-title">📰 精选资讯</div><div class="section-sub">共 18 条 · 按热度排序</div></div>
-    <div class="grid-3"><a href="https://x.com/Khazix0918/status/2111639562720329976" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+    <div class="grid-3"><div class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 93</span><span>10:04</span><span class="dot"></span><span>X：卡兹克 (@Khazix0918)</span></div>
-  <h4>卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由</h4>
-  <div class="summary">作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。</div>
-  <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
-  <div class="tags-row"><span class="tag">#ProArt</span><span class="tag">#RTX</span><span class="tag">#Spark</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://browser-use.com/posts/browser-agents" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
-  
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 92</span><span>08:00</span><span class="dot"></span><span>Browser Use</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 93</span><span>08:00</span><span class="dot"></span><span>Browser Use</span></div>
   <h4>Browser Use 讲解浏览器智能体的工作原理与使用时机</h4>
   <div class="summary">Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Browser</span><span class="tag">#Use</span><span class="tag">#DOM</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/WorkBuddy_AI/status/2111404103402430558" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  <a class="read-btn" href="https://browser-use.com/posts/browser-agents" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 91</span><span>18:29</span><span class="dot"></span><span>X：Tencent WorkBuddy (@WorkBuddy_AI)</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 92</span><span>18:29</span><span class="dot"></span><span>X：Tencent WorkBuddy (@WorkBuddy_AI)</span></div>
   <h4>WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费</h4>
   <div class="summary">WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#WorkBuddy</span><span class="tag">#Intl</span><span class="tag">#DeepSeek-V4.1-Fl</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687354&idx=1&sn=dea0d54dc3b71b361e36199db6cf4a86" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  <a class="read-btn" href="https://x.com/WorkBuddy_AI/status/2111404103402430558" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 90</span><span>18:19</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 91</span><span>18:19</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
   <h4>卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由</h4>
   <div class="summary">数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#RTX</span><span class="tag">#Spark</span><span class="tag">#Token</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/shao__meng/status/2111274173192638932" target="_blank" rel="noopener" class="news-card" data-cat="opinion">
+  <a class="read-btn" href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687354&idx=1&sn=dea0d54dc3b71b361e36199db6cf4a86" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="opinion">
   
-  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 89</span><span>09:52</span><span class="dot"></span><span>X：邵猛 (@shao__meng)</span></div>
+  <div class="meta-row"><span class="cat-tag">观点</span><span class="heat-tag">🔥 90</span><span>09:52</span><span class="dot"></span><span>X：邵猛 (@shao__meng)</span></div>
   <h4>Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审</h4>
   <div class="summary">作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>观点方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#Claude</span><span class="tag">#Code</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/arena/status/2111221323217412318" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  <a class="read-btn" href="https://x.com/shao__meng/status/2111274173192638932" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 88</span><span>06:22</span><span class="dot"></span><span>X：Arena (@arena)</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 89</span><span>06:22</span><span class="dot"></span><span>X：Arena (@arena)</span></div>
   <h4>Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一</h4>
   <div class="summary">Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Muse</span><span class="tag">#Spark</span><span class="tag">#Open</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  <a class="read-btn" href="https://x.com/arena/status/2111221323217412318" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 87</span><span>00:00</span><span class="dot"></span><span>DeepSeek：API 更新日志</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 88</span><span>00:00</span><span class="dot"></span><span>DeepSeek：API 更新日志</span></div>
   <h4>DeepSeek 开放自研搜索 API</h4>
   <div class="summary">DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#DeepSeek</span><span class="tag">#API</span><span class="tag">#SEO</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://api-docs.deepseek.com/zh-cn/updates/#deepseek-v41-flash-1017-更新" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  <a class="read-btn" href="https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 86</span><span>00:00</span><span class="dot"></span><span>DeepSeek：API 更新日志</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 87</span><span>00:00</span><span class="dot"></span><span>DeepSeek：API 更新日志</span></div>
   <h4>DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变</h4>
   <div class="summary">DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#DeepSeek-V4.1-Fl</span><span class="tag">#API</span><span class="tag">#DeepSeek</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.a16z.news/p/this-week-in-charts-agents-denied" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  <a class="read-btn" href="https://api-docs.deepseek.com/zh-cn/updates/#deepseek-v41-flash-1017-更新" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 85</span><span>22:00</span><span class="dot"></span><span>a16z：News（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 86</span><span>22:00</span><span class="dot"></span><span>a16z：News（RSS）</span></div>
   <h4>a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后</h4>
   <div class="summary">a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Cloudflare</span><span class="tag">#NRF</span><span class="tag">#Similarweb</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs" target="_blank" rel="noopener" class="news-card" data-cat="infra">
+  <a class="read-btn" href="https://www.a16z.news/p/this-week-in-charts-agents-denied" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="infra">
   
-  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 84</span><span>20:00</span><span class="dot"></span><span>NVIDIA：Newsroom（RSS）</span></div>
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 85</span><span>20:00</span><span class="dot"></span><span>NVIDIA：Newsroom（RSS）</span></div>
   <h4>NVIDIA RTX Spark 笔记本今日开售，主打 128GB 统一内存与本地 AI</h4>
   <div class="summary">NVIDIA 宣布 RTX Spark 笔记本正式开售，来自 ASUS、Dell、HP、Lenovo、Microsoft 和 MSI，起价 $2,599。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#NVIDIA</span><span class="tag">#RTX</span><span class="tag">#Spark</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.ithome.com/1/013/983.htm" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  <a class="read-btn" href="https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 83</span><span>16:23</span><span class="dot"></span><span>IT之家·人工智能</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 84</span><span>16:23</span><span class="dot"></span><span>IT之家·人工智能</span></div>
   <h4>商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见</h4>
   <div class="summary">商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#行业</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://waymo.com/blog/2026/10/waymo-in-toronto" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  <a class="read-btn" href="https://www.ithome.com/1/013/983.htm" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 82</span><span>15:00</span><span class="dot"></span><span>Waymo：Blog（网页）</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 83</span><span>15:00</span><span class="dot"></span><span>Waymo：Blog（网页）</span></div>
   <h4>Waymo 宣布进军多伦多，计划2028年迎接首批乘客</h4>
   <div class="summary">Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Waymo</span><span class="tag">#Element</span><span class="tag">#Fleet</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.ithome.com/1/013/914.htm" target="_blank" rel="noopener" class="news-card" data-cat="industry">
+  <a class="read-btn" href="https://waymo.com/blog/2026/10/waymo-in-toronto" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="industry">
   
-  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 81</span><span>14:14</span><span class="dot"></span><span>IT之家·人工智能</span></div>
+  <div class="meta-row"><span class="cat-tag">行业</span><span class="heat-tag">🔥 82</span><span>14:14</span><span class="dot"></span><span>IT之家·人工智能</span></div>
   <h4>丹麦最高法院裁定持有传播 AI 生成儿童色情内容可判实刑</h4>
   <div class="summary">据彭博社 15 日报道，丹麦最高法院维持对一名 31 岁男子 18 个月监禁的判决，该男子因持有并传播 3.6 万余张 AI 生成的儿童色情图像获刑，且不适用缓刑。法院裁定，即使图像无真实人物原型，也受丹麦《刑法》约束，量刑时不应考虑人物是否虚构；此案为丹麦首起此类定罪，并引发跨国调查，警方查明 273 名买家身份、逮捕 25 人。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>行业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#行业</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://x.com/Khazix0918/status/2110914404393091205" target="_blank" rel="noopener" class="news-card" data-cat="tool">
+  <a class="read-btn" href="https://www.ithome.com/1/013/914.htm" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="tool">
   
-  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 80</span><span>10:03</span><span class="dot"></span><span>X：卡兹克 (@Khazix0918)</span></div>
+  <div class="meta-row"><span class="cat-tag">工具</span><span class="heat-tag">🔥 81</span><span>10:03</span><span class="dot"></span><span>X：卡兹克 (@Khazix0918)</span></div>
   <h4>Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现</h4>
   <div class="summary">可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>工具方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Kling</span><span class="tag">#Flash</span><span class="tag">#HDR</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.ithome.com/1/013/723.htm" target="_blank" rel="noopener" class="news-card" data-cat="biz">
+  <a class="read-btn" href="https://x.com/Khazix0918/status/2110914404393091205" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="biz">
   
-  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 79</span><span>08:54</span><span class="dot"></span><span>IT之家·人工智能</span></div>
+  <div class="meta-row"><span class="cat-tag">商业</span><span class="heat-tag">🔥 80</span><span>08:54</span><span class="dot"></span><span>IT之家·人工智能</span></div>
   <h4>消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元</h4>
   <div class="summary">路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>商业方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Anthropic</span><span class="tag">#IPO</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198" target="_blank" rel="noopener" class="news-card" data-cat="model">
+  <a class="read-btn" href="https://www.ithome.com/1/013/723.htm" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="model">
   
-  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 78</span><span>08:18</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
+  <div class="meta-row"><span class="cat-tag">大模型</span><span class="heat-tag">🔥 79</span><span>08:18</span><span class="dot"></span><span>公众号：数字生命卡兹克</span></div>
   <h4>可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出</h4>
   <div class="summary">可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>大模型方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Kling</span><span class="tag">#Ultra</span><span class="tag">#Flash</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://www.promptarmor.com/resources/open-weight-susceptibility" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  <a class="read-btn" href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="research">
   
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 77</span><span>08:00</span><span class="dot"></span><span>PromptArmor：Threat Intelligence</span></div>
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 78</span><span>08:00</span><span class="dot"></span><span>PromptArmor：Threat Intelligence</span></div>
   <h4>PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%</h4>
   <div class="summary">PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#PromptArmor</span><span class="tag">#DeepSeek</span><span class="tag">#Kimi</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a><a href="https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/" target="_blank" rel="noopener" class="news-card" data-cat="research">
+  <a class="read-btn" href="https://www.promptarmor.com/resources/open-weight-susceptibility" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="research">
   
-  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 76</span><span>08:00</span><span class="dot"></span><span>Google Research：Blog（网页）</span></div>
+  <div class="meta-row"><span class="cat-tag">研究</span><span class="heat-tag">🔥 77</span><span>08:00</span><span class="dot"></span><span>Google Research：Blog（网页）</span></div>
   <h4>Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计</h4>
   <div class="summary">Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>研究方向的新动态,值得关注。</div>
   <div class="tags-row"><span class="tag">#Google</span><span class="tag">#Research</span><span class="tag">#VERID</span></div>
-  <span class="read-btn">阅读原文 →</span>
-</a></div>
+  <a class="read-btn" href="https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/" target="_blank" rel="noopener">阅读原文 →</a>
+</div><div class="news-card" data-cat="infra">
+  
+  <div class="meta-row"><span class="cat-tag">基础设施</span><span class="heat-tag">🔥 76</span><span>08:00</span><span class="dot"></span><span>vLLM 官方博客（RSS）</span></div>
+  <h4>vLLM 解析 Kimi K3 在 AMD Instinct MI355X 上的推理优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%</h4>
+  <div class="summary">AMD 与 Embedded LLM 在 vLLM 官方博客详解 Kimi K3 在八卡 AMD Instinct MI355X 上的推理优化。</div>
+  <div class="reason-box"><strong>💡 推荐理由</strong>基础设施方向的新动态,值得关注。</div>
+  <div class="tags-row"><span class="tag">#LLM</span><span class="tag">#Kimi</span><span class="tag">#AMD</span></div>
+  <a class="read-btn" href="https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x" target="_blank" rel="noopener">阅读原文 →</a>
+</div></div>
   </div></section>
 </div>
 
