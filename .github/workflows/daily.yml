@@ -20,7 +20,7 @@ jobs:
       TZ: Asia/Shanghai
       LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
       LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
-      LARK_CHAT_ID: ${{ secrets.LARK_CHAT_ID }}
+      LARK_OPEN_ID: ${{ secrets.LARK_OPEN_ID }}
     steps:
       - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
