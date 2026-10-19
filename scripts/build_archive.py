@@ -61,6 +61,10 @@ CSS = """
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg-base);color:var(--text-1);line-height:1.6;-webkit-font-smoothing:antialiased}
+/* 允许正文自由选中、复制,并给出选中高亮(折叠标题仍保持不可选以方便点击展开) */
+::selection{background:rgba(73,130,201,.20);color:#1A2A40}
+.top-card,.news-card{user-select:text;-webkit-user-select:text;cursor:default}
+.read-btn{cursor:pointer}
 .container{max-width:1280px;margin:0 auto;padding:0 24px}
 a{color:inherit;text-decoration:none}
 
@@ -191,15 +195,15 @@ def card_html(item, top=False, rank=None):
     h = "h3" if top else "h4"
     cat_key = item.get("catKey", "")
     summary = item.get("summary", "").replace("\n", "<br>")
-    return f"""<a href="{item.get('url','#')}" target="_blank" rel="noopener" class="{cls}" data-cat="{cat_key}">
+    return f"""<div class="{cls}" data-cat="{cat_key}">
   {rank_html}
   <div class="meta-row"><span class="cat-tag">{item.get('cat','')}</span><span class="heat-tag">🔥 {item.get('heat','')}</span><span>{item.get('time','')}</span><span class="dot"></span><span>{item.get('source','')}</span></div>
   <{h}>{item.get('title','')}</{h}>
   <div class="summary">{summary}</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>{item.get('reason','')}</div>
   <div class="tags-row">{tags}</div>
-  <span class="read-btn">阅读原文 →</span>
-</a>"""
+  <a class="read-btn" href="{item.get('url','#')}" target="_blank" rel="noopener">阅读原文 →</a>
+</div>"""
 
 def render_day(g, default_open=False):
     # Preview (always visible) — top3 titles
