@@ -27,6 +27,11 @@ CSS = """
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg-base);color:var(--text-1);line-height:1.6;-webkit-font-smoothing:antialiased}
+/* 允许正文自由选中、复制,并给出选中高亮 */
+::selection{background:rgba(73,130,201,.20);color:#1A2A40}
+.top-card,.news-card{user-select:text;-webkit-user-select:text;cursor:default}
+.top-card h3,.news-card h4,.top-card .summary,.news-card .summary,.reason-box{user-select:text}
+.read-btn{cursor:pointer}
 .container{max-width:1280px;margin:0 auto;padding:0 24px}
 a{color:inherit;text-decoration:none}
 
@@ -108,15 +113,15 @@ def card(item, top=False, rank=None):
     rank_html = f'<div class="rank-badge">{rank}</div>' if rank else ""
     cls = "top-card rank1" if rank == 1 else ("top-card" if top else "news-card")
     h = "h3" if top else "h4"
-    return f"""<a href="{item['url']}" target="_blank" rel="noopener" class="{cls}" data-cat="{item['catKey']}">
+    return f"""<div class="{cls}" data-cat="{item['catKey']}">
   {rank_html}
   <div class="meta-row"><span class="cat-tag">{item['cat']}</span><span class="heat-tag">🔥 {item['heat']}</span><span>{item['time']}</span><span class="dot"></span><span>{item['source']}</span></div>
   <{h}>{item['title']}</{h}>
   <div class="summary">{item['summary']}</div>
   <div class="reason-box"><strong>💡 推荐理由</strong>{item['reason']}</div>
   <div class="tags-row">{tags}</div>
-  <span class="read-btn">阅读原文 →</span>
-</a>"""
+  <a class="read-btn" href="{item['url']}" target="_blank" rel="noopener">阅读原文 →</a>
+</div>"""
 
 chips = "".join(
     f'<span class="chip {"active" if c["key"]=="all" else ""}" onclick="filterCat(\'{c["key"]}\',this)">{c["label"]}<span class="count">{c["count"]}</span></span>'
