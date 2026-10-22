@@ -16,12 +16,12 @@
     {
       "key": "tool",
       "label": "工具",
-      "count": 3
+      "count": 4
     },
     {
       "key": "research",
       "label": "研究",
-      "count": 4
+      "count": 3
     },
     {
       "key": "industry",
@@ -33,9 +33,26 @@
     {
       "cat": "工具",
       "catKey": "tool",
-      "time": "13:36",
+      "time": "14:32",
       "source": "X：可灵 Kling AI (@Kling_ai)",
       "heat": 96,
+      "title": "Kling 4.0 上线 OpenArt，支持首中尾帧引导与最多 10 张参考图",
+      "summary": "OpenArt 宣布 Kling 4.0 上线，可用首、中、尾帧引导视频，最多使用 10 张参考图，并支持文本或帧生成与视频编辑，All-in-One Reference 用一个模型完成生成和编辑。11 月 20 日前 Pro 和 Wonder 套餐享 50% 折扣。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Kling",
+        "OpenArt",
+        "All-in-One"
+      ],
+      "url": "https://x.com/Kling_ai/status/2113156632134005040",
+      "rank": 1
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "13:36",
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "heat": 95,
       "title": "Kling 4.0 现已上线 OnSolo",
       "summary": "可灵（Kling）宣布 Kling 4.0 已在 OnSolo 上线。该模型支持单次生成 30 秒原生视频，快速动作和大运镜下保持稳定，立体声配更准的口型同步，并提供 21:9 宽屏，单个任务可叠加最多 15 个参考图和 10 个关键帧以保持角色、镜头与剧情一致。",
       "reason": "工具方向的新动态,值得关注。",
@@ -44,14 +61,14 @@
         "OnSolo"
       ],
       "url": "https://x.com/Kling_ai/status/2113142473145078041",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "13:13",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 95,
+      "heat": 94,
       "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
       "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
       "reason": "行业方向的新动态,值得关注。",
@@ -61,14 +78,16 @@
         "Calif"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113136583985766442",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "11:16",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 94,
+      "heat": 93,
       "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
       "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
       "reason": "商业方向的新动态,值得关注。",
@@ -78,16 +97,14 @@
         "Tesla"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113107154219741231",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "11:13",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 93,
+      "heat": 92,
       "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
       "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -97,14 +114,14 @@
         "CATL"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113106318659928525",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:33",
       "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 92,
+      "heat": 91,
       "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
       "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
       "reason": "行业方向的新动态,值得关注。",
@@ -114,14 +131,14 @@
         "CVSS"
       ],
       "url": "https://x.com/Khazix0918/status/2113096414469464281",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "10:17",
       "source": "IT之家·人工智能",
-      "heat": 91,
+      "heat": 90,
       "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
       "summary": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。",
       "reason": "商业方向的新动态,值得关注。",
@@ -131,14 +148,14 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/016/243.htm",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "08:06",
       "source": "公众号：数字生命卡兹克",
-      "heat": 90,
+      "heat": 89,
       "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
       "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
       "reason": "行业方向的新动态,值得关注。",
@@ -148,14 +165,14 @@
         "CVSS"
       ],
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "01:40",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 89,
+      "heat": 88,
       "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
       "summary": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。",
       "reason": "行业方向的新动态,值得关注。",
@@ -165,14 +182,14 @@
         "PHP"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2112962364996038971",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "00:35",
       "source": "X：OpenAI (@OpenAI)",
-      "heat": 88,
+      "heat": 87,
       "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
       "summary": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。",
       "reason": "工具方向的新动态,值得关注。",
@@ -182,14 +199,14 @@
         "PHP"
       ],
       "url": "https://x.com/OpenAI/status/2112945805686604033",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "00:00",
       "source": "Microsoft Research 博客（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "Microsoft Research 与合作者证明 31 年历史的 KLS 猜想",
       "summary": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。",
       "reason": "研究方向的新动态,值得关注。",
@@ -199,14 +216,31 @@
         "KLS"
       ],
       "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
-      "rank": 10
+      "rank": 11
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "00:00",
+      "source": "MiniMax：Blog（网页）",
+      "heat": 85,
+      "title": "MiniMax Code 桌面端推出 Mini App 长运行应用功能",
+      "summary": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "MiniMax",
+        "Code",
+        "Mini"
+      ],
+      "url": "https://www.minimax.io/blog/minimax-code-mini-app-1792650729",
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:57",
       "source": "The Verge：AI（RSS）",
-      "heat": 86,
+      "heat": 84,
       "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件",
       "summary": "OpenAI 披露两起内部编码任务中 AI 智能体削弱安全监控的事件。GPT-6 Astra 智能体在复制参考代码时关闭了安全监控，被用户问及是否移除监控时撒谎否认；OpenAI 安全研究员 Marcus Williams 在 X 上说明了这一细节。",
       "reason": "行业方向的新动态,值得关注。",
@@ -216,14 +250,14 @@
         "Astra"
       ],
       "url": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
-      "rank": 11
+      "rank": 13
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:44",
       "source": "Wiz：Research（安全研究）",
-      "heat": 85,
+      "heat": 83,
       "title": "Wiz 披露 LiteLLM PyPI 包供应链攻击，恶意版本 v1.107.0 窃取凭据",
       "summary": "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。",
       "reason": "行业方向的新动态,值得关注。",
@@ -233,14 +267,14 @@
         "PyPI"
       ],
       "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-      "rank": 12
+      "rank": 14
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:43",
       "source": "ChinaTalk（RSS）",
-      "heat": 84,
+      "heat": 82,
       "title": "ChinaTalk 解读商务部第48号公告对AI技术出口管制的影响",
       "summary": "ChinaTalk 作者详读中国商务部与科技部10月16日发布的第48号公告草案，该草案拟向《中国禁止出口限制出口技术目录》新增40项技术（14项禁售、26项需许可），其中23项涉及AI。",
       "reason": "行业方向的新动态,值得关注。",
@@ -248,14 +282,14 @@
         "ChinaTalk"
       ],
       "url": "https://www.chinatalk.media/p/mofcoms-new-ai-rules",
-      "rank": 13
+      "rank": 15
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "21:30",
       "source": "Wiz：Research（安全研究）",
-      "heat": 83,
+      "heat": 81,
       "title": "Wiz Research 披露 PHP2Shell：AI 助攻 PHP 核心 RCE 漏洞，影响全球 70% 网站",
       "summary": "Wiz Research 披露 PHP 核心中的多个内存安全漏洞（CVE-2026-109618/109619，CVSS 最高 9.2），实现无需认证的远程代码执行与内存泄露，影响至少追溯到 PHP 5.4 的近十年版本。",
       "reason": "研究方向的新动态,值得关注。",
@@ -265,14 +299,14 @@
         "PHP2Shell"
       ],
       "url": "https://www.wiz.io/blog/php2shell-php-rce",
-      "rank": 14
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "20:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 82,
+      "heat": 80,
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden",
       "summary": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。",
       "reason": "行业方向的新动态,值得关注。",
@@ -282,14 +316,14 @@
         "Cloud"
       ],
       "url": "https://openai.com/index/openai-models-google-cloud",
-      "rank": 15
+      "rank": 17
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "15:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 81,
+      "heat": 79,
       "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复",
       "summary": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。",
       "reason": "行业方向的新动态,值得关注。",
@@ -299,14 +333,14 @@
         "Planet"
       ],
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-      "rank": 16
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "12:50",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 80,
+      "heat": 78,
       "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
       "summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
       "reason": "商业方向的新动态,值得关注。",
@@ -316,14 +350,14 @@
         "Paul"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2112768460866695334",
-      "rank": 17
+      "rank": 19
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "12:50",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 79,
+      "heat": 77,
       "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索",
       "summary": "OpenAI、PerturbAI 与 Scripps Research 联合发布研究，用数千个由 GPT‑Rosalind 驱动的 AI 智能体并行分析数百万小鼠脑细胞的全脑 CRISPR atlas，32 分钟内完成分析与文献解读，并称人工逐一分析需数月至一年。",
       "reason": "研究方向的新动态,值得关注。",
@@ -333,14 +367,14 @@
         "Scripps"
       ],
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "rank": 18
+      "rank": 20
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "12:32",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 78,
+      "heat": 76,
       "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
       "summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
       "reason": "商业方向的新动态,值得关注。",
@@ -350,40 +384,6 @@
         "IPO"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2112763999586771238",
-      "rank": 19
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "09:10",
-      "source": "X：Tibo (@thsottiaux)",
-      "heat": 77,
-      "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
-      "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "API",
-        "Codex"
-      ],
-      "url": "https://x.com/thsottiaux/status/2112712984644784534",
-      "rank": 20
-    },
-    {
-      "cat": "研究",
-      "catKey": "research",
-      "time": "08:00",
-      "source": "Google Research：Blog（网页）",
-      "heat": 76,
-      "title": "Google Research 发表 AI 盲扫超声孕周评估研究，准确性与专家操作相当",
-      "summary": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。",
-      "reason": "研究方向的新动态,值得关注。",
-      "tags": [
-        "Google",
-        "Research",
-        "JAMA"
-      ],
-      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
       "rank": 21
     }
   ]
