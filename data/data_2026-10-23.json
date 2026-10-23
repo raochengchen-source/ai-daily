@@ -41,11 +41,28 @@
   ],
   "top3": [
     {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "14:04",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "heat": 96,
+      "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+      "summary": "据 WSJ 报道，OpenAI 安全人员发现 3 名安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天后将其解雇。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "WSJ",
+        "OpenAI",
+        "Signal"
+      ],
+      "url": "https://x.com/rohanpaul_ai/status/2113511968112042349",
+      "rank": 1
+    },
+    {
       "cat": "大模型",
       "catKey": "model",
       "time": "09:06",
       "source": "X：MiniMax (@MiniMax_AI)",
-      "heat": 96,
+      "heat": 95,
       "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B",
       "summary": "MiniMax 宣布 M3.1 Flash 权重公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 和 ModelScope 下载。",
       "reason": "大模型方向的新动态,值得关注。",
@@ -55,14 +72,14 @@
         "Flash"
       ],
       "url": "https://x.com/MiniMax_AI/status/2113436864904610008",
-      "rank": 1
+      "rank": 2
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:24",
       "source": "Replit：Blog（RSS）",
-      "heat": 95,
+      "heat": 94,
       "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
       "summary": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。",
       "reason": "工具方向的新动态,值得关注。",
@@ -72,14 +89,16 @@
         "Agent"
       ],
       "url": "https://replit.com/blog/replit-monitoring-agent",
-      "rank": 2
-    },
+      "rank": 3
+    }
+  ],
+  "items": [
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "04:04",
       "source": "X：Claude (@claudeai)",
-      "heat": 94,
+      "heat": 93,
       "title": "Claude 网页、桌面和移动端将默认启用 auto mode",
       "summary": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。",
       "reason": "工具方向的新动态,值得关注。",
@@ -89,16 +108,14 @@
         "Max"
       ],
       "url": "https://x.com/claudeai/status/2113360845409583307",
-      "rank": 3
-    }
-  ],
-  "items": [
+      "rank": 4
+    },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "03:45",
       "source": "The Verge：AI（RSS）",
-      "heat": 93,
+      "heat": 92,
       "title": "The Verge 分析 SpaceX 与特斯拉成立特别委员会讨论合并背后的财务逻辑",
       "summary": "The Verge 作者 Elizabeth Lopatto 分析 SpaceX 和 Tesla 各自成立特别委员会讨论合并一事。",
       "reason": "行业方向的新动态,值得关注。",
@@ -108,14 +125,14 @@
         "SpaceX"
       ],
       "url": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-      "rank": 4
+      "rank": 5
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "03:00",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 92,
+      "heat": 91,
       "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策",
       "summary": "OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。",
       "reason": "工具方向的新动态,值得关注。",
@@ -125,14 +142,14 @@
         "API"
       ],
       "url": "https://openai.com/index/decisions-api",
-      "rank": 5
+      "rank": 6
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "02:01",
       "source": "Microsoft AI：官方博客（网页）",
-      "heat": 91,
+      "heat": 90,
       "title": "Microsoft AI 发布 SDBench 基准与 MAI-DxO 诊断系统，登 Science",
       "summary": "Microsoft AI 发布 Sequential Diagnosis Benchmark（SDBench）和 AI 诊断系统 MAI-DxO，论文发表于 Science。",
       "reason": "研究方向的新动态,值得关注。",
@@ -142,14 +159,14 @@
         "MAI-DxO"
       ],
       "url": "https://microsoft.ai/news/building-medical-superintelligence/",
-      "rank": 6
+      "rank": 7
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "23:53",
       "source": "Newcomer 新闻长文（RSS）",
-      "heat": 90,
+      "heat": 89,
       "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
       "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。",
       "reason": "商业方向的新动态,值得关注。",
@@ -159,14 +176,14 @@
         "OpenAI"
       ],
       "url": "https://www.newcomer.co/p/the-story-of-anthropics-cap-table",
-      "rank": 7
+      "rank": 8
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "23:32",
       "source": "Redwood Research：Blog（RSS）",
-      "heat": 89,
+      "heat": 88,
       "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
       "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。",
       "reason": "研究方向的新动态,值得关注。",
@@ -176,14 +193,14 @@
         "Research"
       ],
       "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
-      "rank": 8
+      "rank": 9
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "23:25",
       "source": "Ars Technica：AI（RSS）",
-      "heat": 88,
+      "heat": 87,
       "title": "PHP2Shell 漏洞披露前黑客已有四天窗口，多国机构紧急响应",
       "summary": "PHP2Shell 漏洞在被披露前四天已遭黑客利用，Calif 与 Wiz 的研究人员发现这些漏洞。OpenAI 称其前沿 AI 在攻击者之前发现了漏洞，并与 PHP、Calif、Wiz 合作验证并开发补丁。NSA 建议无法立即更新的机构将系统离线，英国 NCSC 表示漏洞可能让黑客无需登录凭据即可控制网站服务器，白宫称联邦机构正在评估对政府系统和关键基础设施的潜在影响。",
       "reason": "行业方向的新动态,值得关注。",
@@ -193,14 +210,14 @@
         "Wiz"
       ],
       "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
-      "rank": 9
+      "rank": 10
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "22:23",
       "source": "404 Media（RSS）",
-      "heat": 87,
+      "heat": 86,
       "title": "404 Media 分析 PHP2Shell 事件如何改变 AI 时代的攻防格局",
       "summary": "404 Media 的 Jason Koebler 梳理近一个月安全专家对 AI 挖洞能力引发的\"Black October\"恐慌。Wiz、Calif 和 OpenAI 的研究者用 AI 发现了 PHP 的 PHP2Shell 漏洞，Cloudflare CEO 称公开公告前 10 小时已见数千次利用尝试，公告后 2 小时内增至数十万，目前达数百万级。",
       "reason": "行业方向的新动态,值得关注。",
@@ -210,14 +227,14 @@
         "Jason"
       ],
       "url": "https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next/",
-      "rank": 10
+      "rank": 11
     },
     {
       "cat": "研究",
       "catKey": "research",
       "time": "22:02",
       "source": "Sierra：Blog（RSS）",
-      "heat": 86,
+      "heat": 85,
       "title": "Sierra 发布 𝜏-Entity 基准，检验语音智能体能否准确采集姓名、电话等实体信息",
       "summary": "Sierra 发布 𝜏-Entity 基准，测量语音智能体能否正确采集、识别错误并修复姓名、电话号码、地址和邮箱等细节，包含 10 种实体类型共 200 个任务，并与 𝜏-i18n 一样覆盖六种语言。",
       "reason": "研究方向的新动态,值得关注。",
@@ -226,14 +243,14 @@
         "Entity"
       ],
       "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right",
-      "rank": 11
+      "rank": 12
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "21:05",
       "source": "Wiz：Research（安全研究）",
-      "heat": 85,
+      "heat": 84,
       "title": "Wiz 披露 ARTEX 智能体被 Storm-0940 用于攻击 IT 和软件厂商",
       "summary": "Wiz 披露 2026 年 10 月有攻击者使用开源自主渗透测试框架 ARTEX 针对多家 IT 和软件厂商，活动与微软报告的中国国家级关联组织 Storm-0940 重叠，并已扩展到其他软件领域的供应链攻击尝试。",
       "reason": "行业方向的新动态,值得关注。",
@@ -243,14 +260,14 @@
         "Storm-0940"
       ],
       "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
-      "rank": 12
+      "rank": 13
     },
     {
       "cat": "基础设施",
       "catKey": "infra",
       "time": "19:30",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 84,
+      "heat": 83,
       "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
       "summary": "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。",
       "reason": "基础设施方向的新动态,值得关注。",
@@ -259,14 +276,14 @@
         "Skynet"
       ],
       "url": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
-      "rank": 13
+      "rank": 14
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "14:32",
       "source": "X：可灵 Kling AI (@Kling_ai)",
-      "heat": 83,
+      "heat": 82,
       "title": "Kling 4.0 上线 OpenArt，支持首中尾帧引导与最多 10 张参考图",
       "summary": "OpenArt 宣布 Kling 4.0 上线，可用首、中、尾帧引导视频，最多使用 10 张参考图，并支持文本或帧生成与视频编辑，All-in-One Reference 用一个模型完成生成和编辑。11 月 20 日前 Pro 和 Wonder 套餐享 50% 折扣。",
       "reason": "工具方向的新动态,值得关注。",
@@ -276,14 +293,14 @@
         "All-in-One"
       ],
       "url": "https://x.com/Kling_ai/status/2113156632134005040",
-      "rank": 14
+      "rank": 15
     },
     {
       "cat": "工具",
       "catKey": "tool",
       "time": "13:36",
       "source": "X：可灵 Kling AI (@Kling_ai)",
-      "heat": 82,
+      "heat": 81,
       "title": "Kling 4.0 现已上线 OnSolo",
       "summary": "可灵（Kling）宣布 Kling 4.0 已在 OnSolo 上线。该模型支持单次生成 30 秒原生视频，快速动作和大运镜下保持稳定，立体声配更准的口型同步，并提供 21:9 宽屏，单个任务可叠加最多 15 个参考图和 10 个关键帧以保持角色、镜头与剧情一致。",
       "reason": "工具方向的新动态,值得关注。",
@@ -292,14 +309,14 @@
         "OnSolo"
       ],
       "url": "https://x.com/Kling_ai/status/2113142473145078041",
-      "rank": 15
+      "rank": 16
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "13:13",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 81,
+      "heat": 80,
       "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
       "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
       "reason": "行业方向的新动态,值得关注。",
@@ -309,14 +326,14 @@
         "Calif"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113136583985766442",
-      "rank": 16
+      "rank": 17
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "11:16",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 80,
+      "heat": 79,
       "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
       "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
       "reason": "商业方向的新动态,值得关注。",
@@ -326,14 +343,14 @@
         "Tesla"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113107154219741231",
-      "rank": 17
+      "rank": 18
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "11:13",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "heat": 79,
+      "heat": 78,
       "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
       "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
       "reason": "商业方向的新动态,值得关注。",
@@ -343,14 +360,14 @@
         "CATL"
       ],
       "url": "https://x.com/rohanpaul_ai/status/2113106318659928525",
-      "rank": 18
+      "rank": 19
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "10:33",
       "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 78,
+      "heat": 77,
       "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
       "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
       "reason": "行业方向的新动态,值得关注。",
@@ -360,14 +377,14 @@
         "CVSS"
       ],
       "url": "https://x.com/Khazix0918/status/2113096414469464281",
-      "rank": 19
+      "rank": 20
     },
     {
       "cat": "商业",
       "catKey": "biz",
       "time": "10:17",
       "source": "IT之家·人工智能",
-      "heat": 77,
+      "heat": 76,
       "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
       "summary": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。",
       "reason": "商业方向的新动态,值得关注。",
@@ -377,23 +394,6 @@
         "IPO"
       ],
       "url": "https://www.ithome.com/1/016/243.htm",
-      "rank": 20
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "08:06",
-      "source": "公众号：数字生命卡兹克",
-      "heat": 76,
-      "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
-      "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "PHP2Shell",
-        "PHP",
-        "CVSS"
-      ],
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
       "rank": 21
     }
   ]
