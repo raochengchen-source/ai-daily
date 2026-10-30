@@ -31,12 +31,12 @@
     {
       "key": "research",
       "label": "研究",
-      "count": 2
+      "count": 1
     },
     {
       "key": "industry",
       "label": "行业",
-      "count": 6
+      "count": 7
     },
     {
       "key": "opinion",
@@ -368,11 +368,28 @@
       "rank": 19
     },
     {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "20:00",
+      "source": "Cursor Blog",
+      "heat": 77,
+      "title": "Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响",
+      "summary": "Cursor 官方披露，其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 开发，在 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Cursor",
+        "Anthropic.claude",
+        "Code"
+      ],
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "rank": 20
+    },
+    {
       "cat": "商业",
       "catKey": "biz",
       "time": "18:16",
       "source": "The Decoder：AI News（RSS）",
-      "heat": 77,
+      "heat": 76,
       "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
       "summary": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp Schindler 承认 AI mode 查询的强劲增长因变现率较低产生了影响，同时公司称搜索查询年增速达五年来最高，并计划在美国及国际市场扩大聊天机器人广告项目。",
       "reason": "商业方向的新动态,值得关注。",
@@ -382,23 +399,6 @@
         "Schindler"
       ],
       "url": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
-      "rank": 20
-    },
-    {
-      "cat": "研究",
-      "catKey": "research",
-      "time": "17:00",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 76,
-      "title": "OpenAI 详解如何检测前沿模型失准行为",
-      "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。",
-      "reason": "研究方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "GPT",
-        "Astra"
-      ],
-      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
       "rank": 21
     }
   ]
