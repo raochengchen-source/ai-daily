@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-30",
-  "weekday": "周五",
+  "date": "2026-10-31",
+  "weekday": "周六",
   "totalCount": 21,
   "categories": [
     {
@@ -11,7 +11,7 @@
     {
       "key": "biz",
       "label": "商业",
-      "count": 4
+      "count": 6
     },
     {
       "key": "infra",
@@ -19,24 +19,19 @@
       "count": 1
     },
     {
-      "key": "model",
-      "label": "大模型",
-      "count": 1
-    },
-    {
       "key": "tool",
       "label": "工具",
-      "count": 4
+      "count": 3
     },
     {
       "key": "research",
       "label": "研究",
-      "count": 1
+      "count": 2
     },
     {
       "key": "industry",
       "label": "行业",
-      "count": 8
+      "count": 7
     },
     {
       "key": "opinion",
@@ -46,54 +41,54 @@
   ],
   "top3": [
     {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "15:46",
-      "source": "X：Cursor (@cursor_ai)",
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "09:20",
+      "source": "TechCrunch：AI（RSS）",
       "heat": 96,
-      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
-      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。",
-      "reason": "行业方向的新动态,值得关注。",
+      "title": "Nvidia 洽谈为 Nscale 西弗吉尼亚 Anthropic 数据中心提供债务担保",
+      "summary": "据 The Information 报道、Bloomberg 佐证，Nvidia 正洽谈为 Nscale 在西弗吉尼亚为 Anthropic 建设的数据中心担保数十亿美元债务融资，Anthropic 已就首栋建筑签署 446 亿美元合同。",
+      "reason": "商业方向的新动态,值得关注。",
       "tags": [
-        "Cursor",
-        "Claude",
-        "Code"
+        "Nvidia",
+        "Nscale",
+        "Anthropic"
       ],
-      "url": "https://x.com/cursor_ai/status/2116074289053175808",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
       "rank": 1
     },
     {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "12:04",
-      "source": "公众号：月之暗面（Kimi）",
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "08:58",
+      "source": "Figma AI / Agent / Make",
       "heat": 95,
-      "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
-      "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。",
-      "reason": "商业方向的新动态,值得关注。",
+      "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
+      "summary": "Figma 宣布 Figma Weave，一个面向持续产出需求的创意团队平台，并把 Weave 创作工作流与 Figma 画框连接起来。Weave 用连接的节点承载图像和视频的生成与编辑，支持分支探索、多模型对比、色彩校正、合成、裁剪、Painter 等编辑节点；工作流可打包成 Weave tool 让团队成员一键运行，社区工具发布已上线。",
+      "reason": "工具方向的新动态,值得关注。",
       "tags": [
-        "Kimi",
-        "K3.1",
-        "Pro"
+        "Figma",
+        "Weave",
+        "Painter"
       ],
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&mid=2247484364&idx=1&sn=42491c3f098deb797ee8f2a17d147b3a",
+      "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
       "rank": 2
     },
     {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "08:51",
-      "source": "Platformer（热点 RSS）",
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "08:03",
+      "source": "公众号：千问APP（阿里）",
       "heat": 94,
-      "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
-      "summary": "Casey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。",
-      "reason": "商业方向的新动态,值得关注。",
+      "title": "阿里巴巴与Apple合作，千问集成至Apple智能，11月4日开放测试",
+      "summary": "10月31日阿里巴巴宣布与Apple合作，将千问集成至Apple智能，中国用户可在Siri、写作工具及视觉智能中调用千问的文本与图像理解、内容生成能力。功能11月4日起随iOS开发者Beta开放测试，12月iOS 27.3正式发布时推出；用户可自主选择开通，请求与回复不用于模型训练。",
+      "reason": "行业方向的新动态,值得关注。",
       "tags": [
-        "Google",
-        "Reddit",
-        "Casey"
+        "Apple",
+        "Siri",
+        "Beta"
       ],
-      "url": "https://www.platformer.news/thursday-newsletter-6/",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489416&idx=1&sn=9525f61df8086fcd6fe4d4183da068de",
       "rank": 3
     }
   ],
@@ -104,6 +99,257 @@
       "time": "08:00",
       "source": "OpenRouter：Announcements（RSS）",
       "heat": 93,
+      "title": "OpenRouter 教程：用 Agent SDK 搭建常驻 AI Agent 监控 Hacker News",
+      "summary": "OpenRouter 发布教程，演示用 @openrouter/agent 0.11.0 在 TypeScript 中搭建定时运行的常驻 AI Agent，监控 Hacker News 并生成摘要。",
+      "reason": "观点方向的新动态,值得关注。",
+      "tags": [
+        "OpenRouter",
+        "Agent",
+        "SDK"
+      ],
+      "url": "https://openrouter.ai/blog/tutorials/build-always-on-ai-agent/",
+      "rank": 4
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "06:51",
+      "source": "Wiz：Research（安全研究）",
+      "heat": 92,
+      "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+      "summary": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Wiz",
+        "Fireworks",
+        "Lightning"
+      ],
+      "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+      "rank": 5
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "05:17",
+      "source": "TechCrunch：AI（RSS）",
+      "heat": 91,
+      "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+      "summary": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Alphabet",
+        "Amazon",
+        "Meta"
+      ],
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "rank": 6
+    },
+    {
+      "cat": "基础设施",
+      "catKey": "infra",
+      "time": "02:28",
+      "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
+      "heat": 90,
+      "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
+      "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。",
+      "reason": "基础设施方向的新动态,值得关注。",
+      "tags": [
+        "Project",
+        "Suncatcher",
+        "TPU"
+      ],
+      "url": "https://x.com/_philschmid/status/2116235686445502608",
+      "rank": 7
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "01:42",
+      "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
+      "heat": 89,
+      "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+      "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Max"
+      ],
+      "url": "https://x.com/adocomplete/status/2116224220539883992",
+      "rank": 8
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "01:15",
+      "source": "The Decoder：AI News（RSS）",
+      "heat": 88,
+      "title": "Reddit CEO 称 Google AI Mode 不为任何人带来流量，Reddit 每周流失超百万搜索访问",
+      "summary": "Reddit CEO Steve Huffman 表示 10 月 Reddit 每周流失超过 100 万来自 Google 搜索的访问，股价在业绩强劲的情况下仍下跌超 25%。他称 AI Mode 不会带来流量，Reddit 正在美国以外测试登录墙以遏制抓取，并与 AI 提供商继续数据授权谈判。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Reddit",
+        "CEO",
+        "Google"
+      ],
+      "url": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/",
+      "rank": 9
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "22:50",
+      "source": "Hacker News：AI 热帖",
+      "heat": 87,
+      "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%",
+      "summary": "BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Intel",
+        "BBC"
+      ],
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "rank": 10
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "21:11",
+      "source": "The Verge：AI（RSS）",
+      "heat": 86,
+      "title": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
+      "summary": "The Verge 分析 Anthropic 提交的 335 页 S-1 招股书，其中创始人信以带来奇迹时代为愿景，同时用 94 页风险因素警告模型可能对人类构成灾难性甚至生存风险。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "The",
+        "Verge",
+        "Anthropic"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+      "rank": 11
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "20:50",
+      "source": "Sierra：Blog（RSS）",
+      "heat": 85,
+      "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
+      "summary": "Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快于此前六个月的翻倍节奏。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Sierra",
+        "ARR"
+      ],
+      "url": "https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth",
+      "rank": 12
+    },
+    {
+      "cat": "研究",
+      "catKey": "research",
+      "time": "20:07",
+      "source": "Epoch AI：Gradient Updates（RSS）",
+      "heat": 84,
+      "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
+      "summary": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。",
+      "reason": "研究方向的新动态,值得关注。",
+      "tags": [
+        "Epoch",
+        "GLM",
+        "Firefox"
+      ],
+      "url": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox",
+      "rank": 13
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "15:46",
+      "source": "X：Cursor (@cursor_ai)",
+      "heat": 83,
+      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "Cursor",
+        "Claude",
+        "Code"
+      ],
+      "url": "https://x.com/cursor_ai/status/2116074289053175808",
+      "rank": 14
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "12:04",
+      "source": "公众号：月之暗面（Kimi）",
+      "heat": 82,
+      "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
+      "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Kimi",
+        "K3.1",
+        "Pro"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&mid=2247484364&idx=1&sn=42491c3f098deb797ee8f2a17d147b3a",
+      "rank": 15
+    },
+    {
+      "cat": "商业",
+      "catKey": "biz",
+      "time": "08:51",
+      "source": "Platformer（热点 RSS）",
+      "heat": 81,
+      "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
+      "summary": "Casey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。",
+      "reason": "商业方向的新动态,值得关注。",
+      "tags": [
+        "Google",
+        "Reddit",
+        "Casey"
+      ],
+      "url": "https://www.platformer.news/thursday-newsletter-6/",
+      "rank": 16
+    },
+    {
+      "cat": "工具",
+      "catKey": "tool",
+      "time": "08:00",
+      "source": "Gemini API：更新日志（网页）",
+      "heat": 80,
+      "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
+      "summary": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。",
+      "reason": "工具方向的新动态,值得关注。",
+      "tags": [
+        "Gemini",
+        "API",
+        "Computer"
+      ],
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-30-2026",
+      "rank": 17
+    },
+    {
+      "cat": "行业",
+      "catKey": "industry",
+      "time": "08:00",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "heat": 79,
+      "title": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
+      "summary": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。",
+      "reason": "行业方向的新动态,值得关注。",
+      "tags": [
+        "OpenAI"
+      ],
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "rank": 18
+    },
+    {
+      "cat": "观点",
+      "catKey": "opinion",
+      "time": "08:00",
+      "source": "OpenRouter：Announcements（RSS）",
+      "heat": 78,
       "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
       "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。",
       "reason": "观点方向的新动态,值得关注。",
@@ -113,14 +359,14 @@
         "Opus"
       ],
       "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku/",
-      "rank": 4
+      "rank": 19
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "07:42",
       "source": "TechCrunch：AI（RSS）",
-      "heat": 92,
+      "heat": 77,
       "title": "Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元",
       "summary": "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。",
       "reason": "行业方向的新动态,值得关注。",
@@ -130,14 +376,14 @@
         "Amazon"
       ],
       "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-      "rank": 5
+      "rank": 20
     },
     {
       "cat": "行业",
       "catKey": "industry",
       "time": "05:29",
       "source": "Hacker News：AI 热帖",
-      "heat": 91,
+      "heat": 76,
       "title": "Google 市值蒸发 5000 亿美元，AI 概要冲击搜索广告引发华尔街担忧",
       "summary": "Alphabet 因 AI 搜索概要影响广告收入，单日市值从 3.97 万亿跌至 3.46 万亿美元，缩水超 5000 亿美元。该季度总营收增 25% 至 1276 亿美元，云业务营收增 103% 至近 310 亿美元，但利润下降 25%，自由现金流为负超 90 亿美元。",
       "reason": "行业方向的新动态,值得关注。",
@@ -146,259 +392,6 @@
         "Alphabet"
       ],
       "url": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
-      "rank": 6
-    },
-    {
-      "cat": "观点",
-      "catKey": "opinion",
-      "time": "05:00",
-      "source": "Figma AI / Agent / Make",
-      "heat": 90,
-      "title": "Figma 讲解如何训练专用画布编辑模型",
-      "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。",
-      "reason": "观点方向的新动态,值得关注。",
-      "tags": [
-        "Figma",
-        "SFT",
-        "Llama"
-      ],
-      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
-      "rank": 7
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "04:08",
-      "source": "TechCrunch：AI（RSS）",
-      "heat": 89,
-      "title": "Reddit 宣布转向以登录为主的体验，以应对 AI 搜索带来的流量下滑",
-      "summary": "Reddit 在 Q3 财报中宣布将转向以登录为主的体验，以保护数据免受 AI 抓取并提升广告变现。10 月搜索流量平均每周减少超 100 万次引荐，Q3 全球日活为 1.303 亿，其中美国日活降至 5070 万，同比降 2%。Q3 收入同比增长 53% 至 8.95 亿美元，净利润 2.83 亿美元；该转变将先在美国以外市场测试，暂无全球上线时间表。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Reddit"
-      ],
-      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-      "rank": 8
-    },
-    {
-      "cat": "大模型",
-      "catKey": "model",
-      "time": "04:07",
-      "source": "X：卡兹克 (@Khazix0918)",
-      "heat": 88,
-      "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
-      "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
-      "reason": "大模型方向的新动态,值得关注。",
-      "tags": [
-        "Pika",
-        "MiniMax",
-        "Flex"
-      ],
-      "url": "https://x.com/Khazix0918/status/2115898252004622617",
-      "rank": 9
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "03:10",
-      "source": "Timothy B. Lee：Understanding AI（RSS）",
-      "heat": 87,
-      "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
-      "summary": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Anthropic",
-        "S-1",
-        "Google"
-      ],
-      "url": "https://www.understandingai.org/p/anthropics-financials-are-surprisingly",
-      "rank": 10
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "01:00",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "heat": 86,
-      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
-      "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Hy-Nomas",
-        "Hy-Nomas-Bench",
-        "Xiv"
-      ],
-      "url": "https://x.com/TencentHunyuan/status/2115851165904814283",
-      "rank": 11
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "01:00",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "heat": 85,
-      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则",
-      "summary": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "OpenAI",
-        "Model",
-        "Spec"
-      ],
-      "url": "https://openai.com/index/updated-model-spec",
-      "rank": 12
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "00:56",
-      "source": "X：Tibo (@thsottiaux)",
-      "heat": 84,
-      "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
-      "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Codex",
-        "Pro",
-        "Business"
-      ],
-      "url": "https://x.com/thsottiaux/status/2115850175868727621",
-      "rank": 13
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "00:36",
-      "source": "X：Gemini (@GeminiApp)",
-      "heat": 83,
-      "title": "Gemini 新增文档、PDF、演示文稿和表格的直接生成、预览与编辑功能",
-      "summary": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Gemini",
-        "PDF",
-        "Google"
-      ],
-      "url": "https://x.com/GeminiApp/status/2115845164824711247",
-      "rank": 14
-    },
-    {
-      "cat": "研究",
-      "catKey": "research",
-      "time": "22:36",
-      "source": "Wiz：Research（安全研究）",
-      "heat": 82,
-      "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
-      "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。",
-      "reason": "研究方向的新动态,值得关注。",
-      "tags": [
-        "Wiz",
-        "ARTEX",
-        "Hermes"
-      ],
-      "url": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed",
-      "rank": 15
-    },
-    {
-      "cat": "工具",
-      "catKey": "tool",
-      "time": "22:27",
-      "source": "X：Unsloth (@UnslothAI)",
-      "heat": 81,
-      "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
-      "summary": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。",
-      "reason": "工具方向的新动态,值得关注。",
-      "tags": [
-        "Unsloth",
-        "Mistral",
-        "Chonk"
-      ],
-      "url": "https://x.com/UnslothAI/status/2115812784189620265",
-      "rank": 16
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "22:21",
-      "source": "404 Media（RSS）",
-      "heat": 80,
-      "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
-      "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Media",
-        "Proton",
-        "CEO"
-      ],
-      "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
-      "rank": 17
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "22:00",
-      "source": "The Verge：AI（RSS）",
-      "heat": 79,
-      "title": "SemiAnalysis 分析师解读 Anthropic S-1 招股书背后的 AI 经济账",
-      "summary": "The Verge Decoder 节目邀请 SemiAnalysis 分析师 Joey Brookhart 解读 Anthropic 提交的 S-1 招股书，公司拟在纳斯达克上市，估值区间 1.5 万亿至 2 万亿美元。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "SemiAnalysis",
-        "Anthropic",
-        "S-1"
-      ],
-      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
-      "rank": 18
-    },
-    {
-      "cat": "基础设施",
-      "catKey": "infra",
-      "time": "21:42",
-      "source": "The Decoder：AI News（RSS）",
-      "heat": 78,
-      "title": "纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋",
-      "summary": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。",
-      "reason": "基础设施方向的新动态,值得关注。",
-      "tags": [
-        "CEO",
-        "Megaspeed",
-        "Alice"
-      ],
-      "url": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
-      "rank": 19
-    },
-    {
-      "cat": "商业",
-      "catKey": "biz",
-      "time": "21:30",
-      "source": "The Verge：AI（RSS）",
-      "heat": 77,
-      "title": "The Verge 解读 Anthropic S-1：约 8500 亿美元 compute 承诺押注递归自我改进",
-      "summary": "The Verge 作者分析 Anthropic S-1，认为其商业模式依赖高速增长：2026 上半年营收同比增长 14 倍至 $16.3 billion，净收入留存率 900%，但不可撤销采购承诺合计 $265.6 billion，加上未开始的租赁协议 $321.4 billion 及其他协议，未来 20 年承诺至少约 $850 billion。",
-      "reason": "商业方向的新动态,值得关注。",
-      "tags": [
-        "The",
-        "Verge",
-        "Anthropic"
-      ],
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
-      "rank": 20
-    },
-    {
-      "cat": "行业",
-      "catKey": "industry",
-      "time": "20:00",
-      "source": "Cursor Blog",
-      "heat": 76,
-      "title": "Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响",
-      "summary": "Cursor 官方披露，其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 开发，在 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。",
-      "reason": "行业方向的新动态,值得关注。",
-      "tags": [
-        "Cursor",
-        "Anthropic.claude",
-        "Code"
-      ],
-      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
       "rank": 21
     }
   ]
